@@ -6,6 +6,11 @@ import Services from "../components/UI/Services";
 import Portfolio from "../components/UI/Portfolio";
 import Contact from "../components/UI/Contact";
 
+import {
+  getYoutubeChannelDataDefaultResponse,
+  getYoutubeVideosDefaultResponse,
+} from "../components/data/youtubeDefault";
+
 export default function Home({ youtubeStats, youtubeVideos }) {
   return (
     <Fragment>
@@ -56,9 +61,15 @@ export default function Home({ youtubeStats, youtubeVideos }) {
 }
 
 async function getYoutubeStatsForChannelId(id) {
-  const response = await axios.get(
-    `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${id}&key=AIzaSyDezsveebPt38oIqjLDE-T28PrRClhHjPQ`
-  );
+  let response = null;
+  try {
+    response = await axios.get(
+      `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${id}&key=AIzaSyDezsveebPt38oIqjLDE-T28PrRClhHjPQ`
+    );
+  } catch (error) {
+    response = getYoutubeChannelDataDefaultResponse;
+  }
+
   if (response && "data" in response) {
     if (
       "items" in response.data &&
@@ -71,9 +82,15 @@ async function getYoutubeStatsForChannelId(id) {
 }
 
 async function getYoutubeVideos() {
-  const response = await axios.get(
-    "https://www.googleapis.com/youtube/v3/search?key=AIzaSyDezsveebPt38oIqjLDE-T28PrRClhHjPQ&part=snippet&channelId=UCf9T51_FmMlfhiGpoes0yFA&order=date"
-  );
+  let response = null;
+  try {
+    response = await axios.get(
+      "https://www.googleapis.com/youtube/v3/search?key=AIzaSyDezsveebPt38oIqjLDE-T28PrRClhHjPQ&part=snippet&channelId=UCf9T51_FmMlfhiGpoes0yFA&order=date"
+    );
+  } catch (error) {
+    response = getYoutubeVideosDefaultResponse;
+  }
+
   if (response && "data" in response) {
     if (
       "items" in response.data &&
@@ -86,16 +103,18 @@ async function getYoutubeVideos() {
 }
 
 export async function getStaticProps(context) {
-  const [youtubeStats, youtubeVideos] = await Promise.all([
-    getYoutubeStatsForChannelId("UCf9T51_FmMlfhiGpoes0yFA"),
-    getYoutubeVideos(),
-  ]);
+  try {
+    const [youtubeStats, youtubeVideos] = await Promise.all([
+      getYoutubeStatsForChannelId("UCf9T51_FmMlfhiGpoes0yFA"),
+      getYoutubeVideos(),
+    ]);
 
-  return {
-    props: {
-      youtubeStats,
-      youtubeVideos,
-    }, // will be passed to the page component as props
-    revalidate: 43200, // 12 Hrs
-  };
+    return {
+      props: {
+        youtubeStats,
+        youtubeVideos,
+      }, // will be passed to the page component as props
+      revalidate: 43200, // 12 Hrs
+    };
+  } catch (error) {}
 }
