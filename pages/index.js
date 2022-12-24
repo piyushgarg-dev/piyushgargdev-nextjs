@@ -83,7 +83,7 @@ async function getYoutubeVideos() {
   return null;
 }
 
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
   const [youtubeStats, youtubeVideos] = await Promise.all([
     getYoutubeStatsForChannelId("UCf9T51_FmMlfhiGpoes0yFA"),
     getYoutubeVideos(),
@@ -94,6 +94,6 @@ export async function getServerSideProps(context) {
       youtubeStats,
       youtubeVideos,
     }, // will be passed to the page component as props
-    // revalidate: 43200, // 12 Hrs
+    revalidate: 43200, // 12 Hrs
   };
 }
