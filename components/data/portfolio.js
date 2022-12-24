@@ -13,7 +13,7 @@ const portfolio = [
   {
     id: "03",
     title: "Data Structures and Algo.",
-    subtitle: "Level up your react skills with design patterns",
+    subtitle: "Master the fundamentals of DSA",
     img: "/images/dsa.webp",
     category: "DSA",
     keyword: ["Java", "Coding", "Programming", "DSA"],
@@ -24,7 +24,7 @@ const portfolio = [
   {
     id: "04",
     title: "Master Linear Data Structures",
-    subtitle: "Level up your react skills with design patterns",
+    subtitle: "Complete Guide and Hands-on Tutorials on Linear Data Structures",
     img: "/images/linear-dsa.webp",
     category: "DSA",
     keyword: ["Java", "Coding", "Programming", "DSA"],
@@ -35,7 +35,7 @@ const portfolio = [
   {
     id: "02",
     title: "Ultimate React.js Design Patterns",
-    subtitle: "Complete Guide and Hands-on Tutorials on Linear Data Structures",
+    subtitle: "Level up your react skills with design patterns",
     img: "/images/react-design-patterns.webp",
     category: "React",
     keyword: ["React", "WebDev", "Fontend"],
