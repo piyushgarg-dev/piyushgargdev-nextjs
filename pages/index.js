@@ -61,13 +61,13 @@ export default function Home({ youtubeStats, youtubeVideos }) {
 }
 
 async function getYoutubeStatsForChannelId(id) {
-  let response = null;
+  let response = { data: null };
   try {
     response = await axios.get(
       `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${id}&key=AIzaSyDezsveebPt38oIqjLDE-T28PrRClhHjPQ`
     );
   } catch (error) {
-    response = getYoutubeChannelDataDefaultResponse;
+    response.data = getYoutubeChannelDataDefaultResponse;
   }
 
   if (response && "data" in response) {
@@ -82,13 +82,13 @@ async function getYoutubeStatsForChannelId(id) {
 }
 
 async function getYoutubeVideos() {
-  let response = null;
+  let response = { data: null };
   try {
     response = await axios.get(
       "https://www.googleapis.com/youtube/v3/search?key=AIzaSyDezsveebPt38oIqjLDE-T28PrRClhHjPQ&part=snippet&channelId=UCf9T51_FmMlfhiGpoes0yFA&order=date"
     );
   } catch (error) {
-    response = getYoutubeVideosDefaultResponse;
+    response.data = getYoutubeVideosDefaultResponse;
   }
 
   if (response && "data" in response) {
