@@ -62,5 +62,6 @@ export async function getStaticProps(context) {
       youtubeStats,
       youtubeVideos,
     }, // will be passed to the page component as props
+    revalidate: 43200, // 12 Hrs
   };
 }
