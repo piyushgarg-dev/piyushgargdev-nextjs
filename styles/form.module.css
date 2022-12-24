@@ -1,0 +1,21 @@
+.form__group input,
+.form__group textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #171f38;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.form__group input::placeholder,
+.form__group textarea::placeholder {
+  font-size: 0.8rem;
+  color: #808dad;
+}
+
+.form button {
+  color: var(--site-theme-color);
+}
