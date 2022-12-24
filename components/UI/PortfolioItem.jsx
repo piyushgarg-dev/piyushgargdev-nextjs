@@ -1,8 +1,6 @@
 import React from "react";
 import classes from "../../styles/portfolio-item.module.css";
 import Image from "next/image";
-import Link from "next/link";
-import { Button } from "reactstrap";
 
 const PortfolioItem = (props) => {
   const {

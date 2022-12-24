@@ -31,7 +31,7 @@ const Portfolio = () => {
   const active = `${classes.tab__btn__active}`;
 
   return (
-    <section id="portfolio">
+    <section id="courses">
       <Container>
         <Row>
           <Col lg="6" md="6" className="mb-5">

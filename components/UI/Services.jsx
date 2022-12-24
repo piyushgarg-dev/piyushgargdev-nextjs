@@ -18,7 +18,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
     slidesToScroll: 1,
   };
   return (
-    <section id="services">
+    <section id="youtube-stats">
       <Container>
         <Row>
           <Col lg="3" md="12" sm="12">

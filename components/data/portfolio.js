@@ -17,7 +17,8 @@ const portfolio = [
     img: "/images/dsa.webp",
     category: "DSA",
     keyword: ["Java", "Coding", "Programming", "DSA"],
-    liveUrl: "https://codedamn.com/learn/data-structures-algorithms",
+    liveUrl:
+      "https://codedamn.com/learn/data-structures-algorithms?coupon=SANTA#buy",
     ribbonText: "80% OFF",
   },
   {
@@ -27,7 +28,8 @@ const portfolio = [
     img: "/images/linear-dsa.webp",
     category: "DSA",
     keyword: ["Java", "Coding", "Programming", "DSA"],
-    liveUrl: "https://codedamn.com/learn/linear-data-structures",
+    liveUrl:
+      "https://codedamn.com/learn/linear-data-structures?coupon=SANTA#buy",
     ribbonText: "80% OFF",
   },
   {
@@ -37,7 +39,8 @@ const portfolio = [
     img: "/images/react-design-patterns.webp",
     category: "React",
     keyword: ["React", "WebDev", "Fontend"],
-    liveUrl: "https://codedamn.com/learn/react-design-patterns",
+    liveUrl:
+      "https://codedamn.com/learn/react-design-patterns?coupon=SANTA#buy",
     ribbonText: "80% OFF",
   },
 ];

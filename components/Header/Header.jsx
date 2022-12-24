@@ -10,11 +10,11 @@ const NAV__LINK = [
     display: "Home",
   },
   {
-    path: "#about",
-    display: "About",
+    path: "#youtube-stats",
+    display: "Work",
   },
   {
-    path: "#services",
+    path: "#courses",
     display: "Courses",
   },
 ];
