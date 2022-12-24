@@ -38,10 +38,6 @@
   color: var(--site-theme-color);
 }
 
-.nav__menu a:first-child {
-  color: var(--site-theme-color);
-}
-
 .nav__right p {
   color: var(--site-theme-color);
   margin-left: 20px;

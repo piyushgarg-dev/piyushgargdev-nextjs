@@ -7,6 +7,13 @@ const Form = () => {
   };
   return (
     <form className={`${classes.form}`} onSubmit={submitHandler}>
+      <div className="text-center">
+        <p>
+          <i className="ri-alarm-warning-line"> </i>I was feeling a bit lazy and
+          I haven{"'"}t connected this form to my backend{" "}
+          <i className="ri-alarm-warning-line"></i>
+        </p>
+      </div>
       <div className={`${classes.form__group}`}>
         <input type="text" placeholder="Your Name" required />
       </div>

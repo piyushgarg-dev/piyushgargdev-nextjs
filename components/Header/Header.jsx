@@ -10,12 +10,16 @@ const NAV__LINK = [
     display: "Home",
   },
   {
-    path: "#youtube-stats",
+    path: "/#youtube-stats",
     display: "Work",
   },
   {
-    path: "#courses",
+    path: "/#courses",
     display: "Courses",
+  },
+  {
+    path: "/gears",
+    display: "My Gears",
   },
 ];
 
@@ -49,10 +53,12 @@ const Header = () => {
       <Container>
         <div className={`${classes.nav__wrapper}`}>
           {/* ======== navigation logo ======== */}
-          <div className={`${classes.logo}`}>
-            <h1>
-              <span>P</span>iyush <span>G</span>arg
-            </h1>
+          <div style={{ cursor: "pointer" }} className={`${classes.logo}`}>
+            <Link href="/">
+              <h1>
+                <span>P</span>iyush <span>G</span>arg
+              </h1>
+            </Link>
           </div>
 
           {/* ========= nav menu =========== */}

@@ -10,19 +10,20 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
   const settings = {
     dots: false,
     autoplay: true,
-    speed: 1000,
+    speed: 2000,
     autoplaySpeed: 2000,
     infinite: true,
     swipeToSlide: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows: true,
   };
   return (
     <section id="youtube-stats">
       <Container>
         <Row>
           <Col lg="3" md="12" sm="12">
-            <Slider {...settings}>
+            <Slider className="youtube-slider" {...settings}>
               {youtubeVideos
                 ?.filter((video) => video.id.videoId)
                 ?.map((video) => (

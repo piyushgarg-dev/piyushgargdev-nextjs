@@ -4,6 +4,7 @@ import Head from "next/head";
 import Hero from "../components/UI/Hero";
 import Services from "../components/UI/Services";
 import Portfolio from "../components/UI/Portfolio";
+import Contact from "../components/UI/Contact";
 
 export default function Home({ youtubeStats, youtubeVideos }) {
   return (
@@ -49,6 +50,7 @@ export default function Home({ youtubeStats, youtubeVideos }) {
       <Hero />
       <Services youtubeVideos={youtubeVideos} youtubeStats={youtubeStats} />
       <Portfolio />
+      <Contact />
     </Fragment>
   );
 }
