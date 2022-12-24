@@ -25,7 +25,7 @@ export default function Home({ youtubeStats, youtubeVideos }) {
 
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://piyushgarg.dev" />
+        <meta property="og:url" content="https://www.piyushgarg.dev" />
         <meta property="og:title" content="Piyush Garg - Dev and Instructor" />
         <meta
           property="og:description"
@@ -33,12 +33,12 @@ export default function Home({ youtubeStats, youtubeVideos }) {
         />
         <meta
           property="og:image"
-          content="https://piyushgarg.dev/images/seo.png"
+          content="https://www.piyushgarg.dev/images/seo.png"
         />
 
         {/* <!-- Twitter --> */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://piyushgarg.dev" />
+        <meta property="twitter:url" content="https://www.piyushgarg.dev" />
         <meta
           property="twitter:title"
           content="Piyush Garg - Dev and Instructor"
@@ -49,7 +49,7 @@ export default function Home({ youtubeStats, youtubeVideos }) {
         />
         <meta
           property="twitter:image"
-          content="https://piyushgarg.dev/images/seo.png"
+          content="https://www.piyushgarg.dev/images/seo.png"
         />
       </Head>
       <Hero />
