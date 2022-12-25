@@ -1,8 +1,6 @@
 .nav__menu {
   display: flex;
   align-items: center;
-  column-gap: 2.8rem;
-  margin-bottom: 20px;
 }
 
 .nav__menu a {
@@ -28,13 +26,9 @@
   color: rgba(255, 255, 255, 0.852);
 }
 
-.footer__copyright {
-  border-top: 1px solid #808dad49;
-}
 .footer__copyright p {
   font-size: 0.8rem;
   text-align: center;
-  padding-top: 20px;
 }
 
 @media only screen and (max-width: 768px) {
