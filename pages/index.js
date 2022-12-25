@@ -59,17 +59,20 @@ export default function Home({ youtubeStats, youtubeVideos, blogData }) {
       <Hero />
       <Services youtubeVideos={youtubeVideos} youtubeStats={youtubeStats} />
       <Portfolio />
+      <Container className="mt-5">
+        <SectionSubtitle subtitle="Terminal" />
+        <div
+          id="terminal-1"
+          style={{ border: "1px solid white", height: "400px" }}
+        >
+          <Terminal />
+        </div>
+      </Container>
       <Blog
         blogDomain={blogData?.user?.publicationDomain}
         blogs={blogData?.user?.publication?.posts}
       />
 
-      <Container className="my-5">
-        <SectionSubtitle subtitle="Terminal" />
-        <div style={{ border: "1px solid white", height: "400px" }}>
-          <Terminal />
-        </div>
-      </Container>
       <Contact />
     </Fragment>
   );

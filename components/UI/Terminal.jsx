@@ -27,9 +27,15 @@ const Terminal = () => {
       <ReactTerminal
         prompt="$ piyushgarg-dev >> "
         welcomeMessage={
-          <p>
-            Welcome to my website! Get started by typing `help` command below
-          </p>
+          <div>
+            <p>
+              Welcome to my website! Get started by typing `help` command below
+            </p>
+            <p>
+              <span style={{ color: "#38CC77" }}>Pro Tip:</span> Hack this
+              terminal and you{"'"}ll get FREE access to my courses :)
+            </p>
+          </div>
         }
         themes={{
           darkDefault: {
@@ -46,7 +52,7 @@ const Terminal = () => {
             {}
           ),
           help: (
-            <div>
+            <div style={{ marginTop: "5px" }}>
               <p>Available Commands:</p>
               {Object.keys(commands).map((key) => (
                 <p key={key}>
@@ -54,6 +60,10 @@ const Terminal = () => {
                   {commands[key].help}
                 </p>
               ))}
+              <p>
+                <span style={{ color: "#38CC77" }}>clear:</span> clears out
+                everything on screen!
+              </p>
             </div>
           ),
         }}

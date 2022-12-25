@@ -18,6 +18,14 @@ const NAV__LINK = [
     display: "Courses",
   },
   {
+    path: "/#terminal-1",
+    display: (
+      <span style={{ color: "#38CC77", cursor: "pointer" }}>
+        {"$ Terminal"}
+      </span>
+    ),
+  },
+  {
     path: "/gears",
     display: "My Gears",
   },
