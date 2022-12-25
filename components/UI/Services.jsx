@@ -23,7 +23,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
       <Container>
         <Row>
           <Col lg="3" md="12" sm="12">
-            <Slider className="youtube-slider" {...settings}>
+            <Slider {...settings}>
               {youtubeVideos
                 ?.filter((video) => video.id.videoId)
                 ?.map((video) => (
@@ -57,7 +57,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
             <ServicesItem
               title={`${(
                 Number(youtubeStats?.statistics?.subscriberCount) / 1000
-              ).toPrecision(2)}K Subscribers`}
+              ).toPrecision(3)}K Subscribers`}
               icon="ri-user-add-line"
             />
             <ServicesItem
