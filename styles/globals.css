@@ -79,12 +79,12 @@ footer {
 
 ::-webkit-scrollbar {
   width: 10px;
-  background: #808dad;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 2em;
-  background: #171f38;
+  background: var(--site-theme-color);
 }
 
 .cursor-pointer {
