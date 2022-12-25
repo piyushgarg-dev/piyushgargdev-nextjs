@@ -5,13 +5,14 @@ import Hero from "../components/UI/Hero";
 import Services from "../components/UI/Services";
 import Portfolio from "../components/UI/Portfolio";
 import Contact from "../components/UI/Contact";
+import Blog from "../components/UI/Blog";
 
 import {
   getYoutubeChannelDataDefaultResponse,
   getYoutubeVideosDefaultResponse,
 } from "../components/data/youtubeDefault";
 
-export default function Home({ youtubeStats, youtubeVideos }) {
+export default function Home({ youtubeStats, youtubeVideos, blogData }) {
   return (
     <Fragment>
       <Head>
@@ -55,6 +56,10 @@ export default function Home({ youtubeStats, youtubeVideos }) {
       <Hero />
       <Services youtubeVideos={youtubeVideos} youtubeStats={youtubeStats} />
       <Portfolio />
+      <Blog
+        blogDomain={blogData?.user?.publicationDomain}
+        blogs={blogData?.user?.publication?.posts}
+      />
       <Contact />
     </Fragment>
   );
@@ -102,17 +107,33 @@ async function getYoutubeVideos() {
   return null;
 }
 
+export async function getRecentBlogs() {
+  const response = await axios.post(
+    "https://api.hashnode.com",
+    {
+      query:
+        '{\n  user(username: "piyushgarg") {\npublicationDomain \n    publication {\n     posts(page: 1) {\n  _id\n totalReactions\n  brief\n    title\n        slug\n        coverImage\n      }\n    }\n  }\n}',
+    },
+    {
+      responseType: "json",
+    }
+  );
+  return response.data?.data;
+}
+
 export async function getStaticProps(context) {
   try {
-    const [youtubeStats, youtubeVideos] = await Promise.all([
+    const [youtubeStats, youtubeVideos, blogResponse] = await Promise.all([
       getYoutubeStatsForChannelId("UCf9T51_FmMlfhiGpoes0yFA"),
       getYoutubeVideos(),
+      getRecentBlogs(),
     ]);
 
     return {
       props: {
         youtubeStats,
         youtubeVideos,
+        blogData: blogResponse,
       }, // will be passed to the page component as props
       revalidate: 43200, // 12 Hrs
     };

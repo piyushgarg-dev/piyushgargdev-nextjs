@@ -8,7 +8,7 @@ const PortfolioItem = (props) => {
     title,
     img,
     liveUrl,
-    keyword,
+    keyword = [],
     subtitle,
     ribbonText = null,
   } = props.item;

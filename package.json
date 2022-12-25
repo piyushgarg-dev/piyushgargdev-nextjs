@@ -18,8 +18,7 @@
     "react-slick": "^0.29.0",
     "reactstrap": "^9.1.1",
     "remixicon": "^2.5.0",
-    "slick-carousel": "^1.8.1",
-    "swr": "^2.0.0"
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "eslint": "8.18.0",

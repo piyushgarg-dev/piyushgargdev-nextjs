@@ -49,8 +49,6 @@
 
 .portfolio__item:hover {
   cursor: pointer;
-  scale: 1.1;
-  transition: 0.4s all;
 }
 
 .portfolio__item:hover .portfolio__live {
