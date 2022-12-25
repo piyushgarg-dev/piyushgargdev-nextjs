@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react";
 
-import { Container, Tooltip } from "reactstrap";
+import { Container } from "reactstrap";
+import { useSession, signOut, signIn } from "next-auth/react";
 import classes from "./header.module.css";
 import Link from "next/link";
 
@@ -39,6 +40,8 @@ const Header = () => {
   const headerRef = useRef(null);
 
   const menuRef = useRef(null);
+
+  const { data } = useSession();
 
   const headerFunc = () => {
     if (
@@ -85,6 +88,16 @@ const Header = () => {
                   {item.display}
                 </Link>
               ))}
+
+              {data && data.user ? (
+                <a onClick={signOut} href="#">
+                  Sign Out
+                </a>
+              ) : (
+                <a onClick={signIn} href="#">
+                  Login
+                </a>
+              )}
 
               <div className={`${classes.nav__right}`}>
                 <p className={`d-flex align-items-center gap-3 mb-0`}>
