@@ -6,11 +6,14 @@ import Services from "../components/UI/Services";
 import Portfolio from "../components/UI/Portfolio";
 import Contact from "../components/UI/Contact";
 import Blog from "../components/UI/Blog";
+import Terminal from "../components/UI/Terminal";
 
 import {
   getYoutubeChannelDataDefaultResponse,
   getYoutubeVideosDefaultResponse,
 } from "../components/data/youtubeDefault";
+import { Container } from "reactstrap";
+import SectionSubtitle from "../components/UI/SectionSubtitle";
 
 export default function Home({ youtubeStats, youtubeVideos, blogData }) {
   return (
@@ -60,6 +63,13 @@ export default function Home({ youtubeStats, youtubeVideos, blogData }) {
         blogDomain={blogData?.user?.publicationDomain}
         blogs={blogData?.user?.publication?.posts}
       />
+
+      <Container className="my-5">
+        <SectionSubtitle subtitle="Terminal" />
+        <div style={{ border: "1px solid white", height: "400px" }}>
+          <Terminal />
+        </div>
+      </Container>
       <Contact />
     </Fragment>
   );

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import SectionSubtitle from "./SectionSubtitle";
 import { Container, Row, Col, Button } from "reactstrap";
 import Image from "next/image";
