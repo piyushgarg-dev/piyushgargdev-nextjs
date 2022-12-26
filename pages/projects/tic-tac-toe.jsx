@@ -5,6 +5,7 @@ import { isMobile } from "react-device-detect";
 const { Tab } = Chrome;
 
 import { useSession, signIn } from "next-auth/react";
+
 const Page = () => {
   const { status } = useSession();
 
@@ -74,12 +75,14 @@ const Page = () => {
           ></iframe>
         </Col>
       </Row>
-      <h3>
-        <a href="/files/code/tic-tac-toe.zip">
-          <i className="ri-download-line"></i> Click here to download source
-          code
-        </a>
-      </h3>
+      <Row className="text-center">
+        <h3>
+          <a href="/files/code/tic-tac-toe.zip">
+            <i className="ri-download-line"></i> Click here to download source
+            code
+          </a>
+        </h3>
+      </Row>
     </Container>
   );
 };
