@@ -36,7 +36,7 @@ const Portfolio = () => {
         <Row>
           <Col lg="6" md="6" className="mb-5">
             <SectionSubtitle subtitle="Courses" />
-            <h4 className="mt-4">Checkout My Interactive Courses @CodeDamn</h4>
+            <h4 className="mt-4">Checkout My Interactive Courses @Codedamn</h4>
           </Col>
         </Row>
 
