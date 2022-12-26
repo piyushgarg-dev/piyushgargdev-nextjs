@@ -11,7 +11,7 @@ body {
   font-family: "Quicksand", sans-serif;
   scroll-behavior: smooth;
   background: #0e1630;
-  background-color: #0e1630;
+  background-color: #0e1630 !important;
 }
 
 .border-cool {
