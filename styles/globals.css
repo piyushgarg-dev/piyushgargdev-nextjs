@@ -12,6 +12,12 @@ body {
   scroll-behavior: smooth;
 }
 
+.border-cool {
+  border: "1px solid";
+  border-color: var(--site-theme-color);
+  border-radius: 10px;
+}
+
 a {
   color: unset;
   text-decoration: none;
