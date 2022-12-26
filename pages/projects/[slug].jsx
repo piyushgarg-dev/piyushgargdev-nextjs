@@ -1,4 +1,5 @@
 import Head from "next/head";
+// import { useSession, signIn } from "next-auth/react";
 import { Container, Row, Col } from "reactstrap";
 import Browser, { Chrome } from "react-browser-ui";
 import { isMobile } from "react-device-detect";
@@ -8,46 +9,44 @@ import projects from "../../components/data/projects";
 
 const { Tab } = Chrome;
 
-import { useSession, signIn } from "next-auth/react";
-
 const Page = ({ project }) => {
-  const { status } = useSession();
+  // const { status } = useSession();
 
-  if (status === "loading")
-    return (
-      <Container
-        style={{
-          width: "100vw",
-          height: "50vh",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <div>
-          <MagnifyingGlass
-            visible={true}
-            height="80"
-            width="80"
-            ariaLabel="MagnifyingGlass-loading"
-            wrapperStyle={{}}
-            wrapperClass="MagnifyingGlass-wrapper"
-            glassColor="#c0efff"
-            color="#e15b64"
-          >
-            Loading...
-          </MagnifyingGlass>
-          <div>
-            <h3>Loading...</h3>
-          </div>
-        </div>
-      </Container>
-    );
+  // if (status === "loading")
+  //   return (
+  //     <Container
+  //       style={{
+  //         width: "100vw",
+  //         height: "50vh",
+  //         display: "flex",
+  //         justifyContent: "center",
+  //         alignItems: "center",
+  //       }}
+  //     >
+  //       <div>
+  //         <MagnifyingGlass
+  //           visible={true}
+  //           height="80"
+  //           width="80"
+  //           ariaLabel="MagnifyingGlass-loading"
+  //           wrapperStyle={{}}
+  //           wrapperClass="MagnifyingGlass-wrapper"
+  //           glassColor="#c0efff"
+  //           color="#e15b64"
+  //         >
+  //           Loading...
+  //         </MagnifyingGlass>
+  //         <div>
+  //           <h3>Loading...</h3>
+  //         </div>
+  //       </div>
+  //     </Container>
+  //   );
 
-  if (status === "unauthenticated") {
-    signIn();
-    return;
-  }
+  // if (status === "unauthenticated") {
+  //   signIn();
+  //   return;
+  // }
 
   return (
     <Container className="my-5">
