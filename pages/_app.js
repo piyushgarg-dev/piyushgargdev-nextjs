@@ -7,6 +7,7 @@ import { SessionProvider, signIn, useSession } from "next-auth/react";
 
 import Layout from "../components/Layout/Layout";
 import Script from "next/script";
+
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }) {
