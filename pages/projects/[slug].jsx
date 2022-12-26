@@ -3,7 +3,7 @@ import Head from "next/head";
 import { Container, Row, Col } from "reactstrap";
 import Browser, { Chrome } from "react-browser-ui";
 import { isMobile } from "react-device-detect";
-import { MagnifyingGlass } from "react-loader-spinner";
+// import { MagnifyingGlass } from "react-loader-spinner";
 
 import projects from "../../components/data/projects";
 
@@ -66,7 +66,7 @@ const Page = ({ project }) => {
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </Col>
         )}
