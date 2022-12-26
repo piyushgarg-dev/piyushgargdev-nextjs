@@ -10,6 +10,7 @@ body {
   margin: 0;
   font-family: "Quicksand", sans-serif;
   scroll-behavior: smooth;
+  background: #0e1630;
 }
 
 .border-cool {
@@ -25,7 +26,6 @@ a {
 
 * {
   box-sizing: border-box;
-  background: #0e1630;
 }
 
 p {

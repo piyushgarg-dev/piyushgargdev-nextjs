@@ -1,10 +1,10 @@
-import "../styles/globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "remixicon/fonts/remixicon.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Analytics } from "@vercel/analytics/react";
 import { SessionProvider, signIn, useSession } from "next-auth/react";
+import "../styles/globals.css";
 
 import Layout from "../components/Layout/Layout";
 import Script from "next/script";
