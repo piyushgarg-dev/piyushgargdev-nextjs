@@ -8,7 +8,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Quicksand", sans-serif !important;
   scroll-behavior: smooth;
   background: #0e1630;
   background-color: #0e1630 !important;
