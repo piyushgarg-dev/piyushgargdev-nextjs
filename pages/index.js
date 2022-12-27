@@ -7,6 +7,7 @@ import Portfolio from "../components/UI/Portfolio";
 import Contact from "../components/UI/Contact";
 import Blog from "../components/UI/Blog";
 import Terminal from "../components/UI/Terminal";
+import Testimonial from "../components/UI/Testimonial";
 
 import {
   getYoutubeChannelDataDefaultResponse,
@@ -59,6 +60,7 @@ export default function Home({ youtubeStats, youtubeVideos, blogData }) {
       <Hero />
       <Services youtubeVideos={youtubeVideos} youtubeStats={youtubeStats} />
       <Portfolio />
+      <Testimonial />
       <Container className="mt-5">
         <SectionSubtitle subtitle="Terminal" />
         <div
@@ -68,6 +70,7 @@ export default function Home({ youtubeStats, youtubeVideos, blogData }) {
           <Terminal />
         </div>
       </Container>
+
       <Blog
         blogDomain={blogData?.user?.publicationDomain}
         blogs={blogData?.user?.publication?.posts}
