@@ -12,7 +12,7 @@ const portfolio = [
 
   {
     id: "03",
-    title: "Data Structures and Algo.",
+    title: "Data Structures and Algorithms",
     subtitle: "Master the fundamentals of DSA",
     img: "/images/dsa.webp",
     category: "DSA",
