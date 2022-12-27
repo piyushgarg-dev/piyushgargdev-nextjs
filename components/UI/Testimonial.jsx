@@ -42,46 +42,52 @@ const Testimonial = () => {
   return (
     <section>
       <Container>
+        <SectionSubtitle subtitle="Testimonials" />
+        <h4 className="mt-4 mb-5">Feebacks from students</h4>
         <Row>
-          <Col lg="12" md="12" sm="12">
-            <SectionSubtitle subtitle="Testimonials" />
-            <h4 className="mt-4 mb-5">Feebacks from students</h4>
+          <Slider {...settings}>
+            {feedbacks
+              .sort(() => Math.random() - 0.5)
+              .map((feedBack) => (
+                <Col key={feedBack.name} lg="4" md="4" sm="12">
+                  <div className={`${classes.testimonial__item}`}>
+                    <div className={`${classes.testimonial__client}`}>
+                      <Image
+                        alt="client-img"
+                        src={feedBack.userImage}
+                        width="50"
+                        height="50"
+                        className=" rounded-2"
+                      />
 
-            <Slider {...settings}>
-              {feedbacks
-                .sort(() => Math.random() - 0.5)
-                .map((feedBack) => (
-                  <Col key={feedBack.name} lg="4" md="4" sm="12">
-                    <div className={`${classes.testimonial__item}`}>
-                      <div className={`${classes.testimonial__client}`}>
-                        <Image
-                          alt="client-img"
-                          src={feedBack.userImage}
-                          width="50"
-                          height="50"
-                          className=" rounded-2"
-                        />
+                      <div>
+                        <h6>{feedBack.name}</h6>
 
-                        <div>
-                          <h6>{feedBack.name}</h6>
-                          <h6>
-                            <Link
-                              style={{ color: "#fff" }}
-                              target="_blank"
-                              href={feedBack.navigateToUrl}
-                            >
-                              {feedBack.courseName}
-                            </Link>
-                          </h6>
-                        </div>
+                        <h6>
+                          <Link
+                            style={{ color: "#fff" }}
+                            target="_blank"
+                            href={feedBack.navigateToUrl}
+                          >
+                            {feedBack.courseName}
+                          </Link>
+                        </h6>
                       </div>
-
-                      <p>{feedBack.content}</p>
                     </div>
-                  </Col>
-                ))}
-            </Slider>
-          </Col>
+                    {Array(5)
+                      .fill(0)
+                      .map((_, index) => (
+                        <i
+                          key={index}
+                          style={{ color: "#FFD700" }}
+                          className="ri-star-fill"
+                        />
+                      ))}
+                    <p style={{ fontSize: "20px" }}>{feedBack.content}</p>
+                  </div>
+                </Col>
+              ))}
+          </Slider>
         </Row>
       </Container>
     </section>
