@@ -80,7 +80,7 @@ const Page = ({ project }) => {
               }}
             >
               <Browser activeTabKey={"main"} type={"chrome"}>
-                <Tab key={"main"} title={"Tic Tac Toe"}>
+                <Tab key={"main"} title={project.title}>
                   <div style={{ height: "100%" }}>
                     <iframe
                       width="100%"
