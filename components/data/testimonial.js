@@ -105,6 +105,16 @@ const feedbacks = [
     navigateToUrl:
       "https://codedamn.com/learn/java-course?coupon=JAVA_MASTER_40#buy",
   },
+  {
+    name: "Stuart Markus",
+    userImage: null,
+    courseName: "Ultimate React.js Design Patterns",
+    content:
+      "I am enjoying your Ultimate React Design Patterns course, but I find only the older React is done with Javascript in the work place, and would like to see a lot more React taught with Typescript ... ",
+    studentProfileLink: "",
+    navigateToUrl:
+      "https://codedamn.com/learn/react-design-patterns?coupon=REACT_50#buy",
+  },
 ];
 
 export default feedbacks;

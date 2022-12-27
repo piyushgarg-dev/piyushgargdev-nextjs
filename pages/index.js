@@ -13,10 +13,17 @@ import {
   getYoutubeChannelDataDefaultResponse,
   getYoutubeVideosDefaultResponse,
 } from "../components/data/youtubeDefault";
+import feedbacks from "../components/data/testimonial";
+
 import { Container } from "reactstrap";
 import SectionSubtitle from "../components/UI/SectionSubtitle";
 
-export default function Home({ youtubeStats, youtubeVideos, blogData }) {
+export default function Home({
+  youtubeStats,
+  youtubeVideos,
+  blogData,
+  feedbacks = [],
+}) {
   return (
     <Fragment>
       <Head>
@@ -60,7 +67,7 @@ export default function Home({ youtubeStats, youtubeVideos, blogData }) {
       <Hero />
       <Services youtubeVideos={youtubeVideos} youtubeStats={youtubeStats} />
       <Portfolio />
-      <Testimonial />
+      <Testimonial feedbacks={feedbacks} />
       <Container className="mt-5">
         <SectionSubtitle subtitle="Terminal" />
         <div
@@ -150,6 +157,7 @@ export async function getStaticProps(context) {
         youtubeStats,
         youtubeVideos,
         blogData: blogResponse,
+        feedbacks: feedbacks.sort(() => Math.random() - 0.5),
       }, // will be passed to the page component as props
       revalidate: 43200, // 12 Hrs
     };
