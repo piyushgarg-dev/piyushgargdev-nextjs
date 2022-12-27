@@ -1,3 +1,4 @@
+import "../styles/globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "remixicon/fonts/remixicon.css";
 import "slick-carousel/slick/slick.css";
@@ -7,8 +8,6 @@ import { SessionProvider, signIn, useSession } from "next-auth/react";
 
 import Layout from "../components/Layout/Layout";
 import Script from "next/script";
-
-import "../styles/globals.css";
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   return (
