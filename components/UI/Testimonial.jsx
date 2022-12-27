@@ -64,11 +64,7 @@ const Testimonial = ({ feedbacks = [] }) => {
                       <h6>{feedBack.name}</h6>
 
                       <h6>
-                        <Link
-                          style={{ color: "#fff" }}
-                          target="_blank"
-                          href={feedBack.navigateToUrl}
-                        >
+                        <Link target="_blank" href={feedBack.navigateToUrl}>
                           {feedBack.courseName}
                         </Link>
                       </h6>
