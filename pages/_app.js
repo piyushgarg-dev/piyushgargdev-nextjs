@@ -1,10 +1,12 @@
+import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
-import { SessionProvider, signIn, useSession } from "next-auth/react";
+import { SessionProvider } from "next-auth/react";
 
 import Layout from "../components/Layout/Layout";
-import Script from "next/script";
 
+import "../styles/external.css";
 import "../styles/globals.css";
+
 function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   return (
     <SessionProvider session={session}>
