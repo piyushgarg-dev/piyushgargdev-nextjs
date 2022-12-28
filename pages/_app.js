@@ -14,6 +14,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
         {process.env.NODE_ENV === "production" && (
           <>
             <Script
+              id="google-tag-manager"
               strategy="afterInteractive"
               src="https://www.googletagmanager.com/gtag/js?id=G-0GK7ZH57SK"
             ></Script>
