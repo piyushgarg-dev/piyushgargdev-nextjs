@@ -64,11 +64,15 @@ const About = () => {
 
             <div className="mt-5">
               <button className="primary__btn">
-                <Link href="#portfolio">My Portfolio</Link>
+                <Link aria-label="My Portfolio" href="#portfolio">
+                  My Portfolio
+                </Link>
               </button>
 
               <button className="secondary__btn">
-                <Link href="#">Download CV</Link>
+                <Link aria-label="Download CV" href="#">
+                  Download CV
+                </Link>
               </button>
             </div>
           </Col>

@@ -30,16 +30,28 @@ const Contact = () => {
             </ul>
 
             <div className={`${classes.social__links}`}>
-              <Link href="https://youtube.com/@piyushgargdev">
+              <Link
+                aria-label="Youtube Channel"
+                href="https://youtube.com/@piyushgargdev"
+              >
                 <i className="ri-youtube-line"></i>
               </Link>
-              <Link href="https://github.com/piyushgarg-dev">
+              <Link
+                aria-label="Github Profile"
+                href="https://github.com/piyushgarg-dev"
+              >
                 <i className="ri-github-line"></i>
               </Link>
-              <Link href="https://twitter.com/piyushgarg_dev">
+              <Link
+                aria-label="Twitter Account"
+                href="https://twitter.com/piyushgarg_dev"
+              >
                 <i className="ri-twitter-line"></i>
               </Link>
-              <Link href="https://www.linkedin.com/in/piyushgarg195/">
+              <Link
+                aria-label="LinedIn Account"
+                href="https://www.linkedin.com/in/piyushgarg195/"
+              >
                 <i className="ri-linkedin-line"></i>
               </Link>
             </div>

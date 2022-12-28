@@ -64,7 +64,11 @@ const Testimonial = ({ feedbacks = [] }) => {
                       <h6>{feedBack.name}</h6>
 
                       <h6>
-                        <Link target="_blank" href={feedBack.navigateToUrl}>
+                        <Link
+                          aria-label={feedBack.courseName}
+                          target="_blank"
+                          href={feedBack.navigateToUrl}
+                        >
                           {feedBack.courseName}
                         </Link>
                       </h6>

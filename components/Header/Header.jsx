@@ -57,7 +57,7 @@ const Header = () => {
         <div className={`${classes.nav__wrapper}`}>
           {/* ======== navigation logo ======== */}
           <div style={{ cursor: "pointer" }} className={`${classes.logo}`}>
-            <Link href="/">
+            <Link aria-label="Home Page" href="/">
               <h1>
                 <span>P</span>iyush <span>G</span>arg
               </h1>
@@ -72,7 +72,7 @@ const Header = () => {
           >
             <div className={`${classes.nav__menu}`}>
               {NAV__LINK.map((item, index) => (
-                <Link href={item.path} key={index}>
+                <Link aria-label={item.display} href={item.path} key={index}>
                   {item.display}
                 </Link>
               ))}
@@ -89,30 +89,31 @@ const Header = () => {
 
               <div className={`${classes.nav__right}`}>
                 <p className={`d-flex align-items-center gap-3 mb-0`}>
-                  <a
+                  <Link
+                    aria-label="Youtube Channel"
                     href="https://youtube.com/@piyushgargdev"
                     target="_blank"
                     title="Youtube Channel"
                     id="youtube-channel"
                     className={`ri-youtube-fill cursor-pointer text-white`}
                     rel="noreferrer"
-                  ></a>
-                  <a
+                  ></Link>
+                  <Link
                     href="https://twitter.com/piyushgarg_dev"
                     target="_blank"
                     title="Twitter Account"
                     id="twitter-account"
                     className={`ri-twitter-fill cursor-pointer text-white`}
                     rel="noreferrer"
-                  ></a>
-                  <a
+                  ></Link>
+                  <Link
                     href="https://www.linkedin.com/in/piyushgarg195/"
                     target="_blank"
-                    title="linedin Account"
+                    title="linkedin Account"
                     id="linedin-account"
                     className={`ri-linkedin-fill cursor-pointer text-white`}
                     rel="noreferrer"
-                  ></a>
+                  ></Link>
                 </p>
               </div>
             </div>
