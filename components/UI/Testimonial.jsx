@@ -3,11 +3,8 @@ import { Container, Row, Col } from "reactstrap";
 import SectionSubtitle from "./SectionSubtitle";
 import Slider from "react-slick";
 import dynamic from "next/dynamic";
-import { MagnifyingGlass } from "react-loader-spinner";
 
-const TestimonialItem = dynamic(() => import("./TestimonialItem"), {
-  loading: <MagnifyingGlass />,
-});
+const TestimonialItem = dynamic(() => import("./TestimonialItem"));
 
 const Testimonial = ({ feedbacks = [] }) => {
   const settings = {

@@ -7,7 +7,6 @@ const TestimonialItem = ({ feedBack }) => (
   <div className={`${classes.testimonial__item}`}>
     <div className={`${classes.testimonial__client}`}>
       <Image
-        onLoad={(e) => console.log("Feedback Loaded", feedBack.name)}
         alt={feedBack.name}
         src={
           feedBack.userImage ??
