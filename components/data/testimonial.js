@@ -106,6 +106,26 @@ const feedbacks = [
       "https://codedamn.com/learn/java-course?coupon=JAVA_MASTER_40#buy",
   },
   {
+    name: "Jisu",
+    userImage:
+      "https://wsrv.nl/?url=https%3A%2F%2Flh3.googleusercontent.com%2Fa%2FAEdFTp6zHEazqh31qagWJ54xAGGLKsTZQXenIDArVs0p&w=96&q=70&output=webp",
+    courseName: "Complete Java Master Course",
+    content: "Best Course",
+    studentProfileLink: "",
+    navigateToUrl:
+      "https://codedamn.com/learn/java-course?coupon=JAVA_MASTER_40#buy",
+  },
+  {
+    name: "Dnyanesh Teli",
+    userImage:
+      "https://wsrv.nl/?url=https%3A%2F%2Flh3.googleusercontent.com%2Fa%2FALm5wu2MM0UqqzuRWSIHudFn-t6sCL9Kr3KRHAN62Kr3ww&w=96&q=70&output=webp",
+    courseName: "Complete Java Master Course",
+    content: "helpful for java beginner",
+    studentProfileLink: "",
+    navigateToUrl:
+      "https://codedamn.com/learn/java-course?coupon=JAVA_MASTER_40#buy",
+  },
+  {
     name: "Stuart Markus",
     userImage: null,
     courseName: "Ultimate React.js Design Patterns",
@@ -114,6 +134,16 @@ const feedbacks = [
     studentProfileLink: "",
     navigateToUrl:
       "https://codedamn.com/learn/react-design-patterns?coupon=REACT_50#buy",
+  },
+  {
+    name: "Hari Chandana",
+    userImage:
+      "https://wsrv.nl/?url=https%3A%2F%2Fs3.amazonaws.com%2Fuser-assets.codedamn.com%2F636bd8726d5fca0008043bae%2F2022-11-12%2Fe5342f077b704a6beb4a9242c8d368aad74ddcf9&w=80&q=70&output=webp",
+    courseName: "Complete Java Master Course",
+    content: "the examples explained here are really nice! understood well!",
+    studentProfileLink: "",
+    navigateToUrl:
+      "https://codedamn.com/learn/java-course?coupon=JAVA_MASTER_40#buy",
   },
 ];
 
