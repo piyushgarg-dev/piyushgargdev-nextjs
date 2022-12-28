@@ -157,7 +157,7 @@ export async function getStaticProps(context) {
         youtubeStats,
         youtubeVideos,
         blogData: blogResponse,
-        feedbacks: feedbacks.sort(() => Math.random() - 0.5),
+        feedbacks,
       }, // will be passed to the page component as props
       revalidate: 43200, // 12 Hrs
     };

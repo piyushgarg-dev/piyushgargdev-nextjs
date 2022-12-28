@@ -1,10 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import SectionSubtitle from "./SectionSubtitle";
 import Slider from "react-slick";
-import dynamic from "next/dynamic";
-
-const TestimonialItem = dynamic(() => import("./TestimonialItem"));
+import TestimonialItem from "./TestimonialItem";
+import SectionSubtitle from "./SectionSubtitle";
 
 const Testimonial = ({ feedbacks = [] }) => {
   const settings = {
