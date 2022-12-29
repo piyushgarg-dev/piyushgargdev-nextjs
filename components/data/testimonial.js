@@ -145,6 +145,16 @@ const feedbacks = [
     navigateToUrl:
       "https://codedamn.com/learn/java-course?coupon=JAVA_MASTER_40#buy",
   },
+  {
+    name: "Mohammad Ayaan Siddiqui",
+    userImage:
+      "https://wsrv.nl/?url=https%3A%2F%2Fs3.amazonaws.com%2Fuser-assets.codedamn.com%2F620d7588246dd0000964cef8%2F2022-10-21%2Fd605514f22da24e22ab8cb39059afa7ae196c3af&w=96&q=70&output=webp",
+    courseName: "Complete Java Master Course",
+    content: "course content is really good and easily understandable.",
+    studentProfileLink: "",
+    navigateToUrl:
+      "https://codedamn.com/learn/java-course?coupon=JAVA_MASTER_40#buy",
+  },
 ];
 
 export default feedbacks;
