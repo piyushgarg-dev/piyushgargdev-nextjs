@@ -86,6 +86,8 @@ const Page = ({ project }) => {
                       width="100%"
                       height="100%"
                       src={project.hostedWebUrl}
+                      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
                     />
                   </div>
                 </Tab>
@@ -108,7 +110,6 @@ const Page = ({ project }) => {
                 borderRadius: "4px",
                 overflow: "hidden",
               }}
-              title="frosty-lake-ymiic3"
               allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
               sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
             ></iframe>
