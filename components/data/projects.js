@@ -29,6 +29,16 @@ const projects = [
     codeIframeUrl:
       "https://codesandbox.io/embed/suspicious-waterfall-6q1ddj?fontsize=14&hidenavigation=1&theme=dark&view=editor",
   },
+  {
+    title: "Calculator - Javascript",
+    slug: "calculator-javascript",
+    tags: ["javascript"],
+    sourceCodeDownloadUrl: "/files/code/calculator-js.zip",
+    youtubeEmbedUrl: "https://www.youtube.com/embed/hK6pVaeVGUc?rel=0",
+    hostedWebUrl: "https://breux3.csb.app/",
+    codeIframeUrl:
+      "https://codesandbox.io/embed/solitary-tdd-breux3?fontsize=14&hidenavigation=1&theme=dark&view=editor",
+  },
 ];
 
 export default projects;
