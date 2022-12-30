@@ -149,8 +149,18 @@ const feedbacks = [
     name: "Mohammad Ayaan Siddiqui",
     userImage:
       "https://wsrv.nl/?url=https%3A%2F%2Fs3.amazonaws.com%2Fuser-assets.codedamn.com%2F620d7588246dd0000964cef8%2F2022-10-21%2Fd605514f22da24e22ab8cb39059afa7ae196c3af&w=96&q=70&output=webp",
-    courseName: "Complete Java Master Course",
+    courseName: "Master Linear Data Structures",
     content: "course content is really good and easily understandable.",
+    studentProfileLink: "",
+    navigateToUrl:
+      "https://codedamn.com/learn/linear-data-structures?coupon=INSTRUCTOR#buy",
+  },
+  {
+    name: "Hari Karthik",
+    userImage:
+      "https://wsrv.nl/?url=https%3A%2F%2Fs3.amazonaws.com%2Fuser-assets.codedamn.com%2F63818bef7a563b00083da5ee%2F2022-11-26%2F4058073c4177916cc854a067e1fea54970a82a38&w=96&q=70&output=webp",
+    courseName: "Complete Java Master Course",
+    content: "I am really having fun learning Java with Piyush.",
     studentProfileLink: "",
     navigateToUrl:
       "https://codedamn.com/learn/java-course?coupon=JAVA_MASTER_40#buy",
