@@ -1,13 +1,13 @@
 const portfolio = [
   {
     id: "01",
-    title: "Java Master Course",
+    title: "Complete Java Master Course",
     subtitle: "Go from Zero to Hero in Java",
     img: "/images/java-master.webp",
     category: "Java",
     keyword: ["Java", "Coding", "Programming"],
-    liveUrl: "https://codedamn.com/learn/java-course?coupon=SANTA#buy",
-    ribbonText: "80% OFF",
+    liveUrl: "https://codedamn.com/learn/java-course?coupon=PIYUSHG#buy",
+    ribbonText: "40% OFF",
   },
 
   {
@@ -18,8 +18,8 @@ const portfolio = [
     category: "DSA",
     keyword: ["Java", "Coding", "Programming", "DSA"],
     liveUrl:
-      "https://codedamn.com/learn/data-structures-algorithms?coupon=SANTA#buy",
-    ribbonText: "80% OFF",
+      "https://codedamn.com/learn/data-structures-algorithms?coupon=PIYUSHG#buy",
+    ribbonText: "40% OFF",
   },
   {
     id: "04",
@@ -29,8 +29,8 @@ const portfolio = [
     category: "DSA",
     keyword: ["Java", "Coding", "Programming", "DSA"],
     liveUrl:
-      "https://codedamn.com/learn/linear-data-structures?coupon=SANTA#buy",
-    ribbonText: "80% OFF",
+      "https://codedamn.com/learn/linear-data-structures?coupon=PIYUSHG#buy",
+    ribbonText: "40% OFF",
   },
   {
     id: "02",
@@ -40,8 +40,8 @@ const portfolio = [
     category: "React",
     keyword: ["React", "WebDev", "Fontend"],
     liveUrl:
-      "https://codedamn.com/learn/react-design-patterns?coupon=SANTA#buy",
-    ribbonText: "80% OFF",
+      "https://codedamn.com/learn/react-design-patterns?coupon=PIYUSHG#buy",
+    ribbonText: "40% OFF",
   },
 ];
 

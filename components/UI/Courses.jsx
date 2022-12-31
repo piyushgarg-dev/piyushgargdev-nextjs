@@ -4,32 +4,7 @@ import SectionSubtitle from "./SectionSubtitle";
 import classes from "../../styles/portfolio.module.css";
 import PortfolioItem from "./PortfolioItem";
 
-import portfolioData from "../data/portfolio";
-
-const Portfolio = () => {
-  const [filter, setFilter] = useState("Mobile App");
-  const [data, setData] = useState();
-
-  useEffect(() => {
-    if (filter === "Mobile App") {
-      const filteredData = portfolioData.filter(
-        (item) => item.category === filter
-      );
-
-      setData(filteredData);
-    }
-
-    if (filter === "Web Design") {
-      const filteredData = portfolioData.filter(
-        (item) => item.category === filter
-      );
-
-      setData(filteredData);
-    }
-  }, [filter]);
-
-  const active = `${classes.tab__btn__active}`;
-
+const Courses = ({ courses = [] }) => {
   return (
     <section id="courses">
       <Container>
@@ -41,7 +16,7 @@ const Portfolio = () => {
         </Row>
 
         <Row>
-          {portfolioData.map((item) => (
+          {courses.map((item) => (
             <Col
               style={{ margin: "10px 0px" }}
               key={item.id}
@@ -58,4 +33,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Courses;

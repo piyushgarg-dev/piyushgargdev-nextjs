@@ -22,11 +22,11 @@ const TestimonialItem = ({ feedBack }) => (
 
         <h6>
           <Link
-            aria-label={feedBack.courseName}
+            aria-label={feedBack.course.title}
             target="_blank"
-            href={feedBack.navigateToUrl}
+            href={feedBack.course.liveUrl}
           >
-            {feedBack.courseName}
+            {feedBack.course.title}
           </Link>
         </h6>
       </div>

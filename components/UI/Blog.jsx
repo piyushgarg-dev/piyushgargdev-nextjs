@@ -4,30 +4,9 @@ import SectionSubtitle from "./SectionSubtitle";
 import classes from "../../styles/portfolio.module.css";
 import PortfolioItem from "./PortfolioItem";
 
-import portfolioData from "../data/portfolio";
-import Slider from "react-slick";
-
 const Blog = ({ blogs, blogDomain }) => {
   const [filter, setFilter] = useState("Mobile App");
   const [data, setData] = useState();
-
-  useEffect(() => {
-    if (filter === "Mobile App") {
-      const filteredData = portfolioData.filter(
-        (item) => item.category === filter
-      );
-
-      setData(filteredData);
-    }
-
-    if (filter === "Web Design") {
-      const filteredData = portfolioData.filter(
-        (item) => item.category === filter
-      );
-
-      setData(filteredData);
-    }
-  }, [filter]);
 
   const active = `${classes.tab__btn__active}`;
 

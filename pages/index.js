@@ -3,7 +3,7 @@ import axios from "axios";
 import Head from "next/head";
 import Hero from "../components/UI/Hero";
 import Services from "../components/UI/Services";
-import Portfolio from "../components/UI/Portfolio";
+import Courses from "../components/UI/Courses";
 import Contact from "../components/UI/Contact";
 import Blog from "../components/UI/Blog";
 import Terminal from "../components/UI/Terminal";
@@ -14,6 +14,7 @@ import {
   getYoutubeVideosDefaultResponse,
 } from "../components/data/youtubeDefault";
 import feedbacks from "../components/data/testimonial";
+import courses from "../components/data/courses";
 
 import { Container } from "reactstrap";
 import SectionSubtitle from "../components/UI/SectionSubtitle";
@@ -23,6 +24,7 @@ export default function Home({
   youtubeVideos,
   blogData,
   feedbacks = [],
+  courses = [],
 }) {
   return (
     <Fragment>
@@ -66,7 +68,7 @@ export default function Home({
       </Head>
       <Hero />
       <Services youtubeVideos={youtubeVideos} youtubeStats={youtubeStats} />
-      <Portfolio />
+      <Courses courses={courses} />
       <Testimonial feedbacks={feedbacks} />
       <Container className="mt-5">
         <SectionSubtitle subtitle="Terminal" />
@@ -157,7 +159,11 @@ export async function getStaticProps(context) {
         youtubeStats,
         youtubeVideos,
         blogData: blogResponse,
-        feedbacks,
+        feedbacks: feedbacks.map((feedBack) => ({
+          ...feedBack,
+          course: courses.find((e) => e.id === feedBack.courseId),
+        })),
+        courses,
       }, // will be passed to the page component as props
       revalidate: 43200, // 12 Hrs
     };
