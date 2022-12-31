@@ -1,6 +1,11 @@
 import { globby } from "globby";
 import projects from "../components/data/projects";
 
+const getXmlUrlWrapper = (path) => `<url>
+<loc>https://www.piyushgarg.dev/${path}</loc>
+<changefreq>weekly</changefreq>
+</url>`;
+
 async function getXMLUrlsForStaticPaths(host) {
   const staticPagesPaths = await globby([
     "pages/*.js",
@@ -16,23 +21,14 @@ async function getXMLUrlsForStaticPaths(host) {
         .replace("jsx", "");
       const route = path === "/index" ? "" : path;
 
-      return `<url>
-        <loc>https://${host}${route}</loc>
-        <changefreq>weekly</changefreq>
-      </url>
-      `;
+      return getXmlUrlWrapper(route);
     })
     .join("");
 }
 
 async function getXMLUrlsForProjects(host, prefix) {
   return projects
-    .map(
-      (project) => `<url>
-    <loc>${host}/${prefix}${project.slug}</loc>
-    <changefreq>weekly</changefreq>
-    </url>`
-    )
+    .map((project) => getXmlUrlWrapper(`${prefix}${project.slug}`))
     .join("");
 }
 
