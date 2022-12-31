@@ -1,11 +1,5 @@
-import { globby } from "globby";
 import projects from "../components/data/projects";
 
-/**
- *
- * @param {string} path
- * @returns
- */
 const getXmlUrlWrapper = (path) => `<url>
 <loc>https://www.piyushgarg.dev/${
   path.startsWith("/") ? path.slice(1) : path
@@ -14,12 +8,7 @@ const getXmlUrlWrapper = (path) => `<url>
 </url>`;
 
 async function getXMLUrlsForStaticPaths(host) {
-  const staticPagesPaths = await globby([
-    "pages/*.js",
-    "!pages/_*.js",
-    "!pages/api",
-    "!pages/sitemap.xml.js",
-  ]);
+  const staticPagesPaths = ["/index", "/gears"];
   return staticPagesPaths
     .map((page) => {
       const path = page
