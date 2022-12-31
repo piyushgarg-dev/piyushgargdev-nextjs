@@ -1,8 +1,15 @@
 import { globby } from "globby";
 import projects from "../components/data/projects";
 
+/**
+ *
+ * @param {string} path
+ * @returns
+ */
 const getXmlUrlWrapper = (path) => `<url>
-<loc>https://www.piyushgarg.dev/${path}</loc>
+<loc>https://www.piyushgarg.dev/${
+  path.startsWith("/") ? path.slice(1) : path
+}</loc>
 <changefreq>weekly</changefreq>
 </url>`;
 
