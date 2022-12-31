@@ -165,6 +165,16 @@ const feedbacks = [
     navigateToUrl:
       "https://codedamn.com/learn/java-course?coupon=JAVA_MASTER_40#buy",
   },
+  {
+    name: "Hari Chandana",
+    userImage:
+      "https://wsrv.nl/?url=https%3A%2F%2Fs3.amazonaws.com%2Fuser-assets.codedamn.com%2F636bd8726d5fca0008043bae%2F2022-11-12%2Fe5342f077b704a6beb4a9242c8d368aad74ddcf9&w=96&q=70&output=webp",
+    courseName: "Master Linear Data Structures",
+    content: "One of the excellent courses",
+    studentProfileLink: "",
+    navigateToUrl:
+      "https://codedamn.com/learn/linear-data-structures?coupon=INSTRUCTOR#buy",
+  },
 ];
 
 export default feedbacks;
