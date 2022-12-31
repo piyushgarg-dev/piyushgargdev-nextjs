@@ -17,7 +17,7 @@ async function getXMLUrlsForStaticPaths(host) {
       const route = path === "/index" ? "" : path;
 
       return `<url>
-        <loc>${host}${route}</loc>
+        <loc>https://${host}${route}</loc>
         <changefreq>weekly</changefreq>
       </url>
       `;
