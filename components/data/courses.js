@@ -33,6 +33,18 @@ const portfolio = [
     ribbonText: "40% OFF",
   },
   {
+    id: "05",
+    title: "Master Non-Linear Data Structures",
+    subtitle:
+      "Complete Guide and Hands-on Tutorials on Non-Linear Data Structures",
+    img: "/images/non-linear-dsa.webp",
+    category: "DSA",
+    keyword: ["Java", "Coding", "Programming", "DSA"],
+    liveUrl:
+      "https://codedamn.com/learn/non-linear-data-structures?coupon=PIYUSHG#buy",
+    ribbonText: "40% OFF",
+  },
+  {
     id: "02",
     title: "Ultimate React.js Design Patterns",
     subtitle: "Level up your react skills with design patterns",
