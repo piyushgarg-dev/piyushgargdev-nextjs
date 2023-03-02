@@ -55,6 +55,17 @@ const portfolio = [
       "https://codedamn.com/learn/react-design-patterns?coupon=PIYUSHG#buy",
     ribbonText: "40% OFF",
   },
+  {
+    id: "06",
+    title: "Docker: Containerization for Modern Development",
+    subtitle:
+      "Take Your Development to the Next Level with Docker Containerization",
+    img: "/images/docker.webp",
+    category: "Docker",
+    keyword: ["Docker", "Containerization", "DevOps"],
+    liveUrl: "https://codedamn.com/learn/docker?coupon=GET40#buy",
+    ribbonText: "40% OFF",
+  },
 ];
 
 export default portfolio;
