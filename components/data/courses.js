@@ -6,8 +6,17 @@ const portfolio = [
     img: "/images/java-master.webp",
     category: "Java",
     keyword: ["Java", "Coding", "Programming"],
-    liveUrl: "https://codedamn.com/learn/java-course?coupon=PIYUSHG#buy",
-    ribbonText: "40% OFF",
+    liveUrl: "https://learn.piyushgarg.dev/learn/java",
+  },
+  {
+    id: "06",
+    title: "Docker: Containerization for Modern Development",
+    subtitle:
+      "Take Your Development to the Next Level with Docker Containerization",
+    img: "/images/docker.webp",
+    category: "Docker",
+    keyword: ["Docker", "Containerization", "DevOps"],
+    liveUrl: "https://learn.piyushgarg.dev/learn/docker",
   },
 
   {
@@ -53,17 +62,6 @@ const portfolio = [
     keyword: ["React", "WebDev", "Fontend"],
     liveUrl:
       "https://codedamn.com/learn/react-design-patterns?coupon=PIYUSHG#buy",
-    ribbonText: "40% OFF",
-  },
-  {
-    id: "06",
-    title: "Docker: Containerization for Modern Development",
-    subtitle:
-      "Take Your Development to the Next Level with Docker Containerization",
-    img: "/images/docker.webp",
-    category: "Docker",
-    keyword: ["Docker", "Containerization", "DevOps"],
-    liveUrl: "https://codedamn.com/learn/docker?coupon=GET40#buy",
     ribbonText: "40% OFF",
   },
 ];
