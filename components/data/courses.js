@@ -26,9 +26,7 @@ const portfolio = [
     img: "/images/dsa.webp",
     category: "DSA",
     keyword: ["Java", "Coding", "Programming", "DSA"],
-    liveUrl:
-      "https://codedamn.com/learn/data-structures-algorithms?coupon=PIYUSHG#buy",
-    ribbonText: "40% OFF",
+    liveUrl: "https://learn.piyushgarg.dev/learn/data-structures-algorithms",
   },
   {
     id: "04",
