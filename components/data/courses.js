@@ -1,5 +1,14 @@
 const portfolio = [
   {
+    id: "07",
+    title: "Full Stack Twitter Clone",
+    subtitle: "Build FullStack twitter clone using latest tech stack",
+    img: "/images/twitter-clone.jpg",
+    category: "Full Stack",
+    keyword: ["Node", "GraphQL", "NextJS", "Primsa", "Postgres"],
+    liveUrl: "https://learn.piyushgarg.dev/learn/twitter-clone",
+  },
+  {
     id: "01",
     title: "Complete Java Master Course",
     subtitle: "Go from Zero to Hero in Java",
