@@ -59,6 +59,8 @@ const Form = () => {
     );
   }
 
+  return <></>;
+
   return (
     <form className={`${classes.form}`} onSubmit={handleFormSubmit}>
       <div className={`${classes.form__group}`}>
@@ -93,7 +95,7 @@ const Form = () => {
         />
       </div>
 
-      <button className="primary__btn" type="submit">
+      <button disabled className="primary__btn" type="submit">
         Send
       </button>
     </form>

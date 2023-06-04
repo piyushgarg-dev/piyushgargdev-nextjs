@@ -1,4 +1,5 @@
 import React, { Suspense } from "react";
+import Link from "next/link";
 import SectionSubtitle from "./SectionSubtitle";
 import { Container, Row, Col, Button } from "reactstrap";
 import Image from "next/image";
@@ -21,6 +22,18 @@ const Hero = () => {
                 all things tech and coding, and on my channel, I share my
                 knowledge and experience with others.
               </p>
+            </div>
+            <div className="mt-5">
+              <div className="relative inline-flex group">
+                <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r animate-pulse hover:animate-none from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+                <Link
+                  href="/discord/open-source"
+                  className="relative text-sm sm:text-md md:text-lg text-center items-center justify-center px-8 py-4  font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                  role="button"
+                >
+                  <span className="block">Open Source BootCamp 🎉</span>
+                </Link>
+              </div>
             </div>
           </Col>
           <Col lg="6" md="6">
