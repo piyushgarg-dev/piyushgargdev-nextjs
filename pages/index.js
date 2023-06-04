@@ -115,7 +115,7 @@ async function getYoutubeVideos() {
   let response = { data: null };
   try {
     response = await axios.get(
-      "https://www.googleapis.com/youtube/v3/search?key=AIzaSyDezsveebPt38oIqjLDE-T28PrRClhHjPQ&part=snippet&channelId=UCf9T51_FmMlfhiGpoes0yFA&order=date"
+      `https://www.googleapis.com/youtube/v3/search?key=${process.env.GOOGLE_API_KEY}&part=snippet&channelId=UCf9T51_FmMlfhiGpoes0yFA&order=date`
     );
   } catch (error) {
     response.data = getYoutubeVideosDefaultResponse;
