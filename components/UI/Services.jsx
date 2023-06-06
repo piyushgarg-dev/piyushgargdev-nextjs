@@ -44,6 +44,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
                       style={{
                         borderRadius: "20px",
                         marginBottom: "10px",
+                        cursor:"pointer"
                       }}
                       alt={video.snippet.title}
                     />
