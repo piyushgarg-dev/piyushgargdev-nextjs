@@ -29,8 +29,8 @@ const PortfolioItem = (props) => {
           )}
 
           <div className="bg-transparent">
-            <div className={`${classes.portfolio__img}`}>
-              <Image alt={title} src={img} className={`m-auto bg-white ${index ? "object-contain" : "object-cover"} w-[23rem] aspect-square`} width="380" height="250" />
+            <div className={`${classes.portfolio__img} mb-2`}>
+              <Image alt={title} src={img} className={`m-auto bg-white ${index ? "object-contain" : "object-cover"} w-[380px] aspect-square`} width="380" height="250" />
             </div>
 
             <h3 style={{ background: "transparent" }}>{title}</h3>
