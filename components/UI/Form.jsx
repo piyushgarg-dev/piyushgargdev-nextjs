@@ -82,6 +82,7 @@ const Form = () => {
       </div>
       <div className={`${classes.form__group}`}>
         <textarea
+          className="resize-none"
           onChange={(e) => setMessage(e.target.value)}
           value={message}
           name="message"
