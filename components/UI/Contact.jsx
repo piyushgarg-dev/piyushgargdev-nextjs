@@ -7,7 +7,7 @@ import Form from "./Form";
 
 const Contact = () => {
   return (
-    <section id="contact" className={`${classes.contact}`}>
+    <section id="contact" className={`${classes.contact} flex m-5`}>
       <Container>
         <Row>
           <Col lg="6" md="6">
@@ -61,6 +61,40 @@ const Contact = () => {
             <Form />
           </Col>
         </Row>
+      </Container>
+      <Container>
+        <form className="flex flex-col space-y-4" action="/api/contact" method="POST">
+          <input
+            className="border border-gray-300 bg-transparent px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:rgba(77, 181, 255, 0.4) text-white"
+            type="text"
+            name="name"
+            placeholder="Your Full Name"
+            required
+            autoComplete="off"
+          />
+          <input
+            className="border border-gray-300 bg-transparent px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:[rgba(77, 181, 255, 0.4)] text-white"
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+            autoComplete="off"
+          />
+          <textarea
+            className="border border-gray-300 bg-transparent px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:rgba(77, 181, 255, 0.4) text-white"
+            name="message"
+            placeholder="Your Message"
+            required
+            rows="4"
+            autoComplete="off"
+          ></textarea>
+          <button
+            type="submit"
+            className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
+          >
+            Send Message
+          </button>
+        </form>
       </Container>
     </section>
   );
