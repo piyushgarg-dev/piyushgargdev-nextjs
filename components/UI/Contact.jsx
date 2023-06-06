@@ -23,9 +23,13 @@ const Contact = () => {
               </li>
               <li className={`${classes.info__item}`}>
                 <span>
-                  <a href="mailto:piyushgarg.dev@gmail.com"><i className="ri-mail-line"></i></a>
+                  <a href="mailto:piyushgarg.dev@gmail.com">
+                    <i className="ri-mail-line"></i>
+                  </a>
                 </span>
-                <p><a href="mailto:piyushgarg.dev@gmail.com">piyushgarg.dev@gmail.com</a></p>
+                <p>
+                  <a href="mailto:piyushgarg.dev@gmail.com">piyushgarg.dev@gmail.com</a>
+                </p>
               </li>
             </ul>
 
