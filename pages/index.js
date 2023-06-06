@@ -94,7 +94,7 @@ async function getYoutubeStatsForChannelId(id) {
   let response = { data: null };
   try {
     response = await axios.get(
-      `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${id}&key=AIzaSyDezsveebPt38oIqjLDE-T28PrRClhHjPQ`
+      `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${id}&key=AIzaSyDmTojFDOFUpjlr6e-lnKT5sHBn5UD2bOI`
     );
   } catch (error) {
     response.data = getYoutubeChannelDataDefaultResponse;
@@ -167,5 +167,5 @@ export async function getStaticProps(context) {
       }, // will be passed to the page component as props
       revalidate: 43200, // 12 Hrs
     };
-  } catch (error) {}
+  } catch (error) { }
 }
