@@ -62,6 +62,14 @@ const Contact = () => {
           </Col>
         </Row>
       </Container>
+      <Container>
+      <form className={`${classes.form}`}>
+          <input className={`${classes.input}`} type="text" name='name' placeholder='Your Full Name' required autoComplete='off' />
+          <input className={`${classes.input}`} type="email" name="email" placeholder='Your Email' required autoComplete='off'/>
+          <textarea className={`${classes.textarea}`} name="message" placeholder='Your Message' required rows="4" autoComplete='off'></textarea>
+          <button type='submit' className={`${classes.btn}`}>Send Message</button>
+         </form>
+      </Container>
     </section>
   );
 };
