@@ -45,10 +45,14 @@
   margin-left: -100px;
   margin-top: 30px;
   display: none;
+  
 }
 
 .portfolio__item:hover {
   cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.4s ease;
+  
 }
 
 .portfolio__item:hover .portfolio__live {
