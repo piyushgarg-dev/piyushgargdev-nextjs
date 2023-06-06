@@ -58,9 +58,6 @@ const Form = () => {
       </div>
     );
   }
-
-  return <></>;
-
   return (
     <form className={`${classes.form}`} onSubmit={handleFormSubmit}>
       <div className={`${classes.form__group}`}>
@@ -95,7 +92,13 @@ const Form = () => {
         />
       </div>
 
-      <button disabled className="primary__btn" type="submit">
+      <button
+        disabled={!name || !message || !email}
+        className={`primary__btn opa ${
+          !name || !message || !email ? "opacity-40" : "opacity-100"
+        }`}
+        type="submit"
+      >
         Send
       </button>
     </form>
