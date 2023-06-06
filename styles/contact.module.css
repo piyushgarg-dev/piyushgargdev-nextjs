@@ -1,11 +1,11 @@
 .contact {
-  padding-bottom: 60px;
+  /* padding-bottom: 60px; */
 }
 
 .contact__info__list {
   list-style: none;
   padding-left: 0;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
 .info__item {

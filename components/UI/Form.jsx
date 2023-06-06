@@ -3,9 +3,11 @@ import { useSession } from "next-auth/react";
 import classes from "../../styles/form.module.css";
 import { MagnifyingGlass } from "react-loader-spinner";
 
-const Form = () => {
-  const { data, status } = useSession();
 
+const Form = () => {
+  const google_sheet_api = `https://v1.nocodeapi.com/ashishbhatt/google_sheets/YMhDSvykjqMTLsXF?tabId=test`;
+
+  const { data, status } = useSession();
   const [name, setName] = useState();
   const [email, setEmail] = useState();
   const [message, setMessage] = useState();
@@ -15,7 +17,23 @@ const Form = () => {
   const handleFormSubmit = React.useCallback(
     async (e) => {
       e.preventDefault();
-      await fetch("/api/submit", {
+
+//google sheet api  for storing data
+var myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
+var requestOptions = {
+    method: "post",
+    headers: myHeaders,
+    redirect: "follow",
+    body: JSON.stringify([[name,email,message]])
+};
+
+fetch(google_sheet_api, requestOptions)   
+.then(response => response.text())
+    .then(result => console.log(result))
+    .catch(error => console.log('error', error));
+
+     const response = await fetch("/api/submit", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -59,10 +77,11 @@ const Form = () => {
     );
   }
 
-  return <></>;
+  // return <></>;
 
   return (
-    <form className={`${classes.form}`} onSubmit={handleFormSubmit}>
+    <form className={`${classes.form}`} onSubmit={handleFormSubmit}
+     action={handleFormSubmit}>
       <div className={`${classes.form__group}`}>
         <input
           onChange={(e) => setName(e.target.value)}
@@ -95,7 +114,7 @@ const Form = () => {
         />
       </div>
 
-      <button disabled className="primary__btn" type="submit">
+      <button className="primary__btn cursor-pointer" type="submit">
         Send
       </button>
     </form>
