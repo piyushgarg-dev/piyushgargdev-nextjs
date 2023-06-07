@@ -39,11 +39,14 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
                   >
                     <Image
                       src={video.snippet.thumbnails.medium.url}
-                      height={180}
-                      width={320}
+                      height={0}
+                      width={0}
+                      sizes="100vw"
                       style={{
                         borderRadius: "20px",
                         marginBottom: "10px",
+                        width: "100%",
+                        height: "auto",
                       }}
                       alt={video.snippet.title}
                     />

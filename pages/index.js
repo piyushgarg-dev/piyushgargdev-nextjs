@@ -94,7 +94,7 @@ async function getYoutubeStatsForChannelId(id) {
   let response = { data: null };
   try {
     response = await axios.get(
-      `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${id}&key=AIzaSyDezsveebPt38oIqjLDE-T28PrRClhHjPQ`
+      `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${id}&key=${process.env.GOOGLE_API_KEY}`
     );
   } catch (error) {
     response.data = getYoutubeChannelDataDefaultResponse;
