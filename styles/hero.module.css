@@ -13,10 +13,14 @@
 .hero__img {
   position: relative;
   z-index: 9;
+  display: flex;
+  /* border: 2px solid red; */
+  justify-content: flex-end;
 }
 
 .hero__img img {
   border-radius: 50px 5px 5px 5px;
+  display: inline;
 }
 
 .hero__skills {
@@ -144,5 +148,9 @@
   }
   .hero__experience {
     display: none !important;
+  }
+
+  .hero__img {
+    justify-content: center;
   }
 }
