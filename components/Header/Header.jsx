@@ -56,12 +56,12 @@ const Header = () => {
       <Container>
         <div className={`${classes.nav__wrapper}`}>
           {/* ======== navigation logo ======== */}
-          <div style={{ cursor: "pointer" }} className={`${classes.logo}`}>
-            <Link aria-label="Home Page" href="/">
+          <div className={`${classes.logo}`}>
+            
               <h1>
                 <span>P</span>iyush <span>G</span>arg
               </h1>
-            </Link>
+            
           </div>
 
           {/* ========= nav menu =========== */}
