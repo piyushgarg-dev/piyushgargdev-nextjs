@@ -9,7 +9,7 @@ const Testimonial = ({ feedbacks = [] }) => {
     dots: false,
     autoplay: true,
     speed: 3500,
-    autoplaySpeed: 0,
+    autoplaySpeed: 1500,
     cssEase: "linear",
     infinite: true,
     swipeToSlide: true,
