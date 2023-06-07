@@ -9,7 +9,7 @@ const Testimonial = ({ feedbacks = [] }) => {
     dots: false,
     autoplay: true,
     speed: 3500,
-    autoplaySpeed: 0,
+    autoplaySpeed: 1500,
     cssEase: "linear",
     infinite: true,
     swipeToSlide: true,
@@ -17,7 +17,7 @@ const Testimonial = ({ feedbacks = [] }) => {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 100,
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
         },
