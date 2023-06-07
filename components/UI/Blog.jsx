@@ -16,12 +16,12 @@ const Blog = ({ blogs, blogDomain }) => {
         <Row>
           <Col lg="6" md="6" className="mb-5">
             <SectionSubtitle subtitle="blog.piyushgarg.dev" />
-            <h4 className="mt-4">Checkout my recent blogs</h4>
+            <h4 className="mt-4 text-2xl">Checkout my recent blogs</h4>
           </Col>
         </Row>
 
         <Row>
-          {blogs.map((blogItem) => (
+          {blogs.map((blogItem)  => (
             <Col
               className="hover:scale-110 hover:ease-out duration-300"
               style={{ margin: "10px 0px" }}
