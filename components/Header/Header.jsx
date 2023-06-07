@@ -75,15 +75,10 @@ const Header = () => {
             onClick={toggleMenu}
           >
             <div className={`${classes.nav__menu}`}>
-
-
               {crossMenu && <div className="border  text-3xl  absolute top-10 right-10 font-extrabold
               ">
                 <RiCloseLine />
-
               </div>}
-
-
               {NAV__LINK.map((item, index) => (
                 <Link aria-label={item.display} href={item.path} key={index}>
                   {item.display}
