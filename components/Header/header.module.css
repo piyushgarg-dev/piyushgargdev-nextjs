@@ -75,7 +75,7 @@
 .mobile__menu i {
   font-size: 1.3rem;
   color: #fff;
-
+  /* display: visible; */
   cursor: pointer;
 }
 
@@ -113,6 +113,7 @@
 
   .nav__right {
     display: none;
+    padding-bottom: 80px;
   }
 
   .mobile__menu {
@@ -120,7 +121,8 @@
   }
 
   .menu__active {
-    display: block !important;
+    display: flex !important;
+    padding-bottom: 40px;
   }
 
   .logo h1 {

@@ -16,7 +16,7 @@ const Blog = ({ blogs, blogDomain }) => {
         <Row>
           <Col lg="6" md="6" className="mb-5">
             <SectionSubtitle subtitle="blog.piyushgarg.dev" />
-            <h4 className="mt-4">Checkout my recent blogs</h4>
+            <h4 className="mt-4 fs-4">Checkout my recent blogs</h4>
           </Col>
         </Row>
 
