@@ -3,3 +3,14 @@
 
 "⚠️ API Changes"
   - pages/api/**
+
+"👀 Config Changes"
+  - .eslintrc.json
+  - .gitignore
+  - next.config.js
+
+"🔗 Package Changes"
+  - package.json
+
+"🔁 Github Config Changes"
+  - .github/**
