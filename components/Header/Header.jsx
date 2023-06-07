@@ -1,4 +1,5 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
+import { RiCloseLine } from "react-icons/ri";
 
 import { Container } from "reactstrap";
 import { useSession, signOut, signIn } from "next-auth/react";
@@ -25,6 +26,7 @@ const NAV__LINK = [
 ];
 
 const Header = () => {
+  const [crossMenu, setCrossMenu] = useState(false)
   const headerRef = useRef(null);
 
   const menuRef = useRef(null);
@@ -48,8 +50,10 @@ const Header = () => {
     return () => window.removeEventListener("scroll", headerFunc);
   }, []);
 
-  const toggleMenu = () =>
+  const toggleMenu = () => {
+    setCrossMenu(!crossMenu)
     menuRef.current.classList.toggle(`${classes.menu__active}`);
+  }
 
   return (
     <header className={`${classes.header}`} ref={headerRef}>
@@ -71,6 +75,15 @@ const Header = () => {
             onClick={toggleMenu}
           >
             <div className={`${classes.nav__menu}`}>
+
+
+              {crossMenu && <div className="border  text-3xl  absolute top-10 right-10 font-extrabold
+              ">
+                <RiCloseLine />
+
+              </div>}
+
+
               {NAV__LINK.map((item, index) => (
                 <Link aria-label={item.display} href={item.path} key={index}>
                   {item.display}
