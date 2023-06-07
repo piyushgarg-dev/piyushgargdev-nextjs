@@ -113,7 +113,6 @@
 
   .nav__right {
     display: none;
-    padding-bottom: 80px;
   }
 
   .mobile__menu {
@@ -121,8 +120,7 @@
   }
 
   .menu__active {
-    display: flex !important;
-    padding-bottom: 40px;
+    display: block !important;
   }
 
   .logo h1 {
