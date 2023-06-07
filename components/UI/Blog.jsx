@@ -23,6 +23,7 @@ const Blog = ({ blogs, blogDomain }) => {
         <Row>
           {blogs.map((blogItem) => (
             <Col
+              className="hover:scale-110 hover:ease-out duration-300"
               style={{ margin: "10px 0px" }}
               key={blogItem._id}
               lg="4"
