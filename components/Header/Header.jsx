@@ -99,6 +99,14 @@ const Header = () => {
                     rel="noreferrer"
                   ></Link>
                   <Link
+                    href="https://github.com/piyushgarg-dev"
+                    target="_blank"
+                    title="Github Account"
+                    id="github-account"
+                    className={`ri-github-fill cursor-pointer text-white`}
+                    rel="noreferrer"
+                  ></Link>
+                  <Link
                     href="https://twitter.com/piyushgarg_dev"
                     target="_blank"
                     title="Twitter Account"
@@ -109,11 +117,12 @@ const Header = () => {
                   <Link
                     href="https://www.linkedin.com/in/piyushgarg195/"
                     target="_blank"
-                    title="linkedin Account"
+                    title="Linkedin Account"
                     id="linedin-account"
                     className={`ri-linkedin-fill cursor-pointer text-white`}
                     rel="noreferrer"
                   ></Link>
+                  
                 </p>
               </div>
             </div>
