@@ -17,6 +17,7 @@
 
 .hero__img img {
   border-radius: 50px 5px 5px 5px;
+  display: inline;
 }
 
 .hero__skills {
