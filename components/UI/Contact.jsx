@@ -5,7 +5,6 @@ import SectionSubtitle from "./SectionSubtitle";
 import classes from "../../styles/contact.module.css";
 import Form from "./Form";
 
-
 const Contact = () => {
   return (
     <section id="contact" className={`${classes.contact}`}>
@@ -14,7 +13,6 @@ const Contact = () => {
           <Col lg="6" md="6">
             <SectionSubtitle subtitle="Contact me" />
             <h3 className="mt-1 mb-4">Contact with me</h3>
-
 
             <ul className={`${classes.contact__info__list}`}>
               <li className={`${classes.info__item}`}>
@@ -33,28 +31,40 @@ const Contact = () => {
 
             <div className={`${classes.social__links}`}>
               <Link
+                legacyBehavior
                 aria-label="Youtube Channel"
                 href="https://youtube.com/@piyushgargdev"
               >
-                <i className="ri-youtube-line"></i>
+                <a target="_blank">
+                  <i className="ri-youtube-line"></i>
+                </a>
               </Link>
               <Link
+                legacyBehavior
                 aria-label="Github Profile"
                 href="https://github.com/piyushgarg-dev"
               >
-                <i className="ri-github-line"></i>
+                <a target="_blank">
+                  <i className="ri-github-line"></i>
+                </a>
               </Link>
               <Link
+                legacyBehavior
                 aria-label="Twitter Account"
                 href="https://twitter.com/piyushgarg_dev"
               >
-                <i className="ri-twitter-line"></i>
+                <a target="_blank">
+                  <i className="ri-twitter-line"></i>
+                </a>
               </Link>
               <Link
+                legacyBehavior
                 aria-label="LinedIn Account"
                 href="https://www.linkedin.com/in/piyushgarg195/"
               >
-                <i className="ri-linkedin-line"></i>
+                <a target="_blank">
+                  <i className="ri-linkedin-line"></i>
+                </a>
               </Link>
             </div>
           </Col>
