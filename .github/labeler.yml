@@ -1,2 +1,5 @@
 "❗️ .env changes":
   - .env.example
+
+"⚠️ API Changes"
+  - pages/api/**
