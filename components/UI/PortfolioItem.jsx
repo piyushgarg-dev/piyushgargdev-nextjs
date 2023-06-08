@@ -19,8 +19,7 @@ const PortfolioItem = (props) => {
         target="_blank"
         style={{ textDecoration: "none" }}
         href={liveUrl}
-        rel="noreferrer"
-      >
+        rel="noreferrer">
         <>
           {ribbonText && (
             <div style={{ zIndex: 99 }} className="ribbon ribbon-top-left">
@@ -29,8 +28,13 @@ const PortfolioItem = (props) => {
           )}
 
           <div className="bg-transparent">
+
             <div className={`${classes.portfolio__img} mb-2`}>
               <Image alt={title} src={img} className={`m-auto bg-white ${index ? "object-contain" : "object-cover"} w-[380px] aspect-square`} width="380" height="250" />
+
+            <div className={`${classes.portfolio__img}`}>
+              <Image alt={title} src={img} width="380" height="fit-content" />
+
             </div>
 
             <h3 style={{ background: "transparent" }}>{title}</h3>
@@ -41,8 +45,7 @@ const PortfolioItem = (props) => {
                 position: "absolute",
                 background: "transparent",
                 bottom: "20px",
-              }}
-            >
+              }}>
               {keyword.map((item, index) => (
                 <span className={`${classes.portfolio__keyword}`} key={index}>
                   {item}
