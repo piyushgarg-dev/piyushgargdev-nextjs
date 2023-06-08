@@ -23,7 +23,7 @@ export default async function handler(req, res) {
             // Append the form data as a new row in the sheet
             await sheet.addRow({ Name: name, Email: email, Message: message });
 
-            res.status(200).redirect("/");
+            res.status(200).json({ message: 'success' });
         } catch (error) {
             console.error('Error:', error);
             res.status(500).json({ message: 'An error occurred' });
