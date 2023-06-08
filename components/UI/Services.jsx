@@ -23,7 +23,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
       <Container>
         <Row>
           <Col lg="3" md="12" sm="12">
-            <Slider {...settings}>
+            <Slider {...settings} style={{ cursor:"pointer"}}>
               {youtubeVideos
                 ?.filter((video) => video.id.videoId)
                 ?.map((video) => (
@@ -44,6 +44,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
                       sizes="100vw"
                       style={{
                         borderRadius: "20px",
+
                         marginBottom: "10px",
                         width: "100%",
                         height: "auto",
