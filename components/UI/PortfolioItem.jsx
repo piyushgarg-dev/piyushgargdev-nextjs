@@ -1,7 +1,7 @@
-import React from "react";
-import classes from "../../styles/portfolio-item.module.css";
-import Image from "next/image";
-import Link from "next/link";
+import React from 'react';
+import classes from '../../styles/portfolio-item.module.css';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const PortfolioItem = (props) => {
   const {
@@ -37,13 +37,18 @@ const PortfolioItem = (props) => {
 
             <div
               style={{
-                position: 'absolute',
+                marginTop: '16px',
                 background: 'transparent',
-                bottom: '20px',
+                display: 'flex',
+                flexWrap: 'wrap',
+                flexDirection: 'row',
               }}
             >
               {keyword.map((item, index) => (
-                <span className={`${classes.portfolio__keyword}`} key={index}>
+                <span
+                  className={`${classes.portfolio__keyword} my-1`}
+                  key={index}
+                >
                   {item}
                 </span>
               ))}
