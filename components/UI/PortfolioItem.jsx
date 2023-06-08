@@ -15,31 +15,33 @@ const PortfolioItem = (props) => {
   return (
     <div className={`${classes.portfolio__item}`}>
       <a
-        target="_blank"
-        style={{ textDecoration: "none" }}
+        target='_blank'
+        style={{ textDecoration: 'none' }}
         href={liveUrl}
-        rel="noreferrer">
+        rel='noreferrer'
+      >
         <>
           {ribbonText && (
-            <div style={{ zIndex: 99 }} className="ribbon ribbon-top-left">
+            <div style={{ zIndex: 99 }} className='ribbon ribbon-top-left'>
               <span>{ribbonText}</span>
             </div>
           )}
 
-          <div className="bg-transparent">
+          <div className='bg-transparent'>
             <div className={`${classes.portfolio__img}`}>
-              <Image alt={title} src={img} width="380" height="fit-content" />
+              <Image alt={title} src={img} width='380' height='380' />
             </div>
 
-            <h3 style={{ background: "transparent" }}>{title}</h3>
-            <p style={{ background: "transparent" }}>{subtitle}</p>
+            <h3 style={{ background: 'transparent' }}>{title}</h3>
+            <p style={{ background: 'transparent' }}>{subtitle}</p>
 
             <div
               style={{
-                position: "absolute",
-                background: "transparent",
-                bottom: "20px",
-              }}>
+                position: 'absolute',
+                background: 'transparent',
+                bottom: '20px',
+              }}
+            >
               {keyword.map((item, index) => (
                 <span className={`${classes.portfolio__keyword}`} key={index}>
                   {item}
