@@ -28,7 +28,7 @@
 }
 
 .nav__menu a,
-.nav__menu > * {
+.nav__menu>* {
   color: #808dad;
   font-weight: 500;
   font-size: 1rem;
@@ -37,7 +37,9 @@
   cursor: pointer;
 }
 
-.nav__menu a:hover {
+.nav__menu a:hover,
+.nav__menu a:active,
+.nav__menu a.nav_active {
   color: var(--site-theme-color);
 }
 
@@ -46,6 +48,7 @@
   margin-left: 20px;
   position: relative;
 }
+
 .nav__right i {
   color: #808dad;
 }
