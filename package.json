@@ -24,6 +24,7 @@
     "react-browser-ui": "^1.3.5",
     "react-device-detect": "^2.2.2",
     "react-dom": "18.2.0",
+    "react-icons": "^4.9.0",
     "react-loader-spinner": "^5.3.4",
     "react-slick": "^0.29.0",
     "react-terminal": "^1.3.0",
