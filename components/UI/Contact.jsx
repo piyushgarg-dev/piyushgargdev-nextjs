@@ -4,10 +4,34 @@ import Link from "next/link";
 import SectionSubtitle from "./SectionSubtitle";
 import classes from "../../styles/contact.module.css";
 import Form from "./Form";
+import axios from "axios";
+import { useState } from "react";
 
 const Contact = () => {
+  const [submitted, setSubmitted] = useState(false);
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const data = {
+      name: event.target.name.value,
+      email: event.target.email.value,
+      message: event.target.message.value,
+    }
+    console.log(data)
+    try {
+      const response = await axios.post("/api/contact", data);
+      if (response.status === 200) {
+        setSubmitted(true)
+        console.log("Form submitted")
+      } else {
+        console.log("Failed")
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
-    <section id="contact" className={`${classes.contact}`}>
+    <section id="contact" className={`${classes.contact} flex m-5`}>
       <Container>
         <Row>
           <Col lg="6" md="6">
@@ -69,6 +93,48 @@ const Contact = () => {
             <Form />
           </Col>
         </Row>
+      </Container>
+      <Container>
+        {submitted ? (
+          <div className="flex justify-center items-center text-xl font-bold h-[30vh]">
+            <p>Message Sent!</p>
+          </div>
+        ) : (
+          <form className="flex flex-col space-y-4" onSubmit={handleSubmit}>
+            <input
+              className="border border-gray-300 bg-transparent px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:rgba(77, 181, 255, 0.4) text-white"
+              type="text"
+              name="name"
+              placeholder="Your Full Name"
+              required
+              autoComplete="off"
+            />
+            <input
+              className="border border-gray-300 bg-transparent px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:[rgba(77, 181, 255, 0.4)] text-white"
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+              autoComplete="off"
+            />
+            <textarea
+              className="border border-gray-300 bg-transparent px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:rgba(77, 181, 255, 0.4) text-white"
+              name="message"
+              placeholder="Your Message"
+              required
+              rows="4"
+              autoComplete="off"
+            ></textarea>
+            <button
+              type="submit"
+              className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
+            >
+              Send Message
+            </button>
+          </form>
+
+        )}
+
       </Container>
     </section>
   );
