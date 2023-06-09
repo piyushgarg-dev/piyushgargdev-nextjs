@@ -8,8 +8,8 @@ const Testimonial = ({ feedbacks = [] }) => {
   const settings = {
     dots: false,
     autoplay: true,
-    speed: 3500,
-    autoplaySpeed: 0,
+    speed: 1000,
+    autoplaySpeed: 3000,
     cssEase: "linear",
     infinite: true,
     swipeToSlide: true,
@@ -25,7 +25,7 @@ const Testimonial = ({ feedbacks = [] }) => {
       {
         breakpoint: 750,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
         },
       },
       {
@@ -40,7 +40,7 @@ const Testimonial = ({ feedbacks = [] }) => {
     <section>
       <Container>
         <SectionSubtitle subtitle="Testimonials" />
-        <h4 className="mt-4 mb-5">Feebacks from students</h4>
+        <h4 className="mt-4 mb-5 text-2xl">Feebacks from students</h4>
         <Row>
           <Slider {...settings}>
             {feedbacks.map((feedBack) => (
