@@ -23,8 +23,3 @@ yarn dev
 ### Repo Activity
 
 ![Activity](https://repobeats.axiom.co/api/embed/53ac5d73666adb61764d0945fa9df15ccdc336ea.svg "Repobeats analytics image")
-
-### Contributors
-<a href="https://github.com/piyushgarg-dev/piyushgargdev-nextjs/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=piyushgarg-dev/piyushgargdev-nextjs" />
-</a>
