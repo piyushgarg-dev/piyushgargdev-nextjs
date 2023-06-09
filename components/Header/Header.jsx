@@ -5,6 +5,7 @@ import { Container } from "reactstrap";
 import { useSession, signOut, signIn } from "next-auth/react";
 import classes from "./header.module.css";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const NAV__LINK = [
   {
@@ -26,6 +27,7 @@ const NAV__LINK = [
 ];
 
 const Header = () => {
+  const router = useRouter();
   const [crossMenu, setCrossMenu] = useState(false)
   const headerRef = useRef(null);
 
@@ -80,17 +82,21 @@ const Header = () => {
                 <RiCloseLine />
               </div>}
               {NAV__LINK.map((item, index) => (
-                <Link aria-label={item.display} href={item.path} key={index}>
+                <Link aria-label={item.display} href={item.path} key={index}  className={
+                  router.pathname === item.path
+                    ? 'text-[--site-theme-color]'
+                    : 'text-[#808dad]'
+                }>
                   {item.display}
                 </Link>
               ))}
 
               {data && data.user ? (
-                <a onClick={signOut} href="#">
+                <a onClick={signOut} href="#" className="text-[#808dad]">
                   Sign Out
                 </a>
               ) : (
-                <a onClick={signIn} href="#">
+                <a onClick={signIn} href="#" className="text-[#808dad]">
                   Login
                 </a>
               )}
