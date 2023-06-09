@@ -143,6 +143,11 @@
 }
 
 @media only screen and (max-width: 576px) {
+  .hero__content {
+    max-width: max-content;
+    padding: 50px 20px;
+    margin-left: 1rem;
+  }
   .hero__skills {
     display: none;
   }
