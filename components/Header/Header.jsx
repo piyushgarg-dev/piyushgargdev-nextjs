@@ -107,6 +107,14 @@ const Header = () => {
                     rel="noreferrer"
                   ></Link>
                   <Link
+                    href="https://github.com/piyushgarg-dev/"
+                    target="_blank"
+                    title="github Account"
+                    id="github-account"
+                    className={`ri-github-line cursor-pointer text-white`}
+                    rel="noreferrer"
+                  ></Link>
+                  <Link
                     href="https://twitter.com/piyushgarg_dev"
                     target="_blank"
                     title="Twitter Account"
