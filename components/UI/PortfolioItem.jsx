@@ -28,25 +28,25 @@ const PortfolioItem = (props) => {
 
           <div className="bg-transparent">
             <div className={`${classes.portfolio__img}`}>
-              <Image alt={title} src={img} width="380" height="504" />
+              <Image alt={title} src={img} width="380" height="502" />
             </div>
 
             <h3 style={{ background: "transparent" }}>{title}</h3>
-              <p style={{ background: "transparent"}}>{subtitle}</p>
-              <div
-                style={{
-                  display:"flex",
-                  background: "transparent",
-                  bottom: "20px",
-                  flexWrap:"wrap",
-                }}>
-                {keyword.map((item, index) => (
-                  <span className={`${classes.portfolio__keyword}`} key={index}>
-                    {item}
-                  </span>
-                ))}
-              </div>
+            <p style={{ background: "transparent" }}>{subtitle}</p>
+
+            <div
+              style={{
+                position: "absolute",
+                background: "transparent",
+                bottom: "20px",
+              }}>
+              {keyword.map((item, index) => (
+                <span className={`${classes.portfolio__keyword}`} key={index}>
+                  {item}
+                </span>
+              ))}
             </div>
+          </div>
         </>
       </a>
     </div>
