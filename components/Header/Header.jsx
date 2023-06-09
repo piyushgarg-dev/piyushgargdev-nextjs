@@ -1,4 +1,5 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
+import { RiCloseLine } from "react-icons/ri";
 
 import { Container } from "reactstrap";
 import { useSession, signOut, signIn } from "next-auth/react";
@@ -25,6 +26,7 @@ const NAV__LINK = [
 ];
 
 const Header = () => {
+  const [crossMenu, setCrossMenu] = useState(false)
   const headerRef = useRef(null);
 
   const menuRef = useRef(null);
@@ -48,8 +50,10 @@ const Header = () => {
     return () => window.removeEventListener("scroll", headerFunc);
   }, []);
 
-  const toggleMenu = () =>
+  const toggleMenu = () => {
+    setCrossMenu(false)
     menuRef.current.classList.toggle(`${classes.menu__active}`);
+  }
 
   return (
     <header className={`${classes.header}`} ref={headerRef}>
@@ -71,18 +75,22 @@ const Header = () => {
             onClick={toggleMenu}
           >
             <div className={`${classes.nav__menu}`}>
+              {crossMenu && <div className="border text-white text-3xl  absolute top-10 right-10 font-extrabold
+              ">
+                <RiCloseLine />
+              </div>}
               {NAV__LINK.map((item, index) => (
-                <Link aria-label={item.display} href={item.path} key={index}>
+                <Link className="text-[#808dad] hover:text-[#01d293]" aria-label={item.display} href={item.path} key={index}>
                   {item.display}
                 </Link>
               ))}
 
               {data && data.user ? (
-                <a onClick={signOut} href="#">
+                <a className="text-[#808dad] hover:text-[#01d293]" onClick={signOut} href="#">
                   Sign Out
                 </a>
               ) : (
-                <a onClick={signIn} href="#">
+                <a className="text-[#808dad] hover:text-[#01d293]" onClick={signIn} href="#">
                   Login
                 </a>
               )}
@@ -95,7 +103,15 @@ const Header = () => {
                     target="_blank"
                     title="Youtube Channel"
                     id="youtube-channel"
-                    className={`ri-youtube-fill cursor-pointer text-white`}
+                    className={`ri-youtube-fill cursor-pointer  text-[#ffffff] hover:text-[#01d293]`}
+                    rel="noreferrer"
+                  ></Link>
+                  <Link
+                    href="https://github.com/piyushgarg-dev/"
+                    target="_blank"
+                    title="github Account"
+                    id="github-account"
+                    className={`ri-github-line  text-[#ffffff] hover:text-[#01d293]`}
                     rel="noreferrer"
                   ></Link>
                   <Link
@@ -103,15 +119,15 @@ const Header = () => {
                     target="_blank"
                     title="Twitter Account"
                     id="twitter-account"
-                    className={`ri-twitter-fill cursor-pointer text-white`}
+                    className={`ri-twitter-fill  text-[#ffffff] hover:text-[#01d293]`}
                     rel="noreferrer"
                   ></Link>
                   <Link
                     href="https://www.linkedin.com/in/piyushgarg195/"
                     target="_blank"
                     title="linkedin Account"
-                    id="linedin-account"
-                    className={`ri-linkedin-fill cursor-pointer text-white`}
+                    id="linkedin-account"
+                    className={`ri-linkedin-fill  text-[#ffffff] hover:text-[#01d293]`}
                     rel="noreferrer"
                   ></Link>
                 </p>
@@ -119,7 +135,7 @@ const Header = () => {
             </div>
           </div>
 
-          <span className={`${classes.mobile__menu}`}>
+          <span onClick={() => setCrossMenu(!crossMenu)} className={`${classes.mobile__menu}`}>
             <i className="ri-menu-line" onClick={toggleMenu}></i>
           </span>
         </div>
