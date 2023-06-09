@@ -1,4 +1,5 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
+import { RiCloseLine } from "react-icons/ri";
 
 import { Container } from "reactstrap";
 import { useSession, signOut, signIn } from "next-auth/react";
@@ -25,6 +26,7 @@ const NAV__LINK = [
 ];
 
 const Header = () => {
+  const [crossMenu, setCrossMenu] = useState(false)
   const headerRef = useRef(null);
 
   const menuRef = useRef(null);
@@ -48,8 +50,10 @@ const Header = () => {
     return () => window.removeEventListener("scroll", headerFunc);
   }, []);
 
-  const toggleMenu = () =>
+  const toggleMenu = () => {
+    setCrossMenu(false)
     menuRef.current.classList.toggle(`${classes.menu__active}`);
+  }
 
   return (
     <header className={`${classes.header}`} ref={headerRef}>
@@ -71,6 +75,10 @@ const Header = () => {
             onClick={toggleMenu}
           >
             <div className={`${classes.nav__menu}`}>
+              {crossMenu && <div className="border  text-3xl  absolute top-10 right-10 font-extrabold
+              ">
+                <RiCloseLine />
+              </div>}
               {NAV__LINK.map((item, index) => (
                 <Link aria-label={item.display} href={item.path} key={index}>
                   {item.display}
@@ -99,6 +107,14 @@ const Header = () => {
                     rel="noreferrer"
                   ></Link>
                   <Link
+                    href="https://github.com/piyushgarg-dev/"
+                    target="_blank"
+                    title="github Account"
+                    id="github-account"
+                    className={`ri-github-line cursor-pointer text-white`}
+                    rel="noreferrer"
+                  ></Link>
+                  <Link
                     href="https://twitter.com/piyushgarg_dev"
                     target="_blank"
                     title="Twitter Account"
@@ -110,7 +126,7 @@ const Header = () => {
                     href="https://www.linkedin.com/in/piyushgarg195/"
                     target="_blank"
                     title="linkedin Account"
-                    id="linedin-account"
+                    id="linkedin-account"
                     className={`ri-linkedin-fill cursor-pointer text-white`}
                     rel="noreferrer"
                   ></Link>
@@ -119,7 +135,7 @@ const Header = () => {
             </div>
           </div>
 
-          <span className={`${classes.mobile__menu}`}>
+          <span onClick={() => setCrossMenu(!crossMenu)} className={`${classes.mobile__menu}`}>
             <i className="ri-menu-line" onClick={toggleMenu}></i>
           </span>
         </div>
