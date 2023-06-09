@@ -31,7 +31,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className={`${classes.contact} flex m-5`}>
+    <section id="contact" className={`${classes.contact} flex m-5 flex-col md:flex-row`}>
       <Container>
         <Row>
           <Col lg="6" md="6">
