@@ -47,9 +47,13 @@ const Contact = () => {
               </li>
               <li className={`${classes.info__item}`}>
                 <span>
-                  <i className="ri-mail-line"></i>
+                  <a href="mailto:piyushgarg.dev@gmail.com">
+                    <i className="ri-mail-line"></i>
+                  </a>
                 </span>
-                <p>piyushgarg.dev@gmail.com</p>
+                <p>
+                  <a href="mailto:piyushgarg.dev@gmail.com">piyushgarg.dev@gmail.com</a>
+                </p>
               </li>
             </ul>
 
@@ -57,24 +61,28 @@ const Contact = () => {
               <Link
                 aria-label="Youtube Channel"
                 href="https://youtube.com/@piyushgargdev"
+                target="_blank"
               >
                 <i className="ri-youtube-line"></i>
               </Link>
               <Link
                 aria-label="Github Profile"
                 href="https://github.com/piyushgarg-dev"
+                target="_blank"
               >
                 <i className="ri-github-line"></i>
               </Link>
               <Link
                 aria-label="Twitter Account"
                 href="https://twitter.com/piyushgarg_dev"
+                target="_blank"
               >
                 <i className="ri-twitter-line"></i>
               </Link>
               <Link
                 aria-label="LinedIn Account"
                 href="https://www.linkedin.com/in/piyushgarg195/"
+                target="_blank"
               >
                 <i className="ri-linkedin-line"></i>
               </Link>

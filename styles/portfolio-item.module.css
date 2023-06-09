@@ -41,6 +41,11 @@
   border-radius: 5px;
 }
 
+.portfolio__keyword:hover {
+  background-color: white;
+  color: #000;
+}
+
 .portfolio__live {
   margin-left: -100px;
   margin-top: 30px;
