@@ -14,7 +14,6 @@
   position: relative;
   z-index: 9;
   display: flex;
-  /* border: 2px solid red; */
   justify-content: flex-end;
 }
 
