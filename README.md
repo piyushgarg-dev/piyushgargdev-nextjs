@@ -16,9 +16,6 @@ yarn install
 
 3. Run the Next.JS Development Server
 
-```bash
-yarn dev
-```
 
 ### Repo Activity
 

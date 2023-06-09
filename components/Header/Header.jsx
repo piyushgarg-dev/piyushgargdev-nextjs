@@ -82,7 +82,7 @@ const Header = () => {
                   Sign Out
                 </a>
               ) : (
-                <a onClick={signIn} href="#">
+                <a onClick={() => signIn()} href="#">
                   Login
                 </a>
               )}

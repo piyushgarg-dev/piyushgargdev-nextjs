@@ -5,6 +5,8 @@ import clientPromise from "../../../lib/mongodbAdapter";
 // Providers
 import GitHubProvider from "next-auth/providers/github";
 import DiscordProvider from "next-auth/providers/discord";
+import { GOOGLE_FONT_PROVIDER } from "next/dist/shared/lib/constants";
+import { getCookieParser } from "next/dist/server/api-utils";
 
 export const authOptions = {
   adapter: MongoDBAdapter(clientPromise),
@@ -18,6 +20,7 @@ export const authOptions = {
       clientSecret: process.env.DISCORD_CLIENT_SECRET,
     }),
   ],
+  secrets: process.env.JWT_SECRET
 };
 
 export default NextAuth(authOptions);
