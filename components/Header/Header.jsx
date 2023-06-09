@@ -51,7 +51,7 @@ const Header = () => {
   }, []);
 
   const toggleMenu = () => {
-    setCrossMenu(!crossMenu)
+    setCrossMenu(false)
     menuRef.current.classList.toggle(`${classes.menu__active}`);
   }
 
@@ -126,7 +126,7 @@ const Header = () => {
                     href="https://www.linkedin.com/in/piyushgarg195/"
                     target="_blank"
                     title="linkedin Account"
-                    id="linedin-account"
+                    id="linkedin-account"
                     className={`ri-linkedin-fill cursor-pointer text-white`}
                     rel="noreferrer"
                   ></Link>
@@ -135,7 +135,7 @@ const Header = () => {
             </div>
           </div>
 
-          <span className={`${classes.mobile__menu}`}>
+          <span onClick={() => setCrossMenu(!crossMenu)} className={`${classes.mobile__menu}`}>
             <i className="ri-menu-line" onClick={toggleMenu}></i>
           </span>
         </div>
