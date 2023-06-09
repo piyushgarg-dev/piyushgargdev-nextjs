@@ -32,7 +32,15 @@ const PortfolioItem = (props) => {
               <Image alt={title} src={img} width="380" height="380" />
             </div>
 
-            <h3 style={{ background: "transparent" }}>{title}</h3>
+            <h3
+              style={{
+                background: "transparent",
+                marginBottom: "8px",
+                marginTop: "8px",
+              }}
+            >
+              {title}
+            </h3>
             <p style={{ background: "transparent" }}>{subtitle}</p>
 
             <div
