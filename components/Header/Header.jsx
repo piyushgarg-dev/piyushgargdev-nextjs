@@ -6,6 +6,7 @@ import { useSession, signOut, signIn } from "next-auth/react";
 import classes from "./header.module.css";
 import Link from "next/link";
 
+
 const NAV__LINK = [
   {
     path: "/",
@@ -29,6 +30,8 @@ const Header = () => {
   const [crossMenu, setCrossMenu] = useState(false)
   const headerRef = useRef(null);
 
+  const[currentActivePath,setCurrentActivePath]=useState('');
+
   const menuRef = useRef(null);
 
   const { data } = useSession();
@@ -44,16 +47,30 @@ const Header = () => {
     }
   };
 
+
+
   useEffect(() => {
     window.addEventListener("scroll", headerFunc);
 
     return () => window.removeEventListener("scroll", headerFunc);
   }, []);
 
+
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+       // Check if running in browser environment
+ 
+      setCurrentActivePath("/"+window.location.href.substring(window.location.href.lastIndexOf("/") + 1));
+    }
+  }, []);
+
   const toggleMenu = () => {
     setCrossMenu(false)
     menuRef.current.classList.toggle(`${classes.menu__active}`);
   }
+
+
 
   return (
     <header className={`${classes.header}`} ref={headerRef}>
@@ -80,9 +97,12 @@ const Header = () => {
                 <RiCloseLine />
               </div>}
               {NAV__LINK.map((item, index) => (
-                <Link aria-label={item.display} href={item.path} key={index}>
+ 
+                <Link aria-label={item.display} href={item.path} key={index} style={{color:currentActivePath === item.path ? "#01d293":"#808dad"}} onClick={()=>setCurrentActivePath(item.path)}>
                   {item.display}
                 </Link>
+
+        
               ))}
 
               {data && data.user ? (
