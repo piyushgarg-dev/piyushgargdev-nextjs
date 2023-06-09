@@ -28,7 +28,7 @@ const PortfolioItem = (props) => {
 
           <div className="bg-transparent">
             <div className={`${classes.portfolio__img}`}>
-              <Image alt={title} src={img} width="380" height="fit-content" />
+              <Image alt={title} src={img} width="380" height="502" />
             </div>
 
             <h3 style={{ background: "transparent" }}>{title}</h3>
