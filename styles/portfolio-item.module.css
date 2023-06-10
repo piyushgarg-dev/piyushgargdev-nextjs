@@ -3,7 +3,7 @@
   padding: 10px 15px 10px 15px;
   padding-top: 20px;
   border-radius: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 8px;
   min-height: 100%;
   position: relative;
 }
@@ -39,6 +39,11 @@
   font-size: 0.7rem;
   margin-right: 10px;
   border-radius: 5px;
+}
+
+.portfolio__keyword:hover {
+  background-color: white;
+  color: #000;
 }
 
 .portfolio__live {

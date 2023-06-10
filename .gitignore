@@ -26,8 +26,13 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # local env files
+<<<<<<< HEAD
 .env*.
 .env.local
+=======
+.env*.local
+package-lock.json
+>>>>>>> 692e4397d69b7c1e8d357d892aa298efaacd78b4
 
 # vercel
 .vercel
