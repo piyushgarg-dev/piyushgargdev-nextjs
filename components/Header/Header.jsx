@@ -7,6 +7,10 @@ import {
   AiFillEdit,
 } from "react-icons/ai";
 
+import { BiLogInCircle } from "react-icons/bi";
+
+import { FaWhmcs } from "react-icons/fa";
+
 import { Container } from "reactstrap";
 import { useSession, signOut, signIn } from "next-auth/react";
 import classes from "./header.module.css";
@@ -34,8 +38,9 @@ const NAV__LINK = [
 const icons = [
   <AiFillHome />,
   <AiFillShopping />,
-  <AiFillExclamationCircle />,
+  <FaWhmcs />,
   <AiFillEdit />,
+  <BiLogInCircle />,
 ];
 
 const Header = () => {
@@ -108,9 +113,15 @@ const Header = () => {
                   Sign Out
                 </a>
               ) : (
-                <a onClick={signIn} href="#">
-                  Login
-                </a>
+                <div className={`${classes.mobile__menuDiv}`}>
+                  <Link href="#">
+                    <p className={`${classes.mobile__menu}`}>{icons[4]}</p>
+                  </Link>
+                  <span>Login</span>
+                </div>
+                // <a onClick={signIn} href="#">
+                //   Login
+                // </a>
               )}
 
               <div className={`${classes.nav__right}`}>
