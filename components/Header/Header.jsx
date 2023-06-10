@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import { RiCloseLine } from "react-icons/ri";
+import { RiCloseLine, RiYoutubeFill, RiGithubFill, RiTwitterFill, RiLinkedinFill } from "react-icons/ri";
 
 import { Container } from "reactstrap";
 import { useSession, signOut, signIn } from "next-auth/react";
@@ -103,33 +103,33 @@ const Header = () => {
                     target="_blank"
                     title="Youtube Channel"
                     id="youtube-channel"
-                    className={`ri-youtube-fill cursor-pointer  text-[#ffffff] hover:text-[#01d293]`}
-                    rel="noreferrer"
-                  ></Link>
+                    rel="noreferrer">
+                    <RiYoutubeFill />
+                  </Link>
                   <Link
                     href="https://github.com/piyushgarg-dev/"
                     target="_blank"
                     title="github Account"
                     id="github-account"
-                    className={`ri-github-line  text-[#ffffff] hover:text-[#01d293]`}
-                    rel="noreferrer"
-                  ></Link>
+                    rel="noreferrer">
+                    <RiGithubFill />
+                  </Link>
                   <Link
                     href="https://twitter.com/piyushgarg_dev"
                     target="_blank"
                     title="Twitter Account"
                     id="twitter-account"
-                    className={`ri-twitter-fill  text-[#ffffff] hover:text-[#01d293]`}
-                    rel="noreferrer"
-                  ></Link>
+                    rel="noreferrer">
+                    <RiTwitterFill />
+                  </Link>
                   <Link
                     href="https://www.linkedin.com/in/piyushgarg195/"
                     target="_blank"
                     title="linkedin Account"
                     id="linkedin-account"
-                    className={`ri-linkedin-fill  text-[#ffffff] hover:text-[#01d293]`}
-                    rel="noreferrer"
-                  ></Link>
+                    rel="noreferrer">
+                    <RiLinkedinFill />
+                  </Link>
                 </p>
               </div>
             </div>
