@@ -95,7 +95,7 @@ const Header = () => {
                     target="_blank"
                     title="Youtube Channel"
                     id="youtube-channel"
-                    className={`ri-youtube-fill cursor-pointer text-white`}
+                    className={`ri-youtube-fill cursor-pointer text-red-700`}
                     rel="noreferrer"
                   ></Link>
                   <Link
@@ -111,7 +111,7 @@ const Header = () => {
                     target="_blank"
                     title="linkedin Account"
                     id="linedin-account"
-                    className={`ri-linkedin-fill cursor-pointer text-white`}
+                    className={`ri-linkedin-fill cursor-pointer text-blue-800`}
                     rel="noreferrer"
                   ></Link>
                 </p>
