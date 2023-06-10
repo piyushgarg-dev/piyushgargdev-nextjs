@@ -28,9 +28,5 @@
   }
 }
 
-@media (max-width: 400px) {
-  .custom-padding {
-    padding: 20px;
-  }
-}
+
 
