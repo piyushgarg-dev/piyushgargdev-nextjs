@@ -11,14 +11,14 @@ const Courses = ({ courses = [] }) => {
         <Row>
           <Col lg="6" md="6" className="mb-5">
             <SectionSubtitle subtitle="Courses" />
-            <h4 className="mt-4 text-2xl">Checkout My Interactive Courses</h4>
+            <h4 className="mt-4 text-4xl">Checkout My Interactive Courses</h4>
           </Col>
         </Row>
 
         <Row>
           {courses.map((item) => (
             <Col
-              style={{ margin: "10px 0px" }}
+              style={{ margin: "10px 0px"}}
               key={item.id}
               lg="4"
               md="4"
