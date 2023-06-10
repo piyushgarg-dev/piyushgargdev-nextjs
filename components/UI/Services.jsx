@@ -8,7 +8,7 @@ import ServicesItem from "./ServicesItem";
 
 const Services = ({ youtubeStats, youtubeVideos }) => {
   const settings = {
-    dots: false,
+    dots: true,
     autoplay: true,
     speed: 500,
     autoplaySpeed: 2000,
@@ -22,8 +22,8 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
     <section id="youtube-stats">
       <Container>
         <Row>
-          <Col lg="3" md="12" sm="12">
-            <Slider {...settings} style={{ cursor:"pointer"}}>
+          <Col lg="3" md="12" sm="12" className="pb-8 md:pb-0">
+            <Slider {...settings} style={{ cursor: "pointer" }}>
               {youtubeVideos
                 ?.filter((video) => video.id.videoId)
                 ?.map((video) => (
