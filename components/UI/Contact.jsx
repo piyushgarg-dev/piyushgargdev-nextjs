@@ -6,7 +6,7 @@ import classes from "../../styles/contact.module.css";
 import Form from "./Form";
 import axios from "axios";
 import { useState } from "react";
-
+import { RiYoutubeFill, RiGithubFill, RiTwitterFill, RiLinkedinFill } from "react-icons/ri";
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
   const handleSubmit = async (event) => {
@@ -65,28 +65,28 @@ const Contact = () => {
                 href="https://youtube.com/@piyushgargdev"
                 target="_blank"
               >
-                <i className="ri-youtube-line"></i>
+                <RiYoutubeFill />
               </Link>
               <Link
                 aria-label="Github Profile"
                 href="https://github.com/piyushgarg-dev"
                 target="_blank"
               >
-                <i className="ri-github-line"></i>
+                <RiGithubFill />
               </Link>
               <Link
                 aria-label="Twitter Account"
                 href="https://twitter.com/piyushgarg_dev"
                 target="_blank"
               >
-                <i className="ri-twitter-line"></i>
+                <RiTwitterFill />
               </Link>
               <Link
                 aria-label="LinedIn Account"
                 href="https://www.linkedin.com/in/piyushgarg195/"
                 target="_blank"
               >
-                <i className="ri-linkedin-line"></i>
+                <RiLinkedinFill />
               </Link>
             </div>
           </Col>
