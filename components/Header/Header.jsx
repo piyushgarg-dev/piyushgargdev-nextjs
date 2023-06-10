@@ -90,7 +90,7 @@ const Header = () => {
               <div className={`${classes.nav__right}`}>
                 <p className={`d-flex align-items-center gap-3 mb-0`}>
                   <Link
-                    aria-label="Youtube Channel"
+                    aria-label=" Channel"
                     href="https://youtube.com/@piyushgargdev"
                     target="_blank"
                     title="Youtube Channel"
