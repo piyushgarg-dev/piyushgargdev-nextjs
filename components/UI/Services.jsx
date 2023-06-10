@@ -8,7 +8,7 @@ import ServicesItem from "./ServicesItem";
 
 const Services = ({ youtubeStats, youtubeVideos }) => {
   const settings = {
-    dots: true,
+    dots: false,
     autoplay: true,
     speed: 500,
     autoplaySpeed: 2000,
@@ -22,8 +22,12 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
     <section id="youtube-stats">
       <Container>
         <Row>
-          <Col lg="3" md="12" sm="12" className="pb-8 md:pb-0">
-            <Slider {...settings} style={{ cursor: "pointer" }}>
+          <Col lg="3" md="12" sm="12">
+            <Slider
+              {...settings}
+              // style={{ cursor: "pointer", marginBottom: "10px" }}
+              className=" cursor-pointer mb-10 md:mb:0"
+            >
               {youtubeVideos
                 ?.filter((video) => video.id.videoId)
                 ?.map((video) => (
@@ -44,7 +48,6 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
                       sizes="100vw"
                       style={{
                         borderRadius: "20px",
-
                         marginBottom: "10px",
                         width: "100%",
                         height: "auto",
@@ -52,12 +55,14 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
                       alt={video.snippet.title}
                     />
                     <p>{video.snippet.title}</p>
-                    <p>{new Date(video.snippet.publishTime).toDateString()}</p>
+                    <p className="p-2.5 bg-[#171f38] w-fit text-xs text-white mt-2 rounded-md">
+                      {new Date(video.snippet.publishTime).toDateString()}
+                    </p>
                   </div>
                 ))}
             </Slider>
           </Col>
-          <Col lg="3" md="3">
+          <Col lg="3" md="6">
             <ServicesItem
               title={`${(
                 Number(youtubeStats?.statistics?.subscriberCount) / 1000
