@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import { RiCloseLine } from "react-icons/ri";
+import { RiCloseLine, RiYoutubeFill, RiGithubFill, RiTwitterFill, RiLinkedinFill } from "react-icons/ri";
 
 import { Container } from "reactstrap";
 import { useSession, signOut, signIn } from "next-auth/react";
@@ -92,13 +92,15 @@ const Header = () => {
             onClick={toggleMenu}
           >
             <div className={`${classes.nav__menu}`}>
-              {crossMenu && <div className="border  text-3xl  absolute top-10 right-10 font-extrabold
+              {crossMenu && <div className="border text-white text-3xl  absolute top-10 right-10 font-extrabold
               ">
                 <RiCloseLine />
               </div>}
               {NAV__LINK.map((item, index) => (
+
  
                 <Link aria-label={item.display} href={item.path} key={index} style={{color:currentActivePath === item.path ? "#01d293":"#808dad"}} onClick={()=>setCurrentActivePath(item.path)}>
+
                   {item.display}
                 </Link>
 
@@ -106,11 +108,11 @@ const Header = () => {
               ))}
 
               {data && data.user ? (
-                <a onClick={signOut} href="#">
+                <a className="text-[#808dad] hover:text-[#01d293]" onClick={signOut} href="#">
                   Sign Out
                 </a>
               ) : (
-                <a onClick={signIn} href="#">
+                <a className="text-[#808dad] hover:text-[#01d293]" onClick={signIn} href="#">
                   Login
                 </a>
               )}
@@ -123,33 +125,33 @@ const Header = () => {
                     target="_blank"
                     title="Youtube Channel"
                     id="youtube-channel"
-                    className={`ri-youtube-fill cursor-pointer text-white`}
-                    rel="noreferrer"
-                  ></Link>
+                    rel="noreferrer">
+                    <RiYoutubeFill />
+                  </Link>
                   <Link
                     href="https://github.com/piyushgarg-dev/"
                     target="_blank"
                     title="github Account"
                     id="github-account"
-                    className={`ri-github-line cursor-pointer text-white`}
-                    rel="noreferrer"
-                  ></Link>
+                    rel="noreferrer">
+                    <RiGithubFill />
+                  </Link>
                   <Link
                     href="https://twitter.com/piyushgarg_dev"
                     target="_blank"
                     title="Twitter Account"
                     id="twitter-account"
-                    className={`ri-twitter-fill cursor-pointer text-white`}
-                    rel="noreferrer"
-                  ></Link>
+                    rel="noreferrer">
+                    <RiTwitterFill />
+                  </Link>
                   <Link
                     href="https://www.linkedin.com/in/piyushgarg195/"
                     target="_blank"
                     title="linkedin Account"
                     id="linkedin-account"
-                    className={`ri-linkedin-fill cursor-pointer text-white`}
-                    rel="noreferrer"
-                  ></Link>
+                    rel="noreferrer">
+                    <RiLinkedinFill />
+                  </Link>
                 </p>
               </div>
             </div>
