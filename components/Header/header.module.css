@@ -126,6 +126,12 @@
   .logo h1 {
     font-size: 1.3rem !important;
   }
+
+  .mobile__menuDiv {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
 }
 
 @media only screen and (max-width: 768px) {

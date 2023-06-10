@@ -1,5 +1,11 @@
 import React, { useRef, useEffect, useState } from "react";
 import { RiCloseLine } from "react-icons/ri";
+import {
+  AiFillHome,
+  AiFillShopping,
+  AiFillExclamationCircle,
+  AiFillEdit,
+} from "react-icons/ai";
 
 import { Container } from "reactstrap";
 import { useSession, signOut, signIn } from "next-auth/react";
@@ -25,8 +31,15 @@ const NAV__LINK = [
   },
 ];
 
+const icons = [
+  <AiFillHome />,
+  <AiFillShopping />,
+  <AiFillExclamationCircle />,
+  <AiFillEdit />,
+];
+
 const Header = () => {
-  const [crossMenu, setCrossMenu] = useState(false)
+  const [crossMenu, setCrossMenu] = useState(false);
   const headerRef = useRef(null);
 
   const menuRef = useRef(null);
@@ -51,9 +64,9 @@ const Header = () => {
   }, []);
 
   const toggleMenu = () => {
-    setCrossMenu(false)
+    setCrossMenu(false);
     menuRef.current.classList.toggle(`${classes.menu__active}`);
-  }
+  };
 
   return (
     <header className={`${classes.header}`} ref={headerRef}>
@@ -72,17 +85,22 @@ const Header = () => {
           <div
             className={`${classes.navigation}`}
             ref={menuRef}
-            onClick={toggleMenu}
-          >
+            onClick={toggleMenu}>
             <div className={`${classes.nav__menu}`}>
-              {crossMenu && <div className="border  text-3xl  absolute top-10 right-10 font-extrabold
+              {crossMenu && (
+                <div
+                  className="border  text-3xl  absolute top-10 right-10 font-extrabold
               ">
-                <RiCloseLine />
-              </div>}
+                  <RiCloseLine />
+                </div>
+              )}
               {NAV__LINK.map((item, index) => (
-                <Link aria-label={item.display} href={item.path} key={index}>
-                  {item.display}
-                </Link>
+                <div key={index} className={`${classes.mobile__menuDiv}`}>
+                  <Link aria-label={item.display} href={item.path}>
+                    <p className={`${classes.mobile__menu}`}>{icons[index]}</p>
+                  </Link>
+                  <span>{item.display}</span>
+                </div>
               ))}
 
               {data && data.user ? (
@@ -104,38 +122,36 @@ const Header = () => {
                     title="Youtube Channel"
                     id="youtube-channel"
                     className={`ri-youtube-fill cursor-pointer text-white`}
-                    rel="noreferrer"
-                  ></Link>
+                    rel="noreferrer"></Link>
                   <Link
                     href="https://github.com/piyushgarg-dev/"
                     target="_blank"
                     title="github Account"
                     id="github-account"
                     className={`ri-github-line cursor-pointer text-white`}
-                    rel="noreferrer"
-                  ></Link>
+                    rel="noreferrer"></Link>
                   <Link
                     href="https://twitter.com/piyushgarg_dev"
                     target="_blank"
                     title="Twitter Account"
                     id="twitter-account"
                     className={`ri-twitter-fill cursor-pointer text-white`}
-                    rel="noreferrer"
-                  ></Link>
+                    rel="noreferrer"></Link>
                   <Link
                     href="https://www.linkedin.com/in/piyushgarg195/"
                     target="_blank"
                     title="linkedin Account"
                     id="linkedin-account"
                     className={`ri-linkedin-fill cursor-pointer text-white`}
-                    rel="noreferrer"
-                  ></Link>
+                    rel="noreferrer"></Link>
                 </p>
               </div>
             </div>
           </div>
 
-          <span onClick={() => setCrossMenu(!crossMenu)} className={`${classes.mobile__menu}`}>
+          <span
+            onClick={() => setCrossMenu(!crossMenu)}
+            className={`${classes.mobile__menu}`}>
             <i className="ri-menu-line" onClick={toggleMenu}></i>
           </span>
         </div>
