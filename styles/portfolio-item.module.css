@@ -39,6 +39,7 @@
   font-size: 0.7rem;
   margin-right: 10px;
   border-radius: 5px;
+  margin-bottom: 5px;
 }
 
 .portfolio__keyword:hover {
@@ -61,8 +62,25 @@
   display: block;
 }
 
+
+@media only screen and (max-width: 940px) {
+  .portfolio__keyword {
+    padding: 3px 5px;
+    margin-right: 7px;
+  }
+
+  .portfolio__item p{
+    line-height: 1.5;
+  }
+
+}
+
 @media only screen and (max-width: 576px) {
   .portfolio__img img {
     width: 100% !important;
+  }
+  .portfolio__keyword {
+    padding: 5px 10px;
+    margin-right: 10px;
   }
 }
