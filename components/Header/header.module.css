@@ -29,20 +29,13 @@
 
 .nav__menu a,
 .nav__menu > * {
-  color: #808dad;
   font-weight: 500;
   font-size: 1rem;
   text-decoration: none;
   transition: 0.3s;
-  cursor: pointer;
-}
-
-.nav__menu a:hover {
-  color: var(--site-theme-color);
 }
 
 .nav__right p {
-  color: var(--site-theme-color);
   margin-left: 20px;
   position: relative;
 }
@@ -59,6 +52,10 @@
   height: 14px;
   background: #808dad;
   color: #808dad;
+}
+
+.nav__right p :hover {
+  color: var(--site-theme-color);
 }
 
 .header__shrink {
@@ -125,6 +122,12 @@
 
   .logo h1 {
     font-size: 1.3rem !important;
+  }
+
+  .mobile__menuDiv {
+    display: flex;
+    align-items: center;
+    gap: 7px;
   }
 }
 
