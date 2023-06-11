@@ -28,7 +28,7 @@ const PortfolioItem = (props) => {
           )}
 
           <div className="bg-transparent">
-            <div className="relative w-full h-[240px] lg:h-[280px] md:h-[200px]">
+            <div className="relative w-full h-[240px] lg:h-[250px] md:h-[200px]">
               <Image
                 alt={title}
                 src={img}
