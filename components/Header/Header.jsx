@@ -1,6 +1,15 @@
 import React, { useRef, useEffect, useState } from "react";
-
 import { RiCloseLine } from "react-icons/ri";
+import { CiLight } from "react-icons/ci";
+import { MdDarkMode } from "react-icons/md";
+import {
+  AiFillGithub,
+  AiFillYoutube,
+  AiFillTwitterSquare,
+  AiFillLinkedin,
+} from "react-icons/ai";
+
+import { ImYoutube } from "react-icons/im";
 import {
   AiFillHome,
   AiFillShopping,
@@ -11,9 +20,6 @@ import {
 import { BiLogInCircle } from "react-icons/bi";
 
 import { FaWhmcs } from "react-icons/fa";
-
-import { RiCloseLine, RiYoutubeFill, RiGithubFill, RiTwitterFill, RiLinkedinFill } from "react-icons/ri";
-
 
 import { Container } from "reactstrap";
 import { useSession, signOut, signIn } from "next-auth/react";
@@ -49,6 +55,9 @@ const icons = [
 
 const Header = () => {
   const [crossMenu, setCrossMenu] = useState(false);
+
+  const [dark, setDark] = useState(false);
+
   const headerRef = useRef(null);
 
   const menuRef = useRef(null);
@@ -78,14 +87,32 @@ const Header = () => {
   };
 
   return (
-    <header className={`${classes.header}`} ref={headerRef}>
+    <header
+      className={!dark ? `${classes.header}` : `${classes.header_light}`}
+      ref={headerRef}>
       <Container>
         <div className={`${classes.nav__wrapper}`}>
           {/* ======== navigation logo ======== */}
           <div style={{ cursor: "pointer" }} className={`${classes.logo}`}>
             <Link aria-label="Home Page" href="/">
-              <h1>
-                <span>P</span>iyush <span>G</span>arg
+              <h1
+                className={
+                  dark ? `${classes.heading_light}` : `${classes.heading}`
+                }>
+                <span
+                  className={
+                    dark ? `${classes.span_light}` : `${classes.span}`
+                  }>
+                  P
+                </span>
+                iyush
+                <span
+                  className={
+                    dark ? `${classes.span_light}` : `${classes.span}`
+                  }>
+                  G
+                </span>
+                arg
               </h1>
             </Link>
           </div>
@@ -95,25 +122,41 @@ const Header = () => {
             className={`${classes.navigation}`}
             ref={menuRef}
             onClick={toggleMenu}>
-            <div className={`${classes.nav__menu}`}>
-
-              {crossMenu && <div className="border text-white text-3xl  absolute top-10 right-10 font-extrabold">
+            <div
+              className={
+                !dark ? `${classes.nav__menu}` : `${classes.nav__menu_light}`
+              }>
+              {crossMenu && (
+                <div
+                  className="border  text-3xl  absolute top-10 right-10 font-extrabold
+              ">
                   <RiCloseLine />
                 </div>
               )}
+              {dark ? (
+                <div
+                  style={{ cursor: "pointer" }}
+                  onClick={() => setDark(!dark)}>
+                  <MdDarkMode />
+                </div>
+              ) : (
+                <div
+                  style={{ cursor: "pointer" }}
+                  onClick={() => setDark(!dark)}>
+                  <CiLight />
+                </div>
+              )}
               {NAV__LINK.map((item, index) => (
-
                 <div key={index} className={`${classes.mobile__menuDiv}`}>
                   <Link aria-label={item.display} href={item.path}>
                     <p className={`${classes.mobile__menu}`}>{icons[index]}</p>
                   </Link>
                   <span>{item.display}</span>
                 </div>
-
               ))}
 
               {data && data.user ? (
-                <a className="text-[#808dad] hover:text-[#01d293]" onClick={signOut} href="#">
+                <a onClick={signOut} href="#">
                   Sign Out
                 </a>
               ) : (
@@ -126,7 +169,6 @@ const Header = () => {
                 // <a onClick={signIn} href="#">
                 //   Login
                 // </a>
-
               )}
 
               <div className={`${classes.nav__right}`}>
@@ -137,48 +179,45 @@ const Header = () => {
                     target="_blank"
                     title="Youtube Channel"
                     id="youtube-channel"
-
-                    className={`ri-youtube-fill cursor-pointer text-white`}
+                    className={
+                      !dark ? "ri-youtube-fill cursor-pointer text-white" : ""
+                    }
                     rel="noreferrer">
-
-                    <RiYoutubeFill />
+                    {dark ? <AiFillYoutube /> : ""}
                   </Link>
-
                   <Link
                     href="https://github.com/piyushgarg-dev/"
                     target="_blank"
                     title="github Account"
                     id="github-account"
-
-                    className={`ri-github-line cursor-pointer text-white`}
+                    className={
+                      !dark ? "ri-github-line cursor-pointer text-white" : ""
+                    }
                     rel="noreferrer">
-
-                    <RiGithubFill />
+                    {dark ? <AiFillGithub /> : ""}
                   </Link>
-
                   <Link
                     href="https://twitter.com/piyushgarg_dev"
                     target="_blank"
                     title="Twitter Account"
                     id="twitter-account"
-
-                    className={`ri-twitter-fill cursor-pointer text-white`}
+                    className={
+                      !dark ? "ri-twitter-fill cursor-pointer text-white" : ""
+                    }
                     rel="noreferrer">
-
-                    <RiTwitterFill />
+                    {dark ? <AiFillTwitterSquare /> : ""}
                   </Link>
-
                   <Link
                     href="https://www.linkedin.com/in/piyushgarg195/"
                     target="_blank"
                     title="linkedin Account"
                     id="linkedin-account"
-                    className={`ri-linkedin-fill cursor-pointer text-white`}
-                 
+                    className={
+                      !dark ? "ri-linkedin-fill cursor-pointer text-white" : ""
+                    }
                     rel="noreferrer">
-                    <RiLinkedinFill />
+                    {dark ? <AiFillLinkedin /> : ""}
                   </Link>
-
                 </p>
               </div>
             </div>
