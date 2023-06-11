@@ -8,19 +8,9 @@ import {
   AiFillTwitterSquare,
   AiFillLinkedin,
 } from "react-icons/ai";
-
-import { ImYoutube } from "react-icons/im";
-import {
-  AiFillHome,
-  AiFillShopping,
-  AiFillExclamationCircle,
-  AiFillEdit,
-} from "react-icons/ai";
-
+import { AiFillHome, AiFillShopping, AiFillEdit } from "react-icons/ai";
 import { BiLogInCircle } from "react-icons/bi";
-
 import { FaWhmcs } from "react-icons/fa";
-
 import { Container } from "reactstrap";
 import { useSession, signOut, signIn } from "next-auth/react";
 import classes from "./header.module.css";
