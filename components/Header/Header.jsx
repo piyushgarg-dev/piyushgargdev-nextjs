@@ -12,8 +12,13 @@ import { BiLogInCircle } from "react-icons/bi";
 
 import { FaWhmcs } from "react-icons/fa";
 
-import { RiCloseLine, RiYoutubeFill, RiGithubFill, RiTwitterFill, RiLinkedinFill } from "react-icons/ri";
-
+import {
+  RiCloseLine,
+  RiYoutubeFill,
+  RiGithubFill,
+  RiTwitterFill,
+  RiLinkedinFill,
+} from "react-icons/ri";
 
 import { Container } from "reactstrap";
 import { useSession, signOut, signIn } from "next-auth/react";
@@ -96,24 +101,25 @@ const Header = () => {
             ref={menuRef}
             onClick={toggleMenu}>
             <div className={`${classes.nav__menu}`}>
-
-              {crossMenu && <div className="border text-white text-3xl  absolute top-10 right-10 font-extrabold">
+              {crossMenu && (
+                <div className="border text-white text-3xl  absolute top-10 right-10 font-extrabold">
                   <RiCloseLine />
                 </div>
               )}
               {NAV__LINK.map((item, index) => (
-
                 <div key={index} className={`${classes.mobile__menuDiv}`}>
                   <Link aria-label={item.display} href={item.path}>
                     <p className={`${classes.mobile__menu}`}>{icons[index]}</p>
                   </Link>
                   <span>{item.display}</span>
                 </div>
-
               ))}
 
               {data && data.user ? (
-                <a className="text-[#808dad] hover:text-[#01d293]" onClick={signOut} href="#">
+                <a
+                  className="text-[#808dad] hover:text-[#01d293]"
+                  onClick={signOut}
+                  href="#">
                   Sign Out
                 </a>
               ) : (
@@ -126,7 +132,6 @@ const Header = () => {
                 // <a onClick={signIn} href="#">
                 //   Login
                 // </a>
-
               )}
 
               <div className={`${classes.nav__right}`}>
@@ -137,10 +142,8 @@ const Header = () => {
                     target="_blank"
                     title="Youtube Channel"
                     id="youtube-channel"
-
                     className={`ri-youtube-fill cursor-pointer text-white`}
                     rel="noreferrer">
-
                     <RiYoutubeFill />
                   </Link>
 
@@ -149,10 +152,8 @@ const Header = () => {
                     target="_blank"
                     title="github Account"
                     id="github-account"
-
                     className={`ri-github-line cursor-pointer text-white`}
                     rel="noreferrer">
-
                     <RiGithubFill />
                   </Link>
 
@@ -161,10 +162,8 @@ const Header = () => {
                     target="_blank"
                     title="Twitter Account"
                     id="twitter-account"
-
                     className={`ri-twitter-fill cursor-pointer text-white`}
                     rel="noreferrer">
-
                     <RiTwitterFill />
                   </Link>
 
@@ -174,11 +173,9 @@ const Header = () => {
                     title="linkedin Account"
                     id="linkedin-account"
                     className={`ri-linkedin-fill cursor-pointer text-white`}
-                 
                     rel="noreferrer">
                     <RiLinkedinFill />
                   </Link>
-
                 </p>
               </div>
             </div>
