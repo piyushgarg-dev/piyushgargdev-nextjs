@@ -12,7 +12,7 @@ export default function Gears() {
       </Head>
       <Container className="mt-5">
         <SectionSubtitle subtitle="Gears" />
-        <Row>
+        <Row className="mt-8">
           {gears.map((item) => (
             <Col
               style={{ margin: "10px 0px" }}

@@ -1,9 +1,7 @@
-
-import React from 'react';
-import classes from '../../styles/portfolio-item.module.css';
-import Image from 'next/image';
-import Link from 'next/link';
-
+import React from "react";
+import classes from "../../styles/portfolio-item.module.css";
+import Image from "next/image";
+import Link from "next/link";
 
 const PortfolioItem = (props) => {
   const {
@@ -17,38 +15,39 @@ const PortfolioItem = (props) => {
   return (
     <div className={`${classes.portfolio__item}`}>
       <a
-        target='_blank'
-        style={{ textDecoration: 'none' }}
+        target="_blank"
+        style={{ textDecoration: "none" }}
         href={liveUrl}
-        rel='noreferrer'
+        rel="noreferrer"
       >
         <>
           {ribbonText && (
-            <div style={{ zIndex: 99 }} className='ribbon ribbon-top-left'>
+            <div style={{ zIndex: 99 }} className="ribbon ribbon-top-left">
               <span>{ribbonText}</span>
             </div>
           )}
 
-          <div className='bg-transparent'>
-            <div className={`${classes.portfolio__img}`}>
-              <Image alt={title} src={img} width={380} height={1} />
-
+          <div className="bg-transparent">
+            <div className="relative w-full h-[320px] sm:h-[320px] md:h-[200px] lg:h-[340px]">
+              <Image
+                alt={title}
+                src={img}
+                fill
+                className=" rounded-xl"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
             </div>
 
-            <h3 style={{ background: "transparent" }}>{title}</h3>
-            <p style={{ background: "transparent", }}>{subtitle}</p>
-            
-            <div className=" w-[100%] mt-5 lg:mt-0"> </div>
+            <h3 className="my-2">{title}</h3>
+            <p className="md:line-clamp-4 lg:line-clamp-none">{subtitle}</p>
             <div
               style={{
-                position: "absolute",
-                background: "transparent",
-                bottom: "20px",
                 display: "flex",
                 flexDirection: "row",
                 flexWrap: "wrap",
-              }}>
-
+                marginTop: "8px",
+              }}
+            >
               {keyword.map((item, index) => (
                 <span
                   className={`${classes.portfolio__keyword} my-1`}
