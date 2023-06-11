@@ -1,13 +1,17 @@
 .portfolio__item {
-  background: #171f38;
+  /* background: #171f38; */
+  background: #000000;
   padding: 10px 15px 10px 15px;
   padding-top: 20px;
-  border-radius: 10px;
+  border: 1px solid rgb(34 34 34);
   margin-bottom: 8px;
   min-height: 100%;
   position: relative;
+  
 }
-
+.h4{
+  color:#fff;
+}
 .portfolio__item div {
   background: transparent;
 }
@@ -35,7 +39,8 @@
 .portfolio__keyword {
   padding: 5px 10px;
   color: #fff;
-  background: #808dad68;
+  /* background: #808dad68; */
+  background: #9aa1b426;
   font-size: 0.7rem;
   margin-right: 10px;
   border-radius: 5px;
@@ -54,6 +59,8 @@
 
 .portfolio__item:hover {
   cursor: pointer;
+  box-shadow: 22px 0px 0px rgb(0, 0, 0) inset, 0px -1px 20px 5px rgba(0, 0, 0, 0.699);
+  transition: 1.0s;
 }
 
 .portfolio__item:hover .portfolio__live {
@@ -62,7 +69,5 @@
 }
 
 @media only screen and (max-width: 576px) {
-  .portfolio__img img {
-    width: 100% !important;
-  }
+  
 }

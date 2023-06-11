@@ -4,7 +4,8 @@
 }
 
 .nav__menu a {
-  color: #808dad;
+  /* background: #808dad; */
+  background: #ffffff;
   font-weight: 500;
   font-size: 1rem;
   text-decoration: none;

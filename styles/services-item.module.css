@@ -1,5 +1,6 @@
 .service__item {
-  background: #171f38;
+  /* background: #171f38; */
+  background: #000000;
   padding: 30px;
   margin-bottom: 30px;
   display: flex;
@@ -16,11 +17,13 @@
 }
 
 .service__item:hover i {
-  color: #171f38;
+  /* background: #171f38; */
+  background: #000000;
 }
 
 .service__item:hover h5 {
-  color: #171f38;
+  /* background: #171f38; */
+  background: #000000;
 }
 
 .service__item span,

@@ -6,15 +6,31 @@
   --site-theme-color: #01d293;
 }
 
+/* giving same background color as hero component */
+#blogs{
+  background-image: linear-gradient(rgb(158, 158, 158), black);
+  border-top: 1px solid rgb(84, 84, 84);
+  border-top-right-radius: 300px;
+
+  box-shadow: inset 3px 8px 20px 0px #000;
+}
+
+.mt-5{
+  margin-bottom: 7vh;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: "Quicksand", sans-serif !important;
   scroll-behavior: smooth;
-  background: #0e1630;
-  background-color: #0e1630 !important;
+  /* background: #0e1630; */
+  background: #000000;
+  /* background-color: #0e1630 !important; */
+  background-color: #000000 !important;
 }
+
 
 .border-cool {
   border: "1px solid";
@@ -23,8 +39,7 @@ body {
 }
 
 a {
-  color: unset;
-  text-decoration: none;
+  text-decoration: "#fff";
 }
 
 * {
@@ -32,8 +47,10 @@ a {
 }
 
 p {
-  color: #808dad;
+  /* color: #808dad; */
+  color: #929191;
   line-height: 30px;
+  
 }
 h1,
 h2,
@@ -41,25 +58,41 @@ h3,
 h4,
 h5,
 h6 {
-  color: #fff;
+  color: #ffffff;
 }
 
 h2 {
   font-size: 2.5rem !important;
 }
 
-section {
-  padding-top: 150px;
+section#courses {
+  background: linear-gradient(136deg, rgb(0, 0, 0) 18%, rgb(158, 158, 158) 44%, rgb(0, 0, 0) 83%);
+  
+  border-top: 1px solid rgb(44, 44, 44);
+  border-top-right-radius: 300px;
+  box-shadow: inset 3px 8px 20px 0px #000;
+
+  border-bottom: 1px solid rgb(44, 44, 44);
+  border-bottom-left-radius: 300px;
+  box-shadow: inset 3px 8px 20px 0px #000;
+  
+  margin-bottom: 15vh;
+  padding-bottom: 15vh;
+  margin-top: 15vh;
+  
 }
+
 
 footer {
   padding-bottom: 10px;
   padding-top: 20px;
-  border-top: 1px solid #171f38;
+  /* border-top: 1px solid #171f38; */
+  border-top: 1px solid #000000;
 }
 
 .primary__btn {
-  background: #171f38 !important;
+  /* background: #171f38 !important; */
+  background: #000000 !important;
   padding: 7px 25px !important;
   border: 1px solid var(--site-theme-color);
   border-radius: 5px;
@@ -266,10 +299,42 @@ footer {
 @media only screen and (max-width: 768px) {
   section {
     padding-top: 110px;
+    text-align: center !important;
   }
 
   footer {
     padding-top: 0;
     border: none;
+  }
+}
+
+@media only screen and (max-width: 576px){
+  p{
+    padding:20px
+    
+  }
+  .mt-5{
+    margin-top: 0px;
+    font-size: small;
+    margin: 20px;
+  }
+  .block{
+    font-size: 14px;
+  }
+
+  .py-4 {
+    padding-top: 1.0rem!important;
+    padding-bottom: 1.0rem!important;
+  }
+
+  .px-8 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media only screen and (max-width:570px){
+  p{
+    font-size: 0.8rem !important;
   }
 }

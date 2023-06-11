@@ -11,6 +11,11 @@ const Hero = () => {
     <section className={`${classes.hero}`}>
       <Container id="hero-section">
         <Row>
+        <Col lg="6" md="6">
+            <div className={`${classes.hero__img} text-end`} id="hello">
+              <Image alt="Piyush Garg" src={heroImg} width="450" height="450" />
+            </div>
+          </Col>
           <Col lg="6" md="6">
             <div className={`${classes.hero__content}`}>
               <SectionSubtitle subtitle="Hello" />
@@ -35,11 +40,6 @@ const Hero = () => {
                   <span className="block">Join Discord Server 🎉</span>
                 </Link>
               </div>
-            </div>
-          </Col>
-          <Col lg="6" md="6">
-            <div className={`${classes.hero__img} text-end`}>
-              <Image alt="Piyush Garg" src={heroImg} width="450" height="450" />
             </div>
           </Col>
         </Row>

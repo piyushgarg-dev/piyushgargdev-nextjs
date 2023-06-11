@@ -3,3 +3,7 @@
     secondary-color: var(--site-theme-color)
 
 */
+html
+  {
+    overflow:scroll;    
+  }

@@ -32,7 +32,8 @@
   margin-top: 30px;
   align-items: center;
   column-gap: 1rem;
-  color: #808dad !important;
+  /* color: #808dad !important; */
+  color: #ffffff !important;
   font-size: 1.3rem !important;
   cursor: pointer;
 }

@@ -1,8 +1,19 @@
 .hero {
-  padding-top: 60px !important;
+  /* padding-top: 6vh !important; */
+  height: 94vh;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  border-bottom:1px solid rgb(44, 44, 44);
+  border-bottom-left-radius: 300px;
+  background-image: linear-gradient(black 30%, rgba(158, 158, 158, 0.773) 80%);
+  box-shadow: inset -9px -12px 20px 0px #000;
+  margin-bottom: 10vh;
 }
+
 .hero__content h5 {
-  color: #808dad;
+  /* color: #808dad; */
+  color: #a9aaab;
   font-weight: 400;
 }
 
@@ -32,7 +43,8 @@
   left: 22%;
   transform: translateY(-50%);
   border-radius: 5px;
-  background: #808dad26;
+  /* background: #808dad26; */
+  background: #686c7526;
   z-index: 10;
 }
 
@@ -57,7 +69,8 @@
   right: -5%;
   padding: 10px 20px;
   border-radius: 5px;
-  background: #808dad26;
+  /* background: #808dad26; */
+  background: #9aa1b426;
   z-index: 10;
 }
 
@@ -76,11 +89,17 @@
 .hero__experience span i {
   padding: 5px;
   color: var(--site-theme-color);
-  background: #808dad70;
+  /* background: #808dad70; */
+  background: #000;
   border-radius: 5px;
 }
 
+
 @media only screen and (max-width: 992px) {
+  .hero{
+    height: 94vh;
+    margin-bottom:20vh;
+  }
   .hero__content h2 {
     font-size: 1.5rem !important;
   }
@@ -90,8 +109,9 @@
   }
 
   .hero__img img {
-    width: 250px !important;
-    height: 250px !important;
+    width: 350px !important;
+    height: 350px !important;
+    margin-top: 50px;
   }
 
   .hero__content {
@@ -128,9 +148,26 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .hero__img {
-    text-align: center !important;
-    margin-top: 50px;
+  .hero{
+    padding-top: 40px;
+    height: 94vh;
+    margin-bottom:20vh;
+    border-bottom-left-radius: 200px;
+  }
+  .hero__img{
+    justify-content: center;
+    
+
+  }
+
+  #hello{
+    display:none;
+  }
+
+  .hero__img img{
+    width: 200px !important;
+    height: 200px !important;
+    margin-top: 0;
   }
 
   .hero__skills {
@@ -143,6 +180,14 @@
 }
 
 @media only screen and (max-width: 576px) {
+  #hello{
+    display: block;
+  }
+
+  .hero {
+    height: 94vh;
+  }
+
   .hero__skills {
     display: none;
   }

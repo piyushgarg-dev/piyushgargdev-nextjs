@@ -3,7 +3,7 @@
   width: 100%;
   border: none;
   outline: none;
-  background: #171f38;
+  background: #000000;
   color: #fff;
   padding: 15px 20px;
   border-radius: 5px;
@@ -13,7 +13,8 @@
 .form__group input::placeholder,
 .form__group textarea::placeholder {
   font-size: 0.8rem;
-  color: #808dad;
+  /* color: #808dad; */
+  color: #a6a7aa;
 }
 
 .form button {

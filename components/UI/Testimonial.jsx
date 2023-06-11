@@ -5,7 +5,7 @@ import TestimonialItem from "./TestimonialItem";
 import SectionSubtitle from "./SectionSubtitle";
 
 const Testimonial = ({ feedbacks = [] }) => {
-  const settings = {
+  var settings = {
     dots: false,
     autoplay: true,
     speed: 500,
@@ -17,7 +17,7 @@ const Testimonial = ({ feedbacks = [] }) => {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 100,
+        breakpoint: 992,
         settings: {
           slidesToShow: 2,
         },

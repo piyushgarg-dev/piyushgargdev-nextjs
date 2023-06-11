@@ -43,7 +43,7 @@ const Contact = () => {
                 <span>
                   <i className="ri-map-pin-line"></i>
                 </span>
-                <p>Planet Earth 🌍</p>
+                <p style={{color:"#fff"}}>Planet Earth 🌍</p>
               </li>
               <li className={`${classes.info__item}`}>
                 <span>
@@ -52,7 +52,7 @@ const Contact = () => {
                   </a>
                 </span>
                 <p>
-                  <a href="mailto:piyushgarg.dev@gmail.com">piyushgarg.dev@gmail.com</a>
+                  <a href="mailto:piyushgarg.dev@gmail.com" style={{color:"#fff"}}>piyushgarg.dev@gmail.com</a>
                 </p>
               </li>
             </ul>
