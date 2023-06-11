@@ -28,13 +28,12 @@
 }
 
 .nav__menu a,
-.nav__menu>* {
+.nav__menu > * {
   font-weight: 500;
   font-size: 1rem;
   text-decoration: none;
   transition: 0.3s;
 }
-
 
 .nav__right p {
   margin-left: 20px;
@@ -53,6 +52,10 @@
   height: 14px;
   background: #808dad;
   color: #808dad;
+}
+
+.nav__right p :hover {
+  color: var(--site-theme-color);
 }
 
 .header__shrink {
