@@ -28,12 +28,12 @@ const PortfolioItem = (props) => {
           )}
 
           <div className="bg-transparent">
-            <div className="relative w-full h-[320px] sm:h-[320px] md:h-[200px] lg:h-[340px]">
+            <div className="relative w-full h-[240px] lg:h-[280px] md:h-[200px]">
               <Image
                 alt={title}
                 src={img}
                 fill
-                className=" rounded-xl"
+                className="rounded-xl"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
