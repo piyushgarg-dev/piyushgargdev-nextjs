@@ -2,6 +2,12 @@ import React, { useRef, useEffect, useState } from "react";
 import { RiCloseLine } from "react-icons/ri";
 import { CiLight } from "react-icons/ci";
 import { MdDarkMode } from "react-icons/md";
+import { BiLogInCircle } from "react-icons/bi";
+import { FaWhmcs } from "react-icons/fa";
+import { Container } from "reactstrap";
+import { useSession, signOut, signIn } from "next-auth/react";
+import classes from "./header.module.css";
+import Link from "next/link";
 import {
   AiFillGithub,
   AiFillYoutube,
@@ -36,11 +42,11 @@ const NAV__LINK = [
 ];
 
 const icons = [
-  <AiFillHome />,
-  <AiFillShopping />,
-  <FaWhmcs />,
-  <AiFillEdit />,
-  <BiLogInCircle />,
+  <AiFillHome key="home" />,
+  <AiFillShopping key="shopping" />,
+  <FaWhmcs key="whmcs" />,
+  <AiFillEdit key="edit" />,
+  <BiLogInCircle key="login" />,
 ];
 
 const Header = () => {
@@ -154,7 +160,7 @@ const Header = () => {
                   <Link href="#">
                     <p className={`${classes.mobile__menu}`}>{icons[4]}</p>
                   </Link>
-                  <span>Login</span>
+                  <span className=" text-[#808dad]">Login</span>
                 </div>
                 // <a onClick={signIn} href="#">
                 //   Login
@@ -162,7 +168,9 @@ const Header = () => {
               )}
 
               <div className={`${classes.nav__right}`}>
-                <p className={`d-flex align-items-center gap-3 mb-0`}>
+                <div
+                  className={`flex flex-row items-center gap-3 border-l-2 pl-4 border-l-slate-500 `}
+                >
                   <Link
                     aria-label="Youtube Channel"
                     href="https://youtube.com/@piyushgargdev"
@@ -174,6 +182,7 @@ const Header = () => {
                     }
                     rel="noreferrer">
                     {dark ? <AiFillYoutube /> : ""}
+
                   </Link>
                   <Link
                     href="https://github.com/piyushgarg-dev/"
@@ -185,23 +194,27 @@ const Header = () => {
                     }
                     rel="noreferrer">
                     {dark ? <AiFillGithub /> : ""}
+
                   </Link>
                   <Link
                     href="https://twitter.com/piyushgarg_dev"
                     target="_blank"
                     title="Twitter Account"
                     id="twitter-account"
+
                     className={
                       !dark ? "ri-twitter-fill cursor-pointer text-white" : ""
                     }
                     rel="noreferrer">
                     {dark ? <AiFillTwitterSquare /> : ""}
+
                   </Link>
                   <Link
                     href="https://www.linkedin.com/in/piyushgarg195/"
                     target="_blank"
                     title="linkedin Account"
                     id="linkedin-account"
+
                     className={
                       !dark ? "ri-linkedin-fill cursor-pointer text-white" : ""
                     }
@@ -209,13 +222,15 @@ const Header = () => {
                     {dark ? <AiFillLinkedin /> : ""}
                   </Link>
                 </p>
+
               </div>
             </div>
           </div>
 
           <span
             onClick={() => setCrossMenu(!crossMenu)}
-            className={`${classes.mobile__menu}`}>
+            className={`${classes.mobile__menu}`}
+          >
             <i className="ri-menu-line" onClick={toggleMenu}></i>
           </span>
         </div>

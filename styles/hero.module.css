@@ -131,6 +131,7 @@
   .hero__img {
     text-align: center !important;
     margin-top: 50px;
+    justify-content: center;
   }
 
   .hero__skills {

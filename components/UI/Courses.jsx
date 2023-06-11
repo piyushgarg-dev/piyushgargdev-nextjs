@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Alert } from "reactstrap";
 import SectionSubtitle from "./SectionSubtitle";
-import classes from "../../styles/portfolio.module.css";
+// import classes from "../../styles/portfolio.module.css";
 import PortfolioItem from "./PortfolioItem";
+
 
 const Courses = ({ courses = [] }) => {
   return (
@@ -33,5 +34,6 @@ const Courses = ({ courses = [] }) => {
     </section>
   );
 };
+
 
 export default Courses;

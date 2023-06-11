@@ -4,6 +4,7 @@ import SectionSubtitle from "./SectionSubtitle";
 import classes from "../../styles/portfolio.module.css";
 import PortfolioItem from "./PortfolioItem";
 
+
 const Blog = ({ blogs, blogDomain }) => {
   const [filter, setFilter] = useState("Mobile App");
   const [data, setData] = useState();
@@ -23,6 +24,9 @@ const Blog = ({ blogs, blogDomain }) => {
         <Row>
           {blogs.map((blogItem)  => (
             <Col
+
+              className="hover:scale-105 hover:ease-out duration-300"
+              style={{ margin: "14px 0px" }}
               style={{ margin: "10px 0px" }}
               key={blogItem._id}
               lg="4"

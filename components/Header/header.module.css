@@ -86,6 +86,10 @@
   color: #808dad;
 }
 
+.nav__right p :hover {
+  color: var(--site-theme-color);
+}
+
 .header__shrink {
   position: sticky;
   top: 0;
