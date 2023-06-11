@@ -23,7 +23,11 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
       <Container>
         <Row>
           <Col lg="3" md="12" sm="12">
-            <Slider {...settings} style={{ cursor:"pointer"}}>
+            <Slider
+              {...settings}
+              // style={{ cursor: "pointer", marginBottom: "10px" }}
+              className=" cursor-pointer mb-10 md:mb:0"
+            >
               {youtubeVideos
                 ?.filter((video) => video.id.videoId)
                 ?.map((video) => (
@@ -44,7 +48,6 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
                       sizes="100vw"
                       style={{
                         borderRadius: "20px",
-
                         marginBottom: "10px",
                         width: "100%",
                         height: "auto",
@@ -52,12 +55,14 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
                       alt={video.snippet.title}
                     />
                     <p>{video.snippet.title}</p>
-                    <p>{new Date(video.snippet.publishTime).toDateString()}</p>
+                    <p className="p-2.5 bg-[#171f38] w-fit text-xs text-white mt-2 rounded-md">
+                      {new Date(video.snippet.publishTime).toDateString()}
+                    </p>
                   </div>
                 ))}
             </Slider>
           </Col>
-          <Col lg="3" md="3">
+          <Col lg="3" md="6">
             <ServicesItem
               title={`${(
                 Number(youtubeStats?.statistics?.subscriberCount) / 1000
@@ -72,14 +77,13 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
 
           <Col lg="6" md="6" className={`${classes.service__title}`}>
             <SectionSubtitle subtitle="Youtube" />
-
             <h3 className="mb-0 mt-4">Popular</h3>
-            <h3 className="mb-4">Uploads from My Youtube Channel</h3>
+            <h3 className="mb-2">Uploads from My Youtube Channel</h3>
             <p>
               I would really appreciate it if you could check it out and maybe
               even hit the subscribe button if you enjoy the content.
             </p>
-            <p>Thanks in advance!</p>
+            <p className="mb-3">Thanks in advance!</p>
             <a
               href="https://www.youtube.com/@piyushgargdev?sub_confirmation=1"
               target="_blank"
