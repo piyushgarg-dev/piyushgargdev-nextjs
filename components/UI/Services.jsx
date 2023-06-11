@@ -23,7 +23,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
       <Container>
         <Row>
           <Col lg="3" md="12" sm="12">
-            <Slider {...settings} style={{ cursor:"pointer"}}>
+            <Slider {...settings} style={{ cursor: "pointer" }}>
               {youtubeVideos
                 ?.filter((video) => video.id.videoId)
                 ?.map((video) => (
