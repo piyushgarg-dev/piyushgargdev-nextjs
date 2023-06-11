@@ -45,7 +45,7 @@ const Terminal = () => {
           ),
       },
     };
-  }, [isLoggedIn]);
+  }, [data?.user?.email, data?.user?.name, isLoggedIn]);
 
   return (
     <TerminalContextProvider>
