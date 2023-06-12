@@ -162,7 +162,7 @@ const Header = () => {
                     target="_blank"
                     title="Youtube Channel"
                     id="youtube-channel"
-                    className={`cursor-pointer text-white`}
+                    className={`cursor-pointer  text-[#ffffff] hover:text-[#01d293]`}
                     rel="noreferrer"
                   >
                     <RiYoutubeFill />
@@ -173,7 +173,7 @@ const Header = () => {
                     target="_blank"
                     title="github Account"
                     id="github-account"
-                    className={`cursor-pointer text-white`}
+                    className={`cursor-pointer text-[#ffffff] hover:text-[#01d293]`}
                     rel="noreferrer"
                   >
                     <RiGithubFill />
@@ -184,7 +184,7 @@ const Header = () => {
                     target="_blank"
                     title="Twitter Account"
                     id="twitter-account"
-                    className={`cursor-pointer text-white`}
+                    className={`cursor-pointer text-[#ffffff] hover:text-[#01d293]`}
                     rel="noreferrer"
                   >
                     <RiTwitterFill />
@@ -195,7 +195,7 @@ const Header = () => {
                     target="_blank"
                     title="linkedin Account"
                     id="linkedin-account"
-                    className={`cursor-pointer text-white`}
+                    className={`cursor-pointer text-[#ffffff] hover:text-[#01d293]`}
                     rel="noreferrer"
                   >
                     <RiLinkedinFill />
