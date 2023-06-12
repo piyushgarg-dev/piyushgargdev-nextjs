@@ -1,4 +1,4 @@
-name: Bug Report V2
+name: Bug Report
 description: File a bug report
 title: "[Bug]: "
 labels: ["bug"]
@@ -40,6 +40,4 @@ body:
       label: Please checkmark the following checklist
       options:
         - label: I make sure that similar issue is not opened
-          required: true
-        - label: I agree to follow this project's [Code of Conduct](link/to/coc)
           required: true
