@@ -33,9 +33,9 @@ const Contact = () => {
   return (
     <section id="contact" className={`${classes.contact}`}>
       <Container>
-        <Row className="flex justify-between items-center flex-col md:flex-row ">
+        <Row className="flex justify-between flex-col md:flex-row ">
           <Col lg="4" md="6">
-            <SectionSubtitle subtitle="Contact me" />
+            
             <h3 className="mt-4 mb-4 text-2xl">Connect with me</h3>
 
             <ul className={`${classes.contact__info__list}`}>
@@ -100,6 +100,9 @@ const Contact = () => {
                 <p>Message Sent!</p>
               </div>
             ) : (
+              <>
+              <div className="mb-8"><SectionSubtitle subtitle="Contact me" /></div>
+              
               <form className="flex flex-col space-y-4" onSubmit={handleSubmit}>
                 <input
                   className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
@@ -132,6 +135,7 @@ const Contact = () => {
                   Send Message
                 </button>
               </form>
+              </>
             )}
           </Col>
         </Row>
