@@ -30,8 +30,8 @@ const PortfolioItem = (props) => {
           )}
 
           <div className='bg-transparent'>
-            <div className={`${classes.portfolio__img}`} >
-              <Image alt={title} src={img} width={380} height={1} style={{maxHeight: "380px"}}/>
+            <div className={`${classes.portfolio__img}`}>
+              <Image alt={title} src={img} width={380} height={1} style={{maxHeight: "380px", overflow:"auto"}}/>
 
             </div>
 
