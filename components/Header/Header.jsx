@@ -121,23 +121,35 @@ const Header = () => {
               ))}
 
               {data && data.user ? (
-                <a
-                  className="text-[#808dad] hover:text-[#01d293]"
+                <div
                   onClick={signOut}
-                  href="#"
+                  className={`${classes.mobile__menuDiv} cursor-pointer`}
                 >
-                  Sign Out
-                </a>
-              ) : (
-                <div className={`${classes.mobile__menuDiv}`}>
-                  <Link href="#">
+                  <Link href={"#"}>
                     <p className={`${classes.mobile__menu}`}>{icons[4]}</p>
                   </Link>
-                  <span className=" text-[#808dad]">Login</span>
+
+                  <Link href={"/#"}>
+                    <span className=" text-[#808dad] hover:text-green-400">
+                      Sign Out
+                    </span>
+                  </Link>
                 </div>
-                // <a onClick={signIn} href="#">
-                //   Login
-                // </a>
+              ) : (
+                <div
+                  onClick={signIn}
+                  className={`${classes.mobile__menuDiv} cursor-pointer`}
+                >
+                  <Link href={"#"}>
+                    <p className={`${classes.mobile__menu}`}>{icons[4]}</p>
+                  </Link>
+
+                  <Link href={"#"}>
+                    <span className=" text-[#808dad] hover:text-green-400">
+                      Login
+                    </span>
+                  </Link>
+                </div>
               )}
 
               <div className={`${classes.nav__right}`}>
