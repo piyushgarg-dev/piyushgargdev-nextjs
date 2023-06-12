@@ -166,7 +166,7 @@ const Header = () => {
                     target="_blank"
                     title="Youtube Channel"
                     id="youtube-channel"
-                    className={`cursor-pointer  text-[#ffffff] hover:text-[#01d293]`}
+                    className={`cursor-pointer  text-[#ffffff] hover:text-[--site-theme-color]`}
                     rel="noreferrer"
                   >
                     <RiYoutubeFill />
@@ -175,9 +175,9 @@ const Header = () => {
                   <Link
                     href="https://github.com/piyushgarg-dev/"
                     target="_blank"
-                    title="github Account"
+                    title="Github Account"
                     id="github-account"
-                    className={`cursor-pointer text-[#ffffff] hover:text-[#01d293]`}
+                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color]`}
                     rel="noreferrer"
                   >
                     <RiGithubFill />
@@ -188,7 +188,7 @@ const Header = () => {
                     target="_blank"
                     title="Twitter Account"
                     id="twitter-account"
-                    className={`cursor-pointer text-[#ffffff] hover:text-[#01d293]`}
+                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color]`}
                     rel="noreferrer"
                   >
                     <RiTwitterFill />
@@ -197,9 +197,9 @@ const Header = () => {
                   <Link
                     href="https://www.linkedin.com/in/piyushgarg195/"
                     target="_blank"
-                    title="linkedin Account"
+                    title="LinkedIn Account"
                     id="linkedin-account"
-                    className={`cursor-pointer text-[#ffffff] hover:text-[#01d293]`}
+                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color]`}
                     rel="noreferrer"
                   >
                     <RiLinkedinFill />
