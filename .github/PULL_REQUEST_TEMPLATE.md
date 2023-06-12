@@ -31,7 +31,7 @@ Fixes #(issue)
 
 <!-- Please remove all the irrelevant bullets to your PR -->
 
-- I haven't read the [contributing guide](https://github.com/calcom/cal.com/blob/main/CONTRIBUTING.md)
+- I haven't read the [contributing guide](https://github.com/piyushgarg-dev/piyushgargdev-nextjs/blob/main/CONTRIBUTING.MD)
 - My code doesn't follow the style guidelines of this project
 - I haven't commented my code, particularly in hard-to-understand areas
 - I haven't checked if my PR needs changes to the documentation
