@@ -8,6 +8,10 @@
   margin-bottom: 30px;
 }
 
+.testimonial__client_Avatar {
+  width: 50px;
+  height: 50px;
+}
 .testimonial__client h6 {
   font-weight: 400;
 }
