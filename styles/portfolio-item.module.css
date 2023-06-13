@@ -36,7 +36,7 @@
   padding: 5px 10px;
   color: #fff;
   background: #808dad68;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   margin-right: 10px;
   border-radius: 5px;
   margin-bottom: 5px;
@@ -66,7 +66,7 @@
 @media only screen and (max-width: 940px) {
   .portfolio__keyword {
     padding: 3px 5px;
-    margin-right: 7px;
+    margin-right: 3px;
   }
 
   .portfolio__item p{
@@ -80,7 +80,7 @@
     width: 100% !important;
   }
   .portfolio__keyword {
-    padding: 5px 10px;
-    margin-right: 10px;
+    padding: 3px 5px;
+    margin-right: 5px;
   }
 }
