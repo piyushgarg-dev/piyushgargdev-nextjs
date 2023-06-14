@@ -2,6 +2,11 @@
   padding-bottom: 60px;
 }
 
+.lightModecontact {
+  background-color: var(--bg-lightMode-color);
+  padding-bottom: 60px;
+}
+
 .contact__info__list {
   list-style: none;
   padding-left: 0;
@@ -33,6 +38,15 @@
   align-items: center;
   column-gap: 1rem;
   color: #808dad !important;
+  font-size: 1.3rem !important;
+}
+
+.lightModesocial__links {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  column-gap: 1rem;
+  color: black !important;
   font-size: 1.3rem !important;
 }
 

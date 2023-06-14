@@ -4,6 +4,8 @@
 
 :root {
   --site-theme-color: #01d293;
+  --bg-lightMode-color: #fefefe;
+  --card-lightMode-color:#00000019;
 }
 
 html,
