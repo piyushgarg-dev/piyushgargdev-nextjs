@@ -52,7 +52,8 @@ const Contact = () => {
                   </a>
                 </span>
                 <p>
-                  <a href="mailto:piyushgarg.dev@gmail.com">
+                  <a href="mailto:piyushgarg.dev@gmail.com"
+                     className="hover:text-[#01d293] duration-300" >
                     piyushgarg.dev@gmail.com
                   </a>
                 </p>
