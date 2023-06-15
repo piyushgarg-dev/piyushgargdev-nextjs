@@ -35,8 +35,8 @@ const PortfolioItem = (props) => {
 
             </div>
 
-            <h3 style={{ background: "transparent" }}>{title}</h3>
-            <p style={{ background: "transparent", }}>{subtitle}</p>
+            <h3 style={{ background: "transparent", color : "#fff" }}>{title}</h3>
+            <p style={{ background: "transparent", color : "#fff" }}>{subtitle}</p>
             
             <div className=" w-[100%] mt-5 lg:mt-0"> </div>
             <div

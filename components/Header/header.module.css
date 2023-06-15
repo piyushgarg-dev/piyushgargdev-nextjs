@@ -108,8 +108,14 @@
     justify-content: center;
   }
 
-  .nav__right {
+  .nav__right .nav-items{
     display: none;
+  }
+
+  .nav__right .theme-icon{
+    display: block;
+    margin-top: 1rem;
+    font-size: 1.3rem;
   }
 
   .mobile__menu {

@@ -21,26 +21,28 @@ import {
   AiFillEdit,
 } from "react-icons/ai";
 
+import ThemeSwitch from "../Theme/ThemeSwitch";
+
 const NAV__LINK = [
   {
     path: "/",
     display: "Home",
-    openInNewPage:false,
+    openInNewPage: false,
   },
   {
     path: "/#courses",
     display: "Courses",
-    openInNewPage:false,
+    openInNewPage: false,
   },
   {
     path: "/gears",
     display: "My Gears",
-    openInNewPage:false,
+    openInNewPage: false,
   },
   {
     path: "https://blog.piyushgarg.dev",
     display: "Blogs",
-    openInNewPage:true,
+    openInNewPage: true,
   },
 ];
 
@@ -90,7 +92,8 @@ const Header = () => {
           <div style={{ cursor: "pointer" }} className={`${classes.logo}`}>
             <Link aria-label="Home Page" href="/">
               <h1>
-                <span>P</span>iyush <span>G</span>arg
+                <span>P</span><span className="text-white">iyush</span>{" "}
+                <span>G</span><span className="text-white">arg</span>
               </h1>
             </Link>
           </div>
@@ -112,11 +115,19 @@ const Header = () => {
                   key={index}
                   className={`${classes.mobile__menuDiv} cursor-pointer`}
                 >
-                  <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}`}>
+                  <Link
+                    aria-label={item.display}
+                    href={item.path}
+                    target={`${item.openInNewPage ? "_blank" : "_self"}`}
+                  >
                     <p className={`${classes.mobile__menu}`}>{icons[index]}</p>
                   </Link>
 
-                  <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}`}>
+                  <Link
+                    aria-label={item.display}
+                    href={item.path}
+                    target={`${item.openInNewPage ? "_blank" : "_self"}`}
+                  >
                     <span className=" text-[#808dad] hover:text-green-400">
                       {item.display}
                     </span>
@@ -158,52 +169,59 @@ const Header = () => {
 
               <div className={`${classes.nav__right}`}>
                 <div
-                  className={`flex flex-row items-center gap-3 border-l-2 pl-4 border-l-slate-500 `}
+                  className={`flex flex-row items-center gap-4  pl-4 border-l-slate-500 `}
                 >
-                  <Link
-                    aria-label="Youtube Channel"
-                    href="https://youtube.com/@piyushgargdev"
-                    target="_blank"
-                    title="Youtube Channel"
-                    id="youtube-channel"
-                    className={`cursor-pointer  text-[#ffffff] hover:text-[--site-theme-color]`}
-                    rel="noreferrer"
+                  <div
+                    className={`${classes["nav-items"]} border-l-2 flex flex-row items-center gap-3 pl-4 border-l-slate-500 `}
                   >
-                    <RiYoutubeFill />
-                  </Link>
+                    <Link
+                      aria-label="Youtube Channel"
+                      href="https://youtube.com/@piyushgargdev"
+                      target="_blank"
+                      title="Youtube Channel"
+                      id="youtube-channel"
+                      className={`cursor-pointer  text-[#ffffff] hover:text-[--site-theme-color]`}
+                      rel="noreferrer"
+                    >
+                      <RiYoutubeFill />
+                    </Link>
 
-                  <Link
-                    href="https://github.com/piyushgarg-dev/"
-                    target="_blank"
-                    title="Github Account"
-                    id="github-account"
-                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color]`}
-                    rel="noreferrer"
-                  >
-                    <RiGithubFill />
-                  </Link>
+                    <Link
+                      href="https://github.com/piyushgarg-dev/"
+                      target="_blank"
+                      title="Github Account"
+                      id="github-account"
+                      className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color]`}
+                      rel="noreferrer"
+                    >
+                      <RiGithubFill />
+                    </Link>
 
-                  <Link
-                    href="https://twitter.com/piyushgarg_dev"
-                    target="_blank"
-                    title="Twitter Account"
-                    id="twitter-account"
-                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color]`}
-                    rel="noreferrer"
-                  >
-                    <RiTwitterFill />
-                  </Link>
+                    <Link
+                      href="https://twitter.com/piyushgarg_dev"
+                      target="_blank"
+                      title="Twitter Account"
+                      id="twitter-account"
+                      className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color]`}
+                      rel="noreferrer"
+                    >
+                      <RiTwitterFill />
+                    </Link>
 
-                  <Link
-                    href="https://www.linkedin.com/in/piyushgarg195/"
-                    target="_blank"
-                    title="LinkedIn Account"
-                    id="linkedin-account"
-                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color]`}
-                    rel="noreferrer"
-                  >
-                    <RiLinkedinFill />
-                  </Link>
+                    <Link
+                      href="https://www.linkedin.com/in/piyushgarg195/"
+                      target="_blank"
+                      title="LinkedIn Account"
+                      id="linkedin-account"
+                      className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color]`}
+                      rel="noreferrer"
+                    >
+                      <RiLinkedinFill />
+                    </Link>
+                  </div>
+
+                  {/* Dark-Light theme toggle component */}
+                  <ThemeSwitch />
                 </div>
               </div>
             </div>

@@ -287,3 +287,11 @@ footer {
     border: none;
   }
 }
+
+.dark {
+  background-color: #0e1630;
+}
+
+.light {
+  background-color: rgb(254, 254, 254);
+}

@@ -3,6 +3,7 @@ import { Container, Row, Col } from "reactstrap";
 import Slider from "react-slick";
 import TestimonialItem from "./TestimonialItem";
 import SectionSubtitle from "./SectionSubtitle";
+import Text from "../Typography/Text";
 
 const Testimonial = ({ feedbacks = [] }) => {
   const settings = {
@@ -40,7 +41,7 @@ const Testimonial = ({ feedbacks = [] }) => {
     <section>
       <Container>
         <SectionSubtitle subtitle="Testimonials" />
-        <h4 className="mt-4 mb-5 text-2xl">Feedback from students</h4>
+        <Text size="1.5" marginT="16" marginB="34">Feedback from students</Text>
         <Row className="sm:p-2 p-10">
           <Slider {...settings}>
             {feedbacks.map((feedBack) => (
