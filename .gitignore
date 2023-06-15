@@ -1,5 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+secrets.json
+
 # dependencies
 /node_modules
 /.pnp
@@ -18,6 +20,7 @@
 # misc
 .DS_Store
 *.pem
+nohup.out
 
 # debug
 npm-debug.log*
