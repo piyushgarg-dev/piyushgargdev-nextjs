@@ -9,6 +9,7 @@ import { useState } from "react";
 import { RiYoutubeFill, RiGithubFill, RiTwitterFill, RiLinkedinFill } from "react-icons/ri";
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
   const handleSubmit = async (event) => {
     event.preventDefault();
     const data = {
@@ -28,6 +29,19 @@ const Contact = () => {
     } catch (error) {
       console.log(error);
     }
+  };
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  const linkStyles = {
+    color: isHovered ? "var(--site-theme-color)" : "white",
+    textDecoration: isHovered ? "underline" : "none",
   };
 
   return (
@@ -52,7 +66,7 @@ const Contact = () => {
                   </a>
                 </span>
                 <p>
-                  <a href="mailto:piyushgarg.dev@gmail.com">
+                  <a href="mailto:piyushgarg.dev@gmail.com" style={linkStyles} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                     piyushgarg.dev@gmail.com
                   </a>
                 </p>
