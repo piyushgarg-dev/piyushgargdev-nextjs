@@ -25,18 +25,22 @@ const NAV__LINK = [
   {
     path: "/",
     display: "Home",
+    openInNewPage:false,
   },
   {
     path: "/#courses",
     display: "Courses",
+    openInNewPage:false,
   },
   {
     path: "/gears",
     display: "My Gears",
+    openInNewPage:false,
   },
   {
     path: "https://blog.piyushgarg.dev",
     display: "Blogs",
+    openInNewPage:true,
   },
 ];
 
@@ -108,11 +112,11 @@ const Header = () => {
                   key={index}
                   className={`${classes.mobile__menuDiv} cursor-pointer`}
                 >
-                  <Link aria-label={item.display} href={item.path}>
+                  <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}`}>
                     <p className={`${classes.mobile__menu}`}>{icons[index]}</p>
                   </Link>
 
-                  <Link aria-label={item.display} href={item.path}>
+                  <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}`}>
                     <span className=" text-[#808dad] hover:text-green-400">
                       {item.display}
                     </span>
@@ -162,7 +166,7 @@ const Header = () => {
                     target="_blank"
                     title="Youtube Channel"
                     id="youtube-channel"
-                    className={`cursor-pointer  text-[#ffffff] hover:text-[#01d293]`}
+                    className={`cursor-pointer  text-[#ffffff] hover:text-[--site-theme-color]`}
                     rel="noreferrer"
                   >
                     <RiYoutubeFill />
@@ -171,9 +175,9 @@ const Header = () => {
                   <Link
                     href="https://github.com/piyushgarg-dev/"
                     target="_blank"
-                    title="github Account"
+                    title="Github Account"
                     id="github-account"
-                    className={`cursor-pointer text-[#ffffff] hover:text-[#01d293]`}
+                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color]`}
                     rel="noreferrer"
                   >
                     <RiGithubFill />
@@ -184,7 +188,7 @@ const Header = () => {
                     target="_blank"
                     title="Twitter Account"
                     id="twitter-account"
-                    className={`cursor-pointer text-[#ffffff] hover:text-[#01d293]`}
+                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color]`}
                     rel="noreferrer"
                   >
                     <RiTwitterFill />
@@ -193,9 +197,9 @@ const Header = () => {
                   <Link
                     href="https://www.linkedin.com/in/piyushgarg195/"
                     target="_blank"
-                    title="linkedin Account"
+                    title="LinkedIn Account"
                     id="linkedin-account"
-                    className={`cursor-pointer text-[#ffffff] hover:text-[#01d293]`}
+                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color]`}
                     rel="noreferrer"
                   >
                     <RiLinkedinFill />
