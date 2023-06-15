@@ -1,6 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-/config/secrets.json
+config/*
 
 # dependencies
 /node_modules

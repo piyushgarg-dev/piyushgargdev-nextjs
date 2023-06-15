@@ -1,5 +1,4 @@
 import { google } from 'googleapis';
-import dotenv from 'dotenv';
 
 const SCOPES = ['https://www.googleapis.com/auth/spreadsheets'];
 
