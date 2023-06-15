@@ -8,7 +8,7 @@ const ServicesItem = ({ title, icon }) => {
         <i className={icon}></i>
       </span>
 
-      <h5>{title}</h5>
+      <h5 style={{color : "#fff"}}>{title}</h5>
     </div>
   );
 };

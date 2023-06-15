@@ -7,6 +7,7 @@ import Form from "./Form";
 import axios from "axios";
 import { useState } from "react";
 import { RiYoutubeFill, RiGithubFill, RiTwitterFill, RiLinkedinFill } from "react-icons/ri";
+import Text from "../Typography/Text";
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
   const handleSubmit = async (event) => {
@@ -36,7 +37,7 @@ const Contact = () => {
         <Row className="flex justify-between flex-col md:flex-row ">
           <Col lg="4" md="6">
             
-            <h3 className="mt-4 mb-4 text-2xl">Connect with me</h3>
+            <Text className="mt-4 mb-4 text-2xl" size="1.5">Connect with me</Text>
 
             <ul className={`${classes.contact__info__list}`}>
               <li className={`${classes.info__item}`}>
@@ -105,7 +106,7 @@ const Contact = () => {
               
               <form className="flex flex-col space-y-4" onSubmit={handleSubmit}>
                 <input
-                  className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
+                  className="outline-none text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
                   type="text"
                   name="name"
                   placeholder="Your Full Name"
@@ -113,7 +114,7 @@ const Contact = () => {
                   autoComplete="off"
                 />
                 <input
-                  className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
+                  className="outline-none text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
                   type="email"
                   name="email"
                   placeholder="Your Email"
@@ -121,7 +122,7 @@ const Contact = () => {
                   autoComplete="off"
                 />
                 <textarea
-                  className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
+                  className="outline-none text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
                   name="message"
                   placeholder="Your Message"
                   required

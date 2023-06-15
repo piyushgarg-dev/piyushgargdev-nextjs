@@ -3,7 +3,7 @@ import { Container, Row, Col, Alert } from "reactstrap";
 import SectionSubtitle from "./SectionSubtitle";
 // import classes from "../../styles/portfolio.module.css";
 import PortfolioItem from "./PortfolioItem";
-
+import Text from "../Typography/Text";
 
 const Courses = ({ courses = [] }) => {
   return (
@@ -12,7 +12,7 @@ const Courses = ({ courses = [] }) => {
         <Row>
           <Col lg="6" md="6" className="mb-5">
             <SectionSubtitle subtitle="Courses" />
-            <h4 className="mt-4 text-2xl">Checkout My Interactive Courses</h4>
+            <Text size="1.5" marginT="16">Checkout My Interactive Courses</Text>
           </Col>
         </Row>
 
@@ -34,6 +34,5 @@ const Courses = ({ courses = [] }) => {
     </section>
   );
 };
-
 
 export default Courses;
