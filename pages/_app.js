@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   return (
     <SessionProvider session={session}>
       <Layout>
-        {process.env.NODE_ENV === "production" && (
+        {process.env.NODE_ENV.toLowerCase() === "production" && (
           <>
             <Script
               id="google-tag-manager"
