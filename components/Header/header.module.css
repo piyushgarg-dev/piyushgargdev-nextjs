@@ -1,8 +1,16 @@
 .header {
   width: 100%;
   height: 94px;
-  line-height: 80px;
+  line-height: 94px;
   background-color: #0e1630;
+}
+
+/* LIGHTMODE */
+.lightModeheader{
+  width: 100%;
+  height: 94px;
+  line-height: 94px;
+  background-color: #ffffff;
 }
 
 .nav__wrapper {
@@ -11,9 +19,33 @@
   justify-content: space-between;
 }
 
+.lightModenav__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__wrapper label{
+  display:none;
+}
+
+.lightModenav__wrapper label{
+  display:none;
+}
+
 .logo h1 {
   font-size: 2rem;
   margin-bottom: 0;
+}
+
+.lightModelogo h1 {
+  font-size: 2rem;
+  margin-bottom: 0;
+  color: #000000;
+}
+
+.lightModelogo h1 span {
+  color: var(--site-theme-color);
 }
 
 .logo h1 span {
@@ -24,7 +56,16 @@
   display: flex;
   align-items: center;
   column-gap: 2.8rem;
+  justify-content: flex-end;
   background-color: #0e1630;
+}
+
+/* LIGHTMODE */
+.lightModenav__menu {
+  display: flex;
+  align-items: center;
+  column-gap: 2.8rem;
+  background-color: #ffffff;
 }
 
 .nav__menu a,
@@ -35,11 +76,30 @@
   transition: 0.3s;
 }
 
-.nav__right p {
+/* LIGHTMODE */
+.lightModenav__menu a,
+.lightModenav__menu > * {
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* .nav__right p {
   margin-left: 20px;
   position: relative;
 }
+
+.lightModenav__right p {
+  margin-left: 20px;
+  position: relative;
+}
+
 .nav__right i {
+  color: #808dad;
+}
+
+.lightModenav__right i {
   color: #808dad;
 }
 
@@ -54,17 +114,32 @@
   color: #808dad;
 }
 
+.lightModenav__right p::before {
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: -20px;
+  width: 1px;
+  height: 14px;
+  background: #000000;
+  color: #000000;
+}
+
 .nav__right p :hover {
   color: var(--site-theme-color);
 }
+
+.lightModenav__right p :hover {
+  color: var(--site-theme-color);
+} */
 
 .header__shrink {
   position: sticky;
   top: 0;
   left: 0;
   width: 100%;
-  height: 80px;
-  line-height: 80px;
+  height: 94px;
+  line-height: 94px;
   box-shadow: 5px 5px 15px -5px var(--site-theme-color) 44;
   z-index: 9999;
 }
@@ -76,7 +151,25 @@
   cursor: pointer;
 }
 
+/* LIGHTMODE */
+.lightModemobile__menu i {
+  font-size: 1.3rem;
+  color: #000000;
+  display: none;
+  cursor: pointer;
+}
+
+/* LIGHTMODE */
+.lightModemobile__menu {
+  display: none;
+}
+
+
 .mobile__menu {
+  display: none;
+}
+
+.lightModemobile__menu {
   display: none;
 }
 
@@ -87,6 +180,15 @@
 /* ========== make it responsive ========= */
 
 @media only screen and (max-width: 992px) {
+  .nav__wrapper label{
+    display: block;
+    color: #fff;
+  }
+
+  .lightModenav__wrapper label{
+    display: block;
+    color: #fff;
+  }
   .navigation {
     position: fixed;
     top: 0;
@@ -108,7 +210,45 @@
     justify-content: center;
   }
 
+  /* LIGHTMODE */
+  .lightModenav__menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* LIGHTMODE */
+  .lightModenavigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000097;
+    z-index: 99999;
+    display: none;
+  }
+
+  /* LIGHTMODE */
+  .lightModenav__menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .nav__right {
+    display: none;
+  }
+
+  .lightModenav__right {
     display: none;
   }
 
@@ -116,12 +256,27 @@
     display: block !important;
   }
 
+  /* LIGHTMODE */
+  .lightModemobile__menu {
+    display: block !important;
+  }
+
   .menu__active {
     display: block !important;
   }
 
+  .lightModemenu__active {
+    display: block !important;
+    cursor: pointer;
+  }
+
   .logo h1 {
     font-size: 1.3rem !important;
+  }
+
+  .lightModelogo h1 {
+    font-size: 1.3rem !important;
+    color: #000000;
   }
 
   .mobile__menuDiv {
@@ -129,10 +284,27 @@
     align-items: center;
     gap: 7px;
   }
+
+  /* LIGHTMODE */
+  .lightModemobile__menuDiv {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+
+  .lightModemobile__menuDiv i {
+   color: #000000;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .header {
+    height: 60px;
+    line-height: 60px;
+  }
+  
+  /* LIGHTMODE */
+  .lightModeheader {
     height: 60px;
     line-height: 60px;
   }

@@ -12,6 +12,22 @@
   cursor: pointer;
 }
 
+/* LIGHTMODE added*/
+.footer {
+  padding-bottom: 10px;
+  padding-top: 20px;
+  border-top: 1px solid #171f38;
+  background-color: #171f38;
+}
+
+/* LIGHTMODE */
+.lightModefooter{
+  padding-bottom: 10px;
+  padding-top: 20px;
+  border-top: 1px solid #000000;
+  background-color: #ffffff;
+}
+
 .nav__menu a:hover {
   color: var(--site-theme-color);
 }
@@ -27,6 +43,11 @@
 }
 
 .footer__copyright p {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.lightModefooter__copyright p {
   font-size: 0.8rem;
   text-align: center;
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useContext} from "react";
 import { Container, Row, Col } from "reactstrap";
 import Link from "next/link";
 import SectionSubtitle from "./SectionSubtitle";
@@ -7,6 +7,10 @@ import Form from "./Form";
 import axios from "axios";
 import { useState } from "react";
 import { RiYoutubeFill, RiGithubFill, RiTwitterFill, RiLinkedinFill } from "react-icons/ri";
+
+// LightMode
+import { LightModeContext } from "../UI/LightMode";
+
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
   const handleSubmit = async (event) => {
@@ -30,8 +34,12 @@ const Contact = () => {
     }
   };
 
+// LightMode
+const { lightMode, toggleLightNormal } = useContext(LightModeContext);
+  
+
   return (
-    <section id="contact" className={`${classes.contact}`}>
+    <section id="contact" className={lightMode ?`${classes.lightModecontact}` : `${classes.contact}`}>
       <Container>
         <Row className="flex justify-between flex-col md:flex-row ">
           <Col lg="4" md="6">
@@ -59,7 +67,7 @@ const Contact = () => {
               </li>
             </ul>
 
-            <div className={`${classes.social__links}`}>
+            <div className={lightMode ? `${classes.lightModesocial__links}` : `${classes.social__links}`}>
               <Link
                 className="hover:text-[#01d293] duration-300"
                 aria-label="Youtube Channel"
@@ -105,7 +113,11 @@ const Contact = () => {
               
               <form className="flex flex-col space-y-4" onSubmit={handleSubmit}>
                 <input
-                  className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
+                  className={lightMode ?
+                    "text-md border-3px solid black rounded-lg block w-full p-2.5 bg-[var(--card-lightMode-color)] placeholder-black text-black"
+                    :
+                    "text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
+                   }
                   type="text"
                   name="name"
                   placeholder="Your Full Name"
@@ -113,7 +125,11 @@ const Contact = () => {
                   autoComplete="off"
                 />
                 <input
-                  className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
+                  className={lightMode ?
+                  "text-md border-3px solid black rounded-lg block w-full p-2.5 bg-[var(--card-lightMode-color)] placeholder-black text-black"
+                  :
+                  "text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
+                  }
                   type="email"
                   name="email"
                   placeholder="Your Email"
@@ -121,7 +137,11 @@ const Contact = () => {
                   autoComplete="off"
                 />
                 <textarea
-                  className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
+                  className={lightMode ?
+                    "text-md border-black rounded-lg block w-full p-2.5 bg-[var(--card-lightMode-color)] placeholder-black text-black"
+                    :
+                    "text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
+                    } 
                   name="message"
                   placeholder="Your Message"
                   required

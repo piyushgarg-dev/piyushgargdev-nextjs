@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useContext} from "react";
 import { Container, Row, Col } from "reactstrap";
 import Link from "next/link";
 import SectionSubtitle from "./SectionSubtitle";
@@ -9,8 +9,14 @@ import img02 from "../../public/images/img-02.jpg";
 import img03 from "../../public/images/img-03.jpg";
 import img04 from "../../public/images/hero.jpg";
 
-import classes from "../../styles/about.module.css";
+// LightMode
+import { LightModeContext } from "../UI/LightMode";
 
+import classes from "../../styles/about.module.css";
+ 
+// LightMode
+const { lightMode, toggleLightNormal } = useContext(LightModeContext);
+  
 const About = () => {
   return (
     <section id="about">
