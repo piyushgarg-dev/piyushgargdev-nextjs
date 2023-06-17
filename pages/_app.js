@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   return (
     <SessionProvider session={session}>
       <Layout>
-        {process.env.NODE_ENV.toLowerCase() === "production" && (
+        {process.env.NODE_ENV === "production" && (
           <>
             <Script
               id="google-tag-manager"
@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
             <Script id="google-analytics" strategy="afterInteractive">
               {`window.dataLayer = window.dataLayer || []; function gtag()
                 {dataLayer.push(arguments)}
-                gtag('js', new Date()); gtag('config', 'G-0GK7ZH57SK');
+              gtag('js', new Date()); gtag('config', 'G-0GK7ZH57SK');
         `}
             </Script>
             <Script id="microsoft-clarity" strategy="afterInteractive">
