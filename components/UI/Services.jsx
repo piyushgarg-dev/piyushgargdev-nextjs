@@ -1,11 +1,10 @@
-import React from "react";
-import { Container, Row, Col, Button } from "reactstrap";
-import Slider from "react-slick";
 import Image from "next/image";
-import SectionSubtitle from "./SectionSubtitle";
+import React from "react";
+import Slider from "react-slick";
+import { Button, Col, Container, Row } from "reactstrap";
 import classes from "../../styles/services.module.css";
+import SectionSubtitle from "./SectionSubtitle";
 import ServicesItem from "./ServicesItem";
-
 const Services = ({ youtubeStats, youtubeVideos }) => {
   const settings = {
     dots: false,
@@ -26,7 +25,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
             <Slider
               {...settings}
               // style={{ cursor: "pointer", marginBottom: "10px" }}
-              className=" cursor-pointer mb-10 md:mb:0"
+              className=" cursor-pointer hover:bg-customBlue  px-3 py-2 rounded-lg mb-10 md:mb:0"
             >
               {youtubeVideos
                 ?.filter((video) => video.id.videoId)
@@ -74,7 +73,6 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
               icon="ri-film-line"
             />
           </Col>
-
           <Col lg="6" md="6" className={`${classes.service__title}`}>
             <SectionSubtitle subtitle="Youtube" />
             <h3 className="mb-0 mt-4">Popular</h3>
@@ -97,5 +95,4 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
     </section>
   );
 };
-
 export default Services;
