@@ -14,6 +14,8 @@ const PortfolioItem = (props) => {
     subtitle,
     ribbonText = null,
   } = props.item;
+
+
   return (
     <div className={`${classes.portfolio__item}`}>
       <a
@@ -56,7 +58,9 @@ const PortfolioItem = (props) => {
                 >
                   {item}
                 </span>
+               
               ))}
+              <p className='bg-red-600 text-white rounded-md px-1 font-medium hover:bg-opacity-60'>Buy Now</p>
             </div>
           </div>
         </>
