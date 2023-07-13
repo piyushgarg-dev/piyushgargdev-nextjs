@@ -38,7 +38,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
                         "_blank"
                       )
                     }
-                    style={{ padding: "10px" }}
+                    style={{ padding: "10px"; border-radius:"20px" }}
                     key={video.id.videoId}
                   >
                     <Image
