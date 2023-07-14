@@ -58,6 +58,17 @@
   color: var(--site-theme-color);
 }
 
+/* .header__shrink {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  box-shadow: 5px 5px 15px -5px var(--site-theme-color) 44;
+  z-index: 9999;
+} */
+
 .header__shrink {
   position: sticky;
   top: 0;
@@ -68,6 +79,7 @@
   box-shadow: 5px 5px 15px -5px var(--site-theme-color) 44;
   z-index: 9999;
 }
+
 
 .mobile__menu i {
   font-size: 1.3rem;
