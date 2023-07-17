@@ -67,6 +67,7 @@
   line-height: 80px;
   box-shadow: 5px 5px 15px -5px var(--site-theme-color) 44;
   z-index: 9999;
+  transition: 0.2s;
 }
 
 .mobile__menu i {
@@ -102,7 +103,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 300px;
+    width: 250px;
     height: 100%;
     flex-direction: column;
     justify-content: center;
