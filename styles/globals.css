@@ -287,3 +287,6 @@ footer {
     border: none;
   }
 }
+.slick-list{
+  border-radius: 1rem;
+}
