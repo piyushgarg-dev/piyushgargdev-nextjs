@@ -42,6 +42,11 @@ const NAV__LINK = [
     display: "Blogs",
     openInNewPage:true,
   },
+  {
+    path: "/#contact",
+    display: "Contact",
+    openInNewPage:false,
+  },
 ];
 
 const icons = [
@@ -155,57 +160,6 @@ const Header = () => {
                   </Link>
                 </div>
               )}
-
-              <div className={`${classes.nav__right}`}>
-                <div
-                  className={`flex flex-row items-center gap-3 border-l-2 pl-4 border-l-slate-500 `}
-                >
-                  <Link
-                    aria-label="Youtube Channel"
-                    href="https://youtube.com/@piyushgargdev"
-                    target="_blank"
-                    title="Youtube Channel"
-                    id="youtube-channel"
-                    className={`cursor-pointer  text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
-                    rel="noreferrer"
-                  >
-                    <RiYoutubeFill />
-                  </Link>
-
-                  <Link
-                    href="https://github.com/piyushgarg-dev/"
-                    target="_blank"
-                    title="Github Account"
-                    id="github-account"
-                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
-                    rel="noreferrer"
-                  >
-                    <RiGithubFill />
-                  </Link>
-
-                  <Link
-                    href="https://twitter.com/piyushgarg_dev"
-                    target="_blank"
-                    title="Twitter Account"
-                    id="twitter-account"
-                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
-                    rel="noreferrer"
-                  >
-                    <RiTwitterFill />
-                  </Link>
-
-                  <Link
-                    href="https://www.linkedin.com/in/piyushgarg195/"
-                    target="_blank"
-                    title="LinkedIn Account"
-                    id="linkedin-account"
-                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
-                    rel="noreferrer"
-                  >
-                    <RiLinkedinFill />
-                  </Link>
-                </div>
-              </div>
             </div>
           </div>
 
