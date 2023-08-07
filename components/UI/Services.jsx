@@ -5,6 +5,7 @@ import Image from "next/image";
 import SectionSubtitle from "./SectionSubtitle";
 import classes from "../../styles/services.module.css";
 import ServicesItem from "./ServicesItem";
+import Link from "next/link";
 
 const Services = ({ youtubeStats, youtubeVideos }) => {
   const settings = {
@@ -80,17 +81,27 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
             <h3 className="mb-0 mt-4">Popular</h3>
             <h3 className="mb-2">Uploads from My Youtube Channel</h3>
             <p>
-              I would really appreciate it if you could check it out and maybe
-              even hit the subscribe button if you enjoy the content.
+              Whether you're a beginner looking to learn the basics
+              or an experienced developer looking to expand your skills, I've
+              got something for you. Subscribe to my channel to join me on my
+              journey as I explore the exciting world of technology and coding!
             </p>
             <p className="mb-3">Thanks in advance!</p>
-            <a
-              href="https://www.youtube.com/@piyushgargdev?sub_confirmation=1"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Button color="danger">Subscribe</Button>
-            </a>
+
+            <div className="mt-3 flex flex-col items-start justify-center">
+              <div className="relative inline-flex group">
+                <div className="absolute w-full transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r animate-pulse hover:animate-none from-[#37b4ee] via-[#98398f] to-[#f42d2d] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+                <Link
+                  href="https://www.youtube.com/@piyushgargdev?sub_confirmation=1"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="relative w-full text-sm sm:text-md md:text-lg text-center items-center justify-center px-9 py-3  font-bold text-white transition-all duration-200 bg-danger font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                  role="button"
+                >
+                  <span className="block">Subscribe</span>
+                </Link>
+              </div>
+            </div>
           </Col>
         </Row>
       </Container>
