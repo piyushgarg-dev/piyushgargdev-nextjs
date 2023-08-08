@@ -1,12 +1,14 @@
 import React from "react";
-
 import { Container, Row, Col } from "reactstrap";
 import classes from "./footer.module.css";
-import Link from "next/link";
+import { FaArrowCircleUp } from "react-icons/fa";
 
 const Footer = () => {
   const date = new Date();
   const year = date.getFullYear();
+
+  const handleBackToTopButtonClick = () =>
+    window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
     <footer>
@@ -21,6 +23,9 @@ const Footer = () => {
             </div>
           </Col>
         </Row>
+        <button title="Back To Top" onClick={handleBackToTopButtonClick}>
+          <FaArrowCircleUp className={classes.backToTop__button} />
+        </button>
       </Container>
     </footer>
   );
