@@ -35,7 +35,13 @@ const Hero = () => {
                   className="relative text-sm sm:text-md md:text-lg text-center items-center justify-center px-8 py-4  font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                   role="button"
                 >
-                  <span className="block">Join Discord Server 🎉</span>
+                  <span className="block">Join Discord Server 
+                    <img
+                        src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png"
+                        alt="Discord Icon"
+                        style={{ height: '1em', marginLeft: '0.2em', verticalAlign: 'middle' }}
+                      />
+                  </span>
                 </Link>
               </div>
             </div>
@@ -83,7 +89,13 @@ const Hero = () => {
                   className="relative w-full text-sm sm:text-md md:text-lg text-center items-center justify-center px-8 py-4  font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                   role="button"
                 >
-                  <span className="block">Join Discord Server 🎉</span>
+                  <span className="block">Join Discord Server 
+                    <img
+                        src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png"
+                        alt="Discord Icon"
+                        style={{ height: '1em', marginLeft: '0.2em', verticalAlign: 'middle' }}
+                      />
+                  </span>
                 </Link>
               </div>
             </div>
