@@ -4,6 +4,8 @@ import { FaWhmcs } from "react-icons/fa";
 import { Container } from "reactstrap";
 import { useSession, signOut, signIn } from "next-auth/react";
 import classes from "./header.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 
 import {
@@ -191,7 +193,7 @@ const Header = () => {
                     className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
-                    <RiTwitterFill />
+                    <FontAwesomeIcon icon={faXTwitter} />
                   </Link>
 
                   <Link
