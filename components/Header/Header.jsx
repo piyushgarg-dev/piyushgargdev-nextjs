@@ -21,6 +21,8 @@ import {
   AiFillEdit,
 } from "react-icons/ai";
 
+import { Icon } from '@iconify/react';
+
 const NAV__LINK = [
   {
     path: "/",
@@ -191,7 +193,7 @@ const Header = () => {
                     className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
-                    <RiTwitterFill />
+                    <Icon icon="ri:twitter-x-fill" />
                   </Link>
 
                   <Link
