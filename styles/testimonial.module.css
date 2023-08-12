@@ -16,7 +16,7 @@
   font-weight: 400;
 }
 
-.testimonial__client h6:last-child {
+.testimonial__client h6:first-child {
   color: var(--site-theme-color);
 }
 
