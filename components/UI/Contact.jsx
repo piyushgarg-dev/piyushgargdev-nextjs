@@ -7,6 +7,7 @@ import Form from "./Form";
 import axios from "axios";
 import { useState } from "react";
 import { RiYoutubeFill, RiGithubFill, RiTwitterFill, RiLinkedinFill } from "react-icons/ri";
+import { Icon } from '@iconify/react';
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
   const handleSubmit = async (event) => {
@@ -36,7 +37,7 @@ const Contact = () => {
         <Row className="flex justify-between flex-col md:flex-row ">
           <Col lg="4" md="6">
             
-            <h3 className="mt-4 mb-4 text-2xl">Connect with me</h3>
+            <h3 className="mt-4 mb-4 text-2xl">Connect with Me</h3>
 
             <ul className={`${classes.contact__info__list}`}>
               <li className={`${classes.info__item}`}>
@@ -82,7 +83,7 @@ const Contact = () => {
                 href="https://twitter.com/piyushgarg_dev"
                 target="_blank"
               >
-                <RiTwitterFill />
+                <Icon icon="ri:twitter-x-fill" />
               </Link>
               <Link
                 className="hover:text-[#01d293] duration-300"
