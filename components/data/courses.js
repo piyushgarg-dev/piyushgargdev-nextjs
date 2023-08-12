@@ -15,7 +15,7 @@ const portfolio = [
     img: "/images/java-master.webp",
     category: "Java",
     keyword: ["Java", "Coding", "Programming"],
-    liveUrl: "https://learn.piyushgarg.dev/learn/java",
+    liveUrl: "https://codedamn.com/learn/java-course",
   },
   {
     id: "06",
@@ -25,7 +25,7 @@ const portfolio = [
     img: "/images/docker.webp",
     category: "Docker",
     keyword: ["Docker", "Containerization", "DevOps"],
-    liveUrl: "https://learn.piyushgarg.dev/learn/docker",
+    liveUrl: "https://codedamn.com/learn/docker",
   },
 
   {
@@ -35,7 +35,7 @@ const portfolio = [
     img: "/images/dsa.webp",
     category: "DSA",
     keyword: ["Java", "Coding", "Programming", "DSA"],
-    liveUrl: "https://learn.piyushgarg.dev/learn/data-structures-algorithms",
+    liveUrl: "https://codedamn.com/learn/data-structures-algorithms",
   },
   {
     id: "04",
