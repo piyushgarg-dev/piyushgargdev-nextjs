@@ -7,6 +7,8 @@ import Form from "./Form";
 import axios from "axios";
 import { useState } from "react";
 import { RiYoutubeFill, RiGithubFill, RiTwitterFill, RiLinkedinFill } from "react-icons/ri";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
   const handleSubmit = async (event) => {
@@ -82,8 +84,8 @@ const Contact = () => {
                 href="https://twitter.com/piyushgarg_dev"
                 target="_blank"
               >
-                <RiTwitterFill />
-              </Link>
+                {/* <RiTwitterFill /> */}
+                <FontAwesomeIcon icon={faXTwitter} />              </Link>
               <Link
                 className="hover:text-[#01d293] duration-300"
                 aria-label="LinedIn Account"
