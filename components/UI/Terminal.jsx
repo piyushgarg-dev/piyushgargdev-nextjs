@@ -28,7 +28,7 @@ const Terminal = () => {
 
       "sign-out": {
         help: "Sign out the current user",
-        action: signOut,
+        action: (isLoggedIn) ? signOut : <p>You are not signed in yet...</p>,
       },
 
       "get-location": {
