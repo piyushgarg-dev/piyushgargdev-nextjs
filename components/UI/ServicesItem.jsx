@@ -8,7 +8,10 @@ const ServicesItem = ({ title, icon }) => {
         <i className={icon}></i>
       </span>
 
-      <h5>{title}</h5>
+      <a href="https://www.youtube.com/@piyushgargdev">
+        <h5>{title}</h5>
+      </a>
+
     </div>
   );
 };
