@@ -63,20 +63,35 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
             </Slider>
           </Col>
           <Col lg="3" md="6">
-            <ServicesItem
-              title={`${(
-                Number(youtubeStats?.statistics?.subscriberCount) / 1000
-              ).toPrecision(3)}K Subscribers`}
-              icon="ri-user-add-line"
-            />
+            <a
+              href="https://www.youtube.com/@piyushgargdev?sub_confirmation=1"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <ServicesItem
+                title={`${(
+                  Number(youtubeStats?.statistics?.subscriberCount) / 1000
+                ).toPrecision(3)}K Subscribers`}
+                icon="ri-user-add-line"
+              />
+            </a>
+            <a
+            href="https://www.youtube.com/@piyushgargdev?sub_confirmation=1"
+            target="_blank"
+            rel="noreferrer"
+            >
             <ServicesItem
               title={`${youtubeStats?.statistics?.videoCount} Videos Uploaded`}
               icon="ri-film-line"
             />
+            </a>
           </Col>
 
           <Col lg="6" md="6" className={`${classes.service__title}`}>
-            <SectionSubtitle subtitle="Youtube" />
+          <SectionSubtitle subtitle="Youtube"/>
+  
+
+
             <h3 className="mb-0 mt-4">Popular</h3>
             <h3 className="mb-2">Uploads from My Youtube Channel</h3>
             <p>
