@@ -4,6 +4,15 @@
   column-gap: 2rem;
 }
 
+.subscribe:hover{
+  background: var(--site-theme-color);
+  color: #0e1630;
+}
+
+.subscribe{
+  background: #0e1630;
+}
+
 @media only screen and (max-width: 992px) {
   .services__container {
     flex-direction: column;
