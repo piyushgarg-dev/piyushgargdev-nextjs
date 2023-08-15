@@ -40,5 +40,13 @@
     "eslint-config-next": "12.1.6",
     "postcss": "^8.4.24",
     "tailwindcss": "^3.3.2"
-  }
+  },
+  "description": "This repository is a part of \"Free Open Source BootCamp\". Checkout [Open Source Bootcamp Playlist on Youtube.](https://www.youtube.com/playlist?list=PLinedj3B30sAT6CotNj0iffhRV89SkNK9)",
+  "main": "next.config.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
