@@ -2,7 +2,6 @@
 import React from 'react';
 import classes from '../../styles/portfolio-item.module.css';
 import Image from 'next/image';
-import Link from 'next/link';
 
 
 const PortfolioItem = (props) => {
