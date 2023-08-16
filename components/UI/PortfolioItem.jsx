@@ -2,7 +2,6 @@
 import React from 'react';
 import classes from '../../styles/portfolio-item.module.css';
 import Image from 'next/image';
-import Link from 'next/link';
 
 
 const PortfolioItem = (props) => {
@@ -38,14 +37,11 @@ const PortfolioItem = (props) => {
             <h3 style={{ background: "transparent" }}>{title}</h3>
             <p style={{ background: "transparent", }}>{subtitle}</p>
             
-            <div className=" w-[100%] mt-5 lg:mt-0"> </div>
             <div
               style={{
-                position: "absolute",
+                marginTop: "10px",
                 background: "transparent",
-                bottom: "20px",
                 display: "flex",
-                flexDirection: "row",
                 flexWrap: "wrap",
               }}>
 
