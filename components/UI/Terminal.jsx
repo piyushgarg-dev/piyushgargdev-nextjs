@@ -28,7 +28,14 @@ const Terminal = () => {
 
       "sign-out": {
         help: "Sign out the current user",
-        action: signOut,
+        action: isLoggedIn ? (
+          signOut
+        ) : (
+          <div>
+            <p>You need to be signed in to use this command!</p>
+            <span style={{ color: "#38CC77" }}>Just type `sign-in`</span>
+          </div>
+        ),
       },
 
       "get-location": {
