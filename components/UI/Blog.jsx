@@ -10,7 +10,6 @@ const Blog = ({ blogs, blogDomain }) => {
   const [data, setData] = useState();
 
   const active = `${classes.tab__btn__active}`;
-
   return (
     <section id="blogs">
       <Container>
