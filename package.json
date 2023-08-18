@@ -40,5 +40,9 @@
     "eslint-config-next": "12.1.6",
     "postcss": "^8.4.24",
     "tailwindcss": "^3.3.2"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/piyushgarg-dev/piyushgargdev-nextjs.git",
+  "author": "Dainwi Kumar <danwichoudhary@gmail.com>",
+  "license": "MIT"
 }
