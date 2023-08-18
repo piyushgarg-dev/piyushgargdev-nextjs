@@ -6,7 +6,7 @@ import Image from "next/image";
 import heroImg from "../../public/images/PiyushGarg.png";
 import classes from "../../styles/hero.module.css";
 import classNames from "../../styles/subtitle.module.css";
-import discordImg from "../../public/images/discord.png";
+import { FaDiscord, FaDsicord } from "react-icons/fa"
 
 const Hero = () => {
   return (
@@ -33,11 +33,11 @@ const Hero = () => {
                 <Link
                   target="_blank"
                   href="https://discord.gg/kRSRxBQ6xf"
-                  className="flex flex-row relative text-sm sm:text-md md:text-lg text-center items-center justify-between px-8 py-4  font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                  className="relative text-sm sm:text-md md:text-lg text-center items-center justify-center px-8 py-4  font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                   role="button"
                 >
-                  <Image alt="Discord" src={discordImg} width="50" height="50" className="mr-5" />
-                  <span className="block">Join Our Discord Server 🎉</span>
+
+                  <span className="flex flex-row items-center gap-2"> <FaDiscord className="w-10"/> Join Discord Server 🎉</span>
                 </Link>
               </div>
             </div>
@@ -82,11 +82,10 @@ const Hero = () => {
                 <Link
                   target="_blank"
                   href="https://discord.gg/kRSRxBQ6xf"
-                  className="flex flex-row relative text-sm sm:text-md md:text-lg text-center items-center justify-between px-8 py-4  font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                  className="relative w-full text-sm sm:text-md md:text-lg text-center items-center justify-center px-8 py-4  font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                   role="button"
                 >
-                  <Image alt="Discord" src={discordImg} width="50" height="50" className="mr-5" />
-                  <span className="block">Join Our Discord Server 🎉</span>
+                  <span className="flex flex-row items-center gap-2"> <FaDiscord className="w-10"/> Join Discord Server 🎉</span>
                 </Link>
               </div>
             </div>
