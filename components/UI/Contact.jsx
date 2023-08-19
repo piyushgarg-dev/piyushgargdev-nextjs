@@ -7,6 +7,8 @@ import Form from "./Form";
 import axios from "axios";
 import { useState } from "react";
 import { RiYoutubeFill, RiGithubFill, RiTwitterFill, RiLinkedinFill } from "react-icons/ri";
+import XLogo from "../../public/xLogo.svg";
+
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
   const handleSubmit = async (event) => {
@@ -77,12 +79,12 @@ const Contact = () => {
                 <RiGithubFill />
               </Link>
               <Link
-                className="hover:text-[#01d293] duration-300"
+                className="hover:text-[#01d293] duration-300 scale-90"
                 aria-label="Twitter Account"
                 href="https://twitter.com/piyushgarg_dev"
                 target="_blank"
               >
-                <RiTwitterFill />
+                <XLogo fill="currentColor" stroke="currentColor"/>
               </Link>
               <Link
                 className="hover:text-[#01d293] duration-300"
