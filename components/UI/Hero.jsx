@@ -3,7 +3,7 @@ import Link from "next/link";
 import SectionSubtitle from "./SectionSubtitle";
 import { Container, Row, Col, Button } from "reactstrap";
 import Image from "next/image";
-import heroImg from "../../public/images/PiyushGarg.png";
+import heroImg from "../../public/images/Piyush.png";
 import classes from "../../styles/hero.module.css";
 import classNames  from "../../styles/subtitle.module.css";
 
