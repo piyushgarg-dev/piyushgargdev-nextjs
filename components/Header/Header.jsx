@@ -13,7 +13,6 @@ import {
   RiTwitterFill,
   RiLinkedinFill,
 } from "react-icons/ri";
-import XLogo from "../../public/xLogo.svg";
 
 import {
   AiFillHome,
@@ -189,10 +188,10 @@ const Header = () => {
                     target="_blank"
                     title="Twitter Account"
                     id="twitter-account"
-                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150 scale-90`}
+                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
-                    <XLogo fill="currentColor" stroke="currentColor"/>
+                    <RiTwitterFill />
                   </Link>
 
                   <Link
