@@ -14,7 +14,7 @@ const TestimonialItem = ({ feedBack }) => (
         }
         width="50"
         height="50"
-        className={`${classes.testimonial__client_Avatar} rounded-2`}
+        className={`${classes.testimonial__client_Avatar} object-contain rounded-2`}
       />
 
       <div>
