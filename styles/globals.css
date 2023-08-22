@@ -265,6 +265,9 @@ footer {
   bottom: 30px;
   transform: rotate(-225deg);
 }
+.mt-4 mb-4 text-2xl{
+  color: #25db40;
+}
 
 @media only screen and (max-width: 992px) {
   p {
