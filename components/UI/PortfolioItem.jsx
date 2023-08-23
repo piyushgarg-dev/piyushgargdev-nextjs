@@ -43,7 +43,7 @@ const PortfolioItem = (props) => {
               style={{
                 position: "absolute",
                 background: "transparent",
-                bottom: "20px",
+                bottom: "5px",
                 display: "flex",
                 flexDirection: "row",
                 flexWrap: "wrap",
