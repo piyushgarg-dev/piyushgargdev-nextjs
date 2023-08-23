@@ -44,9 +44,9 @@ const PortfolioItem = (props) => {
             <div className=" w-[100%] mt-5 lg:mt-0"> </div>
             <div
               style={{
-                position: "relative",
+                position: window.innerWidth >= 576 ? "relative" : "absolute",
                 background: "transparent",
-                bottom: "10px",
+                bottom: "20px",
                 display: "flex",
                 flexDirection: "row",
                 flexWrap: "wrap",
