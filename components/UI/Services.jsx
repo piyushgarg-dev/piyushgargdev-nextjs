@@ -54,7 +54,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
                       }}
                       alt={video.snippet.title}
                     />
-                    <p>{video.snippet.title}</p>
+                    <p className="truncate">{video.snippet.title}</p>
                     <p className="p-2.5 bg-[#171f38] w-fit text-xs text-white mt-2 rounded-md">
                       {new Date(video.snippet.publishTime).toDateString()}
                     </p>
