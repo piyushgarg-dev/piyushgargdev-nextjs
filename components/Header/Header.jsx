@@ -33,6 +33,11 @@ const NAV__LINK = [
     openInNewPage:false,
   },
   {
+    path: "/#playlists",
+    display: "Playlists",
+    openInNewPage:false,
+  },
+  {
     path: "/gears",
     display: "My Gears",
     openInNewPage:false,
