@@ -82,6 +82,14 @@ const Header = () => {
     menuRef.current.classList.toggle(`${classes.menu__active}`);
   };
 
+  const signOutAuth = () => {
+    let isUserOkay = confirm('Do you really want to sign out?')
+
+    if(isUserOkay){
+      signOut()
+    }
+  }
+
   return (
     <header className={`${classes.header}`} ref={headerRef}>
       <Container>
@@ -126,7 +134,7 @@ const Header = () => {
 
               {data && data.user ? (
                 <div
-                  onClick={signOut}
+                  onClick={signOutAuth}
                   className={`${classes.mobile__menuDiv} cursor-pointer`}
                 >
                   <Link href={"#"}>
