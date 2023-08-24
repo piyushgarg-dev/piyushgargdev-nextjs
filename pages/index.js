@@ -4,6 +4,7 @@ import Head from "next/head";
 import Hero from "../components/UI/Hero";
 import Services from "../components/UI/Services";
 import Courses from "../components/UI/Courses";
+import Playlists from "../components/UI/Playlists";
 import Contact from "../components/UI/Contact";
 import Blog from "../components/UI/Blog";
 import Terminal from "../components/UI/Terminal";
@@ -15,6 +16,7 @@ import {
 } from "../components/data/youtubeDefault";
 import feedbacks from "../components/data/testimonial";
 import courses from "../components/data/courses";
+import playlists from "../components/data/playlists";
 
 import { Container } from "reactstrap";
 import SectionSubtitle from "../components/UI/SectionSubtitle";
@@ -25,6 +27,7 @@ export default function Home({
   blogData,
   feedbacks = [],
   courses = [],
+  playlists = [],
 }) {
   return (
     <Fragment>
@@ -69,6 +72,7 @@ export default function Home({
       <Hero />
       <Services youtubeVideos={youtubeVideos} youtubeStats={youtubeStats} />
       <Courses courses={courses} />
+      <Playlists playlists={playlists}/>
       <Testimonial feedbacks={feedbacks} />
       <Container className="mt-5">
         <SectionSubtitle subtitle="Terminal" />
@@ -164,8 +168,11 @@ export async function getStaticProps(context) {
           course: courses.find((e) => e.id === feedBack.courseId),
         })),
         courses,
+        playlists,
       }, // will be passed to the page component as props
       revalidate: 43200, // 12 Hrs
     };
-  } catch (error) {}
+  } catch (error) {
+    console.log("Error Found In index.js - ",error);
+  }
 }
