@@ -1,6 +1,13 @@
 .hero {
-  padding-top: 60px !important;
+  padding-top: 0px !important;
 }
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    padding-top: 70px !important;
+  }
+}
+
 .hero__content h5 {
   color: #808dad;
   font-weight: 400;
