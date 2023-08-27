@@ -21,6 +21,7 @@
 .portfolio__item h3 {
   background: transparent;
   padding: 10px 0px 0px 0px;
+  margin: 12px 0px 12px 0px;
 }
 
 .portfolio__img {
@@ -62,17 +63,15 @@
   display: block;
 }
 
-
 @media only screen and (max-width: 940px) {
   .portfolio__keyword {
     padding: 3px 5px;
     margin-right: 7px;
   }
 
-  .portfolio__item p{
+  .portfolio__item p {
     line-height: 1.5;
   }
-
 }
 
 @media only screen and (max-width: 576px) {
