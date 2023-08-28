@@ -36,7 +36,7 @@
   font-size: 1.3rem !important;
 }
 
-.social__links :hover {
+.social__links:hover {
   color: var(--site-theme-color);
 }
 
