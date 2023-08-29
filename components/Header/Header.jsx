@@ -166,7 +166,7 @@ const Header = () => {
                     target="_blank"
                     title="Youtube Channel"
                     id="youtube-channel"
-                    className={`cursor-pointer  text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    className={`cursor-pointer  text-[#ffffff] hover:text-red-600 transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
                     <RiYoutubeFill />
@@ -188,7 +188,7 @@ const Header = () => {
                     target="_blank"
                     title="Twitter Account"
                     id="twitter-account"
-                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    className={`cursor-pointer text-[#ffffff] hover:text-blue-400 transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
                     <RiTwitterFill />
@@ -199,7 +199,7 @@ const Header = () => {
                     target="_blank"
                     title="LinkedIn Account"
                     id="linkedin-account"
-                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    className={`cursor-pointer text-[#ffffff] hover:text-blue-400 transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
                     <RiLinkedinFill />
