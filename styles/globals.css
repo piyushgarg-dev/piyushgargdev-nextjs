@@ -265,6 +265,11 @@ footer {
   bottom: 30px;
   transform: rotate(-225deg);
 }
+.max-textarea{
+  min-height: 5rem;
+  max-height: 17vw;
+}
+
 
 @media only screen and (max-width: 992px) {
   p {
@@ -292,3 +297,4 @@ footer {
     border: none;
   }
 }
+
