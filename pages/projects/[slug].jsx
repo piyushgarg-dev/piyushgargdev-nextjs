@@ -10,44 +10,7 @@ import projects from "../../components/data/projects";
 const { Tab } = Chrome;
 
 const Page = ({ project }) => {
-  // const { status } = useSession();
-
-  // if (status === "loading")
-  //   return (
-  //     <Container
-  //       style={{
-  //         width: "100vw",
-  //         height: "50vh",
-  //         display: "flex",
-  //         justifyContent: "center",
-  //         alignItems: "center",
-  //       }}
-  //     >
-  //       <div>
-  //         <MagnifyingGlass
-  //           visible={true}
-  //           height="80"
-  //           width="80"
-  //           ariaLabel="MagnifyingGlass-loading"
-  //           wrapperStyle={{}}
-  //           wrapperClass="MagnifyingGlass-wrapper"
-  //           glassColor="#c0efff"
-  //           color="#e15b64"
-  //         >
-  //           Loading...
-  //         </MagnifyingGlass>
-  //         <div>
-  //           <h3>Loading...</h3>
-  //         </div>
-  //       </div>
-  //     </Container>
-  //   );
-
-  // if (status === "unauthenticated") {
-  //   signIn();
-  //   return;
-  // }
-
+ 
   return (
     <Container className="my-5">
       <Head>
