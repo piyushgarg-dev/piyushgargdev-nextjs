@@ -20,7 +20,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
   };
   return (
     <section id="youtube-stats">
-      <Container>
+            <Container>
         <Row>
           <Col lg="3" md="12" sm="12">
             <Slider
@@ -30,52 +30,70 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
             >
               {youtubeVideos
                 ?.filter((video) => video.id.videoId)
-                ?.map((video) => (
-                  <div
-                    onClick={() =>
-                      window.open(
-                        `https://youtube.com/watch?v=${video.id.videoId}`,
-                        "_blank"
-                      )
-                    }
-                    style={{ padding: "10px" }}
-                    key={video.id.videoId}
-                  >
-                    <Image
-                      src={video.snippet.thumbnails.medium.url}
-                      height={0}
-                      width={0}
-                      sizes="100vw"
-                      style={{
-                        borderRadius: "20px",
-                        marginBottom: "10px",
-                        width: "100%",
-                        height: "auto",
-                      }}
-                      alt={video.snippet.title}
-                    />
-                    <p>{video.snippet.title}</p>
-                    <p className="p-2.5 bg-[#171f38] w-fit text-xs text-white mt-2 rounded-md">
-                      {new Date(video.snippet.publishTime).toDateString()}
-                    </p>
-                  </div>
-                ))}
+                  ?.map((video) => (
+                    <div
+                      onClick={() =>
+                        window.open(
+                          `https://youtube.com/watch?v=${video.id.videoId}`,
+                          "_blank"
+                        )
+                      }
+                      style={{ padding: "10px" }}
+                      key={video.id.videoId}
+                    >
+                      <Image
+                        src={video.snippet.thumbnails.medium.url}
+                        height={0}
+                        width={0}
+                        sizes="100vw"
+                        style={{
+                          borderRadius: "20px",
+                          marginBottom: "10px",
+                          width: "100%",
+                          height: "auto",
+                        }}
+                        alt={video.snippet.title}
+                      />
+                      <p>{video.snippet.title}</p>
+                      <p className="p-2.5 bg-[#171f38] w-fit text-xs text-white mt-2 rounded-md">
+                        {new Date(video.snippet.publishTime).toDateString()}
+                      </p>
+                    </div>
+                  ))}
             </Slider>
           </Col>
           <Col lg="3" md="6">
-            <ServicesItem
-              title={`${(
-                Number(youtubeStats?.statistics?.subscriberCount) / 1000
-              ).toPrecision(3)}K Subscribers`}
-              icon="ri-user-add-line"
-            />
-            <ServicesItem
-              title={`${youtubeStats?.statistics?.videoCount} Videos Uploaded`}
-              icon="ri-film-line"
-            />
+
+
+            <a
+              href="https://www.youtube.com/@piyushgargdev?sub_confirmation=1"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <ServicesItem
+                title={`${(
+                  Number(youtubeStats?.statistics?.subscriberCount) / 1000
+                ).toPrecision(3)}K Subscribers`}
+                icon="ri-user-add-line"
+              />
+            </a>
+            <a
+              href="https://www.youtube.com/@piyushgargdev?sub_confirmation=1"
+              target="_blank"
+              rel="noreferrer"
+            >
+
+
+
+              <ServicesItem
+                title={`${youtubeStats?.statistics?.videoCount} Videos Uploaded`}
+                icon="ri-film-line"
+              />
+            </a>
           </Col>
 
           <Col lg="6" md="6" className={`${classes.service__title}`}>
+
             <SectionSubtitle subtitle="Youtube" />
             <h3 className="mb-0 mt-4">Popular</h3>
             <h3 className="mb-2">Uploads from My Youtube Channel</h3>
