@@ -130,7 +130,7 @@ const Contact = () => {
 										autoComplete="off"
 									/>
 									<textarea
-										className="text-md min-h-[120px] border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
+										className="text-md min-h-[120px] max-h-[250px] border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
 										name="message"
 										placeholder="Your Message"
 										required
