@@ -74,7 +74,7 @@ export default function Home({
         <SectionSubtitle subtitle="Terminal" />
         <div
           id="terminal-1"
-          style={{ border: "1px solid white", height: "400px" }}
+          style={{ border: "1px solid white", height: "400px", marginTop: "1.5rem" }}
         >
           <Terminal />
         </div>
@@ -167,5 +167,5 @@ export async function getStaticProps(context) {
       }, // will be passed to the page component as props
       revalidate: 43200, // 12 Hrs
     };
-  } catch (error) {}
+  } catch (error) { }
 }
