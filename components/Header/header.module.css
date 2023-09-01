@@ -93,7 +93,6 @@
 .nav_links::before {
   content: "";
   position: absolute;
-  /* width: -webkit-fill-available; */
   width: 0;
   height: 1px;
   background-color: var(--site-theme-color);
