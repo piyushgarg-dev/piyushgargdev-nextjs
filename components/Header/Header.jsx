@@ -25,22 +25,22 @@ const NAV__LINK = [
   {
     path: "/",
     display: "Home",
-    openInNewPage:false,
+    openInNewPage: false,
   },
   {
     path: "/#courses",
     display: "Courses",
-    openInNewPage:false,
+    openInNewPage: false,
   },
   {
     path: "/gears",
     display: "My Gears",
-    openInNewPage:false,
+    openInNewPage: false,
   },
   {
     path: "https://blog.piyushgarg.dev",
     display: "Blogs",
-    openInNewPage:true,
+    openInNewPage: true,
   },
 ];
 
@@ -112,12 +112,12 @@ const Header = () => {
                   key={index}
                   className={`${classes.mobile__menuDiv} cursor-pointer`}
                 >
-                  <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}`}>
+                  <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage ? '_blank' : '_self'}`}>
                     <p className={`${classes.mobile__menu}`}>{icons[index]}</p>
                   </Link>
 
-                  <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}`}>
-                    <span className=" text-[#808dad] hover:text-green-400">
+                  <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage ? '_blank' : '_self'}`}>
+                    <span className={`text-[#808dad] hover:text-green-400 ${classes.nav_links}`}>
                       {item.display}
                     </span>
                   </Link>
@@ -149,7 +149,7 @@ const Header = () => {
                   </Link>
 
                   <Link href={"#"}>
-                    <span className=" text-[#808dad] hover:text-green-400">
+                    <span className={`text-[#808dad] hover:text-green-400 ${classes.nav_links}`}>
                       Login
                     </span>
                   </Link>
@@ -217,7 +217,7 @@ const Header = () => {
           </span>
         </div>
       </Container>
-    </header>
+    </header >
   );
 };
 
