@@ -89,7 +89,7 @@ const Header = () => {
           {/* ======== navigation logo ======== */}
           <div style={{ cursor: "pointer" }} className={`${classes.logo}`}>
             <Link aria-label="Home Page" href="/">
-              <h1>
+              <h1 style={{fontWeight:"600"}}>
                 <span>P</span>iyush <span>G</span>arg
               </h1>
             </Link>
