@@ -61,7 +61,6 @@ const Contact = () => {
 
             <div className={`${classes.social__links}`}>
               <Link
-                // className="hover:text-[#01d293] duration-300"
                 className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                 aria-label="Youtube Channel"
                 title="Youtube Channel"
