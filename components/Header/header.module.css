@@ -69,6 +69,46 @@
   z-index: 9999;
 }
 
+/* Header Styles */
+.header {
+  background-color: #0e1630;
+  color: #fff;
+  padding: 20px 0; /* Add padding to top and bottom */
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo h1 {
+  font-size: 1.8rem; /* Adjust the font size */
+  margin: 0;
+}
+
+/* Body Styles (Adjust as needed) */
+/* Add styles to your course elements */
+
+/* Footer Styles */
+.footer {
+  background-color: #0e1630; /* Add background color */
+  color: #fff;
+  padding: 10px 0; /* Add padding to top and bottom */
+  text-align: center;
+}
+
+/* Footer Links and Copyright (Adjust as needed) */
+
+/* Mobile Styles */
+@media only screen and (max-width: 992px) {
+  
+
+  .logo h1 {
+    font-size: 1.3rem; /* Adjust font size for mobile */
+  }
+
+  /* Add styles for mobile menuDiv */
+}
+
+
 .mobile__menu i {
   font-size: 1.3rem;
   color: #fff;
