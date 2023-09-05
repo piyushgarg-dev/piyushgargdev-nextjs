@@ -1,0 +1,15 @@
+.btn_icon {
+  font-size: 6rem;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 100;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  color: rgb(156, 156, 156);
+  background-color: rgba(11, 4, 46, 0.404);
+  width: 60px;
+  height: 60px;
+}
