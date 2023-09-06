@@ -101,7 +101,7 @@ const Contact = () => {
               </div>
             ) : (
               <>
-              <div className="mt-4 mb-4 text-2xl"><SectionSubtitle subtitle="Contact me" /></div>
+              <div className="mt-4 mb-4 text-2xl"><SectionSubtitle subtitle="Say Hello" /></div>
               
               <form className="flex flex-col space-y-4" onSubmit={handleSubmit}>
                 <input
