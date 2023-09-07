@@ -10,12 +10,16 @@
   padding-top: 50px;
 }
 
-.hero__img {
-  position: relative;
-  z-index: 9;
-  display: flex;
-  /* border: 2px solid red; */
-  justify-content: flex-end;
+.hero__img img {
+  border-radius: 50px 5px 5px 5px;
+  display: inline;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.7);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.hero__img img:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 255, 0.7);
 }
 
 .hero__img img {
