@@ -101,7 +101,7 @@ const Header = () => {
             ref={menuRef}
             onClick={toggleMenu}
           >
-            <div className={`${classes.nav__menu}`}>
+            <div className={`${classes.nav__menu}  ${crossMenu && classes.apear_right}`}>
               {crossMenu && (
                 <div className="border text-white text-3xl absolute top-10 right-10 font-extrabold">
                   <RiCloseLine />
