@@ -85,7 +85,7 @@ const Contact = () => {
                 <RiTwitterFill />
               </Link>
               <Link
-                className="hover:text-[#01d293] duration-300 hover:-translate-y+1 hover:scale-150"
+                className="hover:text-[#01d293] duration-300 hover:scale-150"
                 aria-label="LinedIn Account"
                 href="https://www.linkedin.com/in/piyushgarg195/"
                 target="_blank"
