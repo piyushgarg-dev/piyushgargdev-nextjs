@@ -3,6 +3,7 @@
   height: 94px;
   line-height: 80px;
   background-color: #0e1630;
+  border-bottom: 10px solid white;
 }
 
 .nav__wrapper {
