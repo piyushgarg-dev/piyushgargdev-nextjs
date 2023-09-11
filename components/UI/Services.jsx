@@ -55,7 +55,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
                       alt={video.snippet.title}
                     />
                     <p>{video.snippet.title}</p>
-                    <p className="p-2.5 bg-[#171f38] w-fit text-xs text-white mt-2 rounded-md">
+                    <p className="p-2.5 bg-[#808dad68] w-fit text-xs text-[#fff] mt-2 rounded-md hover:bg-white hover:text-[#000]">
                       {new Date(video.snippet.publishTime).toDateString()}
                     </p>
                   </div>
