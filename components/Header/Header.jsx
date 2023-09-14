@@ -60,6 +60,13 @@ const Header = () => {
 
   const { data } = useSession();
 
+
+  // const handleScroll = (path) => {
+  //   if(!path.startsWith("#"))return;
+
+  // }
+
+
   const headerFunc = () => {
     if (
       document.body.scrollTop > 80 ||
@@ -112,11 +119,11 @@ const Header = () => {
                   key={index}
                   className={`${classes.mobile__menuDiv} cursor-pointer`}
                 >
-                  <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}`}>
+                  <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}`} scroll={false}>
                     <p className={`${classes.mobile__menu}`}>{icons[index]}</p>
                   </Link>
 
-                  <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}`}>
+                  <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}`} scroll={false}>
                     <span className=" text-[#808dad] hover:text-green-400">
                       {item.display}
                     </span>
