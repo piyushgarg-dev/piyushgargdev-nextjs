@@ -23,13 +23,14 @@ import {
 
 const NAV__LINK = [
   {
-    path: "/",
+    path: "/#portfoiloitem",
     display: "Home",
     openInNewPage:false,
   },
   {
     path: "/#courses",
     display: "Courses",
+    to:"courses",
     openInNewPage:false,
   },
   {
@@ -112,11 +113,11 @@ const Header = () => {
                   key={index}
                   className={`${classes.mobile__menuDiv} cursor-pointer`}
                 >
-                  <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}`}>
+                  <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}` }>
                     <p className={`${classes.mobile__menu}`}>{icons[index]}</p>
                   </Link>
 
-                  <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}`}>
+                  <Link scroll={false} aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}`}>
                     <span className=" text-[#808dad] hover:text-green-400">
                       {item.display}
                     </span>
