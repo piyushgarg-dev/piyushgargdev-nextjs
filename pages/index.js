@@ -70,15 +70,17 @@ export default function Home({
       <Services youtubeVideos={youtubeVideos} youtubeStats={youtubeStats} />
       <Courses courses={courses} />
       <Testimonial feedbacks={feedbacks} />
-      <Container className="mt-5">
-        <SectionSubtitle subtitle="Terminal" />
-        <div
-          id="terminal-1"
-          style={{ border: "1px solid white", height: "400px" }}
-        >
-          <Terminal />
-        </div>
-      </Container>
+      <section id="terminal">
+        <Container className="mt-5">
+          <SectionSubtitle subtitle="Terminal" />
+          <div
+            id="terminal-1"
+            style={{ border: "1px solid white", height: "400px" }}
+          >
+            <Terminal />
+          </div>
+        </Container>
+      </section>
 
       <Blog
         blogDomain={blogData?.user?.publicationDomain}
@@ -167,5 +169,5 @@ export async function getStaticProps(context) {
       }, // will be passed to the page component as props
       revalidate: 43200, // 12 Hrs
     };
-  } catch (error) {}
+  } catch (error) { }
 }
