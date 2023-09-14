@@ -61,12 +61,6 @@ const Header = () => {
   const { data } = useSession();
 
 
-  // const handleScroll = (path) => {
-  //   if(!path.startsWith("#"))return;
-
-  // }
-
-
   const headerFunc = () => {
     if (
       document.body.scrollTop > 80 ||
