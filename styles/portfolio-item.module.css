@@ -20,7 +20,8 @@
 
 .portfolio__item h3 {
   background: transparent;
-  padding: 10px 0px 0px 0px;
+  padding: 10px 0px 10px 0px;
+ 
 }
 
 .portfolio__img {
@@ -40,6 +41,7 @@
   margin-right: 10px;
   border-radius: 5px;
   margin-bottom: 5px;
+
 }
 
 .portfolio__keyword:hover {
@@ -71,6 +73,7 @@
 
   .portfolio__item p{
     line-height: 1.5;
+    
   }
 
 }
@@ -82,5 +85,6 @@
   .portfolio__keyword {
     padding: 5px 10px;
     margin-right: 10px;
+   
   }
 }
