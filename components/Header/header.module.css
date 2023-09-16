@@ -84,7 +84,7 @@
   color: #ff0000 !important;
 }
 
-/* ========== make it responsive ========= */
+
 
 @media only screen and (max-width: 992px) {
   .navigation {
@@ -136,4 +136,34 @@
     height: 60px;
     line-height: 60px;
   }
+}
+
+.mobile__menuDiv {
+  position: relative;
+  cursor: pointer;
+  margin-right: 20px;
+  padding-bottom: 6px; 
+  transition: padding-bottom 0.3s ease; 
+}
+
+
+.mobile__menuDiv::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0; 
+  height: 2px; 
+  background-color: #01d293; 
+  transition: width 0.3s ease; 
+}
+
+
+.mobile__menuDiv:hover {
+  padding-bottom: 10px; 
+}
+
+
+.mobile__menuDiv:hover::after {
+  width: 100%; 
 }
