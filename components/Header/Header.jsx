@@ -150,7 +150,7 @@ const Header = () => {
 
                   <Link href={"#"}>
                     <span className=" text-[#808dad] hover:text-green-400">
-                      Login
+                      Sign In
                     </span>
                   </Link>
                 </div>
