@@ -125,6 +125,7 @@
   }
 
   .mobile__menuDiv {
+    width: 100px;
     display: flex;
     align-items: center;
     gap: 7px;
