@@ -105,7 +105,7 @@ const Contact = () => {
               
               <form className="flex flex-col space-y-4" onSubmit={handleSubmit}>
                 <input
-                  className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
+                  className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white focus:outline-none"
                   type="text"
                   name="name"
                   placeholder="Your Full Name"
@@ -113,7 +113,7 @@ const Contact = () => {
                   autoComplete="off"
                 />
                 <input
-                  className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
+                  className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white focus:outline-none"
                   type="email"
                   name="email"
                   placeholder="Your Email"
@@ -121,7 +121,7 @@ const Contact = () => {
                   autoComplete="off"
                 />
                 <textarea
-                  className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
+                  className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white focus:outline-none"
                   name="message"
                   placeholder="Your Message"
                   required
