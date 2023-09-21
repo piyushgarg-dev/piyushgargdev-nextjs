@@ -184,7 +184,7 @@ const Header = () => {
                   </Link>
 
                   <Link
-                    href="https://twitter.com/piyushgarg_dev"
+                    href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fpunchng.com%2Fmusk-unveils-new-name-logo-for-twitter%2F&psig=AOvVaw2CxNLTeiz5Tqd4MlKM35VV&ust=1695411944231000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCNirw-e7vIEDFQAAAAAdAAAAABAM"
                     target="_blank"
                     title="Twitter Account"
                     id="twitter-account"
