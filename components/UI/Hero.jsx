@@ -1,23 +1,38 @@
 import React, { Suspense } from "react";
+import Typewriter from "typewriter-effect";
 import Link from "next/link";
 import SectionSubtitle from "./SectionSubtitle";
 import { Container, Row, Col, Button } from "reactstrap";
 import Image from "next/image";
 import heroImg from "../../public/images/PiyushGarg.png";
 import classes from "../../styles/hero.module.css";
-import classNames  from "../../styles/subtitle.module.css";
+import classNames from "../../styles/subtitle.module.css";
 
 const Hero = () => {
   return (
     <section className={` ${classes.hero} `}>
 
-    {/* desktop / large screen view */}
+      {/* desktop / large screen view */}
       <Container id="hero-section " className="md:flex hidden">
         <Row>
           <Col lg="6" md="6">
             <div className={`${classes.hero__content}`}>
               <SectionSubtitle subtitle="Hello" />
-              <h2 className="mt-3 mb-3">I&apos;m Piyush Garg</h2>
+              <h2 className="mt-3 mb-3">
+                <Typewriter
+                  options={{
+                    loop: true,
+                    autoStart: true
+                  }}
+                  onInit={(Typewriter) => {
+                    Typewriter
+                      .typeString("I'm Piyush Garg")
+                      .pauseFor(1000)
+                      .deleteAll()
+                      .start();
+                  }}
+                />
+              </h2>
               <h5 className="mb-4">Fullstack Developer & Instructor</h5>
               <p id="about-me">
                 Hi there! My name is Piyush Garg and I&rsquo;m a software
@@ -55,21 +70,21 @@ const Hero = () => {
           <Col lg="6" md="6">
             <div className={`${classes.hero__content}`}>
               <div className="flex flex-col items-center justify-center">
-                
+
                 <Col lg="6" md="6">
                   <div className={`${classes.hero__img} text-end`}>
                     <Image alt="Piyush Garg" src={heroImg} width="450" height="450" />
                   </div>
                 </Col>
                 <h2 className="mt-3 mb-3">
-                <span  className={`${classNames.section__subtitle}`} >Hello ! </span>
-                I&apos;m Piyush Garg</h2>
+                  <span className={`${classNames.section__subtitle}`} >Hello ! </span>
+                  I&apos;m Piyush Garg</h2>
                 <h5 className="mb-4">Fullstack Developer & Instructor</h5>
                 <p id="about-me" className="text-center">
-                Hi there! My name is Piyush Garg and I&rsquo;m a software
-                engineer with over 5 years of experience in the industry. I love
-                all things tech and coding, and on my channel, I share my
-                knowledge and experience with others.
+                  Hi there! My name is Piyush Garg and I&rsquo;m a software
+                  engineer with over 5 years of experience in the industry. I love
+                  all things tech and coding, and on my channel, I share my
+                  knowledge and experience with others.
                 </p>
               </div>
 
