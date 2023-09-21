@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row, Col, Alert } from "reactstrap";
+import { Container, Row, Col, Button, Alert } from "reactstrap";
 import SectionSubtitle from "./SectionSubtitle";
 import classes from "../../styles/portfolio.module.css";
 import PortfolioItem from "./PortfolioItem";
-
 
 const Blog = ({ blogs, blogDomain }) => {
   const [filter, setFilter] = useState("Mobile App");
@@ -16,15 +15,14 @@ const Blog = ({ blogs, blogDomain }) => {
       <Container>
         <Row>
           <Col lg="6" md="6" className="mb-5">
-            <SectionSubtitle subtitle="blog.piyushgarg.dev" />
+            <SectionSubtitle subtitle="Recent Blogs" />
             <h4 className="mt-4 text-2xl">Checkout my recent blogs</h4>
           </Col>
         </Row>
 
         <Row>
-          {blogs.map((blogItem)  => (
+          {blogs.map((blogItem) => (
             <Col
-
               className="hover:scale-105 hover:ease-out duration-300"
               style={{ margin: "14px 0px" }}
               key={blogItem._id}
@@ -43,6 +41,17 @@ const Blog = ({ blogs, blogDomain }) => {
               />
             </Col>
           ))}
+        </Row>
+        <Row>
+          <Col className="text-center mt-3">
+            <a
+              href="https://blog.piyushgarg.dev"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Button className="blog_button">View More</Button>
+            </a>
+          </Col>
         </Row>
 
         {/* <Row>
