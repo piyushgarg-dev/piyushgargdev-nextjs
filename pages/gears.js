@@ -20,6 +20,7 @@ export default function Gears() {
               lg="4"
               md="4"
               sm="6"
+              className="hover:scale-105 hover:ease-out duration-300 shadow-md"
             >
               <PortfolioItem item={item} />
             </Col>
