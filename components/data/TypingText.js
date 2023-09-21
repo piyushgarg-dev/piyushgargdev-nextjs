@@ -1,39 +1,43 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 
 const TypingText = ({ text }) => {
   const [displayText, setDisplayText] = useState("");
   const typingSpeed = 100; // Adjust typing speed as needed
-  const textInterval = useRef(null);
+  const containerHeight = "60px"; // Adjust the height as needed
 
   useEffect(() => {
-    let currentIndex = 0;
+    const textLength = text.length;
 
-    const startTyping = () => {
-      textInterval.current = setInterval(() => {
-        if (currentIndex <= text.length) {
+    let currentIndex = 0;
+    let direction = 1; // 1 for forward, -1 for backward
+
+    const updateText = () => {
+      setDisplayText(text.substring(0, currentIndex));
+      currentIndex += direction;
+
+      if (currentIndex === textLength + 1) {
+        direction = -1; // Change direction to backward
+        setTimeout(() => {
           setDisplayText(text.substring(0, currentIndex));
-          currentIndex++;
-        } else {
-          clearInterval(textInterval.current);
-          setTimeout(() => {
-            // Reset the display text and start typing again
-            currentIndex = 0;
-            setDisplayText("");
-            startTyping();
-          }, 500); // Adjust the delay before restarting typing
-        }
-      }, typingSpeed);
+          currentIndex += direction;
+        }, 1000); // Pause before typing backward
+      }
+
+      if (currentIndex === -1) {
+        direction = 1; // Change direction to forward
+        currentIndex = 0;
+      }
     };
 
-    startTyping();
+    const textInterval = setInterval(updateText, typingSpeed);
 
     return () => {
-      clearInterval(textInterval.current);
+      clearInterval(textInterval);
     };
   }, [text]);
 
   return (
-    <div style={{ height: "50px" /* Adjust the height as needed */ }}>
+    <div style={{ height: containerHeight }}>
       <span>{displayText}</span>
     </div>
   );
