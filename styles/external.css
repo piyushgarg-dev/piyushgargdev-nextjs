@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
-@import url("../node_modules/bootstrap/dist/css/bootstrap.min.css");
-@import url("../node_modules/remixicon/fonts/remixicon.css");
-@import url("../node_modules/slick-carousel/slick/slick.css");
-@import url("../node_modules/slick-carousel/slick/slick-theme.css");
+
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+@import 'remixicon/fonts/remixicon.css';
+
+
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
