@@ -1,9 +1,12 @@
 import React from "react";
 import classes from "../../styles/services-item.module.css";
 
-const ServicesItem = ({ title, icon }) => {
+
+const ServicesItem = ({ title, icon, link }) => {
+ 
   return (
-    <div className={`${classes.service__item}`}>
+    
+    <div onClick={()=>  window.open(link, '_blank')} className={`${classes.service__item}`}>
       <span>
         <i className={icon}></i>
       </span>
