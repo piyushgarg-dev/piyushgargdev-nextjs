@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+// import ScrollToTop from "../UI/ScrollToTop";
 
 const Layout = (props) => {
   return (
@@ -8,6 +9,7 @@ const Layout = (props) => {
       <Header />
       <div>{props.children}</div>
       <Footer />
+    
     </Fragment>
   );
 };

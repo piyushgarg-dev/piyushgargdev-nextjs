@@ -3,6 +3,7 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import classes from "./footer.module.css";
 import Link from "next/link";
+import ScrollToTop from "../UI/ScrollToTop";
 
 const Footer = () => {
   const date = new Date();
@@ -10,6 +11,7 @@ const Footer = () => {
 
   return (
     <footer>
+      <ScrollToTop/>
       <Container>
         <Row>
           <Col lg="12">
@@ -21,6 +23,7 @@ const Footer = () => {
             </div>
           </Col>
         </Row>
+    
       </Container>
     </footer>
   );
