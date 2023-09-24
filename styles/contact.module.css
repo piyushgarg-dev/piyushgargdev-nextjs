@@ -22,7 +22,6 @@
 .info__item span i {
   color: var(--site-theme-color);
   font-size: 1.2rem;
-  padding: 5px;
   border-radius: 5px;
   background: var(--site-theme-color) 38;
 }
