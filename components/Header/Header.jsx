@@ -12,6 +12,7 @@ import {
   RiGithubFill,
   RiTwitterFill,
   RiLinkedinFill,
+  RiDiscordFill
 } from "react-icons/ri";
 
 import {
@@ -204,6 +205,17 @@ const Header = () => {
                   >
                     <RiLinkedinFill />
                   </Link>
+                  <Link
+                    href="https://discord.gg/kRSRxBQ6xf"
+                    target="_blank"
+                    title="Discord Account"
+                    id="discord-account"
+                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    rel="noreferrer"
+                  >
+                    <RiDiscordFill />
+                  </Link>
+
                 </div>
               </div>
             </div>

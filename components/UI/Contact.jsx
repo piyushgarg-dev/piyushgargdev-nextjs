@@ -6,7 +6,7 @@ import classes from "../../styles/contact.module.css";
 import Form from "./Form";
 import axios from "axios";
 import { useState } from "react";
-import { RiYoutubeFill, RiGithubFill, RiTwitterFill, RiLinkedinFill } from "react-icons/ri";
+import { RiYoutubeFill, RiGithubFill, RiTwitterFill, RiLinkedinFill, RiDiscordFill } from "react-icons/ri";
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
   const handleSubmit = async (event) => {
@@ -91,6 +91,14 @@ const Contact = () => {
                 target="_blank"
               >
                 <RiLinkedinFill />
+              </Link>
+              <Link
+                className="hover:text-[#01d293] duration-300"
+                aria-label="Discord Account"
+                href="https://discord.gg/kRSRxBQ6xf"
+                target="_blank"
+              >
+                <RiDiscordFill />
               </Link>
             </div>
           </Col>
