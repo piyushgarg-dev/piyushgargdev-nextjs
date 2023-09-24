@@ -75,11 +75,15 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
             />
           </Col>
 
-          <Col lg="6" md="6" className={`${classes.service__title}`}>
+          <Col
+            lg="6"
+            md="6"
+            className={`${classes.service__title} text-center d-flex flex-column align-items-center`}
+          >
             <SectionSubtitle subtitle="Youtube" />
-            <h3 className="mb-0 mt-4">Popular</h3>
-            <h3 className="mb-2">Uploads from My Youtube Channel</h3>
-            <p>
+            <h3 className="mb-3 mt-3">Popular</h3>
+            <h3 className="mb-3">Uploads from My Youtube Channel</h3>
+            <p className="mb-3">
               I would really appreciate it if you could check it out and maybe
               even hit the subscribe button if you enjoy the content.
             </p>
@@ -88,6 +92,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
               href="https://www.youtube.com/@piyushgargdev?sub_confirmation=1"
               target="_blank"
               rel="noreferrer"
+              className="mt-auto" // Pushes the "Subscribe" button to the bottom
             >
               <Button color="danger">Subscribe</Button>
             </a>
