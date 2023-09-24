@@ -26,6 +26,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
             <Slider
               {...settings}
               // style={{ cursor: "pointer", marginBottom: "10px" }}
+              style={{ margin: 20, padding: 0 }}
               className=" cursor-pointer mb-10 md:mb:0"
             >
               {youtubeVideos
