@@ -76,6 +76,7 @@
 }
 
 @media only screen and (max-width: 576px) {
+  
   .portfolio__img img {
     width: 100% !important;
   }
@@ -84,3 +85,21 @@
     margin-right: 10px;
   }
 }
+
+@media screen and (min-width: 640px) and (max-width: 1000px) {
+  .portfolio__item p{
+    line-height: 1.5;
+    height:5rem;
+    font-size: 0.8rem !important;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 320px) 
+     and (orientation: portrait) {
+      .portfolio__item p{
+        line-height: 1.5;
+        height:5rem;
+        font-size: 0.8rem !important;
+      }
+
+  }
