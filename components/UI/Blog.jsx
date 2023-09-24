@@ -4,7 +4,6 @@ import SectionSubtitle from "./SectionSubtitle";
 import classes from "../../styles/portfolio.module.css";
 import PortfolioItem from "./PortfolioItem";
 
-
 const Blog = ({ blogs, blogDomain }) => {
   const [filter, setFilter] = useState("Mobile App");
   const [data, setData] = useState();
@@ -16,15 +15,14 @@ const Blog = ({ blogs, blogDomain }) => {
       <Container>
         <Row>
           <Col lg="6" md="6" className="mb-5">
-            <SectionSubtitle subtitle="blog.piyushgarg.dev" />
+            <SectionSubtitle subtitle="Recent blogs" />
             <h4 className="mt-4 text-2xl">Checkout my recent blogs</h4>
           </Col>
         </Row>
 
         <Row>
-          {blogs.map((blogItem)  => (
+          {blogs.map((blogItem) => (
             <Col
-
               className="hover:scale-105 hover:ease-out duration-300"
               style={{ margin: "14px 0px" }}
               key={blogItem._id}
@@ -43,6 +41,20 @@ const Blog = ({ blogs, blogDomain }) => {
               />
             </Col>
           ))}
+        </Row>
+
+        <Row>
+          <Col className="flex justify-center mt-3">
+            <button className="text-white bg-[#808dad68] py-[5px] px-[14px] rounded-md hover:scale-105 hover:ease-out duration-300">
+              <a
+                target="_blank"
+                href="https://blog.piyushgarg.dev/"
+                rel="noreferrer"
+              >
+                View More
+              </a>
+            </button>
+          </Col>
         </Row>
 
         {/* <Row>
