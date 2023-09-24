@@ -18,7 +18,9 @@ const Contact = () => {
     };
     console.log(data);
     try {
-      const response = await axios.post("/api/contact", data);
+      await axios.post("/api/contact", data);
+      console.log(`Response : ${response}`);
+      
       if (response.status === 200) {
         setSubmitted(true);
         console.log("Form submitted");
