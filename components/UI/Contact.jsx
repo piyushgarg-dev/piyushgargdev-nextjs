@@ -54,6 +54,12 @@ const Contact = () => {
               >
                 <i className="ri-linkedin-line"></i>
               </Link>
+              <Link
+                aria-label="Instagram Account"
+                href="https://www.instagram.com/piyushgarg_dev/"
+              >
+                <i className="ri-instagram-line"></i>
+              </Link>
             </div>
           </Col>
 
