@@ -45,7 +45,7 @@ const Testimonial = ({ feedbacks = [] }) => {
           <Slider {...settings}>
             {feedbacks.map((feedBack) => (
               <Col key={feedBack.name} lg="4" md="4" sm="12">
-                <TestimonialItem feedback={feedBack} />
+                <TestimonialItem feedBack={feedBack} />
               </Col>
             ))}
           </Slider>

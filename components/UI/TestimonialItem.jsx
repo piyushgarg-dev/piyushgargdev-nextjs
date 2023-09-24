@@ -3,7 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import classes from "../../styles/testimonial.module.css";
 
-const TestimonialItem = ({ feedBack }) => (
+
+const TestimonialItem = ({ feedBack}) => (
   <div className={`${classes.testimonial__item}`}>
     <div className={`${classes.testimonial__client}`}>
       <Image

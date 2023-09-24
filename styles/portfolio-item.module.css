@@ -6,7 +6,9 @@
   margin-bottom: 30px;
   min-height: 100%;
   position: relative;
+  transition: 0.3s;
 }
+
 
 .portfolio__item div {
   background: transparent;
@@ -49,6 +51,7 @@
 
 .portfolio__item:hover {
   cursor: pointer;
+  transform: translateY(-5px);
 }
 
 .portfolio__item:hover .portfolio__live {
