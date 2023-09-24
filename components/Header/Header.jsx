@@ -10,37 +10,31 @@ import {
   RiCloseLine,
   RiYoutubeFill,
   RiGithubFill,
-  RiTwitterFill,
   RiLinkedinFill,
 } from "react-icons/ri";
 
-import {
-  AiFillHome,
-  AiFillShopping,
-  AiFillExclamationCircle,
-  AiFillEdit,
-} from "react-icons/ai";
+import { AiFillHome, AiFillShopping, AiFillEdit } from "react-icons/ai";
 
 const NAV__LINK = [
   {
     path: "/",
     display: "Home",
-    openInNewPage:false,
+    openInNewPage: false,
   },
   {
     path: "/#courses",
     display: "Courses",
-    openInNewPage:false,
+    openInNewPage: false,
   },
   {
     path: "/gears",
     display: "My Gears",
-    openInNewPage:false,
+    openInNewPage: false,
   },
   {
     path: "https://blog.piyushgarg.dev",
     display: "Blogs",
-    openInNewPage:true,
+    openInNewPage: true,
   },
 ];
 
@@ -112,11 +106,19 @@ const Header = () => {
                   key={index}
                   className={`${classes.mobile__menuDiv} cursor-pointer`}
                 >
-                  <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}`}>
+                  <Link
+                    aria-label={item.display}
+                    href={item.path}
+                    target={`${item.openInNewPage ? "_blank" : "_self"}`}
+                  >
                     <p className={`${classes.mobile__menu}`}>{icons[index]}</p>
                   </Link>
 
-                  <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}`}>
+                  <Link
+                    aria-label={item.display}
+                    href={item.path}
+                    target={`${item.openInNewPage ? "_blank" : "_self"}`}
+                  >
                     <span className=" text-[#808dad] hover:text-green-400">
                       {item.display}
                     </span>
@@ -188,10 +190,16 @@ const Header = () => {
                     target="_blank"
                     title="Twitter Account"
                     id="twitter-account"
-                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    className={`cursor-pointer fill-[#ffffff] hover:fill-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
-                    <RiTwitterFill />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="1em"
+                      viewBox="0 0 512 512"
+                    >
+                      <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                    </svg>
                   </Link>
 
                   <Link

@@ -6,7 +6,12 @@ import classes from "../../styles/contact.module.css";
 import Form from "./Form";
 import axios from "axios";
 import { useState } from "react";
-import { RiYoutubeFill, RiGithubFill, RiTwitterFill, RiLinkedinFill } from "react-icons/ri";
+import {
+  RiYoutubeFill,
+  RiGithubFill,
+  RiTwitterFill,
+  RiLinkedinFill,
+} from "react-icons/ri";
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
   const handleSubmit = async (event) => {
@@ -35,7 +40,6 @@ const Contact = () => {
       <Container>
         <Row className="flex justify-between flex-col md:flex-row ">
           <Col lg="4" md="6">
-            
             <h3 className="mt-4 mb-4 text-2xl">Connect with me</h3>
 
             <ul className={`${classes.contact__info__list}`}>
@@ -77,12 +81,19 @@ const Contact = () => {
                 <RiGithubFill />
               </Link>
               <Link
-                className="hover:text-[#01d293] duration-300"
+                className="hover:fill-[#01d293] duration-300"
                 aria-label="Twitter Account"
                 href="https://twitter.com/piyushgarg_dev"
                 target="_blank"
               >
-                <RiTwitterFill />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 512 512"
+                  fill="currentColor"
+                >
+                  <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                </svg>
               </Link>
               <Link
                 className="hover:text-[#01d293] duration-300"
@@ -101,40 +112,45 @@ const Contact = () => {
               </div>
             ) : (
               <>
-              <div className="mt-4 mb-4 text-2xl"><SectionSubtitle subtitle="Contact me" /></div>
-              
-              <form className="flex flex-col space-y-4" onSubmit={handleSubmit}>
-                <input
-                  className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
-                  type="text"
-                  name="name"
-                  placeholder="Your Full Name"
-                  required
-                  autoComplete="off"
-                />
-                <input
-                  className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
-                  type="email"
-                  name="email"
-                  placeholder="Your Email"
-                  required
-                  autoComplete="off"
-                />
-                <textarea
-                  className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
-                  name="message"
-                  placeholder="Your Message"
-                  required
-                  rows="4"
-                  autoComplete="off"
-                ></textarea>
-                <button
-                  type="submit"
-                  className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
+                <div className="mt-4 mb-4 text-2xl">
+                  <SectionSubtitle subtitle="Contact me" />
+                </div>
+
+                <form
+                  className="flex flex-col space-y-4"
+                  onSubmit={handleSubmit}
                 >
-                  Send Message
-                </button>
-              </form>
+                  <input
+                    className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
+                    type="text"
+                    name="name"
+                    placeholder="Your Full Name"
+                    required
+                    autoComplete="off"
+                  />
+                  <input
+                    className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                    autoComplete="off"
+                  />
+                  <textarea
+                    className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
+                    name="message"
+                    placeholder="Your Message"
+                    required
+                    rows="4"
+                    autoComplete="off"
+                  ></textarea>
+                  <button
+                    type="submit"
+                    className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
+                  >
+                    Send Message
+                  </button>
+                </form>
               </>
             )}
           </Col>
