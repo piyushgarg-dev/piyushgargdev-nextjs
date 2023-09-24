@@ -37,9 +37,12 @@
   color: #fff;
   background: #808dad68;
   font-size: 0.7rem;
-  margin-right: 10px;
   border-radius: 5px;
   margin-bottom: 5px;
+}
+
+.portfolio__keyword:not(:last-child) {
+  margin-right: 10px;
 }
 
 .portfolio__keyword:hover {
@@ -66,6 +69,9 @@
 @media only screen and (max-width: 940px) {
   .portfolio__keyword {
     padding: 3px 5px;
+  }
+
+  .portfolio__keyword:not(:last-child) {
     margin-right: 7px;
   }
 
@@ -81,6 +87,8 @@
   }
   .portfolio__keyword {
     padding: 5px 10px;
+  }
+  .portfolio__keyword:not(:last-child) {
     margin-right: 10px;
   }
 }
