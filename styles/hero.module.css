@@ -18,6 +18,12 @@
   justify-content: flex-end;
 }
 
+.hero__img:hover{
+  opacity: 0.7;
+  transform: scale(1.01);
+}
+
+
 .hero__img img {
   border-radius: 50px 5px 5px 5px;
   display: inline;
