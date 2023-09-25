@@ -17,10 +17,21 @@
   /* border: 2px solid red; */
   justify-content: flex-end;
 }
-
 .hero__img img {
   border-radius: 50px 5px 5px 5px;
   display: inline;
+  animation: wave-grow 3s ease-in-out infinite;
+}
+@keyframes wave-grow {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .hero__skills {
