@@ -44,7 +44,8 @@ const Hero = () => {
                     }}
                     className="block"
                   >
-                    Join Discord Server <BsDiscord />
+                    Join Discord Server{" "}
+                    <BsDiscord style={{ color: "#5865F2", fontSize: "25px" }} />
                   </span>
                 </Link>
               </div>
@@ -108,7 +109,8 @@ const Hero = () => {
                     }}
                     className="block"
                   >
-                    Join Discord Server <BsDiscord />
+                    Join Discord Server{" "}
+                    <BsDiscord style={{ color: "#5865F2", fontSize: "25px" }} />
                   </span>
                 </Link>
               </div>
