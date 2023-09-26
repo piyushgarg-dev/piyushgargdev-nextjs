@@ -21,6 +21,7 @@
 .portfolio__item h3 {
   background: transparent;
   padding: 10px 0px 0px 0px;
+  margin-top: 10px;
 }
 
 .portfolio__img {
