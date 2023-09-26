@@ -44,4 +44,8 @@
   .social__links {
     margin-bottom: 30px;
   }
+
+  .info__item, .social__links {
+    justify-content: center;
+  }
 }

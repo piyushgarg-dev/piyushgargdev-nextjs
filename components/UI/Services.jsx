@@ -75,11 +75,11 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
             />
           </Col>
 
-          <Col lg="6" md="6" className={`${classes.service__title}`}>
+          <Col lg="6" md="6" className={`${classes.service__title} flex flex-col max-md:items-center`}>
             <SectionSubtitle subtitle="Youtube" />
             <h3 className="mb-0 mt-4">Popular</h3>
             <h3 className="mb-2">Uploads from My Youtube Channel</h3>
-            <p>
+            <p className="max-md:text-center">
               I would really appreciate it if you could check it out and maybe
               even hit the subscribe button if you enjoy the content.
             </p>
