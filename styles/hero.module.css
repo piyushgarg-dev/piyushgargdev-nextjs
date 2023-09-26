@@ -23,7 +23,7 @@
 .hero__img img {
   border-radius: 50%;
   display: inline;
-  border:3.8px solid grey;
+  border:4px solid grey;
 }
 
 @keyframes bounceAnimation {
