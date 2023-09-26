@@ -40,10 +40,13 @@
 
 .service__item:first-child {
   border-radius: 10px 0px 10px 10px;
+  transition: ease-in-out 0.5s;
 }
 
 .service__item:last-child {
   border-radius: 10px 10px 0px 10px;
+  transition: ease-in-out 0.5s;
+
 }
 
 @media only screen and (max-width: 992px) {
