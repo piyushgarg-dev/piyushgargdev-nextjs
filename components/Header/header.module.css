@@ -3,6 +3,11 @@
   height: 94px;
   line-height: 80px;
   background-color: #0e1630;
+  transition: background-color 0.3s;
+}
+.header.scrolled {
+  background-color: transparent; /* Make the background transparent when scrolled */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow for readability */
 }
 
 .nav__wrapper {
@@ -25,6 +30,7 @@
   align-items: center;
   column-gap: 2.8rem;
   background-color: #0e1630;
+  transition: background-color 0.3s; 
 }
 
 .nav__menu a,
