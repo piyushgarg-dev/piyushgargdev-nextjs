@@ -14,7 +14,7 @@ const gears = [
     title: "MacBook Pro M1 Chip",
     subtitle:
       "2022 Apple MacBook Pro Laptop with M1 chip: 34.46 cm (13.6-inch) Liquid Retina Display, 8GB RAM, 512GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera. Works with iPhone/iPad; Space Grey",
-    img: "/images/mac.webp",
+    img: "/images/mac_m1.png",
     category: "Java",
     keyword: [],
     liveUrl: "https://amzn.to/3WBJgQn",
@@ -25,7 +25,7 @@ const gears = [
     title: "Anker USB Hub",
     subtitle:
       "Anker Power Expand Direct 7-in-2 USB C Hub Adapter with Thunderbolt 3 USB C Port (100W Power Delivery), 4K HDMI Port, USB C and USB A 3.0 Data Ports, SD and microSD Card Reader for MacBook (Grey)",
-    img: "/images/anker.jpg",
+    img: "/images/anker1.png",
     category: "Java",
     keyword: [],
     liveUrl: "https://amzn.to/3GhZSr0",
