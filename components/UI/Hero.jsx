@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useMemo } from "react";
 import Link from "next/link";
 import SectionSubtitle from "./SectionSubtitle";
 import { Container, Row, Col, Button } from "reactstrap";
@@ -7,13 +7,21 @@ import Image from "next/image";
 import heroImg from "../../public/images/PiyushGarg.png";
 import classes from "../../styles/hero.module.css";
 import classNames from "../../styles/subtitle.module.css";
+import {motion} from "framer-motion";
+import getScrollAnimation from "../../lib/getScrollAnimation"
+import ScrollAnimationWrapper from "../Layout/ScrollAnimationWrapper"
 
 const Hero = () => {
+  const scrollAnimation = useMemo(() => getScrollAnimation(), []);
   return (
     <section className={` ${classes.hero} `}>
       {/* desktop / large screen view */}
       <Container id="hero-section " className="md:flex hidden">
+      <ScrollAnimationWrapper>
+      <motion.div
+            variants={scrollAnimation}>
         <Row>
+       
           <Col lg="6" md="6">
             <div className={`${classes.hero__content}`}>
               <SectionSubtitle subtitle="Hello" />
@@ -50,18 +58,25 @@ const Hero = () => {
               </div>
             </div>
           </Col>
+         
           <Col lg="6" md="6">
+          <motion.div   variants={scrollAnimation}>
             <div className={`${classes.hero__img} text-end`}>
               <Image alt="Piyush Garg" src={heroImg} width="450" height="450" />
             </div>
+            </motion.div>
           </Col>
+         
         </Row>
+        </motion.div>
+        </ScrollAnimationWrapper>
       </Container>
 
       {/* mobile / small screen view */}
 
       <Container id="hero-section" className="md:hidden">
         <Row>
+  
           <Col lg="6" md="6">
             <div className={`${classes.hero__content}`}>
               <div className="flex flex-col items-center justify-center">
@@ -114,6 +129,7 @@ const Hero = () => {
               </div>
             </div>
           </Col>
+         
         </Row>
       </Container>
     </section>
