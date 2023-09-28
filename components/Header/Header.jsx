@@ -10,7 +10,7 @@ import {
   RiCloseLine,
   RiYoutubeFill,
   RiGithubFill,
-  RiTwitterFill,
+  RiTwitterXFill,
   RiLinkedinFill,
 } from "react-icons/ri";
 
@@ -112,11 +112,19 @@ const Header = () => {
                   key={index}
                   className={`${classes.mobile__menuDiv} cursor-pointer`}
                 >
-                  <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}`}>
+                  <Link
+                    aria-label={item.display}
+                    href={item.path}
+                    target={`${item.openInNewPage ? "_blank" : "_self"}`}
+                  >
                     <p className={`${classes.mobile__menu}`}>{icons[index]}</p>
                   </Link>
 
-                  <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}`}>
+                  <Link
+                    aria-label={item.display}
+                    href={item.path}
+                    target={`${item.openInNewPage ? "_blank" : "_self"}`}
+                  >
                     <span className=" text-[#808dad] hover:text-green-400">
                       {item.display}
                     </span>
@@ -191,7 +199,7 @@ const Header = () => {
                     className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
-                    <RiTwitterFill />
+                    <RiTwitterXFill />
                   </Link>
 
                   <Link
