@@ -169,7 +169,7 @@ const Header = () => {
                     className={`cursor-pointer  text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
-                    <RiYoutubeFill />
+                    <RiYoutubeFill style={{ fontSize: '24px' }} />
                   </Link>
 
                   <Link
@@ -180,7 +180,7 @@ const Header = () => {
                     className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
-                    <RiGithubFill />
+                    <RiGithubFill style={{ fontSize: '24px' }} />
                   </Link>
 
                   <Link
@@ -191,7 +191,7 @@ const Header = () => {
                     className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
-                    <RiTwitterFill />
+                    <RiTwitterFill style={{ fontSize: '24px' }} />
                   </Link>
 
                   <Link
@@ -202,7 +202,7 @@ const Header = () => {
                     className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
-                    <RiLinkedinFill />
+                    <RiLinkedinFill style={{ fontSize: '24px' }} />
                   </Link>
                 </div>
               </div>
