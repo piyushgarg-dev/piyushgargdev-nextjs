@@ -6,7 +6,7 @@ import classes from "../../styles/contact.module.css";
 import Form from "./Form";
 import axios from "axios";
 import { useState } from "react";
-import { RiYoutubeFill, RiGithubFill, RiTwitterFill, RiLinkedinFill } from "react-icons/ri";
+import { RiYoutubeFill, RiGithubFill, RiTwitterFill, RiLinkedinFill, RiMessage2Line } from "react-icons/ri";
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
   const handleSubmit = async (event) => {
@@ -130,8 +130,9 @@ const Contact = () => {
                 ></textarea>
                 <button
                   type="submit"
-                  className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
+                  className="bg-blue-500 text-white px-4 py-2 rounded-md flex items-center justify-center hover:bg-blue-600"
                 >
+                  <RiMessage2Line className="mr-2"/>
                   Send Message
                 </button>
               </form>
