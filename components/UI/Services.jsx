@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Container, Row, Col, Button } from "reactstrap";
 import Slider from "react-slick";
 import Image from "next/image";
@@ -7,26 +7,42 @@ import classes from "../../styles/services.module.css";
 import ServicesItem from "./ServicesItem";
 
 const Services = ({ youtubeStats, youtubeVideos }) => {
+  const sliderRef = useRef(null);
+
   const settings = {
-    dots: false,
+    dots: true,
     autoplay: true,
     speed: 500,
-    autoplaySpeed: 2000,
     infinite: true,
     swipeToSlide: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true,
+    arrows: false,
+    autoplaySpeed: 2000,
+    appendDots: (dots) => (
+      <div className="custom-dots-container">
+        <ul style={{ margin: "-5px" }}> {dots} </ul>
+      </div>
+    ),
   };
+
+  const handlePrev = () => {
+    sliderRef.current.slickPrev();
+  };
+
+  const handleNext = () => {
+    sliderRef.current.slickNext();
+  };
+
   return (
     <section id="youtube-stats">
       <Container>
         <Row>
-          <Col lg="3" md="12" sm="12">
+          <Col lg="3" md="12" sm="12" className="relative">
             <Slider
               {...settings}
-              // style={{ cursor: "pointer", marginBottom: "10px" }}
-              className=" cursor-pointer mb-10 md:mb:0"
+              ref={sliderRef}
+              className="cursor-pointer mb-10 md:mb:0"
             >
               {youtubeVideos
                 ?.filter((video) => video.id.videoId)
@@ -61,6 +77,22 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
                   </div>
                 ))}
             </Slider>
+
+            <div className="w-[100%] flex  mt-[-1px]  mb-[30px] h-[25px]">
+              <button
+                onClick={handlePrev}
+                className={` text-red-500  mx-auto  text-xl		 `}
+              >
+                <i class="ri-arrow-left-circle-fill"></i>
+              </button>
+
+              <button
+                onClick={handleNext}
+                className={` text-blue-500  text-xl	mx-auto	`}
+              >
+                <i class="ri-arrow-right-circle-fill"></i>
+              </button>
+            </div>
           </Col>
           <Col lg="3" md="6">
             <ServicesItem
@@ -97,5 +129,4 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
     </section>
   );
 };
-
 export default Services;
