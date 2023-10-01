@@ -10,7 +10,7 @@ const Footer = () => {
 
   return (
     <footer>
-      <Container>
+      <Container back>
         <Row>
           <Col lg="12">
             <div className={`${classes.footer__copyright}`}>
