@@ -20,7 +20,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
     arrows: false,
     autoplaySpeed: 2000,
     appendDots: (dots) => (
-      <div className="custom-dots-container">
+      <div>
         <ul style={{ margin: "-5px" }}> {dots} </ul>
       </div>
     ),
