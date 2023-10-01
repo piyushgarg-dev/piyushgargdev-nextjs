@@ -14,7 +14,7 @@
   position: relative;
   z-index: 9;
   display: flex;
-  /* border: 2px solid red; */
+  
   justify-content: flex-end;
   border-radius:50%;
   animation : bounceAnimation 1.5s ease infinite alternate;
