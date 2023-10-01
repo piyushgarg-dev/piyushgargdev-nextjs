@@ -77,10 +77,10 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
 
           <Col lg="6" md="6" className={`${classes.service__title}`}>
             <SectionSubtitle subtitle="Youtube" />
-            <h3 className="mb-0 mt-4">Popular Uploads from My Youtube Channel</h3>
-            
+            <h3 className="mb-0 mt-4" >Popular Uploads from My Youtube Channel</h3>
             <p className={`${classes.proper_spacing}`}>
-              I would really appreciate it if you could check it out and maybe even hit the subscribe button if you enjoy the content.
+              I would really appreciate it if you could check it out and maybe
+              even hit the subscribe button if you enjoy the content.
             </p>
             <p className="mb-3">Thanks in advance!</p>
             <a
