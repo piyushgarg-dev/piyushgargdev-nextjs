@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
+import { RiTwitterXFill } from "react-icons/ri";
 import { BiLogInCircle } from "react-icons/bi";
 import { FaWhmcs } from "react-icons/fa";
 import { Container } from "reactstrap";
@@ -191,7 +192,7 @@ const Header = () => {
                     className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
-                    <RiTwitterFill />
+                    <RiTwitterXFill />
                   </Link>
 
                   <Link
