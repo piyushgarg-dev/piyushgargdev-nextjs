@@ -6,8 +6,11 @@
   margin-bottom: 8px;
   min-height: 100%;
   position: relative;
+  transition: transform 0.2s;
 }
-
+.portfolio__item:hover {
+  transform: scale(1.1);
+}
 .portfolio__item div {
   background: transparent;
 }
@@ -62,17 +65,15 @@
   display: block;
 }
 
-
 @media only screen and (max-width: 940px) {
   .portfolio__keyword {
     padding: 3px 5px;
     margin-right: 7px;
   }
 
-  .portfolio__item p{
+  .portfolio__item p {
     line-height: 1.5;
   }
-
 }
 
 @media only screen and (max-width: 576px) {
