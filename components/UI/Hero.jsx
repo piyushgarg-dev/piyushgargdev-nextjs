@@ -36,15 +36,15 @@ const Hero = () => {
                   role="button"
                 >
                   <span
-                    style={{
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      gap: "10px",
-                    }}
-                    className="block"
-                  >
-                    Join Discord Server <BsDiscord />
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        gap: "10px",
+                      }}
+                      className="block"
+                    >
+                      Join Discord Server <BsDiscord className={`${classNames.discord}`} />
                   </span>
                 </Link>
               </div>
@@ -100,16 +100,16 @@ const Hero = () => {
                   role="button"
                 >
                   <span
-                    style={{
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      gap: "10px",
-                    }}
-                    className="block"
-                  >
-                    Join Discord Server <BsDiscord />
-                  </span>
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        gap: "10px",
+                      }}
+                      className="block"
+                    >
+                      Join Discord Server <BsDiscord className={`${classNames.discord}`} />
+                  </span> 
                 </Link>
               </div>
             </div>
