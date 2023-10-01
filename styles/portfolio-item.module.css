@@ -1,4 +1,4 @@
-.portfolio__item {
+.portfolio__item{
   background: #171f38;
   padding: 10px 15px 10px 15px;
   padding-top: 20px;
@@ -6,8 +6,13 @@
   margin-bottom: 8px;
   min-height: 100%;
   position: relative;
+  transition: .2s ease-out; 
+ 
 }
+.portfolio__item:hover {
+  transform: scale(1.03);
 
+}
 .portfolio__item div {
   background: transparent;
 }
@@ -63,6 +68,8 @@
   display: block;
 }
 
+    
+
 
 @media only screen and (max-width: 940px) {
   .portfolio__keyword {
@@ -75,6 +82,7 @@
   }
 
 }
+
 
 @media only screen and (max-width: 576px) {
   .portfolio__img img {
