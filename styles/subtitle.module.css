@@ -17,3 +17,8 @@
   background: var(--site-theme-color);
   color: var(--site-theme-color);
 }
+
+
+.discord{
+    color: #5865F2;
+}
