@@ -78,9 +78,13 @@ const Header = () => {
   }, []);
 
   const toggleMenu = () => {
-    setCrossMenu(false);
-    menuRef.current.classList.toggle(`${classes.menu__active}`);
+    setCrossMenu(!crossMenu);
   };
+  const closeMenu = (e) =>{
+    if (e.target.classList.contains(classes.menu__active)) {
+      setCrossMenu(false);
+    }
+  }
 
   return (
     <header className={`${classes.header}`} ref={headerRef}>
@@ -97,13 +101,15 @@ const Header = () => {
 
           {/* ========= nav menu =========== */}
           <div
-            className={`${classes.navigation}`}
+            className={`${classes.navigation} ${crossMenu ? classes.menu__active : ""}`}
             ref={menuRef}
-            onClick={toggleMenu}
+            onClick={closeMenu}
           >
             <div className={`${classes.nav__menu}`}>
               {crossMenu && (
-                <div className="border text-white text-3xl absolute top-10 right-10 font-extrabold">
+                <div 
+                onClick={toggleMenu}
+                className="border cursor-pointer text-white text-3xl absolute top-10 right-10 font-extrabold">
                   <RiCloseLine />
                 </div>
               )}
@@ -210,10 +216,10 @@ const Header = () => {
           </div>
 
           <span
-            onClick={() => setCrossMenu(!crossMenu)}
+            onClick={toggleMenu}
             className={`${classes.mobile__menu}`}
           >
-            <i className="ri-menu-line" onClick={toggleMenu}></i>
+            <i className="ri-menu-line"></i>
           </span>
         </div>
       </Container>
