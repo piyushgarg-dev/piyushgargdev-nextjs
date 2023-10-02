@@ -16,7 +16,9 @@ const Blog = ({ blogs, blogDomain }) => {
       <Container>
         <Row>
           <Col lg="6" md="6" className="mb-5">
-            <SectionSubtitle subtitle="blog.piyushgarg.dev" />
+            <a href="https://blog.piyushgarg.dev/" target="_blank">
+              <SectionSubtitle subtitle="blog.piyushgarg.dev" />
+            </a>
             <h4 className="mt-4 text-2xl">Checkout my recent blogs</h4>
           </Col>
         </Row>
