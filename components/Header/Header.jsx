@@ -38,6 +38,11 @@ const NAV__LINK = [
     openInNewPage:false,
   },
   {
+    path: "/#contact",
+    display: "Contact US",
+    openInNewPage:false,
+  },
+  {
     path: "https://blog.piyushgarg.dev",
     display: "Blogs",
     openInNewPage:true,
