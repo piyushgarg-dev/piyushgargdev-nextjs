@@ -30,12 +30,12 @@ const NAV__LINK = [
   {
     path: "/#courses",
     display: "Courses",
-    openInNewPage:false,
+    openInNewPage:true,
   },
   {
     path: "/gears",
     display: "My Gears",
-    openInNewPage:false,
+    openInNewPage:true,
   },
   {
     path: "https://blog.piyushgarg.dev",
@@ -148,7 +148,7 @@ const Header = () => {
                     <p className={`${classes.mobile__menu}`}>{icons[4]}</p>
                   </Link>
 
-                  <Link href={"#"}>
+                  <Link href={"#"} target="_blank">
                     <span className=" text-[#808dad] hover:text-green-400">
                       Login
                     </span>
