@@ -17,6 +17,19 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
+    onReInit: () => {
+      const imageContainer = document.querySelector(
+        ".service__slider__container img"
+      );
+      const buttonElements = document.querySelectorAll(
+        ".service__slider__container button.slick-arrow"
+      );
+      const ImageHeight = imageContainer.offsetHeight;
+
+      buttonElements.forEach((buttonElement) => {
+        buttonElement.style.top = ImageHeight / 2 + "px";
+      });
+    },
   };
   return (
     <section id="youtube-stats">
@@ -26,8 +39,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
             <Slider
               {...settings}
               // style={{ cursor: "pointer", marginBottom: "10px" }}
-              className=" cursor-pointer mb-10 md:mb:0"
-            >
+              className="service__slider__container cursor-pointer mb-10 md:mb:0">
               {youtubeVideos
                 ?.filter((video) => video.id.videoId)
                 ?.map((video) => (
@@ -39,8 +51,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
                       )
                     }
                     style={{ padding: "10px" }}
-                    key={video.id.videoId}
-                  >
+                    key={video.id.videoId}>
                     <Image
                       src={video.snippet.thumbnails.medium.url}
                       height={0}
@@ -87,8 +98,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
             <a
               href="https://www.youtube.com/@piyushgargdev?sub_confirmation=1"
               target="_blank"
-              rel="noreferrer"
-            >
+              rel="noreferrer">
               <Button color="danger">Subscribe</Button>
             </a>
           </Col>
