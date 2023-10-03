@@ -6,7 +6,9 @@ import classes from "../../styles/contact.module.css";
 import Form from "./Form";
 import axios from "axios";
 import { useState } from "react";
-import { RiYoutubeFill, RiGithubFill, RiTwitterFill, RiLinkedinFill } from "react-icons/ri";
+import { RiYoutubeFill, RiGithubFill, RiLinkedinFill } from "react-icons/ri";
+import NewTwitterLogo from "./NewTwitterLogo";
+
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
   const handleSubmit = async (event) => {
@@ -35,7 +37,6 @@ const Contact = () => {
       <Container>
         <Row className="flex justify-between flex-col md:flex-row ">
           <Col lg="4" md="6">
-            
             <h3 className="mt-4 mb-4 text-2xl">Connect with me</h3>
 
             <ul className={`${classes.contact__info__list}`}>
@@ -82,7 +83,7 @@ const Contact = () => {
                 href="https://twitter.com/piyushgarg_dev"
                 target="_blank"
               >
-                <RiTwitterFill />
+                <NewTwitterLogo />
               </Link>
               <Link
                 className="hover:text-[#01d293] duration-300"
@@ -101,40 +102,45 @@ const Contact = () => {
               </div>
             ) : (
               <>
-              <div className="mt-4 mb-4 text-2xl"><SectionSubtitle subtitle="Contact me" /></div>
-              
-              <form className="flex flex-col space-y-4" onSubmit={handleSubmit}>
-                <input
-                  className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
-                  type="text"
-                  name="name"
-                  placeholder="Your Full Name"
-                  required
-                  autoComplete="off"
-                />
-                <input
-                  className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
-                  type="email"
-                  name="email"
-                  placeholder="Your Email"
-                  required
-                  autoComplete="off"
-                />
-                <textarea
-                  className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
-                  name="message"
-                  placeholder="Your Message"
-                  required
-                  rows="4"
-                  autoComplete="off"
-                ></textarea>
-                <button
-                  type="submit"
-                  className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
+                <div className="mt-4 mb-4 text-2xl">
+                  <SectionSubtitle subtitle="Contact me" />
+                </div>
+
+                <form
+                  className="flex flex-col space-y-4"
+                  onSubmit={handleSubmit}
                 >
-                  Send Message
-                </button>
-              </form>
+                  <input
+                    className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
+                    type="text"
+                    name="name"
+                    placeholder="Your Full Name"
+                    required
+                    autoComplete="off"
+                  />
+                  <input
+                    className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                    autoComplete="off"
+                  />
+                  <textarea
+                    className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
+                    name="message"
+                    placeholder="Your Message"
+                    required
+                    rows="4"
+                    autoComplete="off"
+                  ></textarea>
+                  <button
+                    type="submit"
+                    className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
+                  >
+                    Send Message
+                  </button>
+                </form>
               </>
             )}
           </Col>
