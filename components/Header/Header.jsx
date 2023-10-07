@@ -5,7 +5,7 @@ import { Container } from "reactstrap";
 import { useSession, signOut, signIn } from "next-auth/react";
 import classes from "./header.module.css";
 import Link from "next/link";
-
+import NewTwitterLogo from "../UI/NewTwitterlogo";
 import {
   RiCloseLine,
   RiYoutubeFill,
@@ -20,6 +20,7 @@ import {
   AiFillExclamationCircle,
   AiFillEdit,
 } from "react-icons/ai";
+
 
 const NAV__LINK = [
   {
@@ -191,7 +192,7 @@ const Header = () => {
                     className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
-                    <RiTwitterFill />
+                    <NewTwitterLogo/>
                   </Link>
 
                   <Link
