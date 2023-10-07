@@ -19,7 +19,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
     arrows: true,
   };
   return (
-    <section id="youtube-stats">
+    <section id="youtube-stats" style={{marginLeft:"235px"}}>
       <Container>
         <Row>
           <Col lg="3" md="12" sm="12">
@@ -79,7 +79,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
             <SectionSubtitle subtitle="Youtube" />
             <h3 className="mb-0 mt-4">Popular</h3>
             <h3 className="mb-2">Uploads from My Youtube Channel</h3>
-            <p>
+            <p style={{width:'400px'}}>
               I would really appreciate it if you could check it out and maybe
               even hit the subscribe button if you enjoy the content.
             </p>
