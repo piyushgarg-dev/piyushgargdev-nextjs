@@ -8,6 +8,7 @@ import Contact from "../components/UI/Contact";
 import Blog from "../components/UI/Blog";
 import Terminal from "../components/UI/Terminal";
 import Testimonial from "../components/UI/Testimonial";
+import ScrollToTopButton from "../components/UI/ScrollToTop";
 
 import {
   getYoutubeChannelDataDefaultResponse,
@@ -86,6 +87,7 @@ export default function Home({
       />
 
       <Contact />
+      <ScrollToTopButton/>
     </Fragment>
   );
 }

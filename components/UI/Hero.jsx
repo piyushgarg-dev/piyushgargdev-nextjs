@@ -7,6 +7,7 @@ import Image from "next/image";
 import heroImg from "../../public/images/PiyushGarg.png";
 import classes from "../../styles/hero.module.css";
 import classNames from "../../styles/subtitle.module.css";
+import ScrollToTopButton from "./ScrollToTop";
 
 const Hero = () => {
   return (
