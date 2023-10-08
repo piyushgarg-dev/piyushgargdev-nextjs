@@ -43,6 +43,11 @@ const NAV__LINK = [
     display: "Blogs",
     openInNewPage:true,
   },
+  {
+    path: "/#contact",
+    display: "Contact",
+    openInNewPage: false,
+  },
 ];
 
 const icons = [
