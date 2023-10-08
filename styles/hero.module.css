@@ -1,3 +1,76 @@
+@-webkit-keyframes pulsate {
+  0% {
+    transform: scale(0.8, 0.8);
+    opacity: 0.0;
+  }
+
+  50% {
+    opacity: 1.0;
+  }
+
+  100% {
+    transform: scale(1.2, 1.2);
+    opacity: 0.0;
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(.8, .8);
+    opacity: 0.0;
+  }
+
+  50% {
+    opacity: 1.0;
+  }
+
+  100% {
+    transform: scale(1.2, 1.2);
+    opacity: 0.0;
+  }
+}
+
+.cc_profile_image a {
+  position: relative;
+}
+
+.cc_profile_image a:before {
+  content: "";
+  border: 22px solid rgba(55, 140, 63, 0.6);
+  border-radius: 50%;
+  height: 450px;
+  width: 450px;
+  position: absolute;
+  left: 0;
+  -webkit-animation: pulsate 1.6s ease-out;
+  animation: pulsate 1.6s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  opacity: 0.0;
+  z-index: 99;
+}
+
+.cc_profile_image img {
+  position: relative;
+  border-radius: 50%;
+  height: 450px;
+  width: 450px;
+  padding: 0;
+  margin: 0;
+  border: 12px solid transparent;
+  z-index: 9999;
+  transition: all .3s ease-out;
+}
+
+.cc_profile_image a:hover img {
+  transform: scale(1.06, 1.06);
+}
+
+.cc_profile_image a:hover:before {
+  -webkit-animation: none;
+  animation: none;
+}
+
 .hero {
   padding-top: 60px !important;
 }
