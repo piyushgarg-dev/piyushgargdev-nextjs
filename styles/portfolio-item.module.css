@@ -10,6 +10,7 @@
 
 .portfolio__item div {
   background: transparent;
+  padding-top: 30px;
 }
 
 .portfolio__item h6 {
