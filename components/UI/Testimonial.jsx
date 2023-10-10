@@ -15,6 +15,8 @@ const Testimonial = ({ feedbacks = [] }) => {
     swipeToSlide: true,
     slidesToShow: 3,
     slidesToScroll: 1,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
     responsive: [
       {
         breakpoint: 100,
@@ -36,6 +38,26 @@ const Testimonial = ({ feedbacks = [] }) => {
       },
     ],
   };
+  function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block", scale: "1.5" }}
+        onClick={onClick}
+      />
+    );
+  }
+  function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block", scale: "1.5" }}
+        onClick={onClick}
+      />
+    );
+  }
   return (
     <section>
       <Container>
