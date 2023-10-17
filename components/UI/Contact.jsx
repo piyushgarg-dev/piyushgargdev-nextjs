@@ -44,7 +44,9 @@ const Contact = () => {
                 <span>
                   <i className="ri-map-pin-line"></i>
                 </span>
-                <p>Planet Earth 🌍</p>
+                <p> <a className="hover:text-[#01d293]" target="_blank" href="https://www.google.co.in/maps/place/India/@19.6894236,61.0146038,4z/data=!3m1!4b1!4m6!3m5!1s0x30635ff06b92b791:0xd78c4fa1854213a6!8m2!3d20.593684!4d78.96288!16zL20vMDNyazA?entry=ttu">
+                    Planet Earth 🌍
+                  </a> </p>
               </li>
               <li className={`${classes.info__item}`}>
                 <span>
