@@ -14,7 +14,7 @@ const Footer = () => {
         <Row>
           <Col lg="12">
             <div className={`${classes.footer__copyright}`}>
-              <p>
+              <p style={{ color: '#000' }}>
                 &copy; Copyright {year} - Developed by Piyush Garg. All right
                 reserved.
               </p>
