@@ -44,7 +44,10 @@ const Hero = () => {
                     }}
                     className="block"
                   >
-                    Join Discord Server <BsDiscord />
+                    Join Discord Server{" "}
+                    <span style={{ paddingTop: "5px" }}>
+                      <BsDiscord />
+                    </span>
                   </span>
                 </Link>
               </div>
