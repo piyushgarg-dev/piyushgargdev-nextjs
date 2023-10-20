@@ -70,6 +70,7 @@
   z-index: 9999;
   animation: slideDown 0.5s ease-out; /*just to add smooth slide of header*/
 }
+
 @keyframes slideDown {
   from {
     transform: translateY(-100%);
