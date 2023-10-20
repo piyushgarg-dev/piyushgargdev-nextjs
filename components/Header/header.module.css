@@ -2,6 +2,7 @@
   width: 100%;
   height: 94px;
   line-height: 80px;
+  transition: height 0.7s ease;
   background-color: #0e1630;
 }
 
@@ -67,8 +68,16 @@
   line-height: 80px;
   box-shadow: 5px 5px 15px -5px var(--site-theme-color) 44;
   z-index: 9999;
+  animation: slideDown 0.5s ease-out; /*just to add smooth slide of header*/
 }
-
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 .mobile__menu i {
   font-size: 1.3rem;
   color: #fff;
