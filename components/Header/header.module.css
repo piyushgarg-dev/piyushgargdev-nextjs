@@ -68,7 +68,7 @@
   line-height: 80px;
   box-shadow: 5px 5px 15px -5px var(--site-theme-color) 44;
   z-index: 9999;
-  animation: slideDown 0.5s ease-out; /*just to add smooth slide of header*/
+  animation: slideDown 0.5s ease-out;
 }
 
 @keyframes slideDown {
