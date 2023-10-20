@@ -9,6 +9,9 @@
 html,
 body {
   padding: 0;
+min-height: 100%;
+  justify-content: flex-end;
+  align-items: flex-end;
   margin: 0;
   font-family: "Quicksand", sans-serif !important;
   scroll-behavior: smooth;
@@ -53,9 +56,18 @@ section {
 }
 
 footer {
+  position: relative;
+    width: 100%;
   padding-bottom: 10px;
   padding-top: 20px;
   border-top: 1px solid #171f38;
+}
+footer p {
+  color: #ffff;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
 }
 
 .primary__btn {
@@ -287,3 +299,4 @@ footer {
     border: none;
   }
 }
+

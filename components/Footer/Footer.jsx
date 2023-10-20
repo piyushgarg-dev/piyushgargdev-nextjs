@@ -10,12 +10,19 @@ const Footer = () => {
 
   return (
     <footer>
+      <div class="animated">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+        <div class="wave" id="wave5"></div>
+      </div>
       <Container>
         <Row>
           <Col lg="12">
             <div className={`${classes.footer__copyright}`}>
-            <p>
-                &copy; 2023 Piyush Garg. All rights reserved.
+            <p class="footer-copyright">
+                &copy; 2023 Piyush Garg. All rights reserved.               
             </p>
             </div>
           </Col>
