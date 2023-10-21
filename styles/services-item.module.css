@@ -57,3 +57,12 @@
     font-size: 0.9rem;
   }
 }
+
+
+#youtube-stats{
+  margin-left: 235px;
+
+  @media (max-width:540px){
+    margin-left: 0px;
+  }
+}
