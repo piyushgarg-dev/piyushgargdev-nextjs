@@ -42,14 +42,14 @@ const Contact = () => {
             <ul className={`${classes.contact__info__list}`}>
               <li className={`${classes.info__item}`}>
                 <span>
-                  <i className="ri-map-pin-line"></i>
+                  <i className="ri-map-pin-line hover:bg-[rgba(1,210,147,1)] hover:rounded-full hover:text-white"></i>
                 </span>
                 <p>Planet Earth 🌍</p>
               </li>
               <li className={`${classes.info__item}`}>
                 <span>
                   <a href="mailto:piyushgarg.dev@gmail.com">
-                    <i className="ri-mail-line"></i>
+                    <i className="ri-mail-line hover:bg-[rgba(1,210,147,1)] hover:rounded-full hover:text-white"></i>
                   </a>
                 </span>
                 <p>
