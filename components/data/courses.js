@@ -66,7 +66,7 @@ const portfolio = [
     subtitle: "Level up your react skills with design patterns",
     img: "/images/react-design-patterns.webp",
     category: "React",
-    keyword: ["React", "WebDev", "Fontend"],
+    keyword: ["React", "WebDev", "Frontend"],
     liveUrl:
       "https://codedamn.com/learn/react-design-patterns?coupon=PIYUSHG#buy",
     ribbonText: "40% OFF",
