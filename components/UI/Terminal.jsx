@@ -23,12 +23,25 @@ const Terminal = () => {
 
       "sign-in": {
         help: "Redirects you to the login page",
-        action: signIn,
+        action: isLoggedIn ? (
+          <div>
+            <p>You Are Alredy Signed In</p>
+          </div>
+        ) : (
+          signIn
+        ),
       },
 
       "sign-out": {
         help: "Sign out the current user",
-        action: signOut,
+        action: !isLoggedIn ? (
+          <div>
+            <p>You need to be signed in to use this command!</p>
+            <span style={{ color: "#38CC77" }}>Just type `sign-in`</span>
+          </div>
+        ) : (
+          signOut
+        ),
       },
 
       "get-location": {
