@@ -62,7 +62,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
                 ))}
             </Slider>
           </Col>
-          <Col lg="3" md="6">
+          <Col lg="3" md="6" style={{padding:"0px 40px 0px"}}>
             <ServicesItem
               title={`${(
                 Number(youtubeStats?.statistics?.subscriberCount) / 1000
