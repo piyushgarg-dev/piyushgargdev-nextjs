@@ -19,7 +19,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
     arrows: true,
   };
   return (
-    <section id="youtube-stats" style={{marginLeft:"235px"}}>
+    <section id="youtube-stats" className="lg:ml-60">
       <Container>
         <Row>
           <Col lg="3" md="12" sm="12">
