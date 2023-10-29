@@ -17,7 +17,7 @@ const Hero = () => {
           <Col lg="6" md="6">
             <div className={`${classes.hero__content}`}>
               <SectionSubtitle subtitle="Hello" />
-              <h2 className="mt-3 mb-3">I&apos;m Piyush Garg</h2>
+              <h2 className="mt-3 mb-3">I&apos;m <span style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)">Piyush Garg</span></h2>
               <h5 className="mb-4">Fullstack Developer & Instructor</h5>
               <p id="about-me">
                 Hi there! My name is Piyush Garg and I&rsquo;m a software
