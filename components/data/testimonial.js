@@ -9,7 +9,7 @@ const feedbacks = [
     courseId: "02",
   },
   {
-    name: "Kunal more",
+    name: "Kunal More",
     userImage:
       "https://wsrv.nl/?url=https%3A%2F%2Fs3.amazonaws.com%2Fuser-assets.codedamn.com%2F633305efb76b3a0009643b92%2F2022-11-25%2F1eedc7f10df42a138ca022609fb954cc2affb991&w=96&q=70&output=webp",
 
@@ -27,7 +27,7 @@ const feedbacks = [
     courseId: "01",
   },
   {
-    name: "KARAN RANA",
+    name: "Karan Rana",
     userImage:
       "https://wsrv.nl/?url=https%3A%2F%2Flh3.googleusercontent.com%2Fa-%2FAOh14Gg5XTRRMQMiRxqlIgum7MkmYl0PenYAbNMRDvo4XA&w=96&q=70&output=webp",
     content:
