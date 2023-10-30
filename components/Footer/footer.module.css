@@ -26,6 +26,12 @@
   color: rgba(255, 255, 255, 0.852);
 }
 
+.footer__copyright {
+  width: 100%;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
 .footer__copyright p {
   font-size: 0.8rem;
   text-align: center;
