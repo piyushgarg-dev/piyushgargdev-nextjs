@@ -40,13 +40,13 @@ const Contact = () => {
 
             <ul className={`${classes.contact__info__list}`}>
               <li className={`${classes.info__item}`}>
-                <span>
+                <span className="custom-hover-effect">
                   <i className="ri-map-pin-line"></i>
                 </span>
                 <p>Planet Earth 🌍</p>
               </li>
               <li className={`${classes.info__item}`}>
-                <span>
+                <span className="custom-hover-effect">
                   <a href="mailto:piyushgarg.dev@gmail.com">
                     <i className="ri-mail-line"></i>
                   </a>
@@ -61,7 +61,7 @@ const Contact = () => {
 
             <div className={`${classes.social__links}`}>
               <Link
-                className="hover:text-[#01d293] duration-300"
+                className="hover:text-[#01d293] duration-300 hover-effect"
                 aria-label="Youtube Channel"
                 href="https://youtube.com/@piyushgargdev"
                 target="_blank"
@@ -69,7 +69,7 @@ const Contact = () => {
                 <RiYoutubeFill />
               </Link>
               <Link
-                className="hover:text-[#01d293] duration-300"
+                className="hover:text-[#01d293] duration-300 hover-effect"
                 aria-label="Github Profile"
                 href="https://github.com/piyushgarg-dev"
                 target="_blank"
@@ -77,7 +77,7 @@ const Contact = () => {
                 <RiGithubFill />
               </Link>
               <Link
-                className="hover:text-[#01d293] duration-300"
+                className="hover:text-[#01d293] duration-300 hover-effect"
                 aria-label="Twitter Account"
                 href="https://twitter.com/piyushgarg_dev"
                 target="_blank"
@@ -85,7 +85,7 @@ const Contact = () => {
                 <RiTwitterFill />
               </Link>
               <Link
-                className="hover:text-[#01d293] duration-300"
+                className="hover:text-[#01d293] duration-300 hover-effect"
                 aria-label="LinedIn Account"
                 href="https://www.linkedin.com/in/piyushgarg195/"
                 target="_blank"

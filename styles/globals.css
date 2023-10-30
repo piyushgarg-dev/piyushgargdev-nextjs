@@ -278,6 +278,19 @@ footer p {
   transform: rotate(-225deg);
 }
 
+.custom-hover-effect:hover {
+  color: #01d293;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+.hover-effect:hover {
+  color: #FF5733;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 992px) {
   p {
     font-size: 0.9rem !important;
