@@ -13,6 +13,16 @@
   transition-duration: 500ms;
   margin-top: 10px;
   margin-bottom: 20px;
+  padding: 10px 20px;
+  margin:0 10px;
+}
+
+.testimonial__item:hover { 
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.7);
+  backdrop-filter: blur(3px);
+  border-radius: 10px;
+  transition: box-shadow 500ms;
 }
 
 .testimonial__client {
