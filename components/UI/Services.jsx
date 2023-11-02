@@ -72,6 +72,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
             <ServicesItem
               title={`${youtubeStats?.statistics?.videoCount} Videos Uploaded`}
               icon="ri-film-line"
+              link="https://www.youtube.com/@piyushgargdev"
             />
           </Col>
 
