@@ -1,8 +1,8 @@
 .section__subtitle {
   color: var(--site-theme-color) !important;
   font-weight: 400;
-  
   margin-left: 40px;
+  margin-bottom: 15px;
   font-size: 1.5rem !important;
   position: relative;
 }
