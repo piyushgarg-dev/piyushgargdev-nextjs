@@ -43,7 +43,7 @@ const Contact = () => {
                 <span className="custom-hover-effect">
                   <i className="ri-map-pin-line"></i>
                 </span>
-                <p class="planet-earth">Planet Earth 🌍</p>
+                <p class="planet-earth-text">Planet Earth 🌍</p>
               </li>
               <li className={`${classes.info__item}`}>
                 <span className="custom-hover-effect">
@@ -51,7 +51,7 @@ const Contact = () => {
                     <i className="ri-mail-line"></i>
                   </a>
                 </span>
-                <p class="mail">
+                <p class="mail-text">
                   <a href="mailto:piyushgarg.dev@gmail.com">
                     piyushgarg.dev@gmail.com
                   </a>

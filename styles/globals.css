@@ -284,12 +284,12 @@ footer p {
   cursor: pointer;
 }
 
-.planet-earth:hover {
+.planet-earth-text:hover {
   color: #01d293;
   transition: color 0.3s;
 }
 
-.mail:hover {
+.mail-text:hover {
   color: #01d293;
   transition: color 0.3s;
 }
