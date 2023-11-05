@@ -55,6 +55,7 @@ section {
   padding-top: 150px;
 }
 
+
 footer {
   position: relative;
     width: 100%;
@@ -62,6 +63,7 @@ footer {
   padding-top: 20px;
   border-top: 1px solid #171f38;
 }
+
 footer p {
   color: #ffff;
   text-align: center;
