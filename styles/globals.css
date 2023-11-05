@@ -284,6 +284,10 @@ footer p {
   cursor: pointer;
 }
 
+.custom-hover-effect:hover i {
+  color: #0e2430;
+  transition: color 0.3s;
+}
 
 .hover-effect:hover {
   color: #FF5733;
