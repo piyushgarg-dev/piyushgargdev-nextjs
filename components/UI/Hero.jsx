@@ -16,7 +16,7 @@ const Hero = () => {
         <Row>
           <Col lg="6" md="6">
             <div className={`${classes.hero__content}`}>
-              <SectionSubtitle subtitle="Hello" />
+              <SectionSubtitle subtitle="Hola Amigos" />
               <h2 className="mt-3 mb-3">I&apos;m Piyush Garg</h2>
               <h5 className="mb-4">Fullstack Developer & Instructor</h5>
               <p id="about-me">
