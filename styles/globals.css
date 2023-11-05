@@ -284,8 +284,13 @@ footer p {
   cursor: pointer;
 }
 
-.custom-hover-effect:hover i {
-  color: #0e2430;
+.planet-earth:hover {
+  color: #01d293;
+  transition: color 0.3s;
+}
+
+.mail:hover {
+  color: #01d293;
   transition: color 0.3s;
 }
 
