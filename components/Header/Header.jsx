@@ -90,8 +90,8 @@ const Header = () => {
           {/* ======== navigation logo ======== */}
           <div style={{ cursor: "pointer" }} className={`${classes.logo}`}>
             <Link aria-label="Home Page" href="/">
-              <h1>
-                <span>P</span>iyush <span>G</span>arg
+              <h1 className="cursor-none">
+                <span className="cursor-none">P</span>iyush <span className="cursor-none">G</span>arg
               </h1>
             </Link>
           </div>
