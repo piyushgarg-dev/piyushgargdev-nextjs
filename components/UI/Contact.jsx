@@ -122,13 +122,14 @@ const Contact = () => {
                     required
                     autoComplete="off"
                   />
-                  <textarea
-                    className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
+                  <textarea 
+                    className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white resize-none"
                     name="message"
                     placeholder="Your Message"
                     required
                     rows="4"
-                    autoComplete="off"
+                    autoComplete="off" 
+                          
                   ></textarea>
                   <button
                     type="submit"
