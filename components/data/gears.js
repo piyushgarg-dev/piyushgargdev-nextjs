@@ -43,7 +43,7 @@ const gears = [
     ribbonText: "Amazon",
   },
   {
-    id: "01",
+    id: "04",
     title: "Gigabyte 27” Monitor",
     subtitle:
       'GIGABYTE G27F cm 68.58 cm (27") 144Hz 1080P Gaming Monitor, 1920 x 1080 IPS Display, 1ms (MPRT) Response Time, 95% DCI-P3, FreeSync Premium',
@@ -54,7 +54,7 @@ const gears = [
     ribbonText: "Amazon",
   },
   {
-    id: "01",
+    id: "05",
     title: "Logitech MK295 Wireless Keyboard and Mouse",
     subtitle:
       "Logitech MK295 Wireless USB Keyboard and Mouse Set, SilentTouch Technology, Full Number Keyboard, Shortcut Buttons, Nano USB Receiver, 90% Less Noise - Black",
@@ -65,7 +65,7 @@ const gears = [
     ribbonText: "Amazon",
   },
   {
-    id: "01",
+    id: "06",
     title: "Seagate Expansion 1TB External HDD",
     subtitle:
       "Seagate Expansion 1TB External HDD - USB 3.0 for Windows and Mac with 3 yr Data Recovery Services, Portable Hard Drive (STKM1000400)",
@@ -76,7 +76,7 @@ const gears = [
     ribbonText: "Amazon",
   },
   {
-    id: "01",
+    id: "07",
     title: "Tripod",
     subtitle:
       "Digitek DTR 550 LW (67 Inch) Tripod For DSLR, Camera |Operating Height: 5.57 Feet | Maximum Load Capacity up to 4.5kg | Portable Lightweight Aluminum Tripod with 360 Degree Ball Head | Carry Bag Included (Black) (DTR 550LW)",
@@ -87,7 +87,7 @@ const gears = [
     ribbonText: "Amazon",
   },
   {
-    id: "01",
+    id: "08",
     title: "Ring Light",
     subtitle:
       "DIGITEK® (DRL-14C) Professional (31cm) Dual Temperature LED Ring Light with Tripod Stand & Mini Tripod for YouTube, Photo-Shoot, Video Shoot, Live Stream, Makeup, Vlogging & More",
