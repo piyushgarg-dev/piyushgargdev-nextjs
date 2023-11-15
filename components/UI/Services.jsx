@@ -11,7 +11,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
     dots: false,
     autoplay: true,
     speed: 500,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 6000,
     infinite: true,
     swipeToSlide: true,
     slidesToShow: 1,
