@@ -19,7 +19,8 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
     arrows: true,
   };
   return (
-    <section id="youtube-stats" style={{marginLeft:"235px"}}>
+    // <section id="youtube-stats" style={{marginLeft:"235px"}}>
+    <section id="youtube-stats" className="lg:ml-[235px]">
       <Container>
         <Row>
           <Col lg="3" md="12" sm="12">
@@ -79,10 +80,15 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
             <SectionSubtitle subtitle="Youtube" />
             <h3 className="mb-0 mt-4">Popular</h3>
             <h3 className="mb-2">Uploads from My Youtube Channel</h3>
-            <p style={{width:'400px',textAlign:'justify'}}>
+            {/* <p style={{width:'400px',textAlign:'justify'}}>
+              I would really appreciate it if you could check it out and maybe
+              even hit the subscribe button if you enjoy the content.
+            </p> */}
+            <p className=" text-justify sm:px-[1px] lg:w-[400px] ">
               I would really appreciate it if you could check it out and maybe
               even hit the subscribe button if you enjoy the content.
             </p>
+
             <p className="mb-3">Thanks in advance!</p>
             <a
               href="https://www.youtube.com/@piyushgargdev?sub_confirmation=1"
