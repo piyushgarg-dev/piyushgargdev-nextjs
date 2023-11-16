@@ -1,6 +1,8 @@
 .section__padding {
   padding-bottom: 30px;
 }
+
+
 .section__subtitle {
   color: var(--site-theme-color) !important;
   font-weight: 400;
