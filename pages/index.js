@@ -73,6 +73,7 @@ export default function Home({
       <Container className="mt-5">
         <SectionSubtitle subtitle="Terminal" />
         <div
+          className="mt-3"
           id="terminal-1"
           style={{ border: "1px solid white", height: "400px" }}
         >
