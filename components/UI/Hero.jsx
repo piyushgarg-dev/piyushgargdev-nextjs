@@ -18,7 +18,7 @@ const Hero = () => {
             <div className={`${classes.hero__content}`}>
               <SectionSubtitle subtitle="Hello" />
               <h2 className="mt-3 mb-3">I&apos;m Piyush Garg</h2>
-              <h5 className="mb-4">Fullstack Developer & Instructor</h5>
+              <h5 className="mb-4">Full stack Developer & Instructor</h5>
               <p id="about-me">
                 Hi there! My name is Piyush Garg and I&rsquo;m a software
                 engineer with over 5 years of experience in the industry. I love
