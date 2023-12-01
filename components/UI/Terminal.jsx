@@ -25,7 +25,7 @@ const Terminal = () => {
         help: "Redirects you to the login page",
         action: isLoggedIn ? (
           <div>
-            <p>You Are Alredy Signed In</p>
+            <p>You Are Already Signed In</p>
           </div>
         ) : (
           signIn
