@@ -19,13 +19,12 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
     arrows: true,
   };
   return (
-    <section id="youtube-stats" style={{marginLeft:"235px"}}>
+    <section id="youtube-stats" style={{margin:"25px auto"}}>
       <Container>
         <Row>
           <Col lg="3" md="12" sm="12">
             <Slider
               {...settings}
-              // style={{ cursor: "pointer", marginBottom: "10px" }}
               className=" cursor-pointer mb-10 md:mb:0"
             >
               {youtubeVideos
