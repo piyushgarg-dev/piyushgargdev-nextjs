@@ -25,7 +25,6 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
           <Col lg="3" md="12" sm="12">
             <Slider
               {...settings}
-              // style={{ cursor: "pointer", marginBottom: "10px" }}
               className=" cursor-pointer mb-10 md:mb:0"
             >
               {youtubeVideos
