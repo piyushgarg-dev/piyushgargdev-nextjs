@@ -12,6 +12,7 @@ import {
   RiGithubFill,
   RiTwitterFill,
   RiLinkedinFill,
+  RiInstagramFill,
 } from "react-icons/ri";
 
 import {
@@ -204,6 +205,18 @@ const Header = () => {
                     rel="noreferrer"
                   >
                     <RiLinkedinFill />
+                  </Link>
+
+                  
+                  <Link
+                    href="https://www.instagram.com/piyushgarg_dev/"
+                    target="_blank"
+                    title="Instagram Account"
+                    id="linkedin-account"
+                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    rel="noreferrer"
+                  >
+                    <RiInstagramFill />
                   </Link>
                 </div>
               </div>
