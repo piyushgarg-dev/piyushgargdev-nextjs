@@ -25,7 +25,7 @@ const Blog = ({ blogs, blogDomain }) => {
           {blogs.map((blogItem)  => (
             <Col
 
-              className="hover:scale-105 hover:ease-out duration-300"
+              className="hover:scale-105 hover:ease-out  duration-300"
               style={{ margin: "14px 0px" }}
               key={blogItem._id}
               lg="4"
@@ -39,7 +39,9 @@ const Blog = ({ blogs, blogDomain }) => {
                   img: blogItem.coverImage,
                   liveUrl: `https://${blogDomain}/${blogItem.slug}`,
                   keyword: [`${blogItem.totalReactions} reactions ✨`],
+
                 }}
+                className="bg-green-200 text-green"
               />
             </Col>
           ))}
