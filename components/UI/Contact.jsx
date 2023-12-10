@@ -10,6 +10,7 @@ import NewTwitterLogo from "./NewTwitterlogo";
 import { RiYoutubeFill, RiGithubFill, RiTwitterFill, RiLinkedinFill } from "react-icons/ri";
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
+  const [isError, setIsError] = useState(false);
   const handleSubmit = async (event) => {
     event.preventDefault();
     const data = {
@@ -25,9 +26,11 @@ const Contact = () => {
         console.log("Form submitted");
       } else {
         console.log("Failed");
+        setIsError(true);
       }
     } catch (error) {
       console.log(error);
+      setIsError(true);
     }
   };
 
@@ -97,6 +100,7 @@ const Contact = () => {
             </div>
           </Col>
           <Col lg="5" md="6">
+            
             {submitted ? (
               <div className="flex justify-center items-center text-xl font-bold h-[30vh]">
                 <p>Message Sent!</p>
@@ -136,6 +140,9 @@ const Contact = () => {
                   >
                     Send Message
                   </button>
+                  {isError && <div className="flex justify-center items-center text-xl font-bold h-[6vh">
+                <p className="text-red-600">Something went wrong. Please try again later</p>
+              </div>}
                 </form>
               </>
             )}
