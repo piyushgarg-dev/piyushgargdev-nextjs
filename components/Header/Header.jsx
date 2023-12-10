@@ -142,14 +142,13 @@ const Header = () => {
                 </div>
               ) : (
                 <div
-                  onClick={signIn}
                   className={`${classes.mobile__menuDiv} cursor-pointer`}
                 >
-                  <Link href={"#"}>
+                  <Link href={"/login"}>
                     <p className={`${classes.mobile__menu}`}>{icons[4]}</p>
                   </Link>
 
-                  <Link href={"#"}>
+                  <Link href={'/login'}>
                     <span className=" text-[#808dad] hover:text-green-400">
                       Login
                     </span>
