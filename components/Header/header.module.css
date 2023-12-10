@@ -108,9 +108,13 @@
     justify-content: center;
   }
 
+  .apear_right{
+    animation: navdrag 0.3s forwards ease-out;
+  }
+
   .nav__right {
     display: none;
-  }
+  } 
 
   .mobile__menu {
     display: block !important;
@@ -135,5 +139,16 @@
   .header {
     height: 60px;
     line-height: 60px;
+  }
+}
+
+@keyframes navdrag {
+  from{
+    transform: translateX(100%);
+    display: none;
+  }
+  to{
+    transform: translateX(0%);
+    display: block !important;
   }
 }
