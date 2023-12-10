@@ -37,7 +37,7 @@ const Contact = () => {
         <Row className="flex justify-between flex-col md:flex-row ">
           <Col lg="4" md="6">
 
-            <h3 className="mt-4 mb-4 text-2xl">Connect with me</h3>
+            <h3 className="mt-4 mb-4 text-2xl font-semibold">Connect with me</h3>
 
             <ul className={`${classes.contact__info__list}`}>
               <li className={`${classes.info__item}`}>
@@ -96,7 +96,11 @@ const Contact = () => {
               </Link>
             </div>
           </Col>
-          <Col lg="5" md="6">
+          <Col 
+            lg="5" 
+            md="6" 
+            className="bg-[#1c2644] pb-4 px-4 rounded-xl border border-white hover:shadow-2xl hover:shadow-gray-500 hover:scale-105 duration-100"
+          >
             {submitted ? (
               <div className="flex justify-center items-center text-xl font-bold h-[30vh]">
                 <p>Message Sent!</p>
