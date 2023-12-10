@@ -54,7 +54,7 @@ const icons = [
 ];
 
 const Header = () => {
-  const [crossMenu, setCrossMenu] = useState(false);
+  const [crossMenu, setCrossMenu] = useState(true);
   const headerRef = useRef(null);
 
   const menuRef = useRef(null);
@@ -72,19 +72,19 @@ const Header = () => {
     }
   };
 
-  useEffect(() => {
-    window.addEventListener("scroll", headerFunc);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", headerFunc);
 
-    return () => window.removeEventListener("scroll", headerFunc);
-  }, []);
+  //   return () => window.removeEventListener("scroll", headerFunc);
+  // }, []);
 
   const toggleMenu = () => {
-    setCrossMenu(false);
+    setCrossMenu(!crossMenu);
     menuRef.current.classList.toggle(`${classes.menu__active}`);
   };
 
   return (
-    <header className={`${classes.header}`} ref={headerRef}>
+    <header className={`${classes.header}`}  ref={headerRef}>
       <Container>
         <div className={`${classes.nav__wrapper}`}>
           {/* ======== navigation logo ======== */}
@@ -103,8 +103,8 @@ const Header = () => {
             onClick={toggleMenu}
           >
             <div className={`${classes.nav__menu}`}>
-              {crossMenu && (
-                <div className="border text-white text-3xl absolute top-10 right-10 font-extrabold">
+              {!crossMenu && (
+                <div className="border md:hidden text-white text-3xl absolute top-10 right-10 font-extrabold">
                   <RiCloseLine />
                 </div>
               )}
