@@ -71,7 +71,7 @@ export default function Home({
       <Courses courses={courses} />
       <Testimonial feedbacks={feedbacks} />
       <Container className="mt-5">
-        <SectionSubtitle subtitle="Terminal" />
+        <SectionSubtitle subtitle="Terminal" /><br></br>
         <div
           id="terminal-1"
           style={{ border: "1px solid white", height: "400px" }}
