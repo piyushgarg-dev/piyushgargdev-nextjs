@@ -4,6 +4,11 @@
   column-gap: 2rem;
 }
 
+.subscribe_btn:hover {
+  transform: scale(1.1); 
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 992px) {
   .services__container {
     flex-direction: column;
