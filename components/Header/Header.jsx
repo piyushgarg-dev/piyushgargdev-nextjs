@@ -104,7 +104,7 @@ const Header = () => {
           >
             <div className={`${classes.nav__menu}`}>
               {crossMenu && (
-                <div className="border text-white text-3xl absolute top-10 right-10 font-extrabold">
+                <div className="border text-white text-3xl absolute top-10 right-10 font-extrabold  cursor-pointer hover:bg-green-400 ">
                   <RiCloseLine />
                 </div>
               )}
