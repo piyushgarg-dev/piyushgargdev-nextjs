@@ -1,7 +1,7 @@
 const gears = [
   {
     id: "00",
-    title: "My Girlfriend",
+    title: <h2>My Girlfriend</h2>,
     subtitle: "👧🏼",
     img: "/images/girl.jpeg",
     category: "Java",
@@ -11,7 +11,7 @@ const gears = [
   },
   {
     id: "01",
-    title: "MacBook Pro M1 Chip",
+    title: <h2>MacBook Pro M1 Chip</h2>,
     subtitle:
       "2022 Apple MacBook Pro Laptop with M1 chip: 34.46 cm (13.6-inch) Liquid Retina Display, 8GB RAM, 512GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera. Works with iPhone/iPad; Space Grey",
     img: "/images/mac.webp",
@@ -22,7 +22,7 @@ const gears = [
   },
   {
     id: "02",
-    title: "Anker USB Hub",
+    title: <h2>Anker USB Hub</h2>,
     subtitle:
       "Anker Power Expand Direct 7-in-2 USB C Hub Adapter with Thunderbolt 3 USB C Port (100W Power Delivery), 4K HDMI Port, USB C and USB A 3.0 Data Ports, SD and microSD Card Reader for MacBook (Grey)",
     img: "/images/anker.jpg",
@@ -33,7 +33,7 @@ const gears = [
   },
   {
     id: "03",
-    title: "Blue Yeti Microphone",
+    title: <h2>Blue Yeti Microphone</h2>,
     subtitle:
       "Blue Yeti USB Microphone for Recording, Streaming, Gaming, Podcasting on PC and Mac, Condenser Mic for Laptop or Computer with Blue VO!CE Effects, Adjustable Stand, Plug and Play - Slate",
     img: "/images/blue-yeti.jpg",
@@ -44,7 +44,7 @@ const gears = [
   },
   {
     id: "01",
-    title: "Gigabyte 27” Monitor",
+    title: <h2>Gigabyte 27 Monitor</h2>,
     subtitle:
       'GIGABYTE G27F cm 68.58 cm (27") 144Hz 1080P Gaming Monitor, 1920 x 1080 IPS Display, 1ms (MPRT) Response Time, 95% DCI-P3, FreeSync Premium',
     img: "/images/gigabyte.jpg",
@@ -55,7 +55,7 @@ const gears = [
   },
   {
     id: "01",
-    title: "Logitech MK295 Wireless Keyboard and Mouse",
+    title: <h2>Logitech MK295 Wireless Keyboard and Mouse</h2>,
     subtitle:
       "Logitech MK295 Wireless USB Keyboard and Mouse Set, SilentTouch Technology, Full Number Keyboard, Shortcut Buttons, Nano USB Receiver, 90% Less Noise - Black",
     img: "/images/keyboard.jpg",
@@ -66,7 +66,7 @@ const gears = [
   },
   {
     id: "01",
-    title: "Seagate Expansion 1TB External HDD",
+    title: <h2>Seagate Expansion 1TB External HDD</h2>,
     subtitle:
       "Seagate Expansion 1TB External HDD - USB 3.0 for Windows and Mac with 3 yr Data Recovery Services, Portable Hard Drive (STKM1000400)",
     img: "/images/segate.jpg",
@@ -77,7 +77,7 @@ const gears = [
   },
   {
     id: "01",
-    title: "Tripod",
+    title: <h2>Tripod</h2>,
     subtitle:
       "Digitek DTR 550 LW (67 Inch) Tripod For DSLR, Camera |Operating Height: 5.57 Feet | Maximum Load Capacity up to 4.5kg | Portable Lightweight Aluminum Tripod with 360 Degree Ball Head | Carry Bag Included (Black) (DTR 550LW)",
     img: "/images/tripod.jpg",
@@ -88,7 +88,7 @@ const gears = [
   },
   {
     id: "01",
-    title: "Ring Light",
+    title: <h2>Ring Light</h2>,
     subtitle:
       "DIGITEK® (DRL-14C) Professional (31cm) Dual Temperature LED Ring Light with Tripod Stand & Mini Tripod for YouTube, Photo-Shoot, Video Shoot, Live Stream, Makeup, Vlogging & More",
     img: "/images/ring-light.jpg",
