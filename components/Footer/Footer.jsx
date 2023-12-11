@@ -14,10 +14,9 @@ const Footer = () => {
         <Row>
           <Col lg="12">
             <div className={`${classes.footer__copyright}`}>
-              <p>
-                &copy; Copyright {year} - Developed by Piyush Garg. All right
-                reserved.
-              </p>
+            <p>
+                &copy; 2023 Piyush Garg. All rights reserved.
+            </p>
             </div>
           </Col>
         </Row>
