@@ -30,6 +30,8 @@
 
 .portfolio__img img {
   border-radius: 10px;
+  height:18rem;
+  background-color: white;
 }
 
 .portfolio__keyword {
