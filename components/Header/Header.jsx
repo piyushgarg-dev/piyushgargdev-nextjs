@@ -20,7 +20,6 @@ import {
   AiFillExclamationCircle,
   AiFillEdit,
 } from "react-icons/ai";
-import { usePathname, useRouter } from "next/navigation";
 
 
 const NAV__LINK = [
