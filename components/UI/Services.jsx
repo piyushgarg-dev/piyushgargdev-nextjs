@@ -70,8 +70,10 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
               icon="ri-user-add-line"
             />
             <ServicesItem
+              <a href="https://www.youtube.com/@piyushgargdev/videos" target="_blank">
               title={`${youtubeStats?.statistics?.videoCount} Videos Uploaded`}
               icon="ri-film-line"
+              </a>
             />
           </Col>
 
