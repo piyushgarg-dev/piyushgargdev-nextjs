@@ -20,6 +20,7 @@ import {
   AiFillExclamationCircle,
   AiFillEdit,
 } from "react-icons/ai";
+import { usePathname, useRouter } from "next/navigation";
 
 
 const NAV__LINK = [
@@ -83,6 +84,13 @@ const Header = () => {
     menuRef.current.classList.toggle(`${classes.menu__active}`);
   };
 
+  const [activeLink,setActiveLink] = useState(null)
+
+  const handleLinkClick = (index)=>{
+    setActiveLink(index)
+    setCrossMenu(false)
+  }
+
   return (
     <header className={`${classes.header}`} ref={headerRef}>
       <Container>
@@ -118,7 +126,14 @@ const Header = () => {
                   </Link>
 
                   <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}`}>
-                    <span className=" text-[#808dad] hover:text-green-400">
+                  <span
+                    className={`${
+                      activeLink === index
+                        ? "text-green-400" 
+                        : "text-[#808dad]"
+                      } hover:text-green-400`}
+                      onClick={() => handleLinkClick(index)}
+                    >
                       {item.display}
                     </span>
                   </Link>
