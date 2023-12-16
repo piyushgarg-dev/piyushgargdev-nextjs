@@ -1,6 +1,6 @@
 const feedbacks = [
   {
-    name: "Kushagra Mathur",
+    name: "santosh kuamr",
     userImage:
       "https://wsrv.nl/?url=https%3A%2F%2Fs3.amazonaws.com%2Fuser-assets.codedamn.com%2F62408d38092b190009e9418e%2F2022-05-24%2Fa68014d7187156360cc8e89263ea824d13a176f0&w=96&q=70&output=webp",
     content:
