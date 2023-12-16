@@ -1,3 +1,7 @@
 .productCardContainer {
   background-color: white;
 }
+
+.productCardContainer:hover {
+  background: whitesmoke;
+}

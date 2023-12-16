@@ -54,7 +54,10 @@
 }
 
 .portfolio__item:hover {
+  background: transparent;
   cursor: pointer;
+
+  transform: translateY(-20px);
 }
 
 .portfolio__item:hover .portfolio__live {
