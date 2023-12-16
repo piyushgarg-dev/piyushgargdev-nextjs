@@ -1,0 +1,1932 @@
+[33mcommit f85a6d6b26859f238f48f2fe78ad25eae35ff3b7[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: manish2022-creator <77712914+manish2022-creator@users.noreply.github.com>
+Date:   Sun Dec 17 02:03:51 2023 +0530
+
+    Fixes
+
+[33mcommit 440e05483dd5e9f5d2a31a4d8ba1cde6ab4cf7a0[m[33m ([m[1;31mupstream/main[m[33m, [m[1;31mupstream/HEAD[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sun Dec 10 13:09:45 2023 +0530
+
+    Added NextJS Course
+
+[33mcommit dcaf957e34498b0853a9c330c99089b3e9687eae[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sun Dec 10 13:07:16 2023 +0530
+
+    fix: responsive revert
+
+[33mcommit 60d697db796dc0a8cdfabb6053061b32994ab2fb[m
+Merge: c8a446b 1bd1464
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sun Oct 8 12:43:23 2023 +0530
+
+    Merge pull request #285 from Swapnil1530/main
+    
+    fix: sign-in and sign-out Behavior
+
+[33mcommit c8a446b0e0a82309c9decd291676b2584da11a4d[m
+Merge: fd4d347 b62420c
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sat Oct 7 17:17:44 2023 +0530
+
+    Merge pull request #875 from Anandateertha/fix/text-alignment-youtube-content
+    
+    fix: fixed the alignment of description in youtube content section
+
+[33mcommit fd4d3474396ca3b40e5fd3b3b01e78e6453ecfe7[m
+Merge: 8b9e7cb a74b3ce
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sat Oct 7 16:04:44 2023 +0530
+
+    Merge pull request #852 from mohdahsanrazakhan/fix/hover-effect-on-email
+    
+    fix: Hover Effect Applied to Email
+
+[33mcommit b62420c423da03839e83f422d9c88e2b860c290e[m
+Author: Anandateertha <www.anandateertha@gmail.com>
+Date:   Sat Oct 7 15:55:17 2023 +0530
+
+    Justifies the content
+
+[33mcommit 30257e5d0d5600f885318db77953f3e7ee615cba[m
+Author: Anandateertha <www.anandateertha@gmail.com>
+Date:   Sat Oct 7 15:50:34 2023 +0530
+
+    fixed the alignment of description in yutube content section
+
+[33mcommit 8b9e7cbde850b197e9043a5abe5c8064343bd155[m
+Merge: 33a33ac bc7c536
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sat Oct 7 13:43:49 2023 +0530
+
+    Merge pull request #849 from manju121212/fix/twitterlogoToX
+    
+    fix : Twitter logo to X
+
+[33mcommit 33a33ace45e9b30cc2e105111b5aa1701bbaec06[m
+Merge: c602b01 c93bf7c
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sat Oct 7 13:41:13 2023 +0530
+
+    Merge pull request #870 from TusharKumawat1/main
+    
+    bug fixed : Align the connect to me section properly
+
+[33mcommit c602b01a64c1637b33782a757734260487b4733a[m
+Merge: 915b112 f7a76fa
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sat Oct 7 13:40:38 2023 +0530
+
+    Merge pull request #866 from AmitSaha15/feat/made-the-link-functional-in-blog-section
+    
+    feat : Made the text "blog.piyushgarg.dev" clickable
+
+[33mcommit c93bf7c2eb9f6df493e2e77659b046fc99f3a0b9[m
+Author: TusharKumawat1 <tusharkumawat9694@gmail.com>
+Date:   Fri Oct 6 16:48:34 2023 +0530
+
+    bug fixed
+
+[33mcommit f7a76fa5e464ea539e85ef49432c7c41c160ec25[m
+Author: Amit Saha <asaha.bwn2000@gmail.com>
+Date:   Fri Oct 6 13:11:31 2023 +0530
+
+    [Feat] : Made the link blog.piyushgarg.dev functional in blog secton
+
+[33mcommit a74b3ce64d6111e1700e25d8a7ee5e5729999a66[m
+Author: Mark <datawithmark@gmail.com>
+Date:   Tue Oct 3 22:53:13 2023 +0530
+
+    fix: hover effect applied on email
+
+[33mcommit bc7c536e882f4813401d4b62c52d3779437594b5[m
+Author: Manjunath <dugganimanjunath@gmail.com>
+Date:   Tue Oct 3 21:34:24 2023 +0530
+
+    Fixed the Twitter logo to X
+
+[33mcommit 915b1127caa6e82a6ff6998bc02965695aa6a768[m
+Merge: 81c93e0 0ff1da9
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sun Sep 24 13:16:34 2023 +0530
+
+    Merge pull request #720 from piyushgarg-dev/fix/discord-icon-added
+    
+    Added Discord Icon on Home Page
+
+[33mcommit 0ff1da905425cd7c2d4e2a0b58e4990338319476[m[33m ([m[1;31mupstream/fix/discord-icon-added[m[33m)[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sun Sep 24 13:12:01 2023 +0530
+
+    Added Discord Icon on Home Page
+
+[33mcommit 1bd1464ba8153c2d10ce8de429f5ce1aa6262321[m
+Author: Swapnil1530 <patelswapnil1004@gmail.com>
+Date:   Sat Aug 5 08:55:10 2023 +0530
+
+     FIX #280 Sign-in and Sign-out Behavior 🐛
+
+[33mcommit 81c93e06f0852ef7a7ff5a23e469a60331d0f470[m
+Merge: 7ac0eb6 8499b89
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Mon Jun 19 12:26:11 2023 +0530
+
+    Merge pull request #207 from Satyam-G5/feat/hover-icon-transition
+    
+    [feat]:hover icon transition on navbar icons
+
+[33mcommit 8499b897f126bf27c7b470f3a0a7e74380839140[m
+Author: Satyam-G5 <satyamshukla4916@gmail.com>
+Date:   Mon Jun 19 12:14:34 2023 +0530
+
+    feat:removed spaces
+
+[33mcommit c208f6a991433ec12ab4908971bf387a074ccd15[m
+Author: Satyam-G5 <satyamshukla4916@gmail.com>
+Date:   Mon Jun 19 12:11:07 2023 +0530
+
+    feat: transition effect
+
+[33mcommit 71b9e14c5156c365ae3d0e71ed75bfdfb1c213bc[m
+Author: Satyam-G5 <satyamshukla4916@gmail.com>
+Date:   Mon Jun 19 12:00:10 2023 +0530
+
+    fixes:#206
+
+[33mcommit 7ac0eb6300ed27347786696fb5a6605ffaf05155[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sat Jun 17 17:41:23 2023 +0530
+
+    Indent Fix
+
+[33mcommit e5be02ab8a17435cd9b7869b58575a708495b6d4[m
+Author: Piyush Garg <torvalds@linux-foundation.org>
+Date:   Sat Jun 17 11:27:06 2023 +0530
+
+    Remove lower case function from env
+
+[33mcommit 75e8d168f22f879b4b898fdc8e582a58ed17f5a6[m
+Author: Piyush Garg <harkirat96@gmail.com>
+Date:   Sat Jun 17 11:10:53 2023 +0530
+
+    Code Formatting done
+
+[33mcommit dbb6d55661c46c9d52bb4771225c4b30887e4c30[m
+Author: Piyush Garg <kunalkushwaha453@gmail.com>
+Date:   Sat Jun 17 11:10:19 2023 +0530
+
+    Added Lower Case Check
+
+[33mcommit d72a0d1d8e0cbd442ea7e28662e7b3e2c5f0b9d1[m
+Author: Piyush Garg <mehulmpt@gmail.com>
+Date:   Sat Jun 17 11:09:38 2023 +0530
+
+    Added yarn.lock file
+
+[33mcommit 9109638bc7499f9af7f9a2876ae551aab1b2cbd2[m
+Merge: b55f6d2 3dfef7d
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Mon Jun 12 19:40:03 2023 +0530
+
+    Merge pull request #186 from piyushgarg-dev/revert-185-feature/youtube-icon-add
+    
+    Revert "feat: added youtube icon in youtube section"
+
+[33mcommit 3dfef7d9ee886ceaf38a9a72e3c6e65f54622d79[m[33m ([m[1;31mupstream/revert-185-feature/youtube-icon-add[m[33m)[m
+Author: Piyush Garg <gargpiyush195@gmail.com>
+Date:   Mon Jun 12 19:39:45 2023 +0530
+
+    Revert "feat: added youtube icon in youtube section"
+
+[33mcommit b55f6d24869106de356bbeda013897d6394ce14a[m
+Merge: c836ce2 84a424f
+Author: Mohit Pardeshi <99909551+TheMohit2003@users.noreply.github.com>
+Date:   Mon Jun 12 19:15:13 2023 +0530
+
+    Merge pull request #185 from prathamesh2525/feature/youtube-icon-add
+    
+    feat: added youtube icon in youtube section
+
+[33mcommit 84a424f98f3a715b06f3b9388c485607a9537af1[m
+Author: Prathamesh Madniwale <61145586+prathamesh2525@users.noreply.github.com>
+Date:   Mon Jun 12 18:54:27 2023 +0530
+
+    deleted yarn.lock
+
+[33mcommit 7c2a6fa62830d538ed933d0719a8346375cab21e[m
+Author: Prathamesh Madniwale <61145586+prathamesh2525@users.noreply.github.com>
+Date:   Mon Jun 12 17:51:57 2023 +0530
+
+    added youtube icon in youtube display section
+
+[33mcommit c836ce2e34c2d27731145bca24c6262ea9dc4eb2[m
+Merge: c8b8222 d91073a
+Author: Piyush Garg <gargpiyush195@gmail.com>
+Date:   Mon Jun 12 16:24:11 2023 +0530
+
+    Merge pull request #180 from Sameerdeshmukh18/fix/MyGearsPageTopCardHeight
+
+[33mcommit c8b8222aba868c64530a6dca3d865197510d602a[m
+Merge: ae9cf98 eb549a1
+Author: Piyush Garg <gargpiyush195@gmail.com>
+Date:   Mon Jun 12 16:23:09 2023 +0530
+
+    Merge pull request #182 from harsh11-11/fixes/fix-hoverColor-navRightIcons
+
+[33mcommit eb549a1564e3117fc23d17208fe283fabc8edbef[m
+Author: harsh11-11 <h7jain@gmail.com>
+Date:   Mon Jun 12 16:08:31 2023 +0530
+
+    fixed the color from #value to --site-theme-color
+
+[33mcommit b1cf4ea9f461a13e89c21a3f937b06b394a6a441[m
+Merge: 9354375 ae9cf98
+Author: harsh11-11 <h7jain@gmail.com>
+Date:   Mon Jun 12 15:38:02 2023 +0530
+
+    Merge remote-tracking branch 'upstream/main'
+
+[33mcommit 9354375e3fab6d0e82c8c805936bea62f7a60be2[m
+Merge: ea6c813 82b4e70
+Author: harsh11-11 <h7jain@gmail.com>
+Date:   Mon Jun 12 15:31:48 2023 +0530
+
+    Merge branch 'fixes/header-height-and-blog-duplicacy'
+
+[33mcommit d91073a8a2b6c55090cf1898276c8ebf3608c27f[m
+Author: Sameer Deshmukh <sameerdeshmukh827@gmail.com>
+Date:   Mon Jun 12 15:24:00 2023 +0530
+
+    added overflow
+
+[33mcommit ae9cf989570b16356649f9110b4a8b0973cb8001[m
+Merge: e7e9397 dd2612b
+Author: Piyush Garg <gargpiyush195@gmail.com>
+Date:   Mon Jun 12 15:16:36 2023 +0530
+
+    Merge pull request #178 from deependujha/bug/blog-external-url
+
+[33mcommit dd2612b98293291f72a7b7dbe03ab9446e89ef10[m
+Merge: 3d24327 e7e9397
+Author: Deependu Jha <deependujha21@gmail.com>
+Date:   Mon Jun 12 15:00:19 2023 +0530
+
+    Merge branch 'piyushgarg-dev:main' into bug/blog-external-url
+
+[33mcommit 3d24327b9bf071b7f332faf87c3cc9b8393f7093[m
+Author: deependujha <deependujha21@gmail.com>
+Date:   Mon Jun 12 14:56:23 2023 +0530
+
+    added property `openInNewPage` in NAV_LINK and opening the link on the basis of it
+
+[33mcommit e7e9397fbb1c03e694099cbb677b1a144044b33f[m
+Merge: ea6c813 82b4e70
+Author: Mohit Pardeshi <99909551+TheMohit2003@users.noreply.github.com>
+Date:   Mon Jun 12 14:35:51 2023 +0530
+
+    Merge pull request #172 from harsh11-11/fixes/header-height-and-blog-duplicacy
+    
+    fix: changes in header height and duplicate use of style in blog
+
+[33mcommit 2277c7f6b96fe382913e44ff0cc4daeed9ec5832[m
+Author: Sameer Deshmukh <sameerdeshmukh827@gmail.com>
+Date:   Mon Jun 12 14:30:19 2023 +0530
+
+    My gears top cards fix
+
+[33mcommit a88128051f3d3cc4bc6d8131173021dac2342d14[m
+Author: deependujha <deependujha21@gmail.com>
+Date:   Mon Jun 12 14:24:11 2023 +0530
+
+    fixed: 'blogs link'(different url) in the navbar opens in different page
+
+[33mcommit ea6c813514da39a8bc9fbb3b0d43b6125fcc7b56[m
+Merge: c1b51cf 12eaa3a
+Author: Mohit Pardeshi <99909551+TheMohit2003@users.noreply.github.com>
+Date:   Mon Jun 12 13:24:58 2023 +0530
+
+    Merge pull request #176 from simrin3308/feat/hoverOnSocialMediaBtns
+    
+    feat: Added hover On Social Media Icons again
+
+[33mcommit 12eaa3a570e885cf88fd3caec92efaba3cd5b645[m
+Author: Simrin Pal Singh <codingwithsaam@gmail.com>
+Date:   Mon Jun 12 12:51:06 2023 +0530
+
+    fixed hover on social media icons in navbar
+
+[33mcommit 82b4e70334e3cc1d887f901ff0d90b1c1ba1d542[m
+Author: harsh11-11 <h7jain@gmail.com>
+Date:   Mon Jun 12 12:37:05 2023 +0530
+
+    fixed minor changes in header height and duplicacy in blog
+
+[33mcommit c1b51cf6bed44ee72736d2f72a67fcf0de345989[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Mon Jun 12 11:41:00 2023 +0530
+
+    Changes to Template Link
+
+[33mcommit 81386ee34eba70d7918a2ebf51f69b5d58bd8383[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Mon Jun 12 11:38:40 2023 +0530
+
+    Changes
+
+[33mcommit 505c80276a572d9b09daa7d0b98b3e45a3fb41f1[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Mon Jun 12 11:37:41 2023 +0530
+
+    Added Multiple Templates
+
+[33mcommit b29850a3d7b5f9d4890265248893a42247513d02[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Mon Jun 12 11:36:10 2023 +0530
+
+    Added Visual Form
+
+[33mcommit df8fe8a5d07eabd974664e2f42e0c43eec024fe9[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Mon Jun 12 11:24:19 2023 +0530
+
+    Added Auto Label in Template
+
+[33mcommit 552c240e33a454996651cc0f26ba511f5530936b[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Mon Jun 12 11:23:15 2023 +0530
+
+    Indent Fixes
+
+[33mcommit ac656a4485ec2945cca678e166f4ef32d1dce4b9[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Mon Jun 12 11:22:32 2023 +0530
+
+    Remove Labeler
+
+[33mcommit c9cadffb85fbd8aa172970b761f144a5499ae0e1[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Mon Jun 12 11:22:03 2023 +0530
+
+    Added Login and Logout Button
+
+[33mcommit 1f030dabe936368d3f334a4718568ba2786135d6[m
+Merge: c905918 cdd27fa
+Author: Mohit Pardeshi <99909551+TheMohit2003@users.noreply.github.com>
+Date:   Mon Jun 12 10:34:15 2023 +0530
+
+    Merge pull request #170 from The-Alan-Turing/fix/Contact-Me-Text-Align
+    
+    fix: Contact me Text Alignment
+
+[33mcommit cdd27fa74d4c05806e7b1f2637d02d625c50c0be[m
+Author: AlanT <mail.alanturing@gmail.com>
+Date:   Mon Jun 12 09:49:46 2023 +0530
+
+    align contact me text with connect with me text
+
+[33mcommit 6737d1dc9fb208537a7451cfc0d078533ae189bc[m
+Author: AlanT <mail.alanturing@gmail.com>
+Date:   Mon Jun 12 09:32:56 2023 +0530
+
+    Contact me Text Alignment
+
+[33mcommit c905918576392bc6585d2f2daa349f051102fbec[m
+Merge: b1fd006 67bcb04
+Author: Mohit Pardeshi <99909551+TheMohit2003@users.noreply.github.com>
+Date:   Mon Jun 12 07:59:45 2023 +0530
+
+    Merge pull request #168 from sheryarking5/fix/student-testimonial-image
+    
+    fix: student lmages Height in student feedback testimonials
+
+[33mcommit 67bcb04fdb21c370a7e4df6f8406542321e70ac4[m
+Author: Sheryar <sheryarking5@gmail.com>
+Date:   Sun Jun 11 22:08:30 2023 +0500
+
+    fix the height of image in student feedback testimonial
+
+[33mcommit 75cf2f75607957253f75bcadff07c1d249de2914[m
+Author: Sheryar <sheryarking5@gmail.com>
+Date:   Sun Jun 11 21:01:34 2023 +0500
+
+    fix student testimonial height
+
+[33mcommit b1fd006df9c4345f8a87c65acc0047b1167cb1ff[m
+Merge: 3d6091c cecaaca
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sun Jun 11 19:02:11 2023 +0530
+
+    Merge pull request #100 from ritikchhipa01/fix/conflict
+    
+    fix: courses keywords responsive and recent blogs overlapping
+
+[33mcommit cecaaca9b0096435fcfe7fe531659e50f68ed940[m
+Merge: 0602eba 3d6091c
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sun Jun 11 19:01:28 2023 +0530
+
+    Merge branch 'main' into fix/conflict
+
+[33mcommit 3d6091c1a7011c460520723d93393f103ae31422[m
+Merge: e77e803 3bd4766
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sun Jun 11 18:57:20 2023 +0530
+
+    Merge pull request #110 from mohibkay/develop
+    
+    fix: alignment of discord button and Piyush's pic
+
+[33mcommit 3bd476669852799f856cdb4d66d369df640e290e[m
+Merge: 897d4e0 e77e803
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sun Jun 11 18:56:48 2023 +0530
+
+    Merge branch 'main' into develop
+
+[33mcommit e77e8037dffc5b31aa26b6b96ca33c57537f60b1[m
+Merge: 9c186f8 a40fe19
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sun Jun 11 18:54:20 2023 +0530
+
+    Merge pull request #133 from simrin3308/feat/hoverOnSocialMediaBtnsInContact
+    
+    feat: Implemented hover On Social Media buttons In Contact page.
+
+[33mcommit a40fe191c6bd8d84053557bb0dcbaa28796b7060[m
+Merge: 4569ab8 9c186f8
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sun Jun 11 18:54:06 2023 +0530
+
+    Merge branch 'main' into feat/hoverOnSocialMediaBtnsInContact
+
+[33mcommit 9c186f8a15aba8b2ef4dc8a8ff01aba5a11dbd0a[m
+Merge: f2d18a7 a74ddb1
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sun Jun 11 18:52:32 2023 +0530
+
+    Merge pull request #153 from VedP20/fix/form-look
+    
+    fix: form look and layout, mobile layout shift and arrow of slider component and video date style
+
+[33mcommit a74ddb1ad47d3687a8738ed5d90fc4ec5ed71d95[m
+Merge: 21ac2f2 f2d18a7
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sun Jun 11 18:52:24 2023 +0530
+
+    Merge branch 'main' into fix/form-look
+
+[33mcommit f2d18a7e2c7c59908e3db3f8887378739b973f72[m
+Merge: 3c50bb4 a993c36
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sun Jun 11 18:51:47 2023 +0530
+
+    Merge pull request #129 from mohammadashphak/fix/layout-overflow-mobile
+    
+    fix: #109 Layout overflow fix in x-axis
+
+[33mcommit a993c368ece728137d402ea2ee1dfc31de5f0a0f[m
+Merge: 68aa88a 3c50bb4
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sun Jun 11 18:51:42 2023 +0530
+
+    Merge branch 'main' into fix/layout-overflow-mobile
+
+[33mcommit 3c50bb45b2e0b44d6fd147d053f88223dc85ea31[m
+Merge: bc8b0f8 02ecc8b
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sun Jun 11 18:43:20 2023 +0530
+
+    Merge pull request #158 from Akash-Trimbake/fix_118
+    
+    fix: #118 Added hover effect on the social media icons.
+
+[33mcommit bc8b0f8a54b8e49632ee59b6df71a5c488e087e3[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sun Jun 11 17:56:23 2023 +0530
+
+    Fix linting issues
+
+[33mcommit c86fcbe276f96db47c8e8cd2e126740785797aa3[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sun Jun 11 17:55:37 2023 +0530
+
+    remove package.json
+
+[33mcommit eec2acbdd3be44ac075342b52a691883cc3debba[m
+Merge: 2503d7a 001f3f5
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sun Jun 11 17:55:14 2023 +0530
+
+    Merge pull request #164 from VedP20/fix/syntax-error-inside-header
+    
+    fix: header style and syntax error
+
+[33mcommit 001f3f5645014a04c00c78450993e9a483b5ae0f[m
+Merge: 82f730d 2503d7a
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sun Jun 11 17:55:09 2023 +0530
+
+    Merge branch 'main' into fix/syntax-error-inside-header
+
+[33mcommit 2503d7a5950debf92baf70e9bd3c39b7a7c3ee89[m
+Merge: 8319260 acaaf0a
+Author: Mohit Pardeshi <99909551+TheMohit2003@users.noreply.github.com>
+Date:   Sun Jun 11 15:47:57 2023 +0530
+
+    Merge pull request #38 from Bajaj2O/fix/sm-hero-UI
+    
+    fix: #36  added mobile view for hero Component/fixed UI for small devices.
+
+[33mcommit 82f730d1221395e9748aa1faa11e3515580ea8ea[m
+Author: VedP20 <ved@capcons.com>
+Date:   Sun Jun 11 15:23:38 2023 +0530
+
+    fix: header style and syntax error
+
+[33mcommit 02ecc8bb45b5480d71fa94ec0601fa404b9d5d97[m
+Author: akash <trimbakeakash5@gmail.com>
+Date:   Sun Jun 11 10:15:48 2023 +0530
+
+    fix: #118
+
+[33mcommit 8319260adcbf6175f467218da7a48a43b37a11fb[m
+Merge: 7eaa40d 647a27e
+Author: Mohit Pardeshi <99909551+TheMohit2003@users.noreply.github.com>
+Date:   Sun Jun 11 09:36:48 2023 +0530
+
+    Merge pull request #145 from Ankush-Ladani/feat/adding-nav-icon-in-small-screen
+    
+    feat: Added navigation icons for small screens
+
+[33mcommit 647a27ea5172a8d00c07c9ec9ca40a277193e1da[m
+Merge: 56173ad 7eaa40d
+Author: Ladani Ankush <astarladani@gmail.com>
+Date:   Sun Jun 11 08:05:32 2023 +0530
+
+    Merge branch 'main' into feat/adding-nav-icon-in-small-screen
+
+[33mcommit 21ac2f226a38bcd874c26d466dbbd024c3f1edd5[m
+Author: VedP20 <ved@capcons.com>
+Date:   Sat Jun 10 19:25:51 2023 +0530
+
+    fix: video date seprated
+
+[33mcommit 43ffad74abcb852f1d6e9b8b6955104cb00fd685[m
+Merge: 4b70cfc 7eaa40d
+Author: VedP20 <ved@capcons.com>
+Date:   Sat Jun 10 19:00:00 2023 +0530
+
+    Merge branch 'main' of https://github.com/VedP20/piyushgargdev-nextjs into fix/form-look
+
+[33mcommit 4b70cfce632a8da8c0f41ef4e1647fec3e7cce5e[m
+Author: VedP20 <ved@capcons.com>
+Date:   Sat Jun 10 18:55:53 2023 +0530
+
+    fix: form and mobile layout shifting
+
+[33mcommit 56173ad0159361d178cbf0e710e40eaf865f1a67[m
+Author: Ankush Ladani <astarladani@gmail.com>
+Date:   Sat Jun 10 16:46:46 2023 +0530
+
+    Icons changed for Login and gears
+
+[33mcommit 7eaa40daffb9f12b2ee4ebe356765f84046676df[m
+Merge: f83b59a 35337ae
+Author: Mohit Pardeshi <99909551+TheMohit2003@users.noreply.github.com>
+Date:   Sat Jun 10 16:29:10 2023 +0530
+
+    Merge pull request #143 from luckyklyist/Courses/Card
+    
+    fix: courses card hover effect
+
+[33mcommit f83b59a767ea705202e7f3c1dd81afd8a54802e8[m
+Merge: 1a49174 fd36715
+Author: Mohit Pardeshi <99909551+TheMohit2003@users.noreply.github.com>
+Date:   Sat Jun 10 16:25:09 2023 +0530
+
+    Merge pull request #150 from ChavvaNarayana/main
+    
+    feat: Replaced previous social media icons with filled version.
+
+[33mcommit 1a491746d4f23c682b56c4a63ba89d1eeb2d6468[m
+Merge: bc39dfa ec5df7c
+Author: Mohit Pardeshi <99909551+TheMohit2003@users.noreply.github.com>
+Date:   Sat Jun 10 16:24:07 2023 +0530
+
+    Merge pull request #149 from VedP20/fix/spacing-issue-between-text-subscribe-button
+    
+    fix: spacing issue between the text and subscribe button
+
+[33mcommit bc39dfa53fb3f7fb77c238575e54b1b9034df16b[m
+Merge: 7a78d71 51d0eaf
+Author: Mohit Pardeshi <99909551+TheMohit2003@users.noreply.github.com>
+Date:   Sat Jun 10 16:16:16 2023 +0530
+
+    Merge pull request #142 from luckyklyist/Testimonials/Btn-fix
+    
+    fix: Testimonials button alignment issue
+
+[33mcommit fd36715330ccad3d588a046fcc8df285e43d5df9[m
+Author: Narayana_Reddy <narayanachavva@gmail.com>
+Date:   Sat Jun 10 14:26:18 2023 +0530
+
+    Replaced previous icons with filled version
+
+[33mcommit ccaefdec20dc5cc62b4ff663e61f81363edc9e1c[m
+Author: Narayana_Reddy <narayanachavva@gmail.com>
+Date:   Sat Jun 10 14:21:21 2023 +0530
+
+     Replaced previous icons with filled version
+
+[33mcommit 0602eba6ed884eddc32ad20e4f700dcfe6120f00[m
+Merge: 47fa5c3 7a78d71
+Author: Ritik chhipa <86508543+ritikchhipa01@users.noreply.github.com>
+Date:   Sat Jun 10 14:09:07 2023 +0530
+
+    Merge branch 'main' into fix/conflict
+
+[33mcommit 35337ae4b43958b228f19ca5e28cc1a596a8a026[m
+Merge: a2f91f4 7a78d71
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sat Jun 10 14:05:40 2023 +0530
+
+    Merge branch 'main' into Courses/Card
+
+[33mcommit ec5df7c654a13fab8b74490cf4f032311635e23e[m
+Author: VedP20 <ved@capcons.com>
+Date:   Sat Jun 10 14:04:04 2023 +0530
+
+    fix: spacing issue between the text and subscribe button
+
+[33mcommit 7a78d71abfd7f1569057c604f761b4eefbf93fd8[m
+Merge: 6445908 b2fcfde
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sat Jun 10 13:14:01 2023 +0530
+
+    Merge pull request #135 from simrin3308/feat/wordChangeContactToConnect
+    
+    feat: word change from "contact" to "connect" in contact page
+
+[33mcommit 644590814c15c3469e2a7f3633f007813dd937b6[m
+Merge: 692e439 61539a3
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sat Jun 10 13:08:21 2023 +0530
+
+    Merge pull request #138 from luckyklyist/contact/responsive
+    
+    fix: contact form container responsive fixed
+
+[33mcommit a6c5c64e6096d3e4527b5bb57c85053434a27b9f[m
+Author: Ankush Ladani <astarladani@gmail.com>
+Date:   Sat Jun 10 11:24:57 2023 +0530
+
+    feat/added-navIcons-in-SmallScreen
+
+[33mcommit a2f91f4d50b2910a7007198b35e259140bb46b14[m
+Author: anupamthe99 <puspaanupam@gmail.com>
+Date:   Sat Jun 10 11:23:10 2023 +0545
+
+    fix: courses card hover effect
+
+[33mcommit 51d0eaf8f818ee225fdc666da7abe65be161c1f9[m
+Author: anupamthe99 <puspaanupam@gmail.com>
+Date:   Sat Jun 10 10:40:34 2023 +0545
+
+    fix Testimonial left Button Not Visibible
+
+[33mcommit ababc499e76654259fc85f9cb903279a1735dd83[m
+Author: anupamthe99 <puspaanupam@gmail.com>
+Date:   Sat Jun 10 10:39:06 2023 +0545
+
+    Revert "Revert "fix Testimonial left Button Not Visibible""
+    
+    This reverts commit 3b4c7bd7ee1ac52d48b46f19efae9470db59eef1.
+
+[33mcommit 3b4c7bd7ee1ac52d48b46f19efae9470db59eef1[m
+Author: anupamthe99 <puspaanupam@gmail.com>
+Date:   Sat Jun 10 10:37:16 2023 +0545
+
+    Revert "fix Testimonial left Button Not Visibible"
+    
+    This reverts commit 2aed54a00d2d0fc408859131af04ad07d2fefc28.
+
+[33mcommit 2aed54a00d2d0fc408859131af04ad07d2fefc28[m
+Author: anupamthe99 <puspaanupam@gmail.com>
+Date:   Sat Jun 10 10:36:12 2023 +0545
+
+    fix Testimonial left Button Not Visibible
+
+[33mcommit a3a39a9c532557798e1d579e34ad0efbf455314c[m
+Author: anupamthe99 <puspaanupam@gmail.com>
+Date:   Sat Jun 10 10:07:13 2023 +0545
+
+    fix Testimonial left Button Not Visible on Mobile
+
+[33mcommit 61539a3e154f52779c2421210e849a38c403aa1d[m
+Author: anupamthe99 <puspaanupam@gmail.com>
+Date:   Sat Jun 10 09:40:37 2023 +0545
+
+    contact form container responsive fixed
+
+[33mcommit b2fcfde17a75cb004ae3502cefb971ab58eedff0[m
+Author: Simrin Pal Singh <codingwithsaam@gmail.com>
+Date:   Sat Jun 10 01:15:31 2023 +0530
+
+    word change contact to connect
+
+[33mcommit 4569ab82ea429f9055c4e03f43c94d49e03aa468[m
+Author: Simrin Pal Singh <codingwithsaam@gmail.com>
+Date:   Sat Jun 10 00:46:23 2023 +0530
+
+    hover On Social Media Btns In Contact
+
+[33mcommit 68aa88ad297bf7a6fafe37537666bf5de70617cb[m
+Author: MAG <magjpmag@gmail.com>
+Date:   Fri Jun 9 23:11:11 2023 +0530
+
+    Fix: #109 Layout Overflow in -x Axis
+
+[33mcommit 692e4397d69b7c1e8d357d892aa298efaacd78b4[m
+Merge: 434d41d 00a5b05
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Fri Jun 9 20:40:21 2023 +0530
+
+    Merge pull request #127 from TheMohit2003/typo/feedback-not-feedacks
+    
+    fix: typo in feeddacks
+
+[33mcommit 00a5b05e31c5d1724c1312e996145f1fe5fd2a3d[m
+Author: mohit <mohitpardeshi729@gmail.com>
+Date:   Fri Jun 9 20:02:33 2023 +0530
+
+    fixed typo of feeddacks
+
+[33mcommit 434d41df1c1857c13bc659f4364fa63d0d6bf339[m
+Merge: 938d381 a2bdf22
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Fri Jun 9 19:18:07 2023 +0530
+
+    Merge pull request #121 from simrin3308/feat/hoverOnSocialMediaBtns
+    
+    feat: Added hover On Social Media Icons
+
+[33mcommit a2bdf227be22aec838801c0f7c575a32b90ee9c0[m
+Merge: 43d1087 938d381
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Fri Jun 9 19:14:21 2023 +0530
+
+    Merge branch 'main' into feat/hoverOnSocialMediaBtns
+
+[33mcommit 938d381978c55b1fb9cbd3f05ddfb8356f26e97c[m
+Merge: 2d6888d c6d7335
+Author: Mohit Pardeshi <99909551+TheMohit2003@users.noreply.github.com>
+Date:   Fri Jun 9 19:11:55 2023 +0530
+
+    Merge pull request #122 from TheMohit2003/main
+    
+    Merge pull request #1 from piyushgarg-dev/main
+
+[33mcommit 2d6888d6a54ce474ad7832293f045dd1768f5dd2[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Fri Jun 9 19:11:45 2023 +0530
+
+    Update README.md
+
+[33mcommit 6b935a4faa6aba72edc82d1b3692e4a32e0c4a6c[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Fri Jun 9 19:08:53 2023 +0530
+
+    Rename CONTRIBUTION.MD to CONTRIBUTING.MD
+
+[33mcommit c6d73352757a73417d647fbd00acc6ca55f10356[m
+Merge: ce03c27 1b36cd7
+Author: Mohit Pardeshi <99909551+TheMohit2003@users.noreply.github.com>
+Date:   Fri Jun 9 18:58:06 2023 +0530
+
+    Merge pull request #1 from piyushgarg-dev/main
+    
+    many bugs solved and feature added
+
+[33mcommit 47fa5c344e895b5b5bdf2e1224d09b61548ad9c4[m
+Merge: ba4f52e 74a58f4
+Author: Ritik chhipa <86508543+ritikchhipa01@users.noreply.github.com>
+Date:   Fri Jun 9 18:55:05 2023 +0530
+
+    Merge branch 'main' into fix/conflict
+
+[33mcommit 1b36cd75e5b0958e611ea04141709811c604ce9c[m
+Merge: 74a58f4 b506bac
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Fri Jun 9 18:53:40 2023 +0530
+
+    Merge pull request #101 from VedP20/fix/icons-comming-out-from-box
+    
+    fix: icons coming out from box
+
+[33mcommit b506bac4c455508d569c4f5d6b34b7a472389977[m
+Merge: ffdc154 74a58f4
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Fri Jun 9 18:52:09 2023 +0530
+
+    Merge branch 'main' into fix/icons-comming-out-from-box
+
+[33mcommit 74a58f4ec9705a1e1ceb8d58cb25e18d6daac798[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Fri Jun 9 18:31:23 2023 +0530
+
+    Update README.md
+
+[33mcommit 43d10874cd957b9553b8f0eacf2d389699dfc7b0[m
+Author: Simrin Pal Singh <codingwithsaam@gmail.com>
+Date:   Fri Jun 9 18:26:42 2023 +0530
+
+    Added hover On Social Media Btns
+
+[33mcommit 36a2ffa1e656430e0f584ccebde4de5eaeb1d5b0[m
+Merge: 0d61b66 f718ecf
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Fri Jun 9 18:20:24 2023 +0530
+
+    Merge pull request #113 from TheMohit2003/feat/Contribiton-guide
+    
+    feat: Added a contribution guide
+
+[33mcommit 0d61b6670466ee9a49390227c11ffd26e8e5bc4b[m
+Merge: 1c65b36 02cbb96
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Fri Jun 9 18:13:55 2023 +0530
+
+    Merge pull request #40 from luckyklyist/contactForm
+    
+    feat: Added Contact Form on Homepage with Google Sheet API
+
+[33mcommit 1c65b36da3f4d24da578d3e7ef74d85c4559a80e[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Fri Jun 9 17:44:13 2023 +0530
+
+    Update README.md
+
+[33mcommit d2a68e614b93b7023de6ad59202efb0010edfa74[m
+Merge: 1f00cdc 6614316
+Author: Piyush Garg <gargpiyush195@gmail.com>
+Date:   Fri Jun 9 16:45:36 2023 +0530
+
+    Merge pull request #108 from TheMohit2003/feature/tutorial-for-setupOfProject
+
+[33mcommit f718ecf7f81752854d30bdb4b2ac0784af5120f3[m
+Author: mohit <mohitpardeshi729@gmail.com>
+Date:   Fri Jun 9 16:31:57 2023 +0530
+
+    added a contibution guide
+
+[33mcommit 897d4e02b62909f8f35113ae06494654c2913ec0[m
+Author: mohibkay <mohibk.in@gmail.com>
+Date:   Fri Jun 9 16:06:06 2023 +0530
+
+    fix: alignment of discord button and Piyush's pic
+
+[33mcommit 661431682d943d91ca1f94a0ecb4ffa33239a5c3[m
+Author: mohit <mohitpardeshi729@gmail.com>
+Date:   Fri Jun 9 15:31:57 2023 +0530
+
+    added video link to setting up tutorial
+
+[33mcommit 02cbb96543865d4ae84e077627310205137d9bb7[m
+Merge: 1f0a928 1f00cdc
+Author: Anupam <35479077+luckyklyist@users.noreply.github.com>
+Date:   Fri Jun 9 15:38:24 2023 +0545
+
+    Merge branch 'main' into contactForm
+
+[33mcommit 1f00cdcb2da15ef39245b990775a985afe07eec1[m
+Merge: e04dbae b36b1e4
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Fri Jun 9 14:52:07 2023 +0530
+
+    Merge pull request #66 from simrin3308/mobileNavCloseMenu
+    
+    fix: [Fix #59] Implement mobile navbar close menu
+
+[33mcommit b36b1e478d307d669e63aa6fd27a58c3248af038[m
+Author: Simrin Pal Singh <codingwithsaam@gmail.com>
+Date:   Fri Jun 9 14:20:05 2023 +0530
+
+    updated the fix
+
+[33mcommit ae6922bbe2cc02e5206e424a9f85e785c722f97d[m
+Merge: 1349f1f af60826
+Author: Simrin Pal Singh <codingwithsaam@gmail.com>
+Date:   Fri Jun 9 13:41:10 2023 +0530
+
+    Merge branch 'main' of https://github.com/simrin3308/piyushgargdev-nextjs into mobileNavCloseMenu
+
+[33mcommit af6082613944c69d843a35b215d5e8d6b07389fd[m
+Merge: 5b4dc36 e04dbae
+Author: Simrin Pal Singh <codingwithsaam@gmail.com>
+Date:   Fri Jun 9 13:36:23 2023 +0530
+
+    made default
+
+[33mcommit 5b4dc363794bd78bc87a2b1a32a2c3394d10d752[m
+Author: Simrin Pal Singh <codingwithsaam@gmail.com>
+Date:   Fri Jun 9 13:10:23 2023 +0530
+
+    updated height of portfolioItemImage
+
+[33mcommit e04dbae9bc2d7b5df5e7c57a641cc6bc6e3104e2[m
+Merge: f15460c a122286
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Fri Jun 9 11:15:52 2023 +0530
+
+    Merge pull request #93 from harsh11-11/fixes/tags-in-portfolioItem
+    
+    fix: make tags responsive in portfolio Items
+
+[33mcommit a1222869925608bc3bd82adba0cd5980bb0a412a[m
+Merge: 7bf7654 f15460c
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Fri Jun 9 11:15:16 2023 +0530
+
+    Merge branch 'main' into fixes/tags-in-portfolioItem
+
+[33mcommit b384b881135a7d3a19504aaf447b57b1495ba2ae[m
+Merge: e119c90 f15460c
+Author: Simrin Pal Singh <codingwithsaam@gmail.com>
+Date:   Fri Jun 9 02:01:16 2023 +0530
+
+    Merge branch 'main' of https://github.com/piyushgarg-dev/piyushgargdev-nextjs
+
+[33mcommit 1f0a928161f3a5827cbd84e517e697e3f5bdb86a[m
+Author: anupamthe99 <puspaanupam@gmail.com>
+Date:   Fri Jun 9 01:18:39 2023 +0545
+
+    form fixed , added the handlesubmit
+
+[33mcommit ffdc154e8af45a137416cdb30592f5ec66771f9d[m
+Author: VedP20 <ved@capcons.com>
+Date:   Thu Jun 8 23:59:13 2023 +0530
+
+    fix: courses item's/card's tags are not responsive
+
+[33mcommit c10c8a74e93a2cac123f3a19fc8712a948b6fe67[m
+Author: VedP20 <ved@capcons.com>
+Date:   Thu Jun 8 22:45:42 2023 +0530
+
+    invalid image height fixed
+
+[33mcommit ba4f52ed6f6a2fa9c8c71d4fee03519484243a03[m
+Author: ritikchhipa01 <ritikchhipa01@gmail.com>
+Date:   Thu Jun 8 22:39:24 2023 +0530
+
+    fixed courses keywords responsive and recent blogs overlapping
+
+[33mcommit f15460cd6f18d3b061b45cf8b50ee926a5d09e9d[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Thu Jun 8 20:34:41 2023 +0530
+
+    Update README.md
+
+[33mcommit 7bf7654a7c529771024f989db3adb24bf26e3213[m
+Author: harsh11-11 <h7jain@gmail.com>
+Date:   Thu Jun 8 13:25:31 2023 +0530
+
+    fixed/make tags responsive in portfolio Item
+
+[33mcommit fec4a75e2a7c1e168a344bd295fece8612a8bf59[m
+Merge: 5a5e63f 11a09c3
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Thu Jun 8 12:47:03 2023 +0530
+
+    Merge pull request #44 from Ahmad-Munab/fix/cursor-pointer-on-yt-slider
+    
+    fix:  added cursor pointer to the youtube video slider
+
+[33mcommit 11a09c371221c5f4044ba9c34ddb25fd847eb6c7[m
+Merge: 4aef3fb 5a5e63f
+Author: Ahmad Munab <90446278+Ahmad-Munab@users.noreply.github.com>
+Date:   Thu Jun 8 13:14:46 2023 +0600
+
+    Merge branch 'main' into fix/cursor-pointer-on-yt-slider
+
+[33mcommit 5a5e63f65ff17eaf6f110b49fbae780176485747[m
+Merge: 6306a54 f9bc8e6
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Thu Jun 8 00:43:25 2023 +0530
+
+    Merge pull request #74 from mohitchandola/piyush-contribution
+    
+    change the font size
+
+[33mcommit 6306a54c5ba4e22c0898d6c9a8ce43756daff522[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Thu Jun 8 00:42:17 2023 +0530
+
+    Update README.md
+
+[33mcommit 4d8961c2f56336d2720d5ef0ed24d2df1de06a4c[m
+Merge: 0db0701 dbf020e
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Thu Jun 8 00:40:13 2023 +0530
+
+    Merge pull request #31 from Ankush-Ladani/main
+    
+    Hover Effect Applied on Buttons
+
+[33mcommit dbf020ebc9b193a47712ab22c80a8e1d020abba5[m
+Merge: d517b72 0db0701
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Thu Jun 8 00:39:53 2023 +0530
+
+    Merge branch 'main' into main
+
+[33mcommit 0db07015ee53154749d0d5fb90f3ae8a81f0d996[m
+Merge: c67d415 8f73d28
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Thu Jun 8 00:37:42 2023 +0530
+
+    Merge pull request #61 from TheMohit2003/bug/social-media-link-navigation
+    
+    Bug/social media link navigation
+
+[33mcommit 8f73d28c4b5707c75f73d6c9df1902c7488c5458[m
+Merge: b3d685c c67d415
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Thu Jun 8 00:37:01 2023 +0530
+
+    Merge branch 'main' into bug/social-media-link-navigation
+
+[33mcommit c67d415fab5c0514652fd0096e6e9b2c9501ca39[m
+Merge: 07523ae 3f73c49
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Thu Jun 8 00:33:20 2023 +0530
+
+    Merge pull request #28 from luckyklyist/improveUIcard
+    
+    improve cards design#24
+
+[33mcommit 3f73c4917bb2f6cdc44f705c5d5c62f72dc38aa8[m
+Merge: 06b079d 07523ae
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Thu Jun 8 00:33:13 2023 +0530
+
+    Merge branch 'main' into improveUIcard
+
+[33mcommit 07523ae0d68877389597a56fad87a38b569d6fd8[m
+Merge: 461375d 810d4f2
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Thu Jun 8 00:32:14 2023 +0530
+
+    Merge pull request #14 from qurban-18/bug/heroimage-alignment
+    
+    fix #13: hero image alignment fixed
+
+[33mcommit 810d4f2f3b9abf4ac851e05cf5dfdc78f481ec4d[m
+Merge: a8abbce 461375d
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Thu Jun 8 00:31:41 2023 +0530
+
+    Merge branch 'main' into bug/heroimage-alignment
+
+[33mcommit 461375d018cb9928fbd447385b8aca6937e6752c[m
+Merge: b05a592 52fba6d
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Thu Jun 8 00:28:08 2023 +0530
+
+    Merge pull request #50 from mohammadashphak/fix/issue#26
+    
+    Fix: #26 Youtube Stats Mobile View Alignment
+
+[33mcommit 52fba6d1446648f725ad7da9eda118975311b03b[m
+Merge: 7f044c8 b05a592
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Thu Jun 8 00:27:41 2023 +0530
+
+    Merge branch 'main' into fix/issue#26
+
+[33mcommit b05a592f1fb05efe0b2e3d1140bad9b9bd82daa6[m
+Merge: 4e2086c 565a827
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Thu Jun 8 00:26:07 2023 +0530
+
+    Merge pull request #48 from mohammadashphak/fix/issue#11
+    
+    Fix: #11 Testimonial's Arrow Keys
+
+[33mcommit 565a827a036800e73d866691b2723c360503f072[m
+Merge: e2d902c 4e2086c
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Thu Jun 8 00:25:59 2023 +0530
+
+    Merge branch 'main' into fix/issue#11
+
+[33mcommit 4e2086c4af4239d1dab611d8815789509c90856d[m
+Merge: deae3f7 e1a5e43
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Thu Jun 8 00:18:06 2023 +0530
+
+    Merge pull request #15 from piyushgarg-dev/fix/wrong-youtube-stats
+    
+    fix: Youtube Stats on Home Page
+
+[33mcommit e1a5e432bc596183d1711a59410e22b6df8ee46e[m
+Merge: 3a9c70d deae3f7
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Thu Jun 8 00:17:39 2023 +0530
+
+    Merge branch 'main' into fix/wrong-youtube-stats
+
+[33mcommit 1349f1f9f7517e8080ae9c7cce051165e1b30cb7[m
+Author: Simrin Pal Singh <codingwithsaam@gmail.com>
+Date:   Thu Jun 8 00:04:40 2023 +0530
+
+    removed packageLock.jsn
+
+[33mcommit deae3f7d7c1452524bb181edeffd03c6f904d7a7[m
+Merge: 17ab4e8 4176c83
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Wed Jun 7 23:44:17 2023 +0530
+
+    Merge pull request #51 from TheMohit2003/feature/email-redirect
+    
+    Feature/email redirect
+
+[33mcommit 17ab4e80add410022a8a164d49863e3b6c505a4e[m
+Merge: 4b2d978 48e1361
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Wed Jun 7 23:39:41 2023 +0530
+
+    Merge pull request #73 from tautik/heroImg-fix
+    
+    fix: heroImage right margin fix
+
+[33mcommit 4b2d9788c0c0bf81215595be55d26d6f0309cdc4[m
+Merge: 91e04d7 e59ba45
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Wed Jun 7 22:17:30 2023 +0530
+
+    Merge pull request #63 from TheMohit2003/feature/added-github-icon-Header
+    
+    feat: [Fix]-issue #62: added github icon to Navbar social media links
+
+[33mcommit 91e04d7ef7c433605f433e6ee329dd764572b3e6[m
+Merge: 68bcb35 373db39
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Wed Jun 7 21:57:39 2023 +0530
+
+    Merge pull request #83 from piyushgarg-dev/fix/typo-in-homepage
+    
+    fix: the typo of Piyush
+
+[33mcommit 373db39877c07260e789f72faf14d0b9bd866efc[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Wed Jun 7 21:46:03 2023 +0530
+
+    Fixed the typo of Piyush
+
+[33mcommit 68bcb3573a0a81ac6a68a2a85fc4a968579ec4c4[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Wed Jun 7 21:37:55 2023 +0530
+
+    Changes
+
+[33mcommit 0555225f41e03000ba992a2d2ebeb698d568e5ad[m
+Author: anupamthe99 <puspaanupam@gmail.com>
+Date:   Wed Jun 7 21:24:30 2023 +0545
+
+    Revert "improve cards design#24"
+    
+    This reverts commit 06b079d8c6ecfb3fd3a28495ee37c65deafa563b.
+
+[33mcommit f9bc8e61b852684897573d3f93f55d64424e5076[m
+Author: mohit <mohitchandola970@gmail.com>
+Date:   Wed Jun 7 18:15:14 2023 +0530
+
+    font size changed
+
+[33mcommit 48e13615a86a7ed4a7795639ba1369cac36ff011[m
+Author: Tautik Agrahari <tautikagrahari@gmail.com>
+Date:   Wed Jun 7 17:44:51 2023 +0530
+
+    Fixed heroImage
+
+[33mcommit 6d8f7d68f0ec2a066536f990733e1f14ff3f34d1[m
+Author: mohit <mohitchandola970@gmail.com>
+Date:   Wed Jun 7 17:42:44 2023 +0530
+
+    increase the font size
+
+[33mcommit 3f4c5b97c7799b669198311155f9b1604c5ce9ef[m
+Author: Simrin Pal Singh <codingwithsaam@gmail.com>
+Date:   Wed Jun 7 16:30:59 2023 +0530
+
+    mobileNavCloseMenuImplemented
+
+[33mcommit e119c9081c2936a21b4ca9c63d9e7f7e76545503[m
+Merge: c2619e3 0be66c5
+Author: simrin3308 <110960043+simrin3308@users.noreply.github.com>
+Date:   Wed Jun 7 13:49:16 2023 +0530
+
+    Merge branch 'main' into main
+
+[33mcommit e59ba45922697ddacc037e4ac0f906fdd98d30d3[m
+Merge: 739fece 0be66c5
+Author: Mohit Pardeshi <99909551+TheMohit2003@users.noreply.github.com>
+Date:   Wed Jun 7 13:25:52 2023 +0530
+
+    Merge branch 'main' into feature/added-github-icon-Header
+
+[33mcommit 0be66c5318ff69d430531504401835c9bdd8b44b[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Wed Jun 7 12:20:05 2023 +0530
+
+    Remove the labeler
+
+[33mcommit 73686e3ed820867a4c1c109df66647431a6ba108[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Wed Jun 7 12:18:32 2023 +0530
+
+    Added More Labels
+
+[33mcommit 8e59e88c0c8092928cfa01d2751c5b45a40f9aa3[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Wed Jun 7 12:16:20 2023 +0530
+
+    Added API Changes Labeler
+
+[33mcommit aa789145091e926b4ee4bc989aed4520ba63d092[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Wed Jun 7 12:15:32 2023 +0530
+
+    Added Labeler
+
+[33mcommit 4aef3fb5ced0e57755917455bdbd739b6c268a6a[m
+Merge: ed1f37b e3959c4
+Author: Ahmad Munab <90446278+Ahmad-Munab@users.noreply.github.com>
+Date:   Wed Jun 7 12:43:17 2023 +0600
+
+    Merge branch 'main' into main
+
+[33mcommit 739fece5da8725f490806b5c9e7163f366b797e6[m
+Author: mohit <mohitpardeshi729@gmail.com>
+Date:   Wed Jun 7 11:18:29 2023 +0530
+
+    added github icon to header social media links
+
+[33mcommit e3959c408c262bba0b8c1718a83ac0fc19fe739d[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Wed Jun 7 11:18:21 2023 +0530
+
+    Added Github Workflows
+
+[33mcommit b3d685cc252385751d66c0b8dfc9736cf563febc[m
+Author: mohit <mohitpardeshi729@gmail.com>
+Date:   Wed Jun 7 10:51:56 2023 +0530
+
+    links now being opened in different tab
+
+[33mcommit 4176c8311a43571c83a99e20ea8f1ca614dee299[m
+Author: mohit <mohitpardeshi729@gmail.com>
+Date:   Wed Jun 7 00:40:22 2023 +0530
+
+    structured the code
+
+[33mcommit 7f044c8d08aabf5d1b34da01e60ca9c0829d0d91[m
+Author: MAG <magjpmag@gmail.com>
+Date:   Wed Jun 7 00:37:24 2023 +0530
+
+    Fix: #26 Youtube Stats Mobile View Alignment
+
+[33mcommit 34776ec61f5750bcb2e20e6eab99c1a01bbedb98[m
+Author: mohit <mohitpardeshi729@gmail.com>
+Date:   Wed Jun 7 00:31:30 2023 +0530
+
+    Add email redirect functionality
+
+[33mcommit e2d902c3a02e85f39af6b903d86a0f7f9da83478[m
+Author: MAG <magjpmag@gmail.com>
+Date:   Tue Jun 6 23:28:24 2023 +0530
+
+    FIx: #11 Testimonial's Arrow Keys
+
+[33mcommit ce03c27140a2bb4aa0c6084d0fc010f8ca946439[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Tue Jun 6 22:41:58 2023 +0530
+
+    Changes to README
+
+[33mcommit 3a9c70d6b8af0be62edd0be23de8fffa8af74dec[m
+Merge: 0a4a7c5 9df43aa
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Tue Jun 6 22:35:32 2023 +0530
+
+    Merge remote-tracking branch 'origin/main' into fix/wrong-youtube-stats
+
+[33mcommit 9df43aab179b0fd32fda73c14c0a0f3fc3000235[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Tue Jun 6 22:33:55 2023 +0530
+
+    Update Local Setup Instructions
+
+[33mcommit c2619e35d42fd1783495028a0c6dbdcad1d433c8[m
+Author: Simrin Pal Singh <codingwithsaam@gmail.com>
+Date:   Tue Jun 6 17:49:22 2023 +0530
+
+    TextAreaResizeDisabled
+
+[33mcommit ed1f37bec792722290609056069ba20452977fd6[m
+Author: Ahmad Munab <ahmadmunab22@gmail.com>
+Date:   Tue Jun 6 17:56:42 2023 +0600
+
+    FIX #34 Added cursor: pointer to the youtube slider
+
+[33mcommit c1ffcae3eefaed165ea18697dc0519f52521f0cd[m
+Author: Simrin Pal Singh <codingwithsaam@gmail.com>
+Date:   Tue Jun 6 16:53:59 2023 +0530
+
+    Added form
+
+[33mcommit 5a23743f03e4c6a963bb342c0cd639cda903cb7e[m
+Author: anupamthe99 <puspaanupam@gmail.com>
+Date:   Tue Jun 6 16:57:44 2023 +0545
+
+    created the contact form #25
+
+[33mcommit 40c368a66ececd8eaac2e9c484328358708d4d24[m
+Author: Ahmad Munab <ahmadmunab22@gmail.com>
+Date:   Tue Jun 6 16:47:46 2023 +0600
+
+    Fix: #34
+
+[33mcommit acaaf0add56a7e569cf5c5d2db406ae57b743422[m
+Author: Bajaj2O <sajal2bajaj@gmail.com>
+Date:   Tue Jun 6 15:18:44 2023 +0530
+
+    fix #36:Responsive UI of Hero components for small devices is not Organised.
+
+[33mcommit d517b729b4368a47e57e6c2333d55c249f3b4cf1[m
+Author: Ankush Ladani <astarladani@gmail.com>
+Date:   Tue Jun 6 12:38:30 2023 +0530
+
+    Fixes Card Height Issue in Gear Section
+
+[33mcommit 1771df676e89077ef3ff49cd05f5c0baf2e75e77[m
+Author: Ankush Ladani <astarladani@gmail.com>
+Date:   Tue Jun 6 11:50:06 2023 +0530
+
+    Hover Effect Applied on Buttons
+
+[33mcommit 06b079d8c6ecfb3fd3a28495ee37c65deafa563b[m
+Author: anupamthe99 <puspaanupam@gmail.com>
+Date:   Tue Jun 6 10:59:09 2023 +0545
+
+    improve cards design#24
+
+[33mcommit 0a4a7c57ecac58f808aab84c14184ee221878c80[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Tue Jun 6 00:49:05 2023 +0530
+
+    Wrong Stats Added
+
+[33mcommit 8a293f1b7aa44d0cc4e0dff8fb27624a88901912[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Tue Jun 6 00:37:57 2023 +0530
+
+    Added PR Template
+
+[33mcommit a8abbce7141a926e2fbf97e1923f3fd692669f86[m
+Author: Qurban Hussain <malikqurbanawan807@gmail.com>
+Date:   Mon Jun 5 23:56:31 2023 +0500
+
+    fix #13: hero image alignment fixed
+
+[33mcommit 5f10c8a0d843f2c68fab0e0571705ac96b835ead[m
+Merge: 8ea49fd acff8a7
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Mon Jun 5 21:44:20 2023 +0530
+
+    Merge pull request #3 from luckyklyist/main
+    
+    Wrong Text of the Button on Home Page #2 fixed
+
+[33mcommit acff8a71df494c5e7d6bad870dd75356c2a2f467[m
+Author: anupamthe99 <puspaanupam@gmail.com>
+Date:   Mon Jun 5 21:41:36 2023 +0545
+
+    Wrong Text of the Button on Home Page #2 fixed
+
+[33mcommit 8ea49fde45d35a56c9f948c19a46bbbf3e3070f4[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sun Jun 4 18:47:21 2023 +0530
+
+    Changes to Env
+
+[33mcommit 3dbee6194c11f031a61479ad3c98fc4b44b424ee[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sun Jun 4 18:45:23 2023 +0530
+
+    Remove the Discord Flow
+
+[33mcommit fb5c3da87e72ae25a5dead555c2843c39a7b25ad[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sun Jun 4 18:05:08 2023 +0530
+
+    Added Loading States
+
+[33mcommit 7400f1a01edd66cb1ae678f49c3ce30d1ef98f46[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sun Jun 4 17:58:18 2023 +0530
+
+    Replace Google API Key
+
+[33mcommit a3c0e46516321e228acfdacf51f212e44773c51f[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sun Jun 4 17:46:24 2023 +0530
+
+    Added Open Source Page
+
+[33mcommit 62c5ba0085a6a114de02d271f58b8f689881cde2[m
+Author: Piyush Garg <gargpiyush195@gmail.com>
+Date:   Sun Jun 4 00:41:32 2023 +0530
+
+    Update issue templates
+
+[33mcommit bf734731e2ffbf8f95e24ae4495dbad7c07fe59e[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Thu May 4 00:17:08 2023 +0530
+
+    Added Twitter Clone
+
+[33mcommit b4c3ebd6b595bf2fdce4ead7a562ecf5083a44d2[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Tue Apr 25 20:41:45 2023 +0530
+
+    Update Course Link
+
+[33mcommit dec1d0cb9e64bf90a923cf9a2b6cd1518056d1b1[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Mon Apr 24 18:05:56 2023 +0530
+
+    Remove Codedamn
+
+[33mcommit 10ff2ce03443400a8ee33771c8511d88157d34d4[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Mon Apr 24 18:05:06 2023 +0530
+
+    Updated Links
+
+[33mcommit fae448deacf49228e606d4916ffc2a2da0fbb7c1[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Thu Mar 2 13:05:59 2023 +0530
+
+    Added Docker Course
+
+[33mcommit ca2fb54bbb077fafc08e778ff37cbe3e4a802c72[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sat Feb 4 14:30:41 2023 +0530
+
+    Added Microsoft Clarity
+
+[33mcommit f181fce8048f4e8aa7dd3d42eb54aec9363ca85a[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sat Jan 28 14:48:10 2023 +0530
+
+    Changes
+
+[33mcommit 9b6b2e82f34ec804b89c4661c9a53cb71c9fbc8c[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sat Jan 28 14:42:17 2023 +0530
+
+    Added URL Redirect Service
+
+[33mcommit 716c9702e40b9c058e4a91ebc4379a41232eff42[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Thu Jan 26 12:23:33 2023 +0530
+
+    Added NodeJS code for short URL
+
+[33mcommit af555d91bbe8975209ef438ad306c33b612fe940[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Mon Jan 23 21:11:41 2023 +0530
+
+    Added Google ADS
+
+[33mcommit 57faef101701e45e3693e29d997b878f4ae8b31a[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Wed Jan 18 12:58:21 2023 +0530
+
+    Added Non Linear DSA Course
+
+[33mcommit 41b257e39254cfc4fc79003761b1354fe39034e2[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sat Dec 31 18:35:29 2022 +0530
+
+    auto slide
+
+[33mcommit 233daa67908113f116aeff5777c774018ae839ed[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sat Dec 31 18:10:10 2022 +0530
+
+    Changes
+
+[33mcommit 365bb776ca1a6bf347cc6cd64aaf333366f37eae[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sat Dec 31 18:07:17 2022 +0530
+
+    Changes
+
+[33mcommit 3d6c1723ec18f70640a4a476298f4accebf4fbb3[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sat Dec 31 18:03:53 2022 +0530
+
+    Changes
+
+[33mcommit d3028ea33d24ed431475c2bb36bc07cacef6a60b[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sat Dec 31 17:58:57 2022 +0530
+
+    Added Https
+
+[33mcommit 8ebebb0b74a6231ee2b0ae0239971909c79187f9[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sat Dec 31 17:53:30 2022 +0530
+
+    Added Sitemap
+
+[33mcommit 20881269a236b3b846f8096779b7fcf3832b2183[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sat Dec 31 13:55:14 2022 +0530
+
+    Changes to testimonials
+
+[33mcommit 045a3f7fc70dd215495aff6c0468dbb76dbb383f[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sat Dec 31 13:37:01 2022 +0530
+
+    Added Testimonial
+
+[33mcommit 0b3d3585421fac2a9a4696eb8bf7b758e8dfb264[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Fri Dec 30 12:10:52 2022 +0530
+
+    Changes
+
+[33mcommit 483ba2178b8894f5a8ab4a940f1c89c463a096c4[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Fri Dec 30 12:02:17 2022 +0530
+
+    Added Calculator JS app
+
+[33mcommit 0a9a998cb0b3cae87950c6e9ddad506b3a9678ca[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Fri Dec 30 11:29:41 2022 +0530
+
+    Added Testimonial
+
+[33mcommit 519ec001184eb1a5e8f127b71402a42dc22264f0[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Thu Dec 29 13:07:46 2022 +0530
+
+    Added Testimonial Item
+
+[33mcommit 920612b68c4c2701ed3fd4ac85098499ccee7ed3[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Wed Dec 28 18:21:39 2022 +0530
+
+    remove dynamic
+
+[33mcommit 075ec9eeccac81b922439e764715c9ae9aebce4f[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Wed Dec 28 18:19:51 2022 +0530
+
+    Remove Loader
+
+[33mcommit 3a01b8b7bf7e808faf3ed9f9853839a3fcb98e0f[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Wed Dec 28 18:16:57 2022 +0530
+
+    Lazy Import
+
+[33mcommit 6e54dfe6aebbc9439ea59e5e814479c11e2f7dd8[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Wed Dec 28 18:04:41 2022 +0530
+
+    SEO Changes
+
+[33mcommit 060b0e5ec6dd65b574fef68b51c7d37314b5ce12[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Wed Dec 28 18:00:10 2022 +0530
+
+    Reduce Content
+
+[33mcommit 2dd0ebcea9f9af47ad468191251153c033b20d68[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Wed Dec 28 17:57:03 2022 +0530
+
+    Added Height to p tag
+
+[33mcommit 78e3dc7144b3e5c16d45ad853d06323fda9e29ec[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Wed Dec 28 17:53:37 2022 +0530
+
+    Added ID to google tag script
+
+[33mcommit 8852e150d8e3fa542ad74bec92d474bd390a3261[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Wed Dec 28 17:51:31 2022 +0530
+
+    Added Cache Control For Images
+
+[33mcommit bbc04ac9d79a6f7492b00ceef39359faa67b2b15[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Wed Dec 28 12:09:21 2022 +0530
+
+    Added More Testimonials and Projects
+
+[33mcommit 2794f46c03ffd2ff29506af5fa412eb054e5ec63[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Tue Dec 27 22:41:38 2022 +0530
+
+    Added Google Sheet Integration
+
+[33mcommit 4c7822e5a523b8a6cf3bce0a0e829a509b110639[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Tue Dec 27 16:44:32 2022 +0530
+
+    Added Basic FavIcon
+
+[33mcommit 171d252751c394414cfd208568de08d4706de54f[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Tue Dec 27 16:37:08 2022 +0530
+
+    Added React Tic Tac Toe In Projects
+
+[33mcommit 2a103ea0a36e5abbc94f3410dcd84b570e9872bf[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Tue Dec 27 13:47:35 2022 +0530
+
+    Moved to external CSS
+
+[33mcommit 763705a4c1c5b9cb60e50fec6f73d97eed41247f[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Tue Dec 27 13:36:37 2022 +0530
+
+    Import CSS in CSS File
+
+[33mcommit 788bdf5f1fdaa4469553b655e8c5c0083739098f[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Tue Dec 27 13:26:38 2022 +0530
+
+    Upgrade Next
+
+[33mcommit 27ca632939cd744744f616b1fd9dedbd2d6dce7b[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Tue Dec 27 13:19:56 2022 +0530
+
+    Changes
+
+[33mcommit bd0e86f7143b8872f83e61a527439d1edcfdd0c3[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Tue Dec 27 13:12:06 2022 +0530
+
+    Changes
+
+[33mcommit 69c7fedb65ba67db3a53c5ba8065be9dfb7aa1e2[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Tue Dec 27 13:11:02 2022 +0530
+
+    changes to feedback
+
+[33mcommit fdf212297fcde49d709c152440c80dc7714e8915[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Tue Dec 27 13:05:28 2022 +0530
+
+    Changes
+
+[33mcommit ebd1f4fcc170577c4ec71f1c9e8f045578c59b6d[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Tue Dec 27 13:04:08 2022 +0530
+
+    Changes
+
+[33mcommit 9ba25050723effe7f0dfa8ad1c4fecd80de917f2[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Tue Dec 27 13:02:10 2022 +0530
+
+    Added Testimonials
+
+[33mcommit 6e6f1171ffbd11aa8d1e3221129ea6552cea4fa8[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Mon Dec 26 19:18:36 2022 +0530
+
+    Fix CodeDamn Branding
+
+[33mcommit 1b2b892eeeb386595b8626d98e8c71192aaee14a[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Mon Dec 26 17:51:28 2022 +0530
+
+    changes
+
+[33mcommit 4be08192761e7083e8600208a1a3d60a9664113e[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Mon Dec 26 17:37:20 2022 +0530
+
+    Remove unused import
+
+[33mcommit 90eff3871fd6cdd703864ea38ec4ee995bcadc10[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Mon Dec 26 17:36:27 2022 +0530
+
+    Remove Auth
+
+[33mcommit 3b8b9fc0d6b103c31225f07ce6ea3014615ae76d[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Mon Dec 26 17:20:06 2022 +0530
+
+    Changes
+
+[33mcommit cdbc61d0d41cc858258f961dd594ccf12c683276[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Mon Dec 26 17:14:15 2022 +0530
+
+    Added Loaders
+
+[33mcommit b92c36c0934755dcc80506107b1bb91f2d57fb71[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Mon Dec 26 17:08:49 2022 +0530
+
+    Project page is now dynamic
+
+[33mcommit aaa2d712f6927d26d412c8d1c780f5b93662ec58[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Mon Dec 26 16:45:15 2022 +0530
+
+    changes
+
+[33mcommit ba4d907ae3237f6927a210609cd16b1c41b2eeb4[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Mon Dec 26 16:43:58 2022 +0530
+
+    Changes
+
+[33mcommit 77c972f061866ba7dfbd2254e66c5b4fe190a14c[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Mon Dec 26 16:38:59 2022 +0530
+
+    Modified Project page
+
+[33mcommit 5c0fd32bce26477a02f7a34ed61318da79643017[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Mon Dec 26 14:49:00 2022 +0530
+
+    Added Project
+
+[33mcommit 5a490ebbdb415bb5777624ac1f91337e427874ed[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sun Dec 25 22:31:29 2022 +0530
+
+    Remove Terminal Button from Header
+
+[33mcommit c614184eca45e9ba1a682796198ad10fc0c13e27[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sun Dec 25 19:59:45 2022 +0530
+
+    Added Authentication
+
+[33mcommit 4fc124b9d2180b0189215265f04cd492fd8a50b1[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sun Dec 25 13:48:12 2022 +0530
+
+    changes to terminal
+
+[33mcommit e146030170bc4bfd848e541380de157c586bbc84[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sun Dec 25 13:13:03 2022 +0530
+
+    Added Terminal Support
+
+[33mcommit a6c21caa34ea358ef6852c6bf1c1bb91deb78391[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sun Dec 25 12:12:20 2022 +0530
+
+    Changes to scroll bar
+
+[33mcommit b0dde17cdecde455c872f5ff7bdfd190a7f67038[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sun Dec 25 12:08:13 2022 +0530
+
+    Change subscribe count
+
+[33mcommit d6ec996a957ba7dfc724150e707d54b525188900[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sun Dec 25 12:01:26 2022 +0530
+
+    Added Footer
+
+[33mcommit e636b1769189ad5c1b10bb7753cdd59ca2f869cf[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sun Dec 25 11:35:07 2022 +0530
+
+    Changes
+
+[33mcommit 67372d94f157b56715fcd8b415665a32aa3d4b81[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sun Dec 25 11:28:47 2022 +0530
+
+    Added Recent Blogs Section
+
+[33mcommit 6ee774d199f1b131d1c5099f941254496dc17dce[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sat Dec 24 23:46:40 2022 +0530
+
+    Added Vercel Analytics
+
+[33mcommit 3627c04c4d95e6991f86642cb78ca28d27cb6401[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sat Dec 24 23:25:14 2022 +0530
+
+    Added Subscriber Count
+
+[33mcommit befc8fa28d6e36dc7fae1d06ee8995a9ea0a9e07[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sat Dec 24 23:22:37 2022 +0530
+
+    Change Image ALT text
+
+[33mcommit 1b6f351d1e5c51214e5ceb90bd9744b098293dc6[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sat Dec 24 23:16:55 2022 +0530
+
+    Reduce Speed
+
+[33mcommit 9e43d775d29bc9a8ca952b38ffdcd87a63f9dfe0[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sat Dec 24 23:07:53 2022 +0530
+
+    Added Google Analytics Script
+
+[33mcommit 2025c8197cdf1230b34f9ae66aa348b0344ab242[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sat Dec 24 22:55:10 2022 +0530
+
+    Changes to Seo tags
+
+[33mcommit 2a5a5d083ebd97b62178722c72952771a1a120f2[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sat Dec 24 22:51:07 2022 +0530
+
+    Added Default Data
+
+[33mcommit 39c35550e9c27af0f9db0ed1708a086ac2769468[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sat Dec 24 22:46:15 2022 +0530
+
+    Changes
+
+[33mcommit 58524cf5c4d83948863a9c23e9565ecbff6de027[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sat Dec 24 22:45:26 2022 +0530
+
+    Added Default Youtube Data
+
+[33mcommit 13c228262e58c2743f9feadea155276d56c3ed82[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sat Dec 24 22:23:32 2022 +0530
+
+    Added Blog Link
+
+[33mcommit 8fcd0d391bd5fc41c9fff4515f1cbfd1f87afbae[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sat Dec 24 22:16:10 2022 +0530
+
+    Added My Gears page
+
+[33mcommit 5308c1fefc79e6cdd551c09f43f261d22863f55a[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sat Dec 24 20:39:35 2022 +0530
+
+    Reevert
+
+[33mcommit c55fd5b44355f3b9a979b45affac174e0faf24e9[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sat Dec 24 20:38:44 2022 +0530
+
+    Change from static rendering to server side rendering
+
+[33mcommit e6dddcb4bceac9681f61b859c88f522225874d5b[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sat Dec 24 20:35:30 2022 +0530
+
+    Minor Fixes
+
+[33mcommit deb89aeda65316960472d368ea7058b4c86974fb[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sat Dec 24 20:22:32 2022 +0530
+
+    Added Revalidate 12 hrs
+
+[33mcommit 39d43e24e18c918cfbc02df9aee60101fcc51fc8[m
+Author: Piyush Garg <piyushgarg.dev@gmail.com>
+Date:   Sat Dec 24 20:09:28 2022 +0530
+
+    first commit
