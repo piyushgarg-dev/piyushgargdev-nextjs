@@ -3,10 +3,13 @@ import { Container, Row, Col } from "reactstrap";
 import gears from "../components/data/gears";
 import PortfolioItem from "../components/UI/PortfolioItem";
 import SectionSubtitle from "../components/UI/SectionSubtitle";
+import { useContext } from "react";
+import ToggleContext from "../context/ToggleContext";
 
 export default function Gears() {
+  const { darkMode } = useContext(ToggleContext);
   return (
-    <div>
+    <div style={{ background: darkMode ? "#0e1630" : "#fff" }}>
       <Head>
         <title>Piyush Garg - Gears</title>
       </Head>

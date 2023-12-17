@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Container, Row, Col, Button } from "reactstrap";
 import Slider from "react-slick";
 import Image from "next/image";
 import SectionSubtitle from "./SectionSubtitle";
 import classes from "../../styles/services.module.css";
 import ServicesItem from "./ServicesItem";
+import ToggleContext from "../../context/ToggleContext";
 
 const Services = ({ youtubeStats, youtubeVideos }) => {
+  const { darkMode } = useContext(ToggleContext);
+
   const settings = {
     dots: false,
     autoplay: true,
@@ -19,7 +22,10 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
     arrows: true,
   };
   return (
-    <section id="youtube-stats">
+    <section
+      style={{ background: darkMode ? "#0e1630" : "#fff" }}
+      id="youtube-stats"
+    >
       <Container>
         <Row>
           <Col lg="3" md="12" sm="12">
@@ -77,8 +83,18 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
 
           <Col lg="6" md="6" className={`${classes.service__title}`}>
             <SectionSubtitle subtitle="Youtube" />
-            <h3 className="mb-0 mt-4">Popular</h3>
-            <h3 className="mb-2">Uploads from My Youtube Channel</h3>
+            <h3
+              style={{ color: darkMode ? "#fff" : "#0e1630" }}
+              className="mb-0 mt-4"
+            >
+              Popular
+            </h3>
+            <h3
+              style={{ color: darkMode ? "#fff" : "#0e1630" }}
+              className="mb-2"
+            >
+              Uploads from My Youtube Channel
+            </h3>
             <p>
               I would really appreciate it if you could check it out and maybe
               even hit the subscribe button if you enjoy the content.

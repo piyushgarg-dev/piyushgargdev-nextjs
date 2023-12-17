@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState, useContext } from "react";
 import { BiLogInCircle } from "react-icons/bi";
 import { FaWhmcs } from "react-icons/fa";
 import { Container } from "reactstrap";
@@ -23,6 +23,7 @@ import {
 
 import { IoMoonOutline } from "react-icons/io5";
 import { BsSun } from "react-icons/bs";
+import ToggleContext from "../../context/ToggleContext";
 
 const NAV__LINK = [
   {
@@ -55,8 +56,11 @@ const icons = [
   <BiLogInCircle key="login" />,
 ];
 
-const Header = ({ darkMode, setDarkMode }) => {
+const Header = () => {
   const [crossMenu, setCrossMenu] = useState(false);
+  const { darkMode, setDarkMode } = useContext(ToggleContext);
+
+  console.log(darkMode);
 
   const headerRef = useRef(null);
 
