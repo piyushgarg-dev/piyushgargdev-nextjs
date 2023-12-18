@@ -4,9 +4,21 @@
   column-gap: 2rem;
 }
 
+#youtube-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-left: 235px; You can adjust this value based on your design */
+}
+
 @media only screen and (max-width: 992px) {
   .services__container {
     flex-direction: column;
+    align-items: unset;
+  }
+
+  #youtube-stats {
+    flex-direction: row;
     align-items: unset;
   }
 

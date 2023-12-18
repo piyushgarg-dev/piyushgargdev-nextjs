@@ -22,7 +22,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
     <section id="youtube-stats">
       <Container>
         <Row>
-          <Col lg="3" md="12" sm="12">
+          <Col lg="3" md="12" sm="12" className="classes.column-youtube">
             <Slider
               {...settings}
               // style={{ cursor: "pointer", marginBottom: "10px" }}
