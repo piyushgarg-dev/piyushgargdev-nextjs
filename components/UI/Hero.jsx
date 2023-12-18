@@ -23,7 +23,7 @@ const Hero = () => {
                 Hi there! My name is Piyush Garg and I&rsquo;m a software
                 engineer with over 5 years of experience in the industry. I love
                 all things tech and coding, and on my channel, I share my
-                knowledge and experience with others.
+                knowledge and experience with others.  thank you to all
               </p>
             </div>
             <div className="mt-5 flex place-content-center md:block">
