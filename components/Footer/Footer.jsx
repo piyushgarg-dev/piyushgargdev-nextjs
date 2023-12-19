@@ -13,10 +13,9 @@ const Footer = () => {
       <Container>
         <Row>
           <Col lg="12">
-            <div className={`${classes.footer__copyright}`}>
+            <div className="footer__copyright">
               <p>
-                &copy; Copyright {year} - Developed by Piyush Garg. All right
-                reserved.
+                &copy; Copyright {year} - Developed by Piyush Garg. All rights reserved.
               </p>
             </div>
           </Col>
