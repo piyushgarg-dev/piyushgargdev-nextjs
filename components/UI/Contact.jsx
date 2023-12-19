@@ -33,7 +33,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className={`${classes.contact}`}>
-      <Container>
+      <Container class="text-center">
         <Row className="flex justify-between flex-col md:flex-row ">
           <Col lg="4" md="6">
 
