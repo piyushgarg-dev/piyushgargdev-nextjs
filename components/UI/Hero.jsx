@@ -51,7 +51,7 @@ const Hero = () => {
             </div>
           </Col>
           <Col lg="6" md="6">
-            <div className={`${classes.hero__img} text-end`}>
+            <div className={`${classes.hero__img} text-center`}>
               <Image alt="Piyush Garg" src={heroImg} width="450" height="450" />
             </div>
           </Col>
@@ -66,7 +66,7 @@ const Hero = () => {
             <div className={`${classes.hero__content}`}>
               <div className="flex flex-col items-center justify-center">
                 <Col lg="6" md="6">
-                  <div className={`${classes.hero__img} text-end`}>
+                  <div className={`${classes.hero__img} text-center`}>
                     <Image
                       alt="Piyush Garg"
                       src={heroImg}

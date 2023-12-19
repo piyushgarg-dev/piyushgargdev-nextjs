@@ -20,7 +20,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
   };
   return (
     <section id="youtube-stats">
-      <Container>
+      <Container class="text-center">
         <Row>
           <Col lg="3" md="12" sm="12">
             <Slider
@@ -75,7 +75,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
             />
           </Col>
 
-          <Col lg="6" md="6" className={`${classes.service__title}`}>
+          <Col lg="6" md="6" className={`${classes.service__title} text-center`}>
             <SectionSubtitle subtitle="Youtube" />
             <h3 className="mb-0 mt-4">Popular</h3>
             <h3 className="mb-2">Uploads from My Youtube Channel</h3>
