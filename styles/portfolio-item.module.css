@@ -6,6 +6,7 @@
   margin-bottom: 8px;
   min-height: 100%;
   position: relative;
+  display: flex;
 }
 
 .portfolio__item div {
