@@ -46,3 +46,8 @@
     margin-bottom: 30px;
   }
 }
+
+.planetEarth:hover {
+  color: #01d293;
+  cursor: pointer;
+}
