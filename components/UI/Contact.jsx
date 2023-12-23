@@ -42,9 +42,13 @@ const Contact = () => {
             <ul className={`${classes.contact__info__list}`}>
               <li className={`${classes.info__item}`}>
                 <span>
-                  <i className="ri-map-pin-line"></i>
+                  <a href="https://maps.app.goo.gl/JFnE9H6XsJXQQhD8A">
+                    <i className="ri-map-pin-line"></i>
+                  </a>
                 </span>
-                <p>Planet Earth 🌍</p>
+                <a href="https://maps.app.goo.gl/JFnE9H6XsJXQQhD8A">
+                  <p className="hover:text-[#01d293]">Planet Earth 🌍</p>
+                </a>
               </li>
               <li className={`${classes.info__item}`}>
                 <span>
@@ -83,7 +87,7 @@ const Contact = () => {
                 href="https://twitter.com/piyushgarg_dev"
                 target="_blank"
               >
-             
+
                 <NewTwitterLogo />
               </Link>
               <Link
