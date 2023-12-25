@@ -129,6 +129,7 @@ const Contact = () => {
                     required
                     rows="4"
                     autoComplete="off"
+                    style={{minHeight:'120px'}}
                   ></textarea>
                   <button
                     type="submit"
