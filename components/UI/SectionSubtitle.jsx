@@ -4,7 +4,7 @@ import classes from "../../styles/subtitle.module.css";
 const SectionSubtitle = (props) => {
   return (
     <h5 className={`${classes.section__subtitle}`}>
-      <a href={props.link} target="_blank" rel="noopener noreferrer">
+      <a href={props.link} target="_blank" rel="noopener noreferrer" className="hover:underline">
         {props.subtitle}
       </a>
     </h5>
