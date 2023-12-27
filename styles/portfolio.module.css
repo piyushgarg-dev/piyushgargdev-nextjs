@@ -8,4 +8,16 @@
     margin-top: -20px !important;
     margin-bottom: 30px;
   }
+  .subtitle-link {
+  color: var(--site-theme-color); 
+  text-decoration: none; 
+  transition: color 0.3s; 
 }
+
+.subtitle-link:hover {
+ text-decoration: underline;
+}
+}
+
+
+
