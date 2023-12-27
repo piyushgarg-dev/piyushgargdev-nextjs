@@ -34,6 +34,9 @@ a {
 p {
   color: #808dad;
   line-height: 30px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 h1,
 h2,

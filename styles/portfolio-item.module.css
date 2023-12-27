@@ -9,7 +9,7 @@
 }
 
 .portfolio__item div {
-  background: transparent;
+  background: transparent no-repeat center;
 }
 
 .portfolio__item h6 {
@@ -30,8 +30,9 @@
 
 .portfolio__img img {
   border-radius: 10px;
+  object-fit: contain;
+  height: 300px;
 }
-
 .portfolio__keyword {
   padding: 5px 10px;
   color: #fff;
