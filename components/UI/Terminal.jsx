@@ -101,7 +101,7 @@ const Terminal = () => {
                 </p>
               ))}
               <p>
-                <span style={{ color: "#38CC77" }}>clear:</span> Clears out
+                <span style={{ color: "#38CC77" }}>clear:</span> clears out
                 everything on screen!
               </p>
             </div>
