@@ -53,7 +53,8 @@ const Terminal = () => {
                 resolve(
                   `Your current position is ${pos.coords.latitude}, ${pos.coords.longitude}`
                 ),
-              (error) => resolve(`Error: ${error.message}`)
+              // (error) => resolve(`Error: ${error.message}`)
+              (error) => resolve(`Sorry, unable to fetch location :(`)
             )
           ),
       },
