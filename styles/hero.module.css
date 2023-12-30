@@ -82,7 +82,7 @@
 
 @media only screen and (max-width: 992px) {
   .hero__content h2 {
-    font-size: 200px !important;
+    font-size: 1.5rem !important;
   }
 
   .hero__content h5 {
