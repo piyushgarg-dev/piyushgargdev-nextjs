@@ -14,6 +14,7 @@ body {
   scroll-behavior: smooth;
   background: #0e1630;
   background-color: #0e1630 !important;
+  scroll-behavior: smooth!important;
 }
 
 .border-cool {
