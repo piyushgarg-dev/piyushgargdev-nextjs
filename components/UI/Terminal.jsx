@@ -1,6 +1,7 @@
 import React from "react";
 import { ReactTerminal, TerminalContextProvider } from "react-terminal";
 import { signIn, signOut, useSession } from "next-auth/react";
+import didYouMean from 'didyoumean2'
 
 const Terminal = () => {
   const { data } = useSession();
@@ -77,6 +78,10 @@ const Terminal = () => {
             </p> */}
           </div>
         }
+        defaultHandler={(enteredText) => {
+          const closestMatch = didYouMean(enteredText, Object.keys(terminalCommands));
+          return `${closestMatch ? `Did you mean '${closestMatch}'? ` : ""}You can use 'help' to see all commands.`
+        }}
         themes={{
           darkDefault: {
             themeBGColor: "",
