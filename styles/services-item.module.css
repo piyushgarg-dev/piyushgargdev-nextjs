@@ -14,6 +14,9 @@
 
   transform: translateY(-20px);
 }
+.service__item__second:hover {
+  transform: translateY(20px);
+}
 
 .service__item:hover i {
   color: #171f38;
