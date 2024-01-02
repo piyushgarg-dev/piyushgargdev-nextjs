@@ -12,10 +12,18 @@ export const authOptions = {
     GitHubProvider({
       clientSecret: process.env.GITHUB_CLIENT_SECRET,
       clientId: process.env.GITHUB_CLIENT_ID,
+      style:{
+        bg:"black",
+        text:"white"
+      }
     }),
     DiscordProvider({
       clientId: process.env.DISCORD_CLIENT_ID,
       clientSecret: process.env.DISCORD_CLIENT_SECRET,
+      style:{
+        bg:"blue",
+        text:"white"
+      }
     }),
   ],
 };
