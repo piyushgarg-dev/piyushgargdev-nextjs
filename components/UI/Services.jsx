@@ -22,6 +22,12 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
     <section id="youtube-stats">
       <Container>
         <Row>
+          <Col lg="6" md="6" className="mb-5" >
+          <SectionSubtitle subtitle="Youtube" />
+          <h4 className="mt-4 text-2xl">Popular Uploads From My YouTube Channel</h4>
+          </Col>
+        </Row>
+        <Row>
           <Col lg="3" md="12" sm="12">
             <Slider
               {...settings}
@@ -75,14 +81,11 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
             />
           </Col>
 
-          <Col lg="6" md="6" className={`${classes.service__title}`}>
-            <SectionSubtitle subtitle="Youtube" />
-            <h3 className="mb-0 mt-4">Popular</h3>
-            <h3 className="mb-2">Uploads from My Youtube Channel</h3>
-            <p>
+          <Col lg="6" md="6" className={`${classes.service__title}`}>                       
+            <h3 className="mb-2">
               I would really appreciate it if you could check it out and maybe
               even hit the subscribe button if you enjoy the content.
-            </p>
+            </h3>
             <p className="mb-3">Thanks in advance!</p>
             <a
               href="https://www.youtube.com/@piyushgargdev?sub_confirmation=1"
