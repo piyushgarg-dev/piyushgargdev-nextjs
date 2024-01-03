@@ -22,6 +22,10 @@ import {
 } from "react-icons/ai";
 
 
+// =================== my contribution ==================
+import {usePathname} from "next/navigation";
+// =================== my contribution ==================
+
 const NAV__LINK = [
   {
     path: "/",
@@ -60,7 +64,9 @@ const Header = () => {
   const menuRef = useRef(null);
 
   const { data } = useSession();
-
+// =================== my contribution ==================
+  const pathName = usePathname();
+// =================== my contribution ==================
   const headerFunc = () => {
     if (
       document.body.scrollTop > 80 ||
@@ -118,7 +124,7 @@ const Header = () => {
                   </Link>
 
                   <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}`}>
-                    <span className=" text-[#808dad] hover:text-green-400">
+                    <span onClick={() => {console.log(item.path, pathName)}} className={`text-[#808dad] hover:text-green-400 ${item.path === pathName && "text-green-400"}`}>
                       {item.display}
                     </span>
                   </Link>
