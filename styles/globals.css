@@ -35,6 +35,7 @@ p {
   color: #808dad;
   line-height: 30px;
 }
+
 h1,
 h2,
 h3,
@@ -81,6 +82,7 @@ footer {
 .secondary__btn a {
   color: var(--site-theme-color) !important;
 }
+
 .primary__btn a:hover,
 .secondary__btn a:hover {
   color: var(--site-theme-color);
@@ -107,10 +109,34 @@ footer {
 .slick-next {
   right: 0 !important;
 }
+
 .slick-prev {
   left: 0 !important;
 }
+
+.slick-arrow:before {
+  content: "" !important;
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slick-next:before {
+  background: url(../assets/right.png) !important;
+  background-size: contain !important;
+  margin-right: 10px;
+}
+
+.slick-prev:before {
+  background: url(../assets/left.png) !important;
+  background-size: contain !important;
+  /* margin-right: 15px; */
+}
+
 .slick-arrow {
+
   z-index: 2 !important;
 }
 
@@ -127,6 +153,7 @@ footer {
   cursor: pointer;
   outline-offset: 4px;
 }
+
 .front {
   display: block;
   padding: 12px 42px;
@@ -148,6 +175,7 @@ footer {
   overflow: hidden;
   position: absolute;
 }
+
 .ribbon::before,
 .ribbon::after {
   position: absolute;
@@ -156,6 +184,7 @@ footer {
   display: block;
   border: 5px solid #2980b9;
 }
+
 .ribbon span {
   position: absolute;
   display: block;
@@ -175,19 +204,23 @@ footer {
   top: -10px;
   left: -10px;
 }
+
 .ribbon-top-left::before,
 .ribbon-top-left::after {
   border-top-color: transparent;
   border-left-color: transparent;
 }
+
 .ribbon-top-left::before {
   top: 0;
   right: 0;
 }
+
 .ribbon-top-left::after {
   bottom: 0;
   left: 0;
 }
+
 .ribbon-top-left span {
   right: -25px;
   top: 30px;
@@ -199,19 +232,23 @@ footer {
   top: -10px;
   right: -10px;
 }
+
 .ribbon-top-right::before,
 .ribbon-top-right::after {
   border-top-color: transparent;
   border-right-color: transparent;
 }
+
 .ribbon-top-right::before {
   top: 0;
   left: 0;
 }
+
 .ribbon-top-right::after {
   bottom: 0;
   right: 0;
 }
+
 .ribbon-top-right span {
   left: -25px;
   top: 30px;
@@ -223,19 +260,23 @@ footer {
   bottom: -10px;
   left: -10px;
 }
+
 .ribbon-bottom-left::before,
 .ribbon-bottom-left::after {
   border-bottom-color: transparent;
   border-left-color: transparent;
 }
+
 .ribbon-bottom-left::before {
   bottom: 0;
   right: 0;
 }
+
 .ribbon-bottom-left::after {
   top: 0;
   left: 0;
 }
+
 .ribbon-bottom-left span {
   right: -25px;
   bottom: 30px;
@@ -247,19 +288,23 @@ footer {
   bottom: -10px;
   right: -10px;
 }
+
 .ribbon-bottom-right::before,
 .ribbon-bottom-right::after {
   border-bottom-color: transparent;
   border-right-color: transparent;
 }
+
 .ribbon-bottom-right::before {
   bottom: 0;
   left: 0;
 }
+
 .ribbon-bottom-right::after {
   top: 0;
   right: 0;
 }
+
 .ribbon-bottom-right span {
   left: -25px;
   bottom: 30px;

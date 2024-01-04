@@ -39,6 +39,7 @@ const Testimonial = ({ feedbacks = [] }) => {
   return (
     <section>
       <Container>
+        <i class="fa-solid fa-house"></i>
         <SectionSubtitle subtitle="Testimonials" />
         <h4 className="mt-4 mb-5 text-2xl">Feedback from students</h4>
         <Row className="sm:p-2 p-10">
