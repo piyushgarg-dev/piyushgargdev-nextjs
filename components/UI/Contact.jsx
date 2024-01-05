@@ -7,7 +7,7 @@ import Form from "./Form";
 import axios from "axios";
 import { useState } from "react";
 import NewTwitterLogo from "./NewTwitterlogo";
-import { RiYoutubeFill, RiGithubFill, RiTwitterFill, RiLinkedinFill } from "react-icons/ri";
+import { RiYoutubeFill,RiInstagramFill, RiGithubFill, RiLinkedinFill } from "react-icons/ri";
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
   const handleSubmit = async (event) => {
@@ -61,6 +61,7 @@ const Contact = () => {
             </ul>
 
             <div className={`${classes.social__links}`}>
+              {/* firslt Youtube */}
               <Link
                 className="hover:text-[#01d293] duration-300"
                 aria-label="Youtube Channel"
@@ -69,6 +70,17 @@ const Contact = () => {
               >
                 <RiYoutubeFill />
               </Link>
+
+              {/* contact for Instagram */}
+              <Link
+                className="hover:text-[#01d293] duration-300"
+                aria-label="Instagram Account"
+                href="https://www.instagram.com/piyushgarg_dev/"
+                target="_blank"
+              >
+                <RiInstagramFill />
+              </Link>
+
               <Link
                 className="hover:text-[#01d293] duration-300"
                 aria-label="Github Profile"
@@ -76,6 +88,8 @@ const Contact = () => {
                 target="_blank"
               >
                 <RiGithubFill />
+
+
               </Link>
               <Link
                 className="hover:text-[#01d293] duration-300"
@@ -83,7 +97,7 @@ const Contact = () => {
                 href="https://twitter.com/piyushgarg_dev"
                 target="_blank"
               >
-             
+                {/* Twitter */}
                 <NewTwitterLogo />
               </Link>
               <Link
@@ -92,6 +106,7 @@ const Contact = () => {
                 href="https://www.linkedin.com/in/piyushgarg195/"
                 target="_blank"
               >
+                {/* LinkedIn */}
                 <RiLinkedinFill />
               </Link>
             </div>
