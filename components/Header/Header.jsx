@@ -7,6 +7,7 @@ import NewTwitterLogo from "../UI/NewTwitterlogo";
 import {
   RiCloseLine,
   RiYoutubeFill,
+  RiInstagramFill,
   RiGithubFill,
   NewTwitterLogo,
   RiLinkedinFill,
@@ -182,7 +183,7 @@ const Header = () => {
                     className={`cursor-pointer  text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
-                    <RiYoutubeFill />
+                    <RiInstagramFill />
                   </Link>
 
                   <Link
