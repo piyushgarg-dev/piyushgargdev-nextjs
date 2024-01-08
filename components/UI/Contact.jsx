@@ -123,7 +123,7 @@ const Contact = () => {
                     autoComplete="off"
                   />
                   <textarea
-                    className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
+                    className="text-md border-transparent rounded-lg block w-full min-h-[45px] p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
                     name="message"
                     placeholder="Your Message"
                     required
