@@ -154,14 +154,14 @@ footer {
   z-index: -1;
   content: "";
   display: block;
-  border: 5px solid #2980b9;
+  border: 5px solid #0a578a;
 }
 .ribbon span {
   position: absolute;
   display: block;
   width: 225px;
   padding: 15px 0;
-  background-color: #3498db;
+  background-color: #0375c1;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   color: #fff;
   font: 700 18px/1 "Lato", sans-serif;
