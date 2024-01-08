@@ -35,18 +35,21 @@ const PortfolioItem = (props) => {
 
             </div>
 
-            <h3 style={{ background: "transparent" }}>{title}</h3>
-            <p style={{ background: "transparent", }}>{subtitle}</p>
+            <h3 className='pb-3 sm:pb-0' style={{ background: "transparent" }}>{title}</h3>
+            <p className='hidden sm:block' style={{ background: "transparent", }}>{subtitle}</p>
             
-            <div className=" w-[100%] mt-5 lg:mt-0"> </div>
+            <div className="hidden  w-[100%] mt-5 lg:mt-0"> </div>
             <div
+              className='hidden min-[332px]:flex'
               style={{
-                position: "absolute",
+                
+
+
+                
                 background: "transparent",
-                bottom: "20px",
-                display: "flex",
                 flexDirection: "row",
                 flexWrap: "wrap",
+                marginTop:"auto",
               }}>
 
               {keyword.map((item, index) => (
