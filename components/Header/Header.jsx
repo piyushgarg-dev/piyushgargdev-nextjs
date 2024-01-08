@@ -56,19 +56,17 @@ const icons = [
 const Header = () => {
   const [crossMenu, setCrossMenu] = useState(false);
   const headerRef = useRef(null);
-
+  const [isScrolling , setIsScrolling ] = useState(false);
   const menuRef = useRef(null);
+  const [isHeaderShrunk, setIsHeaderShrunk] = useState(false);
 
   const { data } = useSession();
 
   const headerFunc = () => {
-    if (
-      document.body.scrollTop > 80 ||
-      document.documentElement.scrollTop > 80
-    ) {
-      headerRef.current.classList.add(`${classes.header__shrink}`);
+    if (window.scrollY > 0) {
+      setIsHeaderShrunk(true);
     } else {
-      headerRef.current.classList.remove(`${classes.header__shrink}`);
+      setIsHeaderShrunk(false);
     }
   };
 
@@ -76,15 +74,34 @@ const Header = () => {
     window.addEventListener("scroll", headerFunc);
 
     return () => window.removeEventListener("scroll", headerFunc);
-  }, []);
+  }, [headerFunc]);
 
   const toggleMenu = () => {
     setCrossMenu(false);
     menuRef.current.classList.toggle(`${classes.menu__active}`);
   };
 
+
+  // to handle the highlight effect on navbar elements
+  useEffect(()=>{
+    const handleScrollStart = () => {
+      // Check if the user is at the top of the page
+      const isAtTop = window.scrollY === 0;
+
+      // Set isScrolling to true only if not at the top
+      setIsScrolling(!isAtTop);
+    };
+
+    window.addEventListener('scroll', handleScrollStart);
+
+    return () => {
+      window.removeEventListener('scroll', handleScrollStart);
+    };
+  },[])
+
+
   return (
-    <header className={`${classes.header}`} ref={headerRef}>
+    <header className={` ${classes.header} ${isHeaderShrunk ? `${classes.header__shrink} ` : ''}`} ref={headerRef}>
       <Container>
         <div className={`${classes.nav__wrapper}`}>
           {/* ======== navigation logo ======== */}
@@ -118,7 +135,7 @@ const Header = () => {
                   </Link>
 
                   <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}`}>
-                    <span className=" text-[#808dad] hover:text-green-400">
+                    <span className={` transition-all duration-300 ease-in-out ${isScrolling ? 'bg-red-900 px-2.5 py-1  text-white shadow-md rounded-sm hover:bg-red-500 hover:text-neutral-950' : 'text-[#808dad] hover:text-green-400'}`}>
                       {item.display}
                     </span>
                   </Link>
@@ -135,7 +152,7 @@ const Header = () => {
                   </Link>
 
                   <Link href={"/#"}>
-                    <span className=" text-[#808dad] hover:text-green-400">
+                    <span className={` transition-all duration-300 ease-in-out ${isScrolling ? 'bg-red-900 px-2.5 py-1  text-white shadow-md rounded-sm hover:bg-red-500 hover:text-neutral-950' : 'text-[#808dad] hover:text-green-400'}`}>
                       Sign Out
                     </span>
                   </Link>
@@ -150,7 +167,7 @@ const Header = () => {
                   </Link>
 
                   <Link href={"#"}>
-                    <span className=" text-[#808dad] hover:text-green-400">
+                    <span className={` transition-all duration-300 ease-in-out ${isScrolling ? 'bg-red-900 px-2.5 py-1  text-white shadow-md rounded-sm hover:bg-red-500 hover:text-neutral-950' : 'text-[#808dad] hover:text-green-400'}`}>
                       Login
                     </span>
                   </Link>
