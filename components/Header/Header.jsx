@@ -101,7 +101,7 @@ const Header = () => {
 
 
   return (
-    <header className={` transition-all duration-300 ease-in-out ${classes.header} ${isHeaderShrunk ? `${classes.header__shrink} ` : ''}`} ref={headerRef}>
+    <header className={` ${classes.header} ${isHeaderShrunk ? `${classes.header__shrink} ` : ''}`} ref={headerRef}>
       <Container>
         <div className={`${classes.nav__wrapper}`}>
           {/* ======== navigation logo ======== */}
