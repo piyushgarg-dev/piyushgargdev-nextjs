@@ -16,7 +16,7 @@ const Footer = () => {
             <div className={`${classes.footer__copyright}`}>
               <p>
                 &copy; Copyright {year} - Developed by Piyush Garg. All Rights
-                Reserved.
+                Reserved .
               </p>
             </div>
           </Col>
