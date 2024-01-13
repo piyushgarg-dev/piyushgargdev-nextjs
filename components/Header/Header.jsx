@@ -5,6 +5,7 @@ import { Container } from "reactstrap";
 import { useSession, signOut, signIn } from "next-auth/react";
 import classes from "./header.module.css";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import NewTwitterLogo from "../UI/NewTwitterlogo";
 import {
   RiCloseLine,
@@ -58,6 +59,8 @@ const Header = () => {
   const headerRef = useRef(null);
 
   const menuRef = useRef(null);
+
+  const { asPath } = useRouter();
 
   const { data } = useSession();
 
@@ -118,7 +121,7 @@ const Header = () => {
                   </Link>
 
                   <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}`}>
-                    <span className=" text-[#808dad] hover:text-green-400">
+                    <span className={`hover:text-green-400 ${asPath === item.path ? ' text-green-400' : ' text-[#808dad]'}`}>
                       {item.display}
                     </span>
                   </Link>
