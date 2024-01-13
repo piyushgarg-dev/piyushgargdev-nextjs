@@ -107,6 +107,8 @@ const Terminal = () => {
             </div>
           ),
         }}
+        showControlButtons={false}
+        showControlBar={false}
       />
     </TerminalContextProvider>
   );
