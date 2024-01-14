@@ -81,7 +81,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
             <h3 className="mb-2">Uploads from My Youtube Channel</h3>
             <p>
               I would really appreciate it if you could check it out and maybe
-              even hit the subscribe button if you enjoy the content.
+              even hit the subscribe button if you enjoyed the content.
             </p>
             <p className="mb-3">Thanks in advance!</p>
             <a
