@@ -59,7 +59,7 @@
 }
 
 .header__shrink {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -67,6 +67,9 @@
   line-height: 80px;
   box-shadow: 5px 5px 15px -5px var(--site-theme-color) 44;
   z-index: 9999;
+}
+.header__adjuster {
+  height: 80px;
 }
 
 .mobile__menu i {
