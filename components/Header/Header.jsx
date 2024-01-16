@@ -29,7 +29,7 @@ const NAV__LINK = [
     openInNewPage:false,
   },
   {
-    path: "/#courses",
+    path: "/courses",
     display: "Courses",
     openInNewPage:false,
   },
