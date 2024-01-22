@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useState } from "react";
 import Link from "next/link";
 import SectionSubtitle from "./SectionSubtitle";
 import { Container, Row, Col, Button } from "reactstrap";
@@ -7,8 +7,21 @@ import Image from "next/image";
 import heroImg from "../../public/images/PiyushGarg.png";
 import classes from "../../styles/hero.module.css";
 import classNames from "../../styles/subtitle.module.css";
-
+import Typist from "react-typist";
 const Hero = () => {
+  const [isTyping, setIsTyping] = useState(true);
+
+  const handleTypingDone = () => {
+    // Triggered when typing is done
+    setIsTyping(false);
+    setTimeout(() => {
+      setIsTyping(true);
+    }, 1000);
+  };
+  const myStyle = {
+    fontSize: "35px",
+    display: "flex",
+  };
   return (
     <section className={` ${classes.hero} `}>
       {/* desktop / large screen view */}
@@ -17,7 +30,19 @@ const Hero = () => {
           <Col lg="6" md="6">
             <div className={`${classes.hero__content}`}>
               <SectionSubtitle subtitle="Hello" />
-              <h2 className="mt-3 mb-3">I&apos;m Piyush Garg</h2>
+              <h1 style={myStyle}>
+                <span>I'm </span>
+                {isTyping && (
+                  <Typist
+                    onTypingDone={handleTypingDone}
+                    avgTypingDelay={75}
+                    stdTypingDelay={0}
+                  >
+                    <span>&nbsp;Piyush Garg</span>
+                    <Typist.Backspace count={12} delay={500} />
+                  </Typist>
+                )}
+              </h1>
               <h5 className="mb-4">Fullstack Developer & Instructor</h5>
               <p id="about-me">
                 Hi there! My name is Piyush Garg and I&rsquo;m a software
