@@ -4,45 +4,51 @@ import SectionSubtitle from "./SectionSubtitle";
 import classes from "../../styles/portfolio.module.css";
 import PortfolioItem from "./PortfolioItem";
 
-
 const Blog = ({ blogs, blogDomain }) => {
   const [filter, setFilter] = useState("Mobile App");
   const [data, setData] = useState();
-
   const active = `${classes.tab__btn__active}`;
-
   return (
     <section id="blogs">
       <Container>
         <Row>
           <Col lg="6" md="6" className="mb-5">
-            <SectionSubtitle subtitle="blog.piyushgarg.dev" link="https://blog.piyushgarg.dev/" />
+            <SectionSubtitle
+              subtitle="blog.piyushgarg.dev"
+              link="https://blog.piyushgarg.dev/"
+            />
             <h4 className="mt-4 text-2xl">Checkout my recent blogs</h4>
           </Col>
         </Row>
 
         <Row>
-          {blogs.map((blogItem)  => (
-            <Col
-
-              className="hover:scale-105 hover:ease-out duration-300"
-              style={{ margin: "14px 0px" }}
-              key={blogItem._id}
-              lg="4"
-              md="4"
-              sm="6"
-            >
-              <PortfolioItem
-                item={{
-                  title: blogItem.title,
-                  subtitle: blogItem.brief,
-                  img: blogItem.coverImage,
-                  liveUrl: `https://${blogDomain}/${blogItem.slug}`,
-                  keyword: [`${blogItem.totalReactions} reactions ✨`],
-                }}
-              />
+        
+          {blogs && blogs.length > 0 ? (
+            blogs.map((blogItem) => (
+              <Col
+                className="hover:scale-105 hover:ease-out duration-300"
+                style={{ margin: "14px 0px" }}
+                key={blogItem._id}
+                lg="4"
+                md="4"
+                sm="6"
+              >
+                <PortfolioItem
+                  item={{
+                    title: blogItem.title,
+                    subtitle: blogItem.brief,
+                    img: blogItem.coverImage,
+                    liveUrl: `https://${blogDomain}/${blogItem.slug}`,
+                    keyword: [`${blogItem.totalReactions} reactions ✨`],
+                  }}
+                />
+              </Col>
+            ))
+          ) : (
+            <Col lg="12" className="text-center">
+              <Alert color="info">No blogs available.</Alert>
             </Col>
-          ))}
+          )}
         </Row>
 
         {/* <Row>
@@ -62,5 +68,4 @@ const Blog = ({ blogs, blogDomain }) => {
     </section>
   );
 };
-
 export default Blog;
