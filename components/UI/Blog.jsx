@@ -22,27 +22,32 @@ const Blog = ({ blogs, blogDomain }) => {
         </Row>
 
         <Row>
-          {blogs.map((blogItem)  => (
-            <Col
-
-              className="hover:scale-105 hover:ease-out duration-300"
-              style={{ margin: "14px 0px" }}
-              key={blogItem._id}
-              lg="4"
-              md="4"
-              sm="6"
-            >
-              <PortfolioItem
-                item={{
-                  title: blogItem.title,
-                  subtitle: blogItem.brief,
-                  img: blogItem.coverImage,
-                  liveUrl: `https://${blogDomain}/${blogItem.slug}`,
-                  keyword: [`${blogItem.totalReactions} reactions ✨`],
-                }}
-              />
+          {blogs && blogs.length > 0 ? (
+            blogs.map((blogItem) => (
+              <Col
+                className="hover:scale-105 hover:ease-out duration-300"
+                style={{ margin: "14px 0px" }}
+                key={blogItem._id}
+                lg="4"
+                md="4"
+                sm="6"
+              >
+                <PortfolioItem
+                  item={{
+                    title: blogItem.title,
+                    subtitle: blogItem.brief,
+                    img: blogItem.coverImage,
+                    liveUrl: `https://${blogDomain}/${blogItem.slug}`,
+                    keyword: [`${blogItem.totalReactions} reactions ✨`],
+                  }}
+                />
+              </Col>
+            ))
+          ) : (
+            <Col lg="12" className="text-center">
+              <Alert color="info">No blogs available.</Alert>
             </Col>
-          ))}
+          )}
         </Row>
 
         {/* <Row>
