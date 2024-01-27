@@ -147,6 +147,7 @@ export async function getRecentBlogs() {
 }
 
 export async function getStaticProps(context) {
+  let props = {};
   try {
     const [youtubeStats, youtubeVideos, blogResponse] = await Promise.all([
       getYoutubeStatsForChannelId("UCf9T51_FmMlfhiGpoes0yFA"),
@@ -168,4 +169,7 @@ export async function getStaticProps(context) {
       revalidate: 43200, // 12 Hrs
     };
   } catch (error) {}
+  return {
+    props,
+  };
 }

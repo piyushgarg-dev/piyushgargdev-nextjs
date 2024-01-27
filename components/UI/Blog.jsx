@@ -22,7 +22,7 @@ const Blog = ({ blogs, blogDomain }) => {
         </Row>
 
         <Row>
-          {blogs.map((blogItem)  => (
+          {blogs?.map((blogItem)  => (
             <Col
 
               className="hover:scale-105 hover:ease-out duration-300"
