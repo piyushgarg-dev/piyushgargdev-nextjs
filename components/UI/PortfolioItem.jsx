@@ -15,7 +15,7 @@ const PortfolioItem = (props) => {
     ribbonText = null,
   } = props.item;
   return (
-    <div className={`${classes.portfolio__item}`}>
+    <div className={`${classes.portfolio__item}`} >
       <a
         target='_blank'
         style={{ textDecoration: 'none' }}
@@ -35,8 +35,8 @@ const PortfolioItem = (props) => {
 
             </div>
 
-            <h3 style={{ background: "transparent" }}>{title}</h3>
-            <p style={{ background: "transparent", }}>{subtitle}</p>
+            <h4 style={{ background: "transparent",marginTop:'10px' }}>{title.length>49?`${title.slice(0,47)}..`:title}</h4>
+            <p style={{ background: "transparent",textAlign:'justify',marginTop:'19px'}}>{subtitle}</p>
             
             <div className=" w-[100%] mt-5 lg:mt-0"> </div>
             <div
