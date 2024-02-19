@@ -134,7 +134,7 @@ async function getYoutubeVideos() {
 
 export async function getRecentBlogs() {
   const response = await axios.post(
-    "https://api.hashnode.com",
+    "https://gql.hashnode.com",
     {
       query:
         '{\n  user(username: "piyushgarg") {\npublicationDomain \n    publication {\n     posts(page: 1) {\n  _id\n totalReactions\n  brief\n    title\n        slug\n        coverImage\n      }\n    }\n  }\n}',
