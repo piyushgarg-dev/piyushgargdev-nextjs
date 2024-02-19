@@ -79,12 +79,6 @@ export default function Home({
           <Terminal />
         </div>
       </Container>
-
-      <Blog
-        blogDomain={blogData?.user?.publicationDomain}
-        blogs={blogData?.user?.publication?.posts}
-      />
-
       <Contact />
     </Fragment>
   );
