@@ -151,14 +151,14 @@ export async function getStaticProps(context) {
     const [youtubeStats, youtubeVideos, blogResponse] = await Promise.all([
       getYoutubeStatsForChannelId("UCf9T51_FmMlfhiGpoes0yFA"),
       getYoutubeVideos(),
-      getRecentBlogs(),
+      
     ]);
 
     return {
       props: {
         youtubeStats,
         youtubeVideos,
-        blogData: blogResponse,
+        blogData: [],
         feedbacks: feedbacks.map((feedBack) => ({
           ...feedBack,
           course: courses.find((e) => e.id === feedBack.courseId),
