@@ -23,11 +23,14 @@ const Contact = () => {
       if (response.status === 200) {
         setSubmitted(true);
         console.log("Form submitted");
+        window.alert("Form submitted successfully!");
       } else {
         console.log("Failed");
+        window.alert("Form Submission failed.please try again")
       }
     } catch (error) {
       console.log(error);
+      window.alert("An error occured.please try again later")
     }
   };
 
