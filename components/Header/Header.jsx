@@ -6,6 +6,7 @@ import { useSession, signOut, signIn } from "next-auth/react";
 import classes from "./header.module.css";
 import Link from "next/link";
 import NewTwitterLogo from "../UI/NewTwitterlogo";
+
 import {
   RiCloseLine,
   RiYoutubeFill,
@@ -26,22 +27,22 @@ const NAV__LINK = [
   {
     path: "/",
     display: "Home",
-    openInNewPage:false,
+    openInNewPage: false,
   },
   {
     path: "/#courses",
     display: "Courses",
-    openInNewPage:false,
+    openInNewPage: false,
   },
   {
     path: "/gears",
     display: "My Gears",
-    openInNewPage:false,
+    openInNewPage: false,
   },
   {
     path: "https://blog.piyushgarg.dev",
     display: "Blogs",
-    openInNewPage:true,
+    openInNewPage: true,
   },
 ];
 
@@ -113,11 +114,18 @@ const Header = () => {
                   key={index}
                   className={`${classes.mobile__menuDiv} cursor-pointer`}
                 >
-                  <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}`}>
+                  <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage ? '_blank' : '_self'}`} >
                     <p className={`${classes.mobile__menu}`}>{icons[index]}</p>
                   </Link>
 
-                  <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}`}>
+                  <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage ? '_blank' : '_self'}`}
+                    onClick={(e) => {
+                      // e.preventDefault();
+                      const targetElement = document.getElementById(item.path);
+                      if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }}>
                     <span className=" text-[#808dad] hover:text-green-400">
                       {item.display}
                     </span>
@@ -192,7 +200,7 @@ const Header = () => {
                     className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
-                    <NewTwitterLogo/>
+                    <NewTwitterLogo />
                   </Link>
 
                   <Link
