@@ -37,10 +37,21 @@
   margin-left: 4px !important;
 }
 
-.social__links :hover {
+/* .social__links :hover {
   color: var(--site-theme-color);
+} */
+.youtube:hover{
+  color: red;
 }
-
+.github:hover{
+   color:white;
+}
+.twitter:hover{
+   color: white;
+}
+.linkedin:hover{
+   color:#007FFF;
+}
 @media only screen and (max-width: 768px) {
   .social__links {
     margin-bottom: 30px;

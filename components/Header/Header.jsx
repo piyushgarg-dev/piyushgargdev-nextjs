@@ -156,7 +156,7 @@ const Header = () => {
                   </Link>
                 </div>
               )}
-
+            {/* // bug 504  */}
               <div className={`${classes.nav__right}`}>
                 <div
                   className={`flex flex-row items-center gap-3 border-l-2 pl-4 border-l-slate-500 `}
@@ -167,9 +167,10 @@ const Header = () => {
                     target="_blank"
                     title="Youtube Channel"
                     id="youtube-channel"
-                    className={`cursor-pointer  text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    className={`youtube cursor-pointer hover:text-[red]  text-[#ffffff] transform ease-in-out hover:-translate-y+1 hover:scale-150` }
                     rel="noreferrer"
                   >
+                   {/* //--site-theme-color */}
                     <RiYoutubeFill />
                   </Link>
 
@@ -178,7 +179,7 @@ const Header = () => {
                     target="_blank"
                     title="Github Account"
                     id="github-account"
-                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    className={`cursor-pointer text-[#ffffff] hover:text-[white] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
                     <RiGithubFill />
@@ -189,7 +190,7 @@ const Header = () => {
                     target="_blank"
                     title="Twitter Account"
                     id="twitter-account"
-                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    className={`cursor-pointer text-[#ffffff] hover:text-[white] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
                     <NewTwitterLogo/>
@@ -200,7 +201,7 @@ const Header = () => {
                     target="_blank"
                     title="LinkedIn Account"
                     id="linkedin-account"
-                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    className={`cursor-pointer text-[#ffffff] hover:text-[#007FFF] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
                     <RiLinkedinFill />
