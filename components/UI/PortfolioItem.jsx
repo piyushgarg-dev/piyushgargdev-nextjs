@@ -15,7 +15,7 @@ const PortfolioItem = (props) => {
     ribbonText = null,
   } = props.item;
   return (
-    <div className={`${classes.portfolio__item}`}>
+    <div className={`${classes.portfolio__item} h-full`}>
       <a
         target='_blank'
         style={{ textDecoration: 'none' }}
@@ -29,7 +29,7 @@ const PortfolioItem = (props) => {
             </div>
           )}
 
-          <div className='bg-transparent'>
+          <div className='bg-transparent flex h-[95%] flex-col justify-between'>
             <div className={`${classes.portfolio__img}`}>
               <Image alt={title} src={img} width={380} height={1} style={{maxHeight: "380px", overflow:"auto"}}/>
 
@@ -41,9 +41,7 @@ const PortfolioItem = (props) => {
             <div className=" w-[100%] mt-5 lg:mt-0"> </div>
             <div
               style={{
-                position: "absolute",
                 background: "transparent",
-                bottom: "20px",
                 display: "flex",
                 flexDirection: "row",
                 flexWrap: "wrap",
