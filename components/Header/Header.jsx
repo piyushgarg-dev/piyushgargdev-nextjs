@@ -118,7 +118,7 @@ const Header = () => {
                   </Link>
 
                   <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}`}>
-                    <span className=" text-[#808dad] hover:text-green-400">
+                    <span className=" text-[var(--text-light-blue)] hover:text-green-400">
                       {item.display}
                     </span>
                   </Link>
@@ -135,7 +135,7 @@ const Header = () => {
                   </Link>
 
                   <Link href={"/#"}>
-                    <span className=" text-[#808dad] hover:text-green-400">
+                    <span className=" text-[var(--text-light-blue)] hover:text-green-400">
                       Sign Out
                     </span>
                   </Link>
@@ -150,7 +150,7 @@ const Header = () => {
                   </Link>
 
                   <Link href={"#"}>
-                    <span className=" text-[#808dad] hover:text-green-400">
+                    <span className=" text-[var(--text-light-blue)] hover:text-green-400">
                       Login
                     </span>
                   </Link>

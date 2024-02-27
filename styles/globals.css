@@ -4,6 +4,7 @@
 
 :root {
   --site-theme-color: #01d293;
+  --text-light-blue: #b7c6ee;
 }
 
 html,
@@ -31,8 +32,11 @@ a {
   box-sizing: border-box;
 }
 
+.text-deep-blue {
+  color: var(--text-light-blue);
+}
 p {
-  color: #808dad;
+  color: var(--text-light-blue);
   line-height: 30px;
 }
 h1,
