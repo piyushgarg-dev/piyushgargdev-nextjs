@@ -44,7 +44,7 @@ const Contact = () => {
                 <span>
                   <i className="ri-map-pin-line"></i>
                 </span>
-                <p>Planet Earth 🌍</p>
+                <p>India</p>
               </li>
               <li className={`${classes.info__item}`}>
                 <span>
