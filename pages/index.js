@@ -161,5 +161,13 @@ export async function getStaticProps(context) {
       }, // will be passed to the page component as props
       revalidate: 43200, // 12 Hrs
     };
-  } catch (error) {}
+  } catch (error) {
+    console.error("Error in getStaticProps:", error);
+
+    // If an error occurs, return an empty object or handle it accordingly
+    return {
+      props: {},
+    };
+  }
 }
+
