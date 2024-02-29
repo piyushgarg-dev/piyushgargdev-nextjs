@@ -4,7 +4,7 @@
   margin-bottom: 30px;
   display: flex;
   align-items: center;
-  column-gap: 1rem;
+  justify-content: space-around;
   transition: 0.3s;
 }
 
@@ -45,6 +45,7 @@
 .service__item:last-child {
   border-radius: 10px 10px 0px 10px;
 }
+
 
 @media only screen and (max-width: 992px) {
   .service__item {
