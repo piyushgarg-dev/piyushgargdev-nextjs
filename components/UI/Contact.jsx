@@ -116,6 +116,14 @@ const Contact = () => {
                   />
                   <input
                     className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
+                    type="number"
+                    name="number"
+                    placeholder="Your Phone Number"
+                    required
+                    autoComplete="off"
+                  />
+                  <input
+                    className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
                     type="email"
                     name="email"
                     placeholder="Your Email"
@@ -187,3 +195,6 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
+
