@@ -4,10 +4,8 @@
   margin-bottom: 30px;
   display: flex;
   align-items: center;
-  /* column-gap: 1rem; */
   justify-content: space-around;
   transition: 0.3s;
-  position: relative;
 }
 
 .service__item:hover {
@@ -48,11 +46,6 @@
   border-radius: 10px 10px 0px 10px;
 }
 
-/* .service__icon {
-  position: absolute;
-  right: 20px;
-  top: 60px;
-} */
 
 @media only screen and (max-width: 992px) {
   .service__item {
