@@ -161,5 +161,17 @@ export async function getStaticProps(context) {
       }, // will be passed to the page component as props
       revalidate: 43200, // 12 Hrs
     };
-  } catch (error) {}
+  } catch (error) {
+    console.error("Error in getStaticProps:", error);
+    return {
+      props: {
+        youtubeStats: null,
+        youtubeVideos: null,
+        blogData: null,
+        feedbacks: [],
+        courses: [],
+      },
+      revalidate: 43200, // 12 Hrs
+    };
+  }
 }
