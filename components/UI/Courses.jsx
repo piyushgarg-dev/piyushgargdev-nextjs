@@ -1,18 +1,25 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Container, Row, Col, Alert } from "reactstrap";
 import SectionSubtitle from "./SectionSubtitle";
 // import classes from "../../styles/portfolio.module.css";
 import PortfolioItem from "./PortfolioItem";
-
+import ToggleContext from "../../context/ToggleContext";
 
 const Courses = ({ courses = [] }) => {
+  const { darkMode } = useContext(ToggleContext);
+
   return (
-    <section id="courses">
+    <section style={{ background: darkMode ? "#0e1630" : "#fff" }} id="courses">
       <Container>
         <Row>
           <Col lg="6" md="6" className="mb-5">
             <SectionSubtitle subtitle="Courses" />
-            <h4 className="mt-4 text-2xl">Checkout My Interactive Courses</h4>
+            <h4
+              style={{ color: darkMode ? "#fff" : "#0e1630" }}
+              className="mt-4 text-2xl"
+            >
+              Checkout My Interactive Courses
+            </h4>
           </Col>
         </Row>
 
@@ -34,6 +41,5 @@ const Courses = ({ courses = [] }) => {
     </section>
   );
 };
-
 
 export default Courses;

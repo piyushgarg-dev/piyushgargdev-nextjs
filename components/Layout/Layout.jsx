@@ -1,14 +1,17 @@
 import React, { Fragment } from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+import ToggleContextProvider from "../../context/ToggleContextProvider";
 
 const Layout = (props) => {
   return (
-    <Fragment>
-      <Header />
-      <div>{props.children}</div>
-      <Footer />
-    </Fragment>
+    <ToggleContextProvider>
+      <Fragment>
+        <Header />
+        <div>{props.children}</div>
+        <Footer />
+      </Fragment>
+    </ToggleContextProvider>
   );
 };
 

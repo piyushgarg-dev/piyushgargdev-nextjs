@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useContext } from "react";
 import Link from "next/link";
 import SectionSubtitle from "./SectionSubtitle";
 import { Container, Row, Col, Button } from "reactstrap";
@@ -7,17 +7,28 @@ import Image from "next/image";
 import heroImg from "../../public/images/PiyushGarg.png";
 import classes from "../../styles/hero.module.css";
 import classNames from "../../styles/subtitle.module.css";
+import ToggleContext from "../../context/ToggleContext";
 
 const Hero = () => {
+  const { darkMode } = useContext(ToggleContext);
+
   return (
-    <section className={` ${classes.hero} `}>
+    <section
+      style={{ background: darkMode ? "#0e1630" : "#fff" }}
+      className={` ${classes.hero} `}
+    >
       {/* desktop / large screen view */}
       <Container id="hero-section " className="md:flex hidden">
         <Row>
           <Col lg="6" md="6">
             <div className={`${classes.hero__content}`}>
               <SectionSubtitle subtitle="Hello" />
-              <h2 className="mt-3 mb-3">I&apos;m Piyush Garg</h2>
+              <h2
+                style={{ color: darkMode ? "#fff" : "#0e1630" }}
+                className="mt-3 mb-3"
+              >
+                I&apos;m Piyush Garg
+              </h2>
               <h5 className="mb-4">Fullstack Developer & Instructor</h5>
               <p id="about-me">
                 Hi there! My name is Piyush Garg and I&rsquo;m a software

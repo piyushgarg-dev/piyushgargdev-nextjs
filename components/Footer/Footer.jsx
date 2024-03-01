@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import { Container, Row, Col } from "reactstrap";
 import classes from "./footer.module.css";
 import Link from "next/link";
+import ToggleContext from "../../context/ToggleContext";
 
 const Footer = () => {
   const date = new Date();
   const year = date.getFullYear();
+  const { darkMode } = useContext(ToggleContext);
 
   return (
     <footer>

@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Container, Row, Col } from "reactstrap";
 import Slider from "react-slick";
 import TestimonialItem from "./TestimonialItem";
 import SectionSubtitle from "./SectionSubtitle";
+import ToggleContext from "../../context/ToggleContext";
 
 const Testimonial = ({ feedbacks = [] }) => {
+  const { darkMode } = useContext(ToggleContext);
   const settings = {
     dots: false,
     autoplay: true,
@@ -37,10 +39,15 @@ const Testimonial = ({ feedbacks = [] }) => {
     ],
   };
   return (
-    <section>
+    <section style={{ background: darkMode ? "#0e1630" : "#fff" }}>
       <Container>
         <SectionSubtitle subtitle="Testimonials" />
-        <h4 className="mt-4 mb-5 text-2xl">Feedback from students</h4>
+        <h4
+          style={{ color: darkMode ? "#fff" : "#0e1630" }}
+          className="mt-4 mb-5 text-2xl"
+        >
+          Feedback from students
+        </h4>
         <Row className="sm:p-2 p-10">
           <Slider {...settings}>
             {feedbacks.map((feedBack) => (

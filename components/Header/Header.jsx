@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState, useContext } from "react";
 import { BiLogInCircle } from "react-icons/bi";
 import { FaWhmcs } from "react-icons/fa";
 import { Container } from "reactstrap";
@@ -21,27 +21,30 @@ import {
   AiFillEdit,
 } from "react-icons/ai";
 
+import { IoMoonOutline } from "react-icons/io5";
+import { BsSun } from "react-icons/bs";
+import ToggleContext from "../../context/ToggleContext";
 
 const NAV__LINK = [
   {
     path: "/",
     display: "Home",
-    openInNewPage:false,
+    openInNewPage: false,
   },
   {
     path: "/#courses",
     display: "Courses",
-    openInNewPage:false,
+    openInNewPage: false,
   },
   {
     path: "/gears",
     display: "My Gears",
-    openInNewPage:false,
+    openInNewPage: false,
   },
   {
     path: "https://blog.piyushgarg.dev",
     display: "Blogs",
-    openInNewPage:true,
+    openInNewPage: true,
   },
 ];
 
@@ -55,6 +58,10 @@ const icons = [
 
 const Header = () => {
   const [crossMenu, setCrossMenu] = useState(false);
+  const { darkMode, setDarkMode } = useContext(ToggleContext);
+
+  console.log(darkMode);
+
   const headerRef = useRef(null);
 
   const menuRef = useRef(null);
@@ -113,11 +120,19 @@ const Header = () => {
                   key={index}
                   className={`${classes.mobile__menuDiv} cursor-pointer`}
                 >
-                  <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}`}>
+                  <Link
+                    aria-label={item.display}
+                    href={item.path}
+                    target={`${item.openInNewPage ? "_blank" : "_self"}`}
+                  >
                     <p className={`${classes.mobile__menu}`}>{icons[index]}</p>
                   </Link>
 
-                  <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}`}>
+                  <Link
+                    aria-label={item.display}
+                    href={item.path}
+                    target={`${item.openInNewPage ? "_blank" : "_self"}`}
+                  >
                     <span className=" text-[#808dad] hover:text-green-400">
                       {item.display}
                     </span>
@@ -192,7 +207,7 @@ const Header = () => {
                     className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
-                    <NewTwitterLogo/>
+                    <NewTwitterLogo />
                   </Link>
 
                   <Link
@@ -206,6 +221,14 @@ const Header = () => {
                     <RiLinkedinFill />
                   </Link>
                 </div>
+              </div>
+
+              <div className={`${classes.toggle__mode}`}>
+                <input id="toggle" type="checkbox" checked={darkMode} />
+                <label onClick={() => setDarkMode(!darkMode)} htmlFor="toggle">
+                  <BsSun className={`${classes.sun}`} />
+                  <IoMoonOutline className={`${classes.moon}`} />
+                </label>
               </div>
             </div>
           </div>
