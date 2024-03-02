@@ -3,12 +3,17 @@ import { MongoDBAdapter } from "@next-auth/mongodb-adapter";
 import clientPromise from "../../../lib/mongodbAdapter";
 
 // Providers
+import AppleProvider from "next-auth/providers/apple";
 import GitHubProvider from "next-auth/providers/github";
 import DiscordProvider from "next-auth/providers/discord";
 
 export const authOptions = {
   adapter: MongoDBAdapter(clientPromise),
   providers: [
+    AppleProvider({
+      clientSecret: process.env.APPLE_CLIENT_SECRET,
+      clientId: process.env.APPLE_CLIENT_ID,
+    }),
     GitHubProvider({
       clientSecret: process.env.GITHUB_CLIENT_SECRET,
       clientId: process.env.GITHUB_CLIENT_ID,
