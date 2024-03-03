@@ -31,7 +31,7 @@ const feedbacks = [
     userImage:
       "https://wsrv.nl/?url=https%3A%2F%2Flh3.googleusercontent.com%2Fa-%2FAOh14Gg5XTRRMQMiRxqlIgum7MkmYl0PenYAbNMRDvo4XA&w=96&q=70&output=webp",
     content:
-      "IT IS THE best courses which gives you proper learning regarding react js",
+      "IT IS THE best course which gives you proper learning regarding React JS",
     studentProfileLink: "",
     courseId: "02",
   },
