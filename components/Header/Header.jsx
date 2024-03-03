@@ -41,7 +41,7 @@ const NAV__LINK = [
   {
     path: "https://blog.piyushgarg.dev",
     display: "Blogs",
-    openInNewPage:true,
+    openInNewPage:false,
   },
 ];
 
