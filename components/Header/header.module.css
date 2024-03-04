@@ -2,7 +2,7 @@
   width: 100%;
   height: 94px;
   line-height: 80px;
-  background-color: #0e1630;
+  background-color: var(--bg-header);
 }
 
 .nav__wrapper {
@@ -24,7 +24,7 @@
   display: flex;
   align-items: center;
   column-gap: 2.8rem;
-  background-color: #0e1630;
+  background-color: var(--bg-header);
 }
 
 .nav__menu a,
@@ -82,6 +82,47 @@
 
 .color_FF0000 {
   color: #ff0000 !important;
+}
+
+/* ========== Theme Toggle ========= */
+
+.toggle_slide {
+  position: relative;
+  margin-right: -39px;
+  width: 40px;
+  height: 21px;
+}
+
+.toggle_slide .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e7e3e3;
+  border-radius: 20px;
+}
+
+.toggle_slide input:checked + .slider {
+  background-color: #07227b;
+}
+
+.toggle_slide .slider::before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 3px;
+  background-color: #fff;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.toggle_slide input:checked + .slider::before {
+  transform: translateX(17px);
+  background-color: #2b4fc7;
 }
 
 /* ========== make it responsive ========= */
