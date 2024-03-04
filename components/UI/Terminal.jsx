@@ -1,9 +1,11 @@
 import React from "react";
 import { ReactTerminal, TerminalContextProvider } from "react-terminal";
 import { signIn, signOut, useSession } from "next-auth/react";
+import { useTheme } from "../context/Theme-Context";
 
 const Terminal = () => {
   const { data } = useSession();
+  const { isDark } = useTheme();
 
   const isLoggedIn = React.useMemo(() => Boolean(data && data.user), [data]);
 
@@ -79,10 +81,10 @@ const Terminal = () => {
         }
         themes={{
           darkDefault: {
-            themeBGColor: "",
-            themeToolbarColor: "",
+            themeBGColor: `${isDark ? "#0e1630" : "#F5F5F5"}`,
+            themeToolbarColor: `${isDark ? "#0e1630" : "#F5F5F5"}`,
             themeColor: "#38CC77",
-            themePromptColor: "#fff",
+            themePromptColor: `${!isDark ? "black" : "#fff"}`,
           },
         }}
         theme="darkDefault"
