@@ -41,6 +41,7 @@ const Hero = () => {
                       justifyContent: "center",
                       alignItems: "center",
                       gap: "10px",
+                      letterSpacing: "2px"
                     }}
                     className="block"
                   >
@@ -105,6 +106,7 @@ const Hero = () => {
                       justifyContent: "center",
                       alignItems: "center",
                       gap: "10px",
+                      letterSpacing: "1px"
                     }}
                     className="block"
                   >
