@@ -5,6 +5,7 @@ import Image from "next/image";
 import SectionSubtitle from "./SectionSubtitle";
 import classes from "../../styles/services.module.css";
 import ServicesItem from "./ServicesItem";
+import { FaYoutube } from "react-icons/fa";
 
 const Services = ({ youtubeStats, youtubeVideos }) => {
   const settings = {
@@ -89,7 +90,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
               target="_blank"
               rel="noreferrer"
             >
-              <Button color="danger">Subscribe</Button>
+              <Button className="flex items-center gap-2" color="danger"><FaYoutube /> Subscribe </Button>
             </a>
           </Col>
         </Row>
