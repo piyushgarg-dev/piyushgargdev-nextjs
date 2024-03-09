@@ -1,7 +1,7 @@
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
 import { SessionProvider } from "next-auth/react";
-
+import ScrollToTop from "react-scroll-to-top";
 import Layout from "../components/Layout/Layout";
 
 import "../styles/external.css";
@@ -10,6 +10,7 @@ import "../styles/globals.css";
 function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   return (
     <SessionProvider session={session}>
+       <ScrollToTop smooth color="#6f00ff" width='40'/>
       <Layout>
         {process.env.NODE_ENV === "production" && (
           <>
