@@ -37,6 +37,10 @@
   margin-left: 4px !important;
 }
 
+.message {
+  resize: none;
+}
+
 .social__links :hover {
   color: var(--site-theme-color);
 }
