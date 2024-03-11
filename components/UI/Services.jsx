@@ -5,6 +5,7 @@ import Image from "next/image";
 import SectionSubtitle from "./SectionSubtitle";
 import classes from "../../styles/services.module.css";
 import ServicesItem from "./ServicesItem";
+import { RiYoutubeFill } from "react-icons/ri";
 
 const Services = ({ youtubeStats, youtubeVideos }) => {
   const settings = {
@@ -89,7 +90,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
               target="_blank"
               rel="noreferrer"
             >
-              <Button color="danger">Subscribe</Button>
+              <Button color="danger" style={{display: "flex", alignItems: "center", justifyContent: "space-between", width: "22%"}}><RiYoutubeFill />Subscribe</Button>
             </a>
           </Col>
         </Row>
