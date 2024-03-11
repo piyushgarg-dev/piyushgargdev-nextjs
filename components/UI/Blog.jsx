@@ -38,7 +38,7 @@ const Blog = ({ blogs, blogDomain }) => {
                   subtitle: blogItem.brief,
                   img: blogItem.coverImage,
                   liveUrl: `https://${blogDomain}/${blogItem.slug}`,
-                  keyword: [`${blogItem.totalReactions} reactions ✨`],
+                  keyword: [`${blogItem.totalReactions} reactions 💗`],
                 }}
               />
             </Col>
