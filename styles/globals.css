@@ -96,6 +96,10 @@ footer {
   background: var(--site-theme-color);
 }
 
+::-webkit-scrollbar-thumb:hover {
+  background-color: #00fff2;
+} 
+
 .cursor-pointer {
   cursor: pointer;
 }
