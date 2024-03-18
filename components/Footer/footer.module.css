@@ -31,6 +31,14 @@
   text-align: center;
 }
 
+.backToTop__button {
+  color: var(--site-theme-color);
+  font-size: 30px;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
 @media only screen and (max-width: 768px) {
   .footer__top {
     display: none;
