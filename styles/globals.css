@@ -287,3 +287,19 @@ footer {
     border: none;
   }
 }
+
+/* Adding dynamic feature to the scrollbar which shows its dynamic behaviour */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, #66db4bcf);
+  border-radius: 6px;
+  animation: background 0.5s ease-in;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, #00d5ffbb);
+}
