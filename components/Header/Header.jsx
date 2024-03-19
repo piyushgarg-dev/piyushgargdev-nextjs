@@ -159,7 +159,8 @@ const Header = () => {
 
               <div className={`${classes.nav__right}`}>
                 <div
-                  className={`flex flex-row items-center gap-3 border-l-2 pl-4 border-l-slate-500 `}
+                  className={`flex flex-row items-center gap-4 border-l-2 pl-12 border-l-slate-500 `}
+                  style={{color:"#808dad"}}
                 >
                   <Link
                     aria-label="Youtube Channel"
@@ -170,7 +171,7 @@ const Header = () => {
                     className={`cursor-pointer  text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
-                    <RiYoutubeFill />
+                    <RiYoutubeFill className={`text-[#808dad]`} />
                   </Link>
 
                   <Link
@@ -181,7 +182,7 @@ const Header = () => {
                     className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
-                    <RiGithubFill />
+                    <RiGithubFill className={`text-[#808dad]`} />
                   </Link>
 
                   <Link
@@ -192,7 +193,7 @@ const Header = () => {
                     className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
-                    <NewTwitterLogo/>
+                    <NewTwitterLogo />
                   </Link>
 
                   <Link
@@ -203,7 +204,7 @@ const Header = () => {
                     className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
-                    <RiLinkedinFill />
+                    <RiLinkedinFill className={`text-[#808dad]`} />
                   </Link>
                 </div>
               </div>
