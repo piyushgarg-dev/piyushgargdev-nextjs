@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="code">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/public/files/code/short-url-node.zip!/" />
+      <root url="jar://$PROJECT_DIR$/public/files/code/calculator-js.zip!/" />
+      <root url="jar://$PROJECT_DIR$/public/files/code/tic-tac-toe.zip!/" />
+      <root url="jar://$PROJECT_DIR$/public/files/code/short-url-node-auth.zip!/" />
+      <root url="jar://$PROJECT_DIR$/public/files/code/color-guess.zip!/" />
+      <root url="jar://$PROJECT_DIR$/public/files/code/react-Tic-Tac-Toe-main.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
