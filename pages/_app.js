@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
             </Script>
           </>
         )}
-        <Component {...pageProps} />;
+        <Component {...pageProps} />
         <Analytics />
       </Layout>
     </SessionProvider>
