@@ -42,9 +42,9 @@ const Contact = () => {
             <ul className={`${classes.contact__info__list}`}>
               <li className={`${classes.info__item}`}>
                 <span>
-                  <i className="ri-map-pin-line"></i>
+                 <a href="https://www.google.com/maps/d/u/0/viewer?mid=1TTSkxB8WASE7jxXasYEmCro4xPc&hl=en_US&ll=30.342344110497738%2C76.39150399098355&z=14" ><i className="ri-map-pin-line"></i> </a>
                 </span>
-                <p>Planet Earth 🌍</p>
+               <a className="hover:text-[#01d293]" href="https://www.google.com/maps/d/u/0/viewer?mid=1TTSkxB8WASE7jxXasYEmCro4xPc&hl=en_US&ll=30.342344110497738%2C76.39150399098355&z=14"> <p className="hover:text-[#01d293]">Patiala Punjab, India</p> </a>
               </li>
               <li className={`${classes.info__item}`}>
                 <span>
@@ -187,3 +187,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
