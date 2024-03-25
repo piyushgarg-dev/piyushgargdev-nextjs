@@ -61,22 +61,22 @@ const Header = () => {
 
   const { data } = useSession();
 
-  const headerFunc = () => {
-    if (
-      document.body.scrollTop > 80 ||
-      document.documentElement.scrollTop > 80
-    ) {
-      headerRef.current.classList.add(`${classes.header__shrink}`);
-    } else {
-      headerRef.current.classList.remove(`${classes.header__shrink}`);
-    }
-  };
+  // const headerFunc = () => {
+  //   if (
+  //     document.body.scrollTop > 80 ||
+  //     document.documentElement.scrollTop > 80
+  //   ) {
+  //     headerRef.current.classList.add(`${classes.header__shrink}`);
+  //   } else {
+  //     headerRef.current.classList.remove(`${classes.header__shrink}`);
+  //   }
+  // };
 
-  useEffect(() => {
-    window.addEventListener("scroll", headerFunc);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", headerFunc);
 
-    return () => window.removeEventListener("scroll", headerFunc);
-  }, []);
+  //   return () => window.removeEventListener("scroll", headerFunc);
+  // }, []);
 
   const toggleMenu = () => {
     setCrossMenu(false);
