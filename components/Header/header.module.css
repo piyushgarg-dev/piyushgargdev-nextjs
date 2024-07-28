@@ -1,3 +1,12 @@
+@keyframes appear {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
 .header {
   width: 100%;
   height: 94px;
@@ -60,13 +69,15 @@
 
 .header__shrink {
   position: sticky;
-  top: 0;
+  padding-top: 14px;
+  top: -14px;
   left: 0;
   width: 100%;
-  height: 80px;
   line-height: 80px;
+  transition: padding-top .5s;
   box-shadow: 5px 5px 15px -5px var(--site-theme-color) 44;
   z-index: 9999;
+  animation: appear .4s;
 }
 
 .mobile__menu i {
@@ -128,6 +139,9 @@
     display: flex;
     align-items: center;
     gap: 7px;
+  }
+  .header__shrink {
+    animation: none;
   }
 }
 
