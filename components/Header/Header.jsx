@@ -159,7 +159,7 @@ const Header = () => {
 
               <div className={`${classes.nav__right}`}>
                 <div
-                  className={`flex flex-row items-center gap-3 border-l-2 pl-4 border-l-slate-500 `}
+                  className={`flex flex-row items-center gap-3 border-l-2 pl-4 border-l-slate-500 scale-150`}
                 >
                   <Link
                     aria-label="Youtube Channel"
