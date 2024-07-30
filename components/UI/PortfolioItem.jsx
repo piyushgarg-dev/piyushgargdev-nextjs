@@ -1,9 +1,7 @@
-
-import React from 'react';
-import classes from '../../styles/portfolio-item.module.css';
-import Image from 'next/image';
-import Link from 'next/link';
-
+import React from "react";
+import classes from "../../styles/portfolio-item.module.css";
+import Image from "next/image";
+import Link from "next/link";
 
 const PortfolioItem = (props) => {
   const {
@@ -15,48 +13,75 @@ const PortfolioItem = (props) => {
     ribbonText = null,
   } = props.item;
   return (
-    <div className={`${classes.portfolio__item}`}>
+    <div
+      className={`${classes.portfolio__item}`}
+      style={{ display: "flex", flexDirection: "column", height: "100%" }}
+    >
       <a
-        target='_blank'
-        style={{ textDecoration: 'none' }}
+        target="_blank"
+        style={{ textDecoration: "none", flex: "1" }}
         href={liveUrl}
-        rel='noreferrer'
+        rel="noreferrer"
       >
         <>
           {ribbonText && (
-            <div style={{ zIndex: 99 }} className='ribbon ribbon-top-left'>
+            <div style={{ zIndex: 99 }} className="ribbon ribbon-top-left">
               <span>{ribbonText}</span>
             </div>
           )}
 
-          <div className='bg-transparent'>
-            <div className={`${classes.portfolio__img}`}>
-              <Image alt={title} src={img} width={380} height={1} style={{maxHeight: "380px", overflow:"auto"}}/>
-
+          <div
+            className="bg-transparent"
+            style={{ display: "flex", flexDirection: "column", height: "100%" }}
+          >
+            <div className={`${classes.portfolio__img}`} style={{ flex: "1" }}>
+              <Image
+                alt={title}
+                src={img}
+                width={380}
+                height={250}
+                style={{
+                  maxHeight: "380px",
+                  overflow: "hidden",
+                  objectFit: "cover",
+                }}
+              />
             </div>
 
-            <h3 style={{ background: "transparent" }}>{title}</h3>
-            <p style={{ background: "transparent", }}>{subtitle}</p>
-            
-            <div className=" w-[100%] mt-5 lg:mt-0"> </div>
             <div
               style={{
-                position: "absolute",
-                background: "transparent",
-                bottom: "20px",
+                flex: "1",
                 display: "flex",
-                flexDirection: "row",
-                flexWrap: "wrap",
-              }}>
+                flexDirection: "column",
+                justifyContent: "space-between",
+              }}
+            >
+              <div>
+                <h3 style={{ background: "transparent", margin: "10px 0" }}>
+                  {title}
+                </h3>
+                <p style={{ background: "transparent", margin: "10px 0" }}>
+                  {subtitle}
+                </p>
+              </div>
 
-              {keyword.map((item, index) => (
-                <span
-                  className={`${classes.portfolio__keyword} my-1`}
-                  key={index}
-                >
-                  {item}
-                </span>
-              ))}
+              <div
+                style={{ display: "flex", flexWrap: "wrap", marginTop: "10px" }}
+              >
+                {keyword.map((item, index) => (
+                  <span
+                    className={`${classes.portfolio__keyword} my-1`}
+                    key={index}
+                    style={{
+                      display: "inline-block",
+                      marginRight: "8px",
+                      padding: "5px 10px",
+                    }}
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         </>
