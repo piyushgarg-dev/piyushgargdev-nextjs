@@ -169,6 +169,7 @@ const Header = () => {
                     id="youtube-channel"
                     className={`cursor-pointer  text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
+                    style={{fontSize:'24px'}}
                   >
                     <RiYoutubeFill />
                   </Link>
@@ -180,6 +181,7 @@ const Header = () => {
                     id="github-account"
                     className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
+                    style={{fontSize:'24px'}}
                   >
                     <RiGithubFill />
                   </Link>
@@ -191,6 +193,7 @@ const Header = () => {
                     id="twitter-account"
                     className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
+                    style={{fontSize:'24px'}}
                   >
                     <NewTwitterLogo/>
                   </Link>
@@ -202,6 +205,7 @@ const Header = () => {
                     id="linkedin-account"
                     className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
+                    style={{fontSize:'24px'}}
                   >
                     <RiLinkedinFill />
                   </Link>
