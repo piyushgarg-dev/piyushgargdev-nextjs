@@ -123,6 +123,13 @@
   .logo h1 {
     font-size: 1.3rem !important;
   }
+  .linkedin.account{
+    font-size: 9rem;
+  }
+  .Link{
+    font-size: 67px;
+
+  }
 
   .mobile__menuDiv {
     display: flex;
