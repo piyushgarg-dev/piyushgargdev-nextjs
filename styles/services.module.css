@@ -3,6 +3,9 @@
   align-items: center;
   column-gap: 2rem;
 }
+.service__title h3 {
+  font-size: 1.5rem;
+}
 
 @media only screen and (max-width: 992px) {
   .services__container {
