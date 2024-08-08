@@ -68,7 +68,7 @@ const portfolio = [
     liveUrl:
       "https://codedamn.com/learn/non-linear-data-structures?coupon=PIYUSHG#buy",
     ribbonText: "40% OFF",
-  },
+  },  
   {
     id: "02",
     title: "Ultimate React.js Design Patterns",
