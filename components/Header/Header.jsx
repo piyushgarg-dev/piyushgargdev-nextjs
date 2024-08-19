@@ -55,28 +55,10 @@ const icons = [
 
 const Header = () => {
   const [crossMenu, setCrossMenu] = useState(false);
-  const headerRef = useRef(null);
 
   const menuRef = useRef(null);
 
   const { data } = useSession();
-
-  const headerFunc = () => {
-    if (
-      document.body.scrollTop > 80 ||
-      document.documentElement.scrollTop > 80
-    ) {
-      headerRef.current.classList.add(`${classes.header__shrink}`);
-    } else {
-      headerRef.current.classList.remove(`${classes.header__shrink}`);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", headerFunc);
-
-    return () => window.removeEventListener("scroll", headerFunc);
-  }, []);
 
   const toggleMenu = () => {
     setCrossMenu(false);
@@ -84,7 +66,7 @@ const Header = () => {
   };
 
   return (
-    <header className={`${classes.header}`} ref={headerRef}>
+    <header className={`${classes.header}`}>
       <Container>
         <div className={`${classes.nav__wrapper}`}>
           {/* ======== navigation logo ======== */}
