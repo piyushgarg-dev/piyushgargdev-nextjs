@@ -12,7 +12,7 @@
   background: var(--site-theme-color);
   cursor: pointer;
 
-  transform: translateY(-20px);
+  transform: scale(1.05);
 }
 
 .service__item:hover i {
