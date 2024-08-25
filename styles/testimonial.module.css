@@ -1,5 +1,12 @@
 .testimonial__item {
-  padding: 0px 20px;
+  padding: 30px 30px;
+  transition: 0.3s ease-in-out;
+}
+
+.testimonial__item:hover{
+  border: transparent;
+  background-color: #19223a;
+  border-radius: 5%;
 }
 
 .testimonial__client {
@@ -18,6 +25,10 @@
 
 .testimonial__client h6:last-child {
   color: var(--site-theme-color);
+}
+
+.testimonial__client h6:last-child:hover{
+  color: #62f7ca;
 }
 
 @media only screen and (max-width: 768px) {
