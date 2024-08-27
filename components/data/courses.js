@@ -5,7 +5,7 @@ const portfolio = [
     subtitle: "Build FullStack twitter clone using latest tech stack",
     img: "/images/twitter-clone.jpg",
     category: "Full Stack",
-    keyword: ["Node", "GraphQL", "NextJS", "Primsa", "Postgres"],
+    keyword: ["Node", "GraphQL", "NextJS", "Prisma", "PostgreSQL"],
     liveUrl: "https://learn.piyushgarg.dev/learn/twitter-clone",
   },
   {
