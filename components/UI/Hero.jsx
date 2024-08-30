@@ -52,7 +52,9 @@ const Hero = () => {
           </Col>
           <Col lg="6" md="6">
             <div className={`${classes.hero__img} text-end`}>
-              <Image alt="Piyush Garg" src={heroImg} width="450" height="450" />
+                <div class={`${classes.hover_effect_image}`}>
+                  <img src="../../images/PiyushGarg.png" alt="Piyush Garg" />
+                </div>
             </div>
           </Col>
         </Row>

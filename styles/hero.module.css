@@ -155,3 +155,41 @@
     justify-content: center;
   }
 }
+
+
+.hover_effect_image {
+  position: relative;
+  display: inline-block;
+  width: 450px;
+  height: 450px;
+  z-index: 1;
+  
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.hover_effect_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.hover_effect_image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 450px ;
+  height: 450px;
+  background: linear-gradient(to right, rgb(215, 57, 255), rgb(101, 122, 238));
+  filter: blur(10px); /* Adjust the blur effect */
+  opacity: 0;
+  z-index: -1;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.hover_effect_image:hover::before{
+  opacity: 1;
+}

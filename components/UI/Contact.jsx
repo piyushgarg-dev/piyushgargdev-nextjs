@@ -132,7 +132,7 @@ const Contact = () => {
                   ></textarea>
                   <button
                     type="submit"
-                    className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
+                    className=" bg-gradient-to-br from-blue-900 to-blue-600 hover:bg-gradient-to-tl text-white px-4 py-2 rounded-md hover:bg-blue-600"
                   >
                     Send Message
                   </button>
