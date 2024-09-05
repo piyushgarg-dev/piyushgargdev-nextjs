@@ -30,8 +30,8 @@ export default function Home({
     <Fragment>
       <Head>
         {/* <!-- Primary Meta Tags --> */}
-        <title>Piyush Garg - Dev and Instructor</title>
-        <meta name="title" content="Piyush Garg - Dev and Instructor" />
+        <title>Piyush Gargt - Dev and Instructor</title>
+        <meta name="title" content="Piyushh Garg - Dev and Instructor" />
         <meta
           name="description"
           content="Hi there! My name is Piyush Garg and I’m a software engineer with over 5 years of experience in the industry. I love all things tech and coding, and on my channel, I share my knowledge and experience with others. Whether you’re a beginner looking to learn the basics or an experienced developer looking to expand your skills, I’ve got something for you."
