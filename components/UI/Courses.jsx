@@ -12,7 +12,7 @@ const Courses = ({ courses = [] }) => {
         <Row>
           <Col lg="6" md="6" className="mb-5">
             <SectionSubtitle subtitle="Courses" />
-            <h4 className="mt-4 text-2xl">Checkout My Interactive Courses</h4>
+            <h4 className="mt-4 text-3xl">Checkout My Interactive Courses</h4>
           </Col>
         </Row>
 

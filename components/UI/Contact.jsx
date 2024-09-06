@@ -37,7 +37,7 @@ const Contact = () => {
         <Row className="flex justify-between flex-col md:flex-row ">
           <Col lg="4" md="6">
 
-            <h3 className="mt-4 mb-4 text-2xl">Connect with me</h3>
+            <h3 className="mt-4 mb-4 text-3xl">Connect with me</h3>
 
             <ul className={`${classes.contact__info__list}`}>
               <li className={`${classes.info__item}`}>
