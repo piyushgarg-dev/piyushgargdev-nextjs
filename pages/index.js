@@ -30,7 +30,7 @@ export default function Home({
     <Fragment>
       <Head>
         {/* <!-- Primary Meta Tags --> */}
-        <title>Piyush Garg - Dev and Instructor</title>
+        <title>Piyush Garg - Developer</title>
         <meta name="title" content="Piyush Garg - Dev and Instructor" />
         <meta
           name="description"
@@ -145,7 +145,6 @@ export async function getStaticProps(context) {
     const [youtubeStats, youtubeVideos, blogResponse] = await Promise.all([
       getYoutubeStatsForChannelId("UCf9T51_FmMlfhiGpoes0yFA"),
       getYoutubeVideos(),
-      
     ]);
 
     return {
