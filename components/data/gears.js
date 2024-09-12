@@ -14,7 +14,7 @@ const gears = [
     title: "MacBook Pro M1 Chip",
     subtitle:
       "2022 Apple MacBook Pro Laptop with M1 chip: 34.46 cm (13.6-inch) Liquid Retina Display, 8GB RAM, 512GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera. Works with iPhone/iPad; Space Grey",
-    img: "/images/mac.webp",
+    img: "public\images\mac.png",
     category: "Java",
     keyword: [],
     liveUrl: "https://amzn.to/3WBJgQn",
