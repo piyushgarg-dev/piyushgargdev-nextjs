@@ -4,7 +4,7 @@
   padding-top: 20px;
   border-radius: 10px;
   margin-bottom: 8px;
-  min-height: 100%;
+  min-height: 300px;
   position: relative;
 }
 
@@ -65,12 +65,17 @@
 
 @media only screen and (max-width: 940px) {
   .portfolio__keyword {
-    padding: 3px 5px;
+    padding: 0px 5px;
     margin-right: 7px;
+
   }
 
   .portfolio__item p{
     line-height: 1.5;
+  }
+
+  .portfolio__item {
+    min-height:300px;
   }
 
 }
@@ -82,5 +87,17 @@
   .portfolio__keyword {
     padding: 5px 10px;
     margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .portfolio__item {
+    min-height:400px;
+  }
+}
+
+@media only screen and (max-width: 1920px) {
+  .portfolio__item {
+    min-height:350px;
   }
 }
