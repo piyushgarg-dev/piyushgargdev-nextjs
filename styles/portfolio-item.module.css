@@ -2,10 +2,17 @@
   background: #171f38;
   padding: 10px 15px 10px 15px;
   padding-top: 20px;
-  border-radius: 10px;
-  margin-bottom: 8px;
+  border-radius: 20px;
+  margin-bottom:20px;
   min-height: 100%;
   position: relative;
+  box-shadow: rgba(0, 0, 0, 0.372) 0px 7px 29px 0px;
+  border: 0px solid rgba(42, 42, 141, 0.765);
+}
+.portfolio__item:hover{
+  transition: 500ms;
+  border: 1px solid rgba(1,	210,	147, 0.565);
+  box-shadow: rgba(1,	210,	147, 0.565) 0px 7px 29px 0px;
 }
 
 .portfolio__item div {
@@ -39,10 +46,12 @@
   font-size: 0.7rem;
   margin-right: 10px;
   border-radius: 5px;
+  /* margin-top: 5px; */
   margin-bottom: 5px;
 }
 
 .portfolio__keyword:hover {
+  transition: 500ms;
   background-color: white;
   color: #000;
 }
