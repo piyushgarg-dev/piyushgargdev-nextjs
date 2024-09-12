@@ -62,6 +62,7 @@ const Terminal = () => {
 
   return (
     <TerminalContextProvider>
+      <div style={{ margin: '10px', height: "100%"}}>
       <ReactTerminal
         prompt={
           data && data.user ? `$ ${data.user.name} >> ` : "$ piyushgarg-dev >> "
@@ -80,6 +81,7 @@ const Terminal = () => {
         themes={{
           darkDefault: {
             themeBGColor: "",
+            themeBGColor: "#000000",
             themeToolbarColor: "",
             themeColor: "#38CC77",
             themePromptColor: "#fff",
@@ -108,6 +110,7 @@ const Terminal = () => {
           ),
         }}
       />
+      </div>
     </TerminalContextProvider>
   );
 };
