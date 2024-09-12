@@ -6,6 +6,11 @@
   margin-bottom: 8px;
   min-height: 100%;
   position: relative;
+  transition: .3s ease-out;
+}
+
+.portfolio__item:hover {
+  transform: scale(1.03);
 }
 
 .portfolio__item div {
@@ -69,7 +74,7 @@
     margin-right: 7px;
   }
 
-  .portfolio__item p{
+  .portfolio__item p {
     line-height: 1.5;
   }
 
@@ -79,6 +84,7 @@
   .portfolio__img img {
     width: 100% !important;
   }
+
   .portfolio__keyword {
     padding: 5px 10px;
     margin-right: 10px;
