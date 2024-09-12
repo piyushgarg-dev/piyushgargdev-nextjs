@@ -67,10 +67,11 @@
   .portfolio__keyword {
     padding: 3px 5px;
     margin-right: 7px;
+    margin-bottom: 24px;
   }
 
   .portfolio__item p{
-    line-height: 1.5;
+    line-height: 1.4;
   }
 
 }
@@ -78,7 +79,14 @@
 @media only screen and (max-width: 576px) {
   .portfolio__img img {
     width: 100% !important;
+
+    height: auto;
   }
+
+  .portfolio__item {
+    margin-bottom: 26px;
+  }
+
   .portfolio__keyword {
     padding: 5px 10px;
     margin-right: 10px;
