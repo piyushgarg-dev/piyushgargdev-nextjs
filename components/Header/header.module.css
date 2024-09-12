@@ -87,6 +87,11 @@
 /* ========== make it responsive ========= */
 
 @media only screen and (max-width: 992px) {
+  .nav__menu a,
+  .nav__menu > * {
+    font-size: 1rem;
+  }
+
   .navigation {
     position: fixed;
     top: 0;
@@ -94,6 +99,7 @@
     width: 100%;
     height: 100%;
     background: #171f3897;
+    opacity: 0.9;
     z-index: 99999;
     display: none;
   }
@@ -102,7 +108,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 300px;
+    width: 100%;
     height: 100%;
     flex-direction: column;
     justify-content: center;
