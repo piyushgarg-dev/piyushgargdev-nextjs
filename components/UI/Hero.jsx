@@ -66,7 +66,10 @@ const Hero = () => {
             <div className={`${classes.hero__content}`}>
               <div className="flex flex-col items-center justify-center">
                 <Col lg="6" md="6">
-                  <div className={`${classes.hero__img} text-end`}>
+                  <div className={`${classes.hero__img} text-end`}     style={{
+                  border: '1px solid #555',
+                  boxShadow: '0 0 10px  rgba(0,0,0,0.6)',
+                }}>
                     <Image
                       alt="Piyush Garg"
                       src={heroImg}
