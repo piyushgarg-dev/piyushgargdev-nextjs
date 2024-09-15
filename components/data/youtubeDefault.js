@@ -12,9 +12,9 @@ export const getYoutubeChannelDataDefaultResponse = {
       id: "UCf9T51_FmMlfhiGpoes0yFA",
       statistics: {
         viewCount: "39669",
-        subscriberCount: "1010",
+        subscriberCount: "21020",
         hiddenSubscriberCount: false,
-        videoCount: "114",
+        videoCount: "240",
       },
     },
   ],
