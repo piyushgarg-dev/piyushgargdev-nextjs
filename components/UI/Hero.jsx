@@ -1,7 +1,7 @@
-import React, { Suspense } from "react";
+import React from "react";
 import Link from "next/link";
 import SectionSubtitle from "./SectionSubtitle";
-import { Container, Row, Col, Button } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 import { BsDiscord } from "react-icons/bs";
 import Image from "next/image";
 import heroImg from "../../public/images/PiyushGarg.png";
@@ -10,11 +10,11 @@ import classNames from "../../styles/subtitle.module.css";
 
 const Hero = () => {
   return (
-    <section className={` ${classes.hero} `}>
+    <section className={`${classes.hero}`}>
       {/* desktop / large screen view */}
-      <Container id="hero-section " className="md:flex hidden">
-        <Row>
-          <Col lg="6" md="6">
+      <Container id="hero-section" className="md:flex hidden">
+        <Row className="items-center">
+          <Col lg="6" md="6" className="pr-8">
             <div className={`${classes.hero__content}`}>
               <SectionSubtitle subtitle="Hello" />
               <h2 className="mt-3 mb-3">I&apos;m Piyush Garg</h2>
@@ -26,56 +26,53 @@ const Hero = () => {
                 knowledge and experience with others.
               </p>
             </div>
-            <div className="mt-5 flex place-content-center md:block">
+            <div className="mt-5">
               <div className="relative inline-flex group">
-                <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r animate-pulse hover:animate-none from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+                <div className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r animate-pulse hover:animate-none from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
                 <Link
                   target="_blank"
                   href="https://discord.gg/kRSRxBQ6xf"
-                  className="relative text-sm sm:text-md md:text-lg text-center items-center justify-center px-8 py-4  font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                  className="relative text-sm sm:text-md md:text-lg text-center items-center justify-center px-8 py-4 font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                   role="button"
                 >
-                  <span
-                    style={{
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      gap: "10px",
-                    }}
-                    className="block"
-                  >
+                  <span className="flex items-center justify-center gap-2">
                     Join Discord Server <BsDiscord />
                   </span>
                 </Link>
               </div>
             </div>
           </Col>
-          <Col lg="6" md="6">
-            <div className={`${classes.hero__img} text-end`}>
-              <Image alt="Piyush Garg" src={heroImg} width="450" height="450" />
+          <Col lg="6" md="6" className="flex justify-end">
+            <div className="relative inline-flex group">
+              <div className="absolute inset-0 transition-all duration-1000 opacity-70 bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-full blur-lg group-hover:opacity-100 md:opacity-50"></div>
+              <div className="relative z-10">
+                <Image alt="Piyush Garg" src={heroImg} width="450" height="450" />
+              </div>
             </div>
           </Col>
         </Row>
       </Container>
 
       {/* mobile / small screen view */}
-
       <Container id="hero-section" className="md:hidden">
         <Row>
           <Col lg="6" md="6">
             <div className={`${classes.hero__content}`}>
               <div className="flex flex-col items-center justify-center">
                 <Col lg="6" md="6">
-                  <div className={`${classes.hero__img} text-end`}>
-                    <Image
-                      alt="Piyush Garg"
-                      src={heroImg}
-                      width="450"
-                      height="450"
-                    />
+                  <div className="relative inline-flex group text-end">
+                    <div className="absolute inset-0 transition-all duration-1000 opacity-70 bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-full blur-lg group-hover:opacity-100"></div>
+                    <div className="relative z-10">
+                      <Image
+                        alt="Piyush Garg"
+                        src={heroImg}
+                        width="450"
+                        height="450"
+                      />
+                    </div>
                   </div>
                 </Col>
-                <h2 className="mt-3 mb-3">
+                <h2 className="mt-4 mb-3">
                   <span className={`${classNames.section__subtitle}`}>
                     Hello !{" "}
                   </span>
@@ -92,22 +89,14 @@ const Hero = () => {
             </div>
             <div className="mt-5 flex flex-col items-center justify-center">
               <div className="relative inline-flex group">
-                <div className="absolute w-full transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r animate-pulse hover:animate-none from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+                <div className="absolute w-full transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r animate-pulse hover:animate-none from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
                 <Link
                   target="_blank"
                   href="https://discord.gg/kRSRxBQ6xf"
-                  className="relative w-full text-sm sm:text-md md:text-lg text-center items-center justify-center px-8 py-4  font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                  className="relative w-full text-sm sm:text-md md:text-lg text-center items-center justify-center px-8 py-4 font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                   role="button"
                 >
-                  <span
-                    style={{
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      gap: "10px",
-                    }}
-                    className="block"
-                  >
+                  <span className="flex items-center justify-center gap-2">
                     Join Discord Server <BsDiscord />
                   </span>
                 </Link>
