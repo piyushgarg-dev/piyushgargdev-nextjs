@@ -100,6 +100,10 @@ footer {
   cursor: pointer;
 }
 
+.discord-btn {
+  border: 1px solid #01d293;
+}
+
 .slick-dots li button:before {
   color: white !important;
 }
