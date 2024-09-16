@@ -31,6 +31,7 @@ const Contact = () => {
     }
   };
 
+
   return (
     <section id="contact" className={`${classes.contact}`}>
       <Container>
@@ -83,7 +84,7 @@ const Contact = () => {
                 href="https://twitter.com/piyushgarg_dev"
                 target="_blank"
               >
-             
+
                 <NewTwitterLogo />
               </Link>
               <Link
