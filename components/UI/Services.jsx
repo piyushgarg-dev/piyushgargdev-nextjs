@@ -23,6 +23,13 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
       <Container>
         <Row>
           <Col lg="3" md="12" sm="12">
+            <div
+              onClick={() => window.open("https://www.youtube.com/@piyushgargdev/featured", "_blank")}
+              style={{ 
+                cursor: "pointer",
+              }}
+              
+            ><h3 className="mb-2">Popular Uploads from My Youtube Channel</h3></div>
             <Slider
               {...settings}
               // style={{ cursor: "pointer", marginBottom: "10px" }}
@@ -77,9 +84,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
 
           <Col lg="6" md="6" className={`${classes.service__title}`}>
             <SectionSubtitle subtitle="Youtube" />
-            <h3 className="mb-0 mt-4">Popular</h3>
-            <h3 className="mb-2">Uploads from My Youtube Channel</h3>
-            <p>
+            <p className="mt-4">
               I would really appreciate it if you could check it out and maybe
               even hit the subscribe button if you enjoy the content.
             </p>
