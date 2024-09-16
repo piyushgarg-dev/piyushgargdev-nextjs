@@ -77,8 +77,14 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
 
           <Col lg="6" md="6" className={`${classes.service__title}`}>
             <SectionSubtitle subtitle="Youtube" />
-            <h3 className="mb-0 mt-4">Popular</h3>
-            <h3 className="mb-2">Uploads from My Youtube Channel</h3>
+              {/* Blocked only for mid-screen sizes */}
+            <h3 className="mb-2 d-md-none d-lg-block ">
+              Popular Uploads from My Youtube Channel
+            </h3>
+            {/* Visible only for mid-screen sizes . Note that, this shortens the fontsize of the text in order to make the content stay inline */}
+            <h3 className="mb-2 d-none d-md-block d-lg-none fs-6">
+              Popular Uploads from My Youtube Channel
+            </h3>
             <p>
               I would really appreciate it if you could check it out and maybe
               even hit the subscribe button if you enjoy the content.
