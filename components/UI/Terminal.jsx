@@ -93,7 +93,7 @@ const Terminal = () => {
           ),
           help: (
             <div style={{ marginTop: "5px" }}>
-              <p>Available Commands:</p>
+              <p>Available Commands: </p>
               {Object.keys(terminalCommands).map((key) => (
                 <p key={key}>
                   <span style={{ color: "#38CC77" }}>{key}:</span>{" "}
@@ -102,7 +102,7 @@ const Terminal = () => {
               ))}
               <p>
                 <span style={{ color: "#38CC77" }}>clear:</span> clears out
-                everything on screen!
+                everything on
               </p>
             </div>
           ),
