@@ -4,7 +4,6 @@ import SectionSubtitle from "./SectionSubtitle";
 import classes from "../../styles/portfolio.module.css";
 import PortfolioItem from "./PortfolioItem";
 
-
 const Blog = ({ blogs, blogDomain }) => {
   const [filter, setFilter] = useState("Mobile App");
   const [data, setData] = useState();
@@ -22,9 +21,8 @@ const Blog = ({ blogs, blogDomain }) => {
         </Row>
 
         <Row>
-          {blogs.map((blogItem)  => (
+          {blogs.map((blogItem) => (
             <Col
-
               className="hover:scale-105 hover:ease-out duration-300"
               style={{ margin: "14px 0px" }}
               key={blogItem._id}
@@ -38,7 +36,10 @@ const Blog = ({ blogs, blogDomain }) => {
                   subtitle: blogItem.brief,
                   img: blogItem.coverImage,
                   liveUrl: `https://${blogDomain}/${blogItem.slug}`,
-                  keyword: [`${blogItem.totalReactions} reactions ✨`],
+                  keyword:
+                    blogItem.totalReactions > 0
+                      ? [`${blogItem.totalReactions} reactions ✨`]
+                      : ["Be the first to react!"],
                 }}
               />
             </Col>
