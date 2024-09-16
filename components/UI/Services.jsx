@@ -68,10 +68,12 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
                 Number(youtubeStats?.statistics?.subscriberCount) / 1000
               ).toPrecision(3)}K Subscribers`}
               icon="ri-user-add-line"
+              index={1}
             />
             <ServicesItem
               title={`${youtubeStats?.statistics?.videoCount} Videos Uploaded`}
               icon="ri-film-line"
+              index={2}
             />
           </Col>
 
