@@ -117,7 +117,7 @@ const Header = () => {
                     <p className={`${classes.mobile__menu}`}>{icons[index]}</p>
                   </Link>
 
-                  <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}`}>
+                  <Link aria-label={item.display} href={item.path} target={`${false?'_blank':'_self'}`}>
                     <span className=" text-[#808dad] hover:text-green-400">
                       {item.display}
                     </span>
