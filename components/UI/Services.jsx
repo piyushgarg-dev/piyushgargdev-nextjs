@@ -76,7 +76,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
           </Col>
 
           <Col lg="6" md="6" className={`${classes.service__title}`}>
-            <SectionSubtitle subtitle="Youtube" />
+            <SectionSubtitle subtitle="YouTube" />
             <h3 className="mb-0 mt-4">Popular</h3>
             <h3 className="mb-2">Uploads from My Youtube Channel</h3>
             <p>
