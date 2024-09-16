@@ -8,18 +8,18 @@ const Testimonial = ({ feedbacks = [] }) => {
   const settings = {
     dots: false,
     autoplay: true,
-    speed: 500,
-    autoplaySpeed: 2000,
+    speed: 1000,
+    autoplaySpeed: 5000,
     cssEase: "linear",
     infinite: true,
     swipeToSlide: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToShow: 4,
+    slidesToScroll: 3,
     responsive: [
       {
         breakpoint: 100,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 9,
         },
       },
       {

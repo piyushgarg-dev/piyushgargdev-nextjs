@@ -19,11 +19,11 @@ const Courses = ({ courses = [] }) => {
         <Row>
           {courses.map((item) => (
             <Col
-              style={{ margin: "10px 0px" }}
+              style={{ margin:  " 10px 0px" }}
               key={item.id}
-              lg="4"
+              lg="3"
               md="4"
-              sm="6"
+              sm="8"
               className="hover:scale-105 hover:ease-out duration-300 shadow-md"
             >
               <PortfolioItem item={item} />

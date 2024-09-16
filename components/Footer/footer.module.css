@@ -13,17 +13,17 @@
 }
 
 .nav__menu a:hover {
-  color: var(--site-theme-color);
+  color: var();
 }
 
 .nav__menu a:first-child {
-  color: var(--site-theme-color);
+  color: var();
 }
 
 .footer__creator h6 {
   text-align: right;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.852);
+  color: rgba(0, 84, 194, 0.852);
 }
 
 .footer__copyright p {
