@@ -1,8 +1,8 @@
 const gears = [
   {
     id: "00",
-    title: "My Girlfriend",
-    subtitle: "👧🏼",
+    title: "My Girlfriend 👧🏼",
+    subtitle: "",
     img: "/images/girl.jpeg",
     category: "Java",
     keyword: [],
