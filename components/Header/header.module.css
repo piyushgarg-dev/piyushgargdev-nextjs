@@ -3,6 +3,8 @@
   height: 94px;
   line-height: 80px;
   background-color: #0e1630;
+  top: -94px;
+  transition: top 0.75s ease 0s;
 }
 
 .nav__wrapper {
