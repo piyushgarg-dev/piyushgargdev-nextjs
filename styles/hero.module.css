@@ -19,8 +19,10 @@
 }
 
 .hero__img img {
-  border-radius: 50px 5px 5px 5px;
+  border-radius: 50%;
   display: inline;
+  border: 5px solid rgb(255, 255, 255);
+  filter: drop-shadow(7px 7px 15px #4444dd);
 }
 
 .hero__skills {
