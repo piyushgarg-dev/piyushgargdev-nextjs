@@ -137,3 +137,28 @@
     line-height: 60px;
   }
 }
+
+.nav__menu a,
+.mobile__menuDiv a {
+  text-decoration: none;
+  position: relative; 
+}
+
+/* Creating the hover underline effect */
+.nav__menu a::before,
+.mobile__menuDiv a::before {
+  content: "";
+  position: absolute;
+  bottom: -2px; 
+  left: 0; 
+  width: 0; 
+  height: 2px; 
+  background-color: #22c55e;
+  transition: width 0.3s ease; 
+}
+
+/* Increasing width on hover to create the transition effect */
+.nav__menu a:hover::before,
+.mobile__menuDiv:hover a::before {
+  width: 100%; 
+}
