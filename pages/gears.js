@@ -12,14 +12,15 @@ export default function Gears() {
       </Head>
       <Container className="mt-5">
         <SectionSubtitle subtitle="Gears" />
-        <Row>
+        <Row className="mt-3">
           {gears.map((item) => (
             <Col
-              style={{ margin: "10px 0px" }}
+              style={{ margin: "15px 0px" }}
               key={item.id}
               lg="4"
               md="4"
               sm="6"
+              className="hover:scale-105 hover:ease-out duration-300 shadow-md"
             >
               <PortfolioItem item={item} />
             </Col>
