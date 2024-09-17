@@ -9,19 +9,42 @@
 .hero__content {
   padding-top: 50px;
 }
-
 .hero__img {
+  width: 100%;
+  height: 100%;
   position: relative;
   z-index: 9;
   display: flex;
-  /* border: 2px solid red; */
-  justify-content: flex-end;
+  border-radius: 1000px;
+  justify-content:flex-end;
+}
+
+.hero__img:hover img {
+  transform: scale(1.041);
+  box-shadow: 0 0 60px rgba(0, 88, 240, 0.5), 0 0 40px rgba(161, 106, 255, 0.5);
+  background-size: 100% 100%; /* Initial background size for animation */
+  transition: ease-in-out 1s;
+}
+
+.hero__img:hover {
+  animation: breathe 2s ease infinite; /* Apply the breathing animation */
+  background-size: 100% 100%; /* Adjusted background size for animation */
+}
+
+@keyframes breathe {
+  0%, 100% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
 .hero__img img {
-  border-radius: 50px 5px 5px 5px;
-  display: inline;
+  border-radius: 1000px;
+  display: inline-block;
 }
+
 
 .hero__skills {
   text-align: left;
