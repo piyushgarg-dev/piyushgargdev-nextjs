@@ -3,7 +3,27 @@ import Image from "next/image";
 import Link from "next/link";
 import classes from "../../styles/testimonial.module.css";
 
+const capitalise = (text) => {
+  // Use a regular expression to split the text into sentences
+  const sentences = text.split(/(?<=[.!?])\s+/);
+
+  // Capitalize the first letter of each sentence
+  const capitalizedSentences = sentences.map(sentence => {
+    if (sentence.length > 0) {
+      return sentence.charAt(0).toUpperCase() + sentence.slice(1);
+    }
+    return sentence;
+  });
+
+  // Join the sentences back together into a single string
+  const capitalizedText = capitalizedSentences.join(' ');
+
+  return capitalizedText;
+}
+
+
 const TestimonialItem = ({ feedBack }) => (
+
   <div className={`${classes.testimonial__item}`}>
     <div className={`${classes.testimonial__client}`}>
       <Image
@@ -36,7 +56,7 @@ const TestimonialItem = ({ feedBack }) => (
       .map((_, index) => (
         <i key={index} style={{ color: "#FFD700" }} className="ri-star-fill" />
       ))}
-    <p style={{ fontSize: "20px" }}>{feedBack.content}</p>
+    <p style={{ fontSize: "20px" }}>{capitalise(feedBack.content)}</p>
   </div>
 );
 
