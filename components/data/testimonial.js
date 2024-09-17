@@ -65,7 +65,7 @@ const feedbacks = [
     userImage:
       "https://wsrv.nl/?url=https%3A%2F%2Flh3.googleusercontent.com%2Fa-%2FAOh14Gi3OfMCQoQ1g7t1OmU1_bl0X2CXiXnAR6tO4xsM66I&w=80&fit=cover&h=80&q=70&output=webp",
     content:
-      "all the basics covered to startwith can say a beginner to pro course🔥",
+      "all the basics covered to start with can say a beginner to pro course🔥",
     studentProfileLink: "",
     courseId: "01",
   },
