@@ -69,7 +69,7 @@ const Terminal = () => {
         welcomeMessage={
           <div>
             <p>
-              Welcome to my website! Get started by typing `help` command below
+              Welcome to my website! Get started by typing `<span className="text-[#38CC77]">help</span>` command below
             </p>
             {/* <p>
               <span style={{ color: "#38CC77" }}>Pro Tip:</span> Hack this
