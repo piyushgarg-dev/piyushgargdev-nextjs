@@ -1,8 +1,10 @@
 .header {
   width: 100%;
-  height: 94px;
+  height: 80px;
   line-height: 80px;
+  transition: height 0.4 ease;
   background-color: #0e1630;
+  position: sticky;
 }
 
 .nav__wrapper {
@@ -67,6 +69,16 @@
   line-height: 80px;
   box-shadow: 5px 5px 15px -5px var(--site-theme-color) 44;
   z-index: 9999;
+  animation: slideDown 0.4s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
 .mobile__menu i {
