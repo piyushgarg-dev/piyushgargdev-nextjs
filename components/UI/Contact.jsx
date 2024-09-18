@@ -7,7 +7,8 @@ import Form from "./Form";
 import axios from "axios";
 import { useState } from "react";
 import NewTwitterLogo from "./NewTwitterlogo";
-import { RiYoutubeFill, RiGithubFill, RiTwitterFill, RiLinkedinFill } from "react-icons/ri";
+import { VscGithub } from "react-icons/vsc";
+import { RiYoutubeFill, RiLinkedinFill } from "react-icons/ri";
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
   const handleSubmit = async (event) => {
@@ -67,7 +68,7 @@ const Contact = () => {
                 href="https://youtube.com/@piyushgargdev"
                 target="_blank"
               >
-                <RiYoutubeFill />
+                <RiYoutubeFill color="#FF0000" />
               </Link>
               <Link
                 className="hover:text-[#01d293] duration-300"
@@ -75,16 +76,15 @@ const Contact = () => {
                 href="https://github.com/piyushgarg-dev"
                 target="_blank"
               >
-                <RiGithubFill />
+                <VscGithub color="white"/>
               </Link>
               <Link
-                className="hover:text-[#01d293] duration-300"
                 aria-label="Twitter Account"
                 href="https://twitter.com/piyushgarg_dev"
                 target="_blank"
+                className="duration-300"
               >
-             
-                <NewTwitterLogo />
+                <NewTwitterLogo className="fill-[#ffffff] hover:fill-[#01d293]" />
               </Link>
               <Link
                 className="hover:text-[#01d293] duration-300"
@@ -92,7 +92,7 @@ const Contact = () => {
                 href="https://www.linkedin.com/in/piyushgarg195/"
                 target="_blank"
               >
-                <RiLinkedinFill />
+                <RiLinkedinFill color="#3498DB"/>
               </Link>
             </div>
           </Col>
