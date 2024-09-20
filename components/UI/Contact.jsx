@@ -129,6 +129,7 @@ const Contact = () => {
                     required
                     rows="4"
                     autoComplete="off"
+                    style={{ maxHeight: "300px", minHeight: "45px" }}
                   ></textarea>
                   <button
                     type="submit"
@@ -142,46 +143,6 @@ const Contact = () => {
           </Col>
         </Row>
       </Container>
-      {/* <Container className=" w-80">
-        {submitted ? (
-          <div className="flex justify-center items-center text-xl font-bold h-[30vh]">
-            <p>Message Sent!</p>
-          </div>
-        ) : (
-          <form className="flex flex-col space-y-4" onSubmit={handleSubmit}>
-            <input
-              className="border border-gray-300 bg-transparent px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:rgba(77, 181, 255, 0.4) text-white"
-              type="text"
-              name="name"
-              placeholder="Your Full Name"
-              required
-              autoComplete="off"
-            />
-            <input
-              className="border border-gray-300 bg-transparent px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:[rgba(77, 181, 255, 0.4)] text-white"
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              required
-              autoComplete="off"
-            />
-            <textarea
-              className="border border-gray-300 bg-transparent px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:rgba(77, 181, 255, 0.4) text-white"
-              name="message"
-              placeholder="Your Message"
-              required
-              rows="4"
-              autoComplete="off"
-            ></textarea>
-            <button
-              type="submit"
-              className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
-            >
-              Send Message
-            </button>
-          </form>
-        )}
-      </Container> */}
     </section>
   );
 };
