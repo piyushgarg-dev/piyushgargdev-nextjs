@@ -5,6 +5,7 @@
   margin-left: 40px;
   font-size: 1.5rem !important;
   position: relative;
+  margin-bottom: 1rem;
 }
 
 .section__subtitle::before {
