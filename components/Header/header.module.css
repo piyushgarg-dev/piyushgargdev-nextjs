@@ -83,6 +83,9 @@
 .color_FF0000 {
   color: #ff0000 !important;
 }
+.mobile__crossline{
+  display: none !important;
+}
 
 /* ========== make it responsive ========= */
 
@@ -128,6 +131,9 @@
     display: flex;
     align-items: center;
     gap: 7px;
+  }
+  .mobile__crossline{
+    display: block !important;
   }
 }
 
