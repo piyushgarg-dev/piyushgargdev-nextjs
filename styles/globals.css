@@ -105,11 +105,18 @@ footer {
 }
 
 .slick-next {
-  right: 0 !important;
+  right: 15px !important;
+  top: 145px !important;
 }
 .slick-prev {
-  left: 0 !important;
+  left: 2px !important;
+  top: 145px !important;
 }
+.slick-prev::before,
+.slick-next::before {
+  font-size: 34px; /* Adjust the size as needed */
+}
+
 .slick-arrow {
   z-index: 2 !important;
 }
