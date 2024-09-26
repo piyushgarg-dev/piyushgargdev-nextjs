@@ -15,12 +15,28 @@
   z-index: 9;
   display: flex;
   /* border: 2px solid red; */
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .hero__img img {
-  border-radius: 50px 5px 5px 5px;
-  display: inline;
+  /* border-radius: 50px 5px 5px 5px;
+  display: inline; */
+  /* width:24vh;
+  height: 24vh;  */
+  border: 2px dashed var(--primaryColor);
+  border-style: dotted;
+  border-radius:50%;
+/*   box-shadow: 2px 2px 3px 3px; */
+  transition: .5s ease-in all;
+  cursor: pointer;
+  opacity:0.4;
+}
+
+.hero__img  img:hover{
+  background-color: var(--secondary);
+  transform: rotate(360deg);
+  translate: 2px 3px 4px 5px;
+  opacity:1;
 }
 
 .hero__skills {
