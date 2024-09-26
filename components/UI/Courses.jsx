@@ -10,10 +10,12 @@ const Courses = ({ courses = [] }) => {
     <section id="courses">
       <Container>
         <Row>
-          <Col lg="6" md="6" className="mb-5">
+          <Col lg="4" md="4" className="mb-4"></Col>
+          <Col lg="4" md="4" className="mb-4">
             <SectionSubtitle subtitle="Courses" />
             <h4 className="mt-4 text-2xl">Checkout My Interactive Courses</h4>
           </Col>
+          <Col lg="4" md="4" className="mb-4"></Col>
         </Row>
 
         <Row>
