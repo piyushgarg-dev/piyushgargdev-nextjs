@@ -11,12 +11,12 @@ import classNames from "../../styles/subtitle.module.css";
 const Hero = () => {
   return (
     <section className={` ${classes.hero} `}>
-      {/* desktop / large screen view */}
+      {/* desktop / large screen view  */}
       <Container id="hero-section " className="md:flex hidden">
         <Row>
           <Col lg="6" md="6">
             <div className={`${classes.hero__content}`}>
-              <SectionSubtitle subtitle="Hello" />
+              <h1 style={{color:"green",fontSize:30}}>Hello !</h1>
               <h2 className="mt-3 mb-3">I&apos;m Piyush Garg</h2>
               <h5 className="mb-4">Fullstack Developer & Instructor</h5>
               <p id="about-me">
