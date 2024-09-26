@@ -19,8 +19,10 @@
 }
 
 .hero__img img {
-  border-radius: 50px 5px 5px 5px;
   display: inline;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  max-width: 78%;
 }
 
 .hero__skills {
