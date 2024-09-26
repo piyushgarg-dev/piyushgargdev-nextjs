@@ -6,6 +6,7 @@ import SectionSubtitle from "./SectionSubtitle";
 import classes from "../../styles/services.module.css";
 import ServicesItem from "./ServicesItem";
 
+
 const Services = ({ youtubeStats, youtubeVideos }) => {
   const settings = {
     dots: false,
@@ -63,15 +64,18 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
             </Slider>
           </Col>
           <Col lg="3" md="6">
-            <ServicesItem
+           
+            <ServicesItem 
               title={`${(
                 Number(youtubeStats?.statistics?.subscriberCount) / 1000
               ).toPrecision(3)}K Subscribers`}
-              icon="ri-user-add-line"
+              icon="ri-user-add-line" link= "https://www.youtube.com/@piyushgargdev/featured"
             />
+           
+           
             <ServicesItem
               title={`${youtubeStats?.statistics?.videoCount} Videos Uploaded`}
-              icon="ri-film-line"
+              icon="ri-film-line" link="https://www.youtube.com/@piyushgargdev/videos"
             />
           </Col>
 
