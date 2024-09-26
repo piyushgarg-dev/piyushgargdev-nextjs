@@ -173,28 +173,32 @@ footer {
 /* top left*/
 .ribbon-top-left {
   top: -10px;
-  left: -10px;
+  right: -10px;
 }
+
 .ribbon-top-left::before,
 .ribbon-top-left::after {
   border-top-color: transparent;
-  border-left-color: transparent;
-}
-.ribbon-top-left::before {
-  top: 0;
-  right: 0;
-}
-.ribbon-top-left::after {
-  bottom: 0;
-  left: 0;
-}
-.ribbon-top-left span {
-  right: -25px;
-  top: 30px;
-  transform: rotate(-45deg);
+  border-right-color: transparent;
 }
 
+.ribbon-top-left::before {
+  top: 0;
+  left: 0;
+}
+
+.ribbon-top-left::after {
+  bottom: 0;
+  right: 0;
+}
+
+.ribbon-top-left span {
+  left: -25px;
+  top: 30px;
+  transform: rotate(+45deg);
+}
 /* top right*/
+
 .ribbon-top-right {
   top: -10px;
   right: -10px;
@@ -265,6 +269,8 @@ footer {
   bottom: 30px;
   transform: rotate(-225deg);
 }
+
+
 
 @media only screen and (max-width: 992px) {
   p {
