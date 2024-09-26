@@ -19,6 +19,21 @@
   margin-bottom: 0;
 }
 
+.info__item p a {
+  /* color: lime; */
+  -webkit-transition: color 0.5s;
+  -moz-transition:    color 0.5s;
+  -ms-transition:     color 0.5s;
+  -o-transition:      color 0.5s;
+  transition:         color 0.5s;
+}
+.info__item p a:hover {
+  color: white;
+}
+/* .info__item p a:hover {
+  
+  background-color: white;
+} */
 .info__item span i {
   color: var(--site-theme-color);
   font-size: 1.2rem;
