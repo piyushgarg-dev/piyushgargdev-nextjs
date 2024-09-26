@@ -5,23 +5,39 @@ This repository is a part of "Free Open Source BootCamp". Checkout [Open Source 
 
 ### Setting up Locally
 
-1. Copy the `.env.example` to `.env.local`
+1. Clone this respository to your local machine using git
+
+```bash
+git clone https://github.com/piyushgarg-dev/piyushgargdev-nextjs.git
+```
+
+2. Go to the “piyushgargdev-nextjs” folder
+
+```bash
+cd ./piyushgargdev-nextjs
+```
+
+3. Copy the `.env.example` to `.env.local`
 
 ```bash
 cp .env.example .env.local
 ```
 
-2. Install Packages via yarn
+4. Install Packages via yarn
 
 ```bash
 yarn install
 ```
 
-3. Run the Next.JS Development Server
+5. Run the Next.JS Development Server
 
 ```bash
 yarn dev
 ```
+
+6. Open up your browser and navigate to [localhost:3000](http://localhost:3000) to view the site
+
+
 
 ### Setting Up the Project
 [Click here](https://www.awesomescreenshot.com/video/18181026?key=45623fef0318912e62b9aacee5038999) to view the video tutorial which will teach you step by step on how to set up this project 
