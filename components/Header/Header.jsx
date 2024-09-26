@@ -162,7 +162,7 @@ const Header = () => {
                   className={`flex flex-row items-center gap-3 border-l-2 pl-4 border-l-slate-500 `}
                 >
                   <Link
-                    aria-label="Youtube Channel"
+                    aria-label="Youtube-Channel"
                     href="https://youtube.com/@piyushgargdev"
                     target="_blank"
                     title="Youtube Channel"
