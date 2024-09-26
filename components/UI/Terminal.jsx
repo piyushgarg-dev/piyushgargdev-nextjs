@@ -79,7 +79,7 @@ const Terminal = () => {
         }
         themes={{
           darkDefault: {
-            themeBGColor: "",
+            themeBGColor: "black",
             themeToolbarColor: "",
             themeColor: "#38CC77",
             themePromptColor: "#fff",
