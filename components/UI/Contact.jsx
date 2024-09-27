@@ -42,9 +42,15 @@ const Contact = () => {
             <ul className={`${classes.contact__info__list}`}>
               <li className={`${classes.info__item}`}>
                 <span>
-                  <i className="ri-map-pin-line"></i>
+                  <a target="_blank" href="https://www.google.com/maps/@32.1687627,84.2165277,3z?entry=ttu">
+                    <i className="ri-map-pin-line"></i>
+                  </a>
                 </span>
-                <p>Planet Earth 🌍</p>
+                <p>
+                  <a className="hover:text-[#01d293]" target="_blank" href="https://www.google.com/maps/@32.1687627,84.2165277,3z?entry=ttu">
+                    Planet Earth 🌍
+                  </a>
+                </p>
               </li>
               <li className={`${classes.info__item}`}>
                 <span>
