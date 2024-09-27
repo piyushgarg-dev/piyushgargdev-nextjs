@@ -5,6 +5,7 @@ import clientPromise from "../../../lib/mongodbAdapter";
 // Providers
 import GitHubProvider from "next-auth/providers/github";
 import DiscordProvider from "next-auth/providers/discord";
+import LinkedInProvider from "next-auth/providers/linkedin";
 
 export const authOptions = {
   adapter: MongoDBAdapter(clientPromise),
@@ -16,6 +17,10 @@ export const authOptions = {
     DiscordProvider({
       clientId: process.env.DISCORD_CLIENT_ID,
       clientSecret: process.env.DISCORD_CLIENT_SECRET,
+    }),
+    LinkedInProvider({
+      clientId: process.env.LINKEDIN_CLIENT_ID,
+      clientSecret: process.env.LINKEDIN_CLIENT_SECRET
     }),
   ],
 };
