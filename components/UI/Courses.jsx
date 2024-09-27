@@ -24,7 +24,7 @@ const Courses = ({ courses = [] }) => {
               lg="4"
               md="4"
               sm="6"
-              className="hover:scale-105 hover:ease-out duration-300 shadow-md"
+              className="hover:scale-105 hover:ease-in-out duration-200"
             >
               <PortfolioItem item={item} />
             </Col>
