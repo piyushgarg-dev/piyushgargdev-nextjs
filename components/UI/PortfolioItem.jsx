@@ -1,9 +1,7 @@
-
-import React from 'react';
-import classes from '../../styles/portfolio-item.module.css';
-import Image from 'next/image';
-import Link from 'next/link';
-
+import React from "react";
+import classes from "../../styles/portfolio-item.module.css";
+import Image from "next/image";
+import Link from "next/link";
 
 const PortfolioItem = (props) => {
   const {
@@ -17,27 +15,40 @@ const PortfolioItem = (props) => {
   return (
     <div className={`${classes.portfolio__item}`}>
       <a
-        target='_blank'
-        style={{ textDecoration: 'none' }}
+        target="_blank"
+        style={{ textDecoration: "none" }}
         href={liveUrl}
-        rel='noreferrer'
+        rel="noreferrer"
       >
         <>
           {ribbonText && (
-            <div style={{ zIndex: 99 }} className='ribbon ribbon-top-left'>
+            <div style={{ zIndex: 99 }} className="ribbon ribbon-top-left">
               <span>{ribbonText}</span>
             </div>
           )}
 
-          <div className='bg-transparent'>
+          <div className="bg-transparent">
             <div className={`${classes.portfolio__img}`}>
-              <Image alt={title} src={img} width={380} height={1} style={{maxHeight: "380px", overflow:"auto"}}/>
-
+              <Image
+                alt={title}
+                src={img}
+                width={380}
+                height={1}
+                style={{ maxHeight: "380px", overflow: "auto" }}
+              />
             </div>
 
-            <h3 style={{ background: "transparent" }}>{title}</h3>
-            <p style={{ background: "transparent", }}>{subtitle}</p>
-            
+            <h3
+              style={{
+                background: "transparent",
+                fontSize: "35px",
+                marginBottom: "10px",
+              }}
+            >
+              {title}
+            </h3>
+            <p style={{ background: "transparent" }}>{subtitle}</p>
+
             <div className=" w-[100%] mt-5 lg:mt-0"> </div>
             <div
               style={{
@@ -47,8 +58,8 @@ const PortfolioItem = (props) => {
                 display: "flex",
                 flexDirection: "row",
                 flexWrap: "wrap",
-              }}>
-
+              }}
+            >
               {keyword.map((item, index) => (
                 <span
                   className={`${classes.portfolio__keyword} my-1`}
