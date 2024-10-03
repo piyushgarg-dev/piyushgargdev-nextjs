@@ -137,3 +137,9 @@
     line-height: 60px;
   }
 }
+
+/*================== make the header underline==================*/
+.active {
+  border-bottom: 2px solid rgb(98, 89, 192);
+  color: green; 
+}

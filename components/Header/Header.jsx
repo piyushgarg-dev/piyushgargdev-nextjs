@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
+import { useRouter } from "next/router";
 import { BiLogInCircle } from "react-icons/bi";
 import { FaWhmcs } from "react-icons/fa";
 import { Container } from "reactstrap";
@@ -13,7 +14,6 @@ import {
   RiTwitterFill,
   RiLinkedinFill,
 } from "react-icons/ri";
-
 import {
   AiFillHome,
   AiFillShopping,
@@ -26,22 +26,22 @@ const NAV__LINK = [
   {
     path: "/",
     display: "Home",
-    openInNewPage:false,
+    openInNewPage: false,
   },
   {
     path: "/#courses",
     display: "Courses",
-    openInNewPage:false,
+    openInNewPage: false,
   },
   {
     path: "/gears",
     display: "My Gears",
-    openInNewPage:false,
+    openInNewPage: false,
   },
   {
     path: "https://blog.piyushgarg.dev",
     display: "Blogs",
-    openInNewPage:true,
+    openInNewPage: true,
   },
 ];
 
@@ -56,16 +56,12 @@ const icons = [
 const Header = () => {
   const [crossMenu, setCrossMenu] = useState(false);
   const headerRef = useRef(null);
-
   const menuRef = useRef(null);
-
   const { data } = useSession();
+  const router = useRouter();  
 
   const headerFunc = () => {
-    if (
-      document.body.scrollTop > 80 ||
-      document.documentElement.scrollTop > 80
-    ) {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
       headerRef.current.classList.add(`${classes.header__shrink}`);
     } else {
       headerRef.current.classList.remove(`${classes.header__shrink}`);
@@ -74,13 +70,17 @@ const Header = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", headerFunc);
-
     return () => window.removeEventListener("scroll", headerFunc);
   }, []);
 
   const toggleMenu = () => {
     setCrossMenu(false);
     menuRef.current.classList.toggle(`${classes.menu__active}`);
+  };
+
+  //function for check the current path
+  const checkIsPathActive = (path) => {
+    return router.asPath === path || (router.asPath === "/" && path === "/");
   };
 
   return (
@@ -113,12 +113,25 @@ const Header = () => {
                   key={index}
                   className={`${classes.mobile__menuDiv} cursor-pointer`}
                 >
-                  <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}`}>
-                    <p className={`${classes.mobile__menu}`}>{icons[index]}</p>
+                  {/* Check for active link using router.asPath */}
+                  <Link
+                    aria-label={item.display}
+                    href={item.path}
+                    target={`${item.openInNewPage ? '_blank' : '_self'}`}
+                  >
+                    <p
+                      className={`${classes.mobile__menu} ${checkIsPathActive(item.path) ? classes.active : ""}`}
+                    >
+                      {icons[index]}
+                    </p>
                   </Link>
 
-                  <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}`}>
-                    <span className=" text-[#808dad] hover:text-green-400">
+                  <Link
+                    aria-label={item.display}
+                    href={item.path}
+                    target={`${item.openInNewPage ? '_blank' : '_self'}`}
+                  >
+                    <span className={`text-[#808dad] hover:text-green-400 ${checkIsPathActive(item.path) ? classes.active : ""}`}>
                       {item.display}
                     </span>
                   </Link>
@@ -192,7 +205,7 @@ const Header = () => {
                     className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
-                    <NewTwitterLogo/>
+                    <NewTwitterLogo />
                   </Link>
 
                   <Link
