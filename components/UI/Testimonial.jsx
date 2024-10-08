@@ -41,7 +41,7 @@ const Testimonial = ({ feedbacks = [] }) => {
       <Container>
         <SectionSubtitle subtitle="Testimonials" />
         <h4 className="mt-4 mb-5 text-2xl">Feedback from students</h4>
-        <Row className="sm:p-2 p-10">
+        <Row className="sm:p-2 lg:p-10">
           <Slider {...settings}>
             {feedbacks.map((feedBack) => (
               <Col key={feedBack.name} lg="4" md="4" sm="12">
