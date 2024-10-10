@@ -19,5 +19,5 @@ const nextConfig = {
     domains: ["i.ytimg.com", "cdn.hashnode.com", "wsrv.nl"],
   },
 };
-
+//next config
 module.exports = nextConfig;
