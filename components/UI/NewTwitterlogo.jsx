@@ -1,14 +1,14 @@
 import React from "react";
 
-const NewTwitterLogo = () => (
- <svg
-  xmlns="http://www.w3.org/2000/svg"
-  height="0.9em"
-  viewBox="0 0 512 512"
-  fill="currentColor"
- >
-  <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
- </svg>
+const NewXLogo = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    height="0.9em"
+    viewBox="0 0 36 36"
+    fill="currentColor"
+  >
+    <path d="M30.54 1.46c-.29 0-.52.07-.72.29L18 14.19 6.18 1.68a.984.984 0 0 0-.72-.29c-.54 0-1 .43-1 1 0 .25.07.5.29.72L15.84 18 4.32 30.82c-.22.22-.29.47-.29.72 0 .54.46.96 1 .96.29 0 .54-.07.72-.29L18 21.81l11.82 12.51c.22.22.43.29.72.29.54 0 1-.43 1-.96 0-.25-.07-.5-.29-.72L20.16 18l11.52-12.82c.22-.22.29-.47.29-.72.04-.54-.43-.96-.96-.96z" />
+  </svg>
 );
 
-export default NewTwitterLogo;
+export default NewXLogo;

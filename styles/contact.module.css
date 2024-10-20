@@ -46,3 +46,51 @@
     margin-bottom: 30px;
   }
 }
+
+/* Default colors for social media icons */
+.youtube {
+  color: #ff0000;
+  /* YouTube default color */
+}
+
+.github {
+  color: #333;
+  /* GitHub default color */
+}
+
+.twitter {
+  color: #1da1f2;
+  /* Twitter default color */
+}
+
+.linkedin {
+  color: #0077b5;
+  /* LinkedIn default color */
+}
+
+/* Hover colors for social media icons */
+.youtube:hover {
+  color: red;
+  /* YouTube red */
+}
+
+.github:hover {
+  color: green;
+  /* GitHub green */
+}
+
+.twitter:hover {
+  color: lightblue;
+  /* Twitter light blue */
+}
+
+.linkedin:hover {
+  color: darkblue;
+  /* LinkedIn dark blue */
+}
+
+@media only screen and (max-width: 768px) {
+  .social__links {
+    margin-bottom: 30px;
+  }
+}
