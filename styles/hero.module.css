@@ -18,10 +18,22 @@
   justify-content: flex-end;
 }
 
+.hero__img {
+  perspective: 1000px; /* Add perspective for 3D effect */
+}
+
 .hero__img img {
   border-radius: 50px 5px 5px 5px;
   display: inline;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
 }
+
+.hero__img img:hover {
+  transform: scale(1.1) rotate(5deg); /* Slightly increase size and rotate */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow */
+}
+
+
 
 .hero__skills {
   text-align: left;
