@@ -89,7 +89,13 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
               target="_blank"
               rel="noreferrer"
             >
-              <Button color="danger">Subscribe</Button>
+              <Button 
+                color="danger"
+                size="lg"
+                className="hover:scale-105 hover:ease-out duration-200 shadow-md"
+              >
+                Subscribe
+              </Button>
             </a>
           </Col>
         </Row>
