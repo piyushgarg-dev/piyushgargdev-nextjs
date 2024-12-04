@@ -20,8 +20,9 @@
 
 .portfolio__item h3 {
   background: transparent;
-  padding: 10px 0px 0px 0px;
-}
+  font-size: large;
+  padding:18px 0 18px 0;
+  }
 
 .portfolio__img {
   background: transparent;
