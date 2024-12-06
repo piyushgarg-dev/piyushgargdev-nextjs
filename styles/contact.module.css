@@ -37,10 +37,6 @@
   margin-left: 4px !important;
 }
 
-.social__links :hover {
-  color: var(--site-theme-color);
-}
-
 @media only screen and (max-width: 768px) {
   .social__links {
     margin-bottom: 30px;
