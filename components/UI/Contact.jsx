@@ -40,10 +40,10 @@ const Contact = () => {
             <h3 className="mt-4 mb-4 text-2xl">Connect with me</h3>
 
             <ul className={`${classes.contact__info__list}`}>
-              <li className={`${classes.info__item}`}>
-                <span>
-                  <i className="ri-map-pin-line"></i>
-                </span>
+              <li className={`${classes.info__item}`}  >
+              <span>
+              <i className="ri-map-pin-line" ></i>
+              </span>
                 <p>Planet Earth 🌍</p>
               </li>
               <li className={`${classes.info__item}`}>
@@ -53,7 +53,7 @@ const Contact = () => {
                   </a>
                 </span>
                 <p>
-                  <a className="hover:text-[#01d293]" href="mailto:piyushgarg.dev@gmail.com">
+                  <a className="" href="mailto:piyushgarg.dev@gmail.com">
                     piyushgarg.dev@gmail.com
                   </a>
                 </p>
@@ -62,7 +62,7 @@ const Contact = () => {
 
             <div className={`${classes.social__links}`}>
               <Link
-                className="hover:text-[#01d293] duration-300"
+                className="cursor-pointer  text-[#FF0000] hover:text-[#FF0000] transform ease-in-out hover:-translate-y+1 hover:scale-150 duration-300"
                 aria-label="Youtube Channel"
                 href="https://youtube.com/@piyushgargdev"
                 target="_blank"
@@ -70,7 +70,7 @@ const Contact = () => {
                 <RiYoutubeFill />
               </Link>
               <Link
-                className="hover:text-[#01d293] duration-300"
+                className={`cursor-pointer text-[#ffffff] bg-[#000000] rounded-full p-2 hover:bg-[#0e0808] hover:text-[#ffffff] transform ease-in-out hover:-translate-y-1 hover:scale-110 fa fa-github text-1xl`}
                 aria-label="Github Profile"
                 href="https://github.com/piyushgarg-dev"
                 target="_blank"
@@ -78,7 +78,7 @@ const Contact = () => {
                 <RiGithubFill />
               </Link>
               <Link
-                className="hover:text-[#01d293] duration-300"
+                className={`cursor-pointer text-[#1DA1F2] hover:text-[#1DA1F2] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                 aria-label="Twitter Account"
                 href="https://twitter.com/piyushgarg_dev"
                 target="_blank"
@@ -87,7 +87,7 @@ const Contact = () => {
                 <NewTwitterLogo />
               </Link>
               <Link
-                className="hover:text-[#01d293] duration-300"
+                className={`cursor-pointer text-[#0077B5] hover:text-[#0077B5] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                 aria-label="LinedIn Account"
                 href="https://www.linkedin.com/in/piyushgarg195/"
                 target="_blank"

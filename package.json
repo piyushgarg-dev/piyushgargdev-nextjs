@@ -10,6 +10,9 @@
   },
   "dependencies": {
     "@formspark/use-formspark": "^0.1.39",
+    "@fortawesome/fontawesome-svg-core": "^6.7.1",
+    "@fortawesome/free-solid-svg-icons": "^6.7.1",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@next-auth/mongodb-adapter": "^1.1.1",
     "@vercel/analytics": "^0.1.6",
     "add": "^2.0.6",
