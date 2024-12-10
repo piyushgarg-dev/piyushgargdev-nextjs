@@ -196,6 +196,18 @@ const Header = () => {
                   </Link>
 
                   <Link
+                    href="https://discord.com/channels/1082554321306136696/1284941956425842719"
+                    target="_blank"
+                    title="Discord Account"
+                    id="discord-account"
+                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    rel="noreferrer"
+                  >
+                    <i class="fa-brands fa-discord"></i>
+                  </Link>
+                  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+                  <Link
                     href="https://www.linkedin.com/in/piyushgarg195/"
                     target="_blank"
                     title="LinkedIn Account"
