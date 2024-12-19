@@ -62,12 +62,12 @@ const Contact = () => {
 
             <div className={`${classes.social__links}`}>
               <Link
-                className="hover:text-[#01d293] duration-300"
+                className="hover:text-[#01d293] duration-300 "
                 aria-label="Youtube Channel"
                 href="https://youtube.com/@piyushgargdev"
                 target="_blank"
               >
-                <RiYoutubeFill />
+                <RiYoutubeFill size={30} />
               </Link>
               <Link
                 className="hover:text-[#01d293] duration-300"
@@ -75,7 +75,7 @@ const Contact = () => {
                 href="https://github.com/piyushgarg-dev"
                 target="_blank"
               >
-                <RiGithubFill />
+                <RiGithubFill size={30} />
               </Link>
               <Link
                 className="hover:text-[#01d293] duration-300"
@@ -84,7 +84,7 @@ const Contact = () => {
                 target="_blank"
               >
              
-                <NewTwitterLogo />
+                <NewTwitterLogo size={30} />
               </Link>
               <Link
                 className="hover:text-[#01d293] duration-300"
@@ -92,7 +92,7 @@ const Contact = () => {
                 href="https://www.linkedin.com/in/piyushgarg195/"
                 target="_blank"
               >
-                <RiLinkedinFill />
+                <RiLinkedinFill size={30} />
               </Link>
             </div>
           </Col>
