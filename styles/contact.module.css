@@ -26,7 +26,18 @@
   border-radius: 5px;
   background: var(--site-theme-color) 38;
 }
-
+.youtube:hover{
+  color:red;
+}
+.github:hover{
+  color:black;
+}
+.linkedin:hover{
+  color:blue;
+}
+.twitter:hover{
+  color:black;
+}
 .social__links {
   display: flex;
   margin-top: 30px;
@@ -37,9 +48,9 @@
   margin-left: 4px !important;
 }
 
-.social__links :hover {
+/* .social__links :hover {
   color: var(--site-theme-color);
-}
+} */
 
 @media only screen and (max-width: 768px) {
   .social__links {
