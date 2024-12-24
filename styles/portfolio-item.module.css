@@ -26,10 +26,16 @@
 .portfolio__img {
   background: transparent;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 340px;
 }
 
 .portfolio__img img {
   border-radius: 10px;
+  height: 100%;
+  object-fit: contain;
 }
 
 .portfolio__keyword {
