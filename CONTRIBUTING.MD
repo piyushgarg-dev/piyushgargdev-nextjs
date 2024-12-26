@@ -1,3 +1,4 @@
+Keerti Gola
 # Contribution Guidelines
 
 Thank you for considering contributing to this project! We appreciate your efforts to make it better.
@@ -16,7 +17,7 @@ To contribute to this project, please follow these guidelines:
 ## Reporting Issues
 
 If you encounter any problems or bugs while using this project, please report them by opening a GitHub issue. Before creating a new issue, please check if a similar one already exists to avoid duplicates. When reporting issues, provide a clear and concise description of the problem, including steps to reproduce it, expected behavior, and any relevant screenshots or error messages.
-
+Keerti Gola
 ## Feature Requests
 
 If you have ideas for new features or improvements, you can submit a GitHub issue as well. Clearly describe the feature or improvement you would like to see and provide any additional context or examples that might be helpful. Feature requests help us understand your needs and prioritize the project's development.
