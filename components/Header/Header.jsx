@@ -37,7 +37,7 @@ const NAV__LINK = [
     path: "/gears",
     display: "My Gears",
     openInNewPage:false,
-  },
+  }, 
   {
     path: "https://blog.piyushgarg.dev",
     display: "Blogs",
