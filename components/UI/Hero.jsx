@@ -32,7 +32,7 @@ const Hero = () => {
                 <Link
                   target="_blank"
                   href="https://discord.gg/kRSRxBQ6xf"
-                  className="relative text-sm sm:text-md md:text-lg text-center items-center justify-center px-8 py-4  font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                  className="relative text-sm sm:text-md md:text-lg text-center items-center justify-center px-8 py-4 font-bold text-white transition-all duration-200 bg-gray-900 hover:bg-blue-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                   role="button"
                 >
                   <span
@@ -94,23 +94,23 @@ const Hero = () => {
               <div className="relative inline-flex group">
                 <div className="absolute w-full transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r animate-pulse hover:animate-none from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
                 <Link
-                  target="_blank"
-                  href="https://discord.gg/kRSRxBQ6xf"
-                  className="relative w-full text-sm sm:text-md md:text-lg text-center items-center justify-center px-8 py-4  font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
-                  role="button"
-                >
-                  <span
-                    style={{
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      gap: "10px",
-                    }}
-                    className="block"
+                    target="_blank"
+                    href="https://discord.gg/kRSRxBQ6xf"
+                    className="relative text-sm sm:text-md md:text-lg text-center items-center justify-center px-8 py-4 font-bold text-white transition-all duration-200 bg-gray-900 hover:bg-blue-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                    role="button"
                   >
-                    Join Discord Server <BsDiscord />
-                  </span>
-                </Link>
+                    <span
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        gap: "10px",
+                      }}
+                      className="block"
+                    >
+                      Join Discord Server <BsDiscord />
+                    </span>
+                  </Link>
               </div>
             </div>
           </Col>
