@@ -1,8 +1,12 @@
 .header {
-  width: 100%;
+  width: 70%;
   height: 94px;
   line-height: 80px;
   background-color: #0e1630;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin: auto;
 }
 
 .nav__wrapper {
