@@ -8,7 +8,7 @@ export default function Gears() {
   return (
     <div>
       <Head>
-        <title>Piyush Garg - Gears</title>
+        <title>Piyush GarG - Gears</title>
       </Head>
       <Container className="mt-5">
         <SectionSubtitle subtitle="Gears" />
