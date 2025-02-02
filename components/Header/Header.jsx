@@ -5,13 +5,9 @@ import { Container } from "reactstrap";
 import { useSession, signOut, signIn } from "next-auth/react";
 import classes from "./header.module.css";
 import Link from "next/link";
-import NewTwitterLogo from "../UI/NewTwitterlogo";
+import {socialLinks} from "../data/socialLinks";
 import {
-  RiCloseLine,
-  RiYoutubeFill,
-  RiGithubFill,
-  RiTwitterFill,
-  RiLinkedinFill,
+  RiCloseLine
 } from "react-icons/ri";
 
 import {
@@ -161,50 +157,20 @@ const Header = () => {
                 <div
                   className={`flex flex-row items-center gap-3 border-l-2 pl-4 border-l-slate-500 `}
                 >
-                  <Link
-                    aria-label="Youtube Channel"
-                    href="https://youtube.com/@piyushgargdev"
-                    target="_blank"
-                    title="Youtube Channel"
-                    id="youtube-channel"
-                    className={`cursor-pointer  text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
-                    rel="noreferrer"
-                  >
-                    <RiYoutubeFill />
-                  </Link>
-
-                  <Link
-                    href="https://github.com/piyushgarg-dev/"
-                    target="_blank"
-                    title="Github Account"
-                    id="github-account"
-                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
-                    rel="noreferrer"
-                  >
-                    <RiGithubFill />
-                  </Link>
-
-                  <Link
-                    href="https://twitter.com/piyushgarg_dev"
-                    target="_blank"
-                    title="Twitter Account"
-                    id="twitter-account"
-                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
-                    rel="noreferrer"
-                  >
-                    <NewTwitterLogo/>
-                  </Link>
-
-                  <Link
-                    href="https://www.linkedin.com/in/piyushgarg195/"
-                    target="_blank"
-                    title="LinkedIn Account"
-                    id="linkedin-account"
-                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
-                    rel="noreferrer"
-                  >
-                    <RiLinkedinFill />
-                  </Link>
+                  {socialLinks.map((link, ind) => (
+                    <Link
+                      key={ind}
+                      aria-label={link.ariaLabel}
+                      href={link.href}
+                      target="_blank"
+                      title={link.title}
+                      id={link.id}
+                      className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                      rel="noreferrer"
+                    >
+                      <link.icon />
+                    </Link>
+                  ))}
                 </div>
               </div>
             </div>
