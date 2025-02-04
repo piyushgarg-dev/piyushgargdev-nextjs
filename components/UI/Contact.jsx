@@ -59,10 +59,10 @@ const Contact = () => {
                 </p>
               </li>
             </ul>
-
+            <a>
             <div className={`${classes.social__links}`}>
               <Link
-                className="hover:text-[#01d293] duration-300"
+                className="hover:text-red-600 duration-300"
                 aria-label="Youtube Channel"
                 href="https://youtube.com/@piyushgargdev"
                 target="_blank"
@@ -70,7 +70,7 @@ const Contact = () => {
                 <RiYoutubeFill />
               </Link>
               <Link
-                className="hover:text-[#01d293] duration-300"
+                className="hover:text-[#181717] duration-300"
                 aria-label="Github Profile"
                 href="https://github.com/piyushgarg-dev"
                 target="_blank"
@@ -78,12 +78,11 @@ const Contact = () => {
                 <RiGithubFill />
               </Link>
               <Link
-                className="hover:text-[#01d293] duration-300"
+                className="hover:text-[#1DA1F2] duration-300"
                 aria-label="Twitter Account"
                 href="https://twitter.com/piyushgarg_dev"
                 target="_blank"
               >
-             
                 <NewTwitterLogo />
               </Link>
               <Link
@@ -95,6 +94,7 @@ const Contact = () => {
                 <RiLinkedinFill />
               </Link>
             </div>
+            </a>
           </Col>
           <Col lg="5" md="6">
             {submitted ? (
