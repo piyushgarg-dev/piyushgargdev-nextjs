@@ -25,6 +25,7 @@
   padding: 5px;
   border-radius: 5px;
   background: var(--site-theme-color) 38;
+  transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .social__links {
@@ -37,8 +38,40 @@
   margin-left: 4px !important;
 }
 
-.social__links :hover {
-  color: var(--site-theme-color);
+.social__links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease, transform 0.3s ease;
+  color: #808dad; 
+}
+
+.social__links a:hover {
+  transform: scale(1.2);
+}
+
+.social__links a[aria-label="Youtube Channel"]:hover {
+  color: red;
+}
+
+.social__links a[aria-label="Github Profile"]:hover {
+  color: white;
+}
+
+.social__links a[aria-label="Twitter Account"]:hover {
+  color: white;
+}
+
+.social__links a[aria-label="LinkedIn Account"]:hover {
+  color: #0077b5;
+}
+
+.social__links a i {
+  transition: transform 0.3s ease;
+}
+
+.social__links a:hover i {
+  transform: rotate(10deg);
 }
 
 @media only screen and (max-width: 768px) {
@@ -46,3 +79,4 @@
     margin-bottom: 30px;
   }
 }
+
