@@ -6,6 +6,10 @@
   font-weight: 400;
 }
 
+.hero__content h2 {
+  text-shadow: 3px 3px 3px rgba(255, 255, 255, 1); /* Single strong shadow */
+}
+
 .hero__content {
   padding-top: 50px;
 }
