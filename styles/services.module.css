@@ -14,3 +14,24 @@
     font-size: 1.3rem;
   }
 }
+.videoItem {
+  padding: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.videoItem:hover {
+  transform: scale(1.05);
+}
+
+.videoThumbnail {
+  border-radius: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.videoThumbnail:hover {
+  transform: scale(1.05);
+}
+

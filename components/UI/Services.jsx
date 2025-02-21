@@ -31,34 +31,28 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
               {youtubeVideos
                 ?.filter((video) => video.id.videoId)
                 ?.map((video) => (
-                  <div
-                    onClick={() =>
-                      window.open(
-                        `https://youtube.com/watch?v=${video.id.videoId}`,
-                        "_blank"
-                      )
-                    }
-                    style={{ padding: "10px" }}
-                    key={video.id.videoId}
-                  >
-                    <img
-                      src={video.snippet.thumbnails.medium.url}
-                      height={0}
-                      width={0}
-                      sizes="100vw"
-                      style={{
-                        borderRadius: "20px",
-                        marginBottom: "10px",
-                        width: "100%",
-                        height: "auto",
-                      }}
-                      alt={video.snippet.title}
-                    />
-                    <p>{video.snippet.title}</p>
-                    <p className="p-2.5 bg-[#171f38] w-fit text-xs text-white mt-2 rounded-md">
-                      {new Date(video.snippet.publishTime).toDateString()}
-                    </p>
-                  </div>
+          <div
+            onClick={() =>
+              window.open(
+                `https://youtube.com/watch?v=${video.id.videoId}`,
+                "_blank"
+              )
+            }
+            key={video.id.videoId}
+            className={classes.videoItem} 
+          >
+            <img
+              src={video.snippet.thumbnails.medium.url}
+              sizes="100vw"
+              className={classes.videoThumbnail} 
+              alt={video.snippet.title}
+            />
+            <p>{video.snippet.title}</p>
+            <p className="p-2.5 bg-[#171f38] w-fit text-xs text-white mt-2 rounded-md">
+              {new Date(video.snippet.publishTime).toDateString()}
+            </p>
+          </div>
+
                 ))}
             </Slider>
           </Col>
