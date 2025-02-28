@@ -6,6 +6,7 @@ import { useSession, signOut, signIn } from "next-auth/react";
 import classes from "./header.module.css";
 import Link from "next/link";
 import NewTwitterLogo from "../UI/NewTwitterlogo";
+import { useRouter } from "next/router";
 import {
   RiCloseLine,
   RiYoutubeFill,
@@ -56,6 +57,8 @@ const icons = [
 const Header = () => {
   const [crossMenu, setCrossMenu] = useState(false);
   const headerRef = useRef(null);
+  const router = useRouter();
+
 
   const menuRef = useRef(null);
 
@@ -117,8 +120,10 @@ const Header = () => {
                     <p className={`${classes.mobile__menu}`}>{icons[index]}</p>
                   </Link>
 
-                  <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}`}>
-                    <span className=" text-[#808dad] hover:text-green-400">
+                  <Link onClick={()=>{
+                    setCurrentTab(!currentTab)
+                  }} aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}`}>
+                    <span className={`  hover:text-green-400} ${router.asPath === item.path ? 'text-green-400' : 'text-[#808dad]'}`}>
                       {item.display}
                     </span>
                   </Link>
