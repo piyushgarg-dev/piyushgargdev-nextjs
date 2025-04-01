@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useState } from "react";
 import Link from "next/link";
 import SectionSubtitle from "./SectionSubtitle";
 import { Container, Row, Col, Button } from "reactstrap";
@@ -9,6 +9,7 @@ import classes from "../../styles/hero.module.css";
 import classNames from "../../styles/subtitle.module.css";
 
 const Hero = () => {
+  const [isHovered,setIsHovered] = useState(false);
   return (
     <section className={` ${classes.hero} `}>
       {/* desktop / large screen view */}
@@ -41,8 +42,16 @@ const Hero = () => {
                       justifyContent: "center",
                       alignItems: "center",
                       gap: "10px",
+                      cursor: "pointer" ,
+                      transition:"all 0.3s ease",
+                      backgroundColor:isHovered ? "#5865F2" : "transparent",
+                      color:isHovered ? "white" : "inherit",
+                      padding : "8px 16px",
+                      borderRadius:"4px"
                     }}
                     className="block"
+                    onMouseEnter={()=>setIsHovered(true)}
+                    onMouseLeave={()=>setIsHovered(false)}
                   >
                     Join Discord Server <BsDiscord />
                   </span>
