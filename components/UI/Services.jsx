@@ -83,13 +83,14 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
               I would really appreciate it if you could check it out and maybe
               even hit the subscribe button if you enjoy the content.
             </p>
-            <p className="mb-3">Thanks in advance!</p>
+            <p className="mb-3">Thanks in Advance!</p>
             <a
               href="https://www.youtube.com/@piyushgargdev?sub_confirmation=1"
               target="_blank"
               rel="noreferrer"
             >
-              <Button color="danger">Subscribe</Button>
+              <Button color="danger">🔔 Subscribe ✅</Button>
+
             </a>
           </Col>
         </Row>
