@@ -7,6 +7,16 @@ import Image from "next/image";
 import heroImg from "../../public/images/PiyushGarg.png";
 import classes from "../../styles/hero.module.css";
 import classNames from "../../styles/subtitle.module.css";
+import NewTwitterLogo from "./NewTwitterlogo";
+import classes1 from "../Header/header.module.css"
+
+import {
+  RiCloseLine,
+  RiYoutubeFill,
+  RiGithubFill,
+  RiTwitterFill,
+  RiLinkedinFill,
+} from "react-icons/ri";
 
 const Hero = () => {
   return (
@@ -51,9 +61,69 @@ const Hero = () => {
             </div>
           </Col>
           <Col lg="6" md="6">
-            <div className={`${classes.hero__img} text-end`}>
-              <Image alt="Piyush Garg" src={heroImg} width="450" height="450" />
-            </div>
+            <Row style={{display:"flex",flexDirection:"column",gap:"4rem"}}>
+              <div className={`${classes1.hero__img} text-end`}>
+                <Image
+                  alt="Piyush Garg"
+                  src={heroImg}
+                  width="450"
+                  height="450"
+                />
+              </div>
+              <div className={`${classes1.nav__right}`}>
+              
+                <div
+                  className={`flex flex-row items-center  gap-20 border-l-2 pl-4 border-l-slate-500 `}
+                >
+                  <span style={{fontSize:"20px",color:"white",fontWeight:"bold"}}>📢 Follow me</span>
+
+                  <Link
+                    aria-label="Youtube Channel"
+                    href="https://youtube.com/@piyushgargdev"
+                    target="_blank"
+                    title="Youtube Channel"
+                    id="youtube-channel"
+                    className={`cursor-pointer  text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    rel="noreferrer"
+                  >
+                    <RiYoutubeFill size={40} />
+                  </Link>
+
+                  <Link
+                    href="https://github.com/piyushgarg-dev/"
+                    target="_blank"
+                    title="Github Account"
+                    id="github-account"
+                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    rel="noreferrer"
+                  >
+                    <RiGithubFill size={40} />
+                  </Link>
+
+                  <Link
+                    href="https://twitter.com/piyushgarg_dev"
+                    target="_blank"
+                    title="Twitter Account"
+                    id="twitter-account"
+                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    rel="noreferrer"
+                  >
+                    <NewTwitterLogo />
+                  </Link>
+
+                  <Link
+                    href="https://www.linkedin.com/in/piyushgarg195/"
+                    target="_blank"
+                    title="LinkedIn Account"
+                    id="linkedin-account"
+                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    rel="noreferrer"
+                  >
+                    <RiLinkedinFill size={40} />
+                  </Link>
+                </div>
+              </div>
+            </Row>
           </Col>
         </Row>
       </Container>

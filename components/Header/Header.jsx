@@ -5,14 +5,14 @@ import { Container } from "reactstrap";
 import { useSession, signOut, signIn } from "next-auth/react";
 import classes from "./header.module.css";
 import Link from "next/link";
-import NewTwitterLogo from "../UI/NewTwitterlogo";
-import {
-  RiCloseLine,
-  RiYoutubeFill,
-  RiGithubFill,
-  RiTwitterFill,
-  RiLinkedinFill,
-} from "react-icons/ri";
+// import NewTwitterLogo from "../UI/NewTwitterlogo";
+// import {
+//   RiCloseLine,
+//   RiYoutubeFill,
+//   RiGithubFill,
+//   RiTwitterFill,
+//   RiLinkedinFill,
+// } from "react-icons/ri";
 
 import {
   AiFillHome,
@@ -157,7 +157,7 @@ const Header = () => {
                 </div>
               )}
 
-              <div className={`${classes.nav__right}`}>
+              {/* <div className={`${classes.nav__right}`}>
                 <div
                   className={`flex flex-row items-center gap-3 border-l-2 pl-4 border-l-slate-500 `}
                 >
@@ -206,7 +206,7 @@ const Header = () => {
                     <RiLinkedinFill />
                   </Link>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 
