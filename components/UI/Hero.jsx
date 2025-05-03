@@ -7,6 +7,10 @@ import Image from "next/image";
 import heroImg from "../../public/images/PiyushGarg.png";
 import classes from "../../styles/hero.module.css";
 import classNames from "../../styles/subtitle.module.css";
+import { RiYoutubeFill } from "react-icons/ri";
+import { RiGithubFill } from "react-icons/ri";
+import NewTwitterLogo from "./NewTwitterlogo";
+import { RiLinkedinFill } from "react-icons/ri";
 
 const Hero = () => {
   return (
@@ -33,8 +37,7 @@ const Hero = () => {
                   target="_blank"
                   href="https://discord.gg/kRSRxBQ6xf"
                   className="relative text-sm sm:text-md md:text-lg text-center items-center justify-center px-8 py-4  font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
-                  role="button"
-                >
+                  role="button">
                   <span
                     style={{
                       display: "flex",
@@ -42,8 +45,7 @@ const Hero = () => {
                       alignItems: "center",
                       gap: "10px",
                     }}
-                    className="block"
-                  >
+                    className="block">
                     Join Discord Server <BsDiscord />
                   </span>
                 </Link>
@@ -53,6 +55,49 @@ const Hero = () => {
           <Col lg="6" md="6">
             <div className={`${classes.hero__img} text-end`}>
               <Image alt="Piyush Garg" src={heroImg} width="450" height="450" />
+            </div>
+            <div
+              className={`flex flex-row justify-center items-center gap-3 w-1/4 p-2 border-b-[0.5px] border-b-slate-400 ml-80`}>
+              <Link
+                aria-label="Youtube Channel"
+                href="https://youtube.com/@piyushgargdev"
+                target="_blank"
+                title="Youtube Channel"
+                id="youtube-channel"
+                className={`cursor-pointer  text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                rel="noreferrer">
+                <RiYoutubeFill />
+              </Link>
+
+              <Link
+                href="https://github.com/piyushgarg-dev/"
+                target="_blank"
+                title="Github Account"
+                id="github-account"
+                className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                rel="noreferrer">
+                <RiGithubFill />
+              </Link>
+
+              <Link
+                href="https://twitter.com/piyushgarg_dev"
+                target="_blank"
+                title="Twitter Account"
+                id="twitter-account"
+                className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                rel="noreferrer">
+                <NewTwitterLogo />
+              </Link>
+
+              <Link
+                href="https://www.linkedin.com/in/piyushgarg195/"
+                target="_blank"
+                title="LinkedIn Account"
+                id="linkedin-account"
+                className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                rel="noreferrer">
+                <RiLinkedinFill />
+              </Link>
             </div>
           </Col>
         </Row>
@@ -97,8 +142,7 @@ const Hero = () => {
                   target="_blank"
                   href="https://discord.gg/kRSRxBQ6xf"
                   className="relative w-full text-sm sm:text-md md:text-lg text-center items-center justify-center px-8 py-4  font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
-                  role="button"
-                >
+                  role="button">
                   <span
                     style={{
                       display: "flex",
@@ -106,8 +150,7 @@ const Hero = () => {
                       alignItems: "center",
                       gap: "10px",
                     }}
-                    className="block"
-                  >
+                    className="block">
                     Join Discord Server <BsDiscord />
                   </span>
                 </Link>
