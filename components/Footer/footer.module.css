@@ -14,6 +14,7 @@
 
 .nav__menu a:hover {
   color: var(--site-theme-color);
+  text-decoration: underline;
 }
 
 .nav__menu a:first-child {
