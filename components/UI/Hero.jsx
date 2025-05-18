@@ -39,6 +39,8 @@ const Hero = () => {
                     style={{
                       display: "flex",
                       justifyContent: "center",
+                      hover: "scale(1.05)",
+                      transition: "all 0.3s ease-in-out",
                       alignItems: "center",
                       gap: "10px",
                     }}
