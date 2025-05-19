@@ -8,6 +8,7 @@ import axios from "axios";
 import { useState } from "react";
 import NewTwitterLogo from "./NewTwitterlogo";
 import { RiYoutubeFill, RiGithubFill, RiTwitterFill, RiLinkedinFill } from "react-icons/ri";
+import ScrollToTop from "./ScrollToTop";
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
   const handleSubmit = async (event) => {
@@ -139,7 +140,9 @@ const Contact = () => {
                 </form>
               </>
             )}
+            
           </Col>
+        <ScrollToTop />
         </Row>
       </Container>
       {/* <Container className=" w-80">
