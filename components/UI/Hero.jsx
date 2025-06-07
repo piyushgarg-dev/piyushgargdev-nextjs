@@ -32,7 +32,8 @@ const Hero = () => {
                 <Link
                   target="_blank"
                   href="https://discord.gg/kRSRxBQ6xf"
-                  className="relative text-sm sm:text-md md:text-lg text-center items-center justify-center px-8 py-4  font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                    className="relative text-sm sm:text-md md:text-lg text-center items-center justify-center px-8 py-4 font-bold text-white bg-gray-900 rounded-xl transition-all duration-200 transform hover:bg-gray-800 hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+
                   role="button"
                 >
                   <span
