@@ -111,7 +111,7 @@ export const getYoutubeVideosDefaultResponse = {
         channelId: "UCf9T51_FmMlfhiGpoes0yFA",
         title: "Complete React Tutorial Series in Hindi | Reactjs",
         description:
-          "Hello Everyone, I am Piyush and in this series, we would be learning complete Reactjs with projects. We will also learn API calling ...",
+          "Hello all the people, I am Piyush and in this series, we would be learning complete Reactjs with projects. We will also learn API calling ...",
         thumbnails: {
           default: {
             url: "https://i.ytimg.com/vi/Eqj7xSKiTlo/default.jpg",
