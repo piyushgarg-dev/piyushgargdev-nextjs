@@ -4,11 +4,7 @@ import Slider from "react-slick";
 import classes from "../../styles/services.module.css";
 import ServicesItem from "./ServicesItem";
 import SectionSubtitle from "./SectionSubtitle";
-import {
-  fetchYouTubeStats,
-  fetchYouTubeVideos,
-} from "/Users/ashishmanhas/Documents/workspace-spring-tools-for-eclipse-4.30.0.RELEASE/git-open-source/piyushgargdev-nextjs/components/data/youtube.js";
-
+import { fetchYouTubeStats, fetchYouTubeVideos } from "../data/youtube.js";
 const Services = () => {
   const [youtubeStats, setYoutubeStats] = useState(null);
   const [youtubeVideos, setYoutubeVideos] = useState(null);
