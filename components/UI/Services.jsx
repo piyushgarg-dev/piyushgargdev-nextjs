@@ -1,12 +1,35 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col, Button } from "reactstrap";
 import Slider from "react-slick";
-import Image from "next/image";
-import SectionSubtitle from "./SectionSubtitle";
 import classes from "../../styles/services.module.css";
 import ServicesItem from "./ServicesItem";
+import SectionSubtitle from "./SectionSubtitle";
+import { fetchYouTubeStats, fetchYouTubeVideos } from "../data/youtube.js";
+const Services = () => {
+  const [youtubeStats, setYoutubeStats] = useState(null);
+  const [youtubeVideos, setYoutubeVideos] = useState(null);
+  const [loading, setLoading] = useState(true);
 
-const Services = ({ youtubeStats, youtubeVideos }) => {
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const [stats, videos] = await Promise.all([
+          fetchYouTubeStats(),
+          fetchYouTubeVideos(),
+        ]);
+
+        setYoutubeStats(stats);
+        setYoutubeVideos(videos);
+      } catch (error) {
+        console.error("Error fetching YouTube data:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   const settings = {
     dots: false,
     autoplay: true,
@@ -18,17 +41,34 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
     slidesToScroll: 1,
     arrows: true,
   };
+
+  // Format subscriber count with K/M suffixes
+  const formatSubscribers = (count) => {
+    if (!count) return "0";
+
+    const num = Number(count);
+    if (num >= 1000000) return (num / 1000000).toFixed(1) + "M";
+    if (num >= 1000) return (num / 1000).toFixed(1) + "K";
+    return num.toString();
+  };
+
+  if (loading) {
+    return (
+      <section id="youtube-stats">
+        <Container>
+          <div className="text-center py-5">Loading YouTube data...</div>
+        </Container>
+      </section>
+    );
+  }
+
   return (
     <section id="youtube-stats">
       <Container>
         <Row>
           <Col lg="3" md="12" sm="12">
-            <Slider
-              {...settings}
-              // style={{ cursor: "pointer", marginBottom: "10px" }}
-              className=" cursor-pointer mb-10 md:mb:0"
-            >
-              {youtubeVideos
+            <Slider {...settings} className="cursor-pointer mb-10 md:mb:0">
+              {youtubeVideos?.items
                 ?.filter((video) => video.id.videoId)
                 ?.map((video) => (
                   <div
@@ -64,13 +104,15 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
           </Col>
           <Col lg="3" md="6">
             <ServicesItem
-              title={`${(
-                Number(youtubeStats?.statistics?.subscriberCount) / 1000
-              ).toPrecision(3)}K Subscribers`}
+              title={`${formatSubscribers(
+                youtubeStats?.items?.[0]?.statistics?.subscriberCount
+              )} Subscribers`}
               icon="ri-user-add-line"
             />
             <ServicesItem
-              title={`${youtubeStats?.statistics?.videoCount} Videos Uploaded`}
+              title={`${
+                youtubeStats?.items?.[0]?.statistics?.videoCount || "0"
+              } Videos Uploaded`}
               icon="ri-film-line"
             />
           </Col>
