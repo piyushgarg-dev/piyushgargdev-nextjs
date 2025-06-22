@@ -14,7 +14,7 @@ const feedbacks = [
       "https://wsrv.nl/?url=https%3A%2F%2Fs3.amazonaws.com%2Fuser-assets.codedamn.com%2F633305efb76b3a0009643b92%2F2022-11-25%2F1eedc7f10df42a138ca022609fb954cc2affb991&w=96&q=70&output=webp",
 
     content:
-      "Yes, I find Piyush's instructional approach to be quite effective right now.",
+      "Yes, I find Piyuusssh's instructional approach to be quite effective right now.",
     studentProfileLink: "",
     courseId: "01",
   },
