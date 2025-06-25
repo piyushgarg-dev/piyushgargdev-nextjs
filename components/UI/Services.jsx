@@ -77,8 +77,8 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
 
           <Col lg="6" md="6" className={`${classes.service__title}`}>
             <SectionSubtitle subtitle="Youtube" />
-            <h3 className="mb-0 mt-4">Popular</h3>
-            <h3 className="mb-2">Uploads from My Youtube Channel</h3>
+            <h2 className="mt-4 mb-1 fw-bold">Popular Uploads</h2>
+            <h4 className="mb-3">from My Youtube Channel</h4>
             <p>
               I would really appreciate it if you could check it out and maybe
               even hit the subscribe button if you enjoy the content.
