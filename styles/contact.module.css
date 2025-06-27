@@ -37,8 +37,15 @@
   margin-left: 4px !important;
 }
 
-.social__links :hover {
-  color: var(--site-theme-color);
+.social__links a {
+  color: white; /* Default color */
+  font-size: 2rem; /* Icon size */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.social__links a:hover {
+  color: #01d293; /* Change color on hover */
+  transform: scale(1.2); /* Slightly enlarge on hover */
 }
 
 @media only screen and (max-width: 768px) {
