@@ -20,10 +20,10 @@ const Hero = () => {
               <h2 className="mt-3 mb-3">I&apos;m Piyush Garg</h2>
               <h5 className="mb-4">Fullstack Developer & Instructor</h5>
               <p id="about-me">
-                Hi there! My name is Piyush Garg and I&rsquo;m a software
-                engineer with over 5 years of experience in the industry. I love
-                all things tech and coding, and on my channel, I share my
-                knowledge and experience with others.
+                Meet Piyush Garg, a content creator, educator, and entrepreneur renowned for his expertise
+                in the tech industry. He has successfully launched numerous technical courses across various 
+                platforms. Piyush is also the founder of Teachyst, a white-labeled Learning Management System (LMS) 
+                designed to help educators monetize their content globally.
               </p>
             </div>
             <div className="mt-5 flex place-content-center md:block">
@@ -83,10 +83,10 @@ const Hero = () => {
                 </h2>
                 <h5 className="mb-4">Fullstack Developer & Instructor</h5>
                 <p id="about-me" className="text-center">
-                  Hi there! My name is Piyush Garg and I&rsquo;m a software
-                  engineer with over 5 years of experience in the industry. I
-                  love all things tech and coding, and on my channel, I share my
-                  knowledge and experience with others.
+                Meet Piyush Garg, a content creator, educator, and entrepreneur renowned for his expertise
+                in the tech industry. He has successfully launched numerous technical courses across various 
+                platforms. Piyush is also the founder of Teachyst, a white-labeled Learning Management System (LMS) 
+                designed to help educators monetize their content globally.                
                 </p>
               </div>
             </div>
