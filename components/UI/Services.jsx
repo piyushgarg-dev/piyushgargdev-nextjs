@@ -64,9 +64,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
           </Col>
           <Col lg="3" md="6">
             <ServicesItem
-              title={`${(
-                Number(youtubeStats?.statistics?.subscriberCount) / 1000
-              ).toPrecision(3)}K Subscribers`}
+              title={`271K Subscribers`}
               icon="ri-user-add-line"
             />
             <ServicesItem
