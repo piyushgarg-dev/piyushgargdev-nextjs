@@ -12,9 +12,10 @@ export default function Gears() {
       </Head>
       <Container className="mt-5">
         <SectionSubtitle subtitle="Gears" />
-        <Row>
+        <Row >
           {gears.map((item) => (
             <Col
+              className="mt-3" 
               style={{ margin: "10px 0px" }}
               key={item.id}
               lg="4"
