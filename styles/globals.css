@@ -156,19 +156,6 @@ footer {
   display: block;
   border: 5px solid #2980b9;
 }
-.ribbon span {
-  position: absolute;
-  display: block;
-  width: 225px;
-  padding: 15px 0;
-  background-color: #3498db;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  color: #fff;
-  font: 700 18px/1 "Lato", sans-serif;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-  text-transform: uppercase;
-  text-align: center;
-}
 
 /* top left*/
 .ribbon-top-left {
@@ -265,6 +252,23 @@ footer {
   bottom: 30px;
   transform: rotate(-225deg);
 }
+
+.discord-btn {
+  background-color: #5865F2;
+  color: white;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(88, 101, 242, 0.4);
+}
+
+.discord-btn:hover {
+  background-color: #4752c4;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(88, 101, 242, 0.6);
+}
+
 
 @media only screen and (max-width: 992px) {
   p {
