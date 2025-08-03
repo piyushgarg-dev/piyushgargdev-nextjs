@@ -72,6 +72,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
             <ServicesItem
               title={`${youtubeStats?.statistics?.videoCount} Videos Uploaded`}
               icon="ri-film-line"
+              hoverDirection="down"
             />
           </Col>
 

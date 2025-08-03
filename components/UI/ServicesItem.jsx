@@ -1,9 +1,11 @@
 import React from "react";
 import classes from "../../styles/services-item.module.css";
 
-const ServicesItem = ({ title, icon }) => {
+const ServicesItem = ({ title, icon, hoverDirection = "up" }) => {
+  const hoverClass = hoverDirection === "down" ? classes.service__item_down : classes.service__item;
+  
   return (
-    <div className={`${classes.service__item}`}>
+    <div className={hoverClass}>
       <span>
         <i className={icon}></i>
       </span>
