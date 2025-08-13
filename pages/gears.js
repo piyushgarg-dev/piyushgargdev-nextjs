@@ -11,21 +11,44 @@ export default function Gears() {
         <title>Piyush Garg - Gears</title>
       </Head>
       <Container className="mt-5">
-        <SectionSubtitle subtitle="Gears" />
+        <div style={{ marginBottom: "20px" }}>
+          <SectionSubtitle subtitle="Gears" />
+        </div>
         <Row>
           {gears.map((item) => (
             <Col
-              style={{ margin: "10px 0px" }}
               key={item.id}
               lg="4"
               md="4"
               sm="6"
-            >
-              <PortfolioItem item={item} />
+              style={{ padding: "10px" }}>
+              <button
+                type="button"
+                aria-label={`View details for ${item.title}`}
+                className="gear-card shadow-md h-full flex flex-col"
+                style={{
+                  position: "relative",
+                  background: "transparent",
+                  borderRadius: "8px",
+                }}
+              >
+                <PortfolioItem item={item} className="flex-1" />
+              </button>
             </Col>
           ))}
         </Row>
       </Container>
+
+      <style>{`
+        .gear-card {
+          transition: transform 0.3s ease;
+              text-align: left;
+        }
+        .gear-card:hover {
+          transform: scale(1.03);
+          z-index: 2;
+        }
+      `}</style>
     </div>
   );
 }
