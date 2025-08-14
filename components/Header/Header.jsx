@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import React, { useRef, useEffect, useState } from "react";
 import { BiLogInCircle } from "react-icons/bi";
 import { FaWhmcs } from "react-icons/fa";
@@ -6,6 +7,7 @@ import { useSession, signOut, signIn } from "next-auth/react";
 import classes from "./header.module.css";
 import Link from "next/link";
 import NewTwitterLogo from "../UI/NewTwitterlogo";
+
 import {
   RiCloseLine,
   RiYoutubeFill,
@@ -54,6 +56,8 @@ const icons = [
 ];
 
 const Header = () => {
+
+  const router = useRouter();
   const [crossMenu, setCrossMenu] = useState(false);
   const headerRef = useRef(null);
 
@@ -118,7 +122,7 @@ const Header = () => {
                   </Link>
 
                   <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}`}>
-                    <span className=" text-[#808dad] hover:text-green-400">
+                    <span className={`text-[#808dad] hover:text-green-400 ${router.asPath === item.path ? classes.active_link : ""}`}>
                       {item.display}
                     </span>
                   </Link>
