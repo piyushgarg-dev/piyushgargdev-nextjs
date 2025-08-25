@@ -11,79 +11,83 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
     dots: false,
     autoplay: true,
     speed: 500,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 2500,
     infinite: true,
     swipeToSlide: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
   };
+
+  const formatSubscribers = (count) => {
+    if (!count) return "0 Subscribers";
+    const num = Number(count);
+    if (num >= 1_000_000) return `${(num / 1_000_000).toFixed(1)}M Subscribers`;
+    if (num >= 1_000) return `${(num / 1_000).toFixed(1)}K Subscribers`;
+    return `${num} Subscribers`;
+  };
+
   return (
-    <section id="youtube-stats">
+    <section id="youtube-stats" className="py-10 bg-gray-900 text-white">
       <Container>
-        <Row>
-          <Col lg="3" md="12" sm="12">
-            <Slider
-              {...settings}
-              // style={{ cursor: "pointer", marginBottom: "10px" }}
-              className=" cursor-pointer mb-10 md:mb:0"
-            >
+        <Row className="gap-6 flex-wrap">
+          {/* YouTube Slider */}
+          <Col lg="4" md="12" sm="12">
+            <Slider {...settings} className="cursor-pointer">
               {youtubeVideos
                 ?.filter((video) => video.id.videoId)
                 ?.map((video) => (
                   <div
+                    key={video.id.videoId}
                     onClick={() =>
                       window.open(
                         `https://youtube.com/watch?v=${video.id.videoId}`,
-                        "_blank"
+                        "_blank",
+                        "noreferrer"
                       )
                     }
-                    style={{ padding: "10px" }}
-                    key={video.id.videoId}
+                    className="p-2"
                   >
-                    <img
-                      src={video.snippet.thumbnails.medium.url}
-                      height={0}
-                      width={0}
-                      sizes="100vw"
-                      style={{
-                        borderRadius: "20px",
-                        marginBottom: "10px",
-                        width: "100%",
-                        height: "auto",
-                      }}
-                      alt={video.snippet.title}
-                    />
-                    <p>{video.snippet.title}</p>
-                    <p className="p-2.5 bg-[#171f38] w-fit text-xs text-white mt-2 rounded-md">
+                    <div className="relative w-full h-56 md:h-64 lg:h-60">
+                      <Image
+                        src={video.snippet.thumbnails.medium.url}
+                        alt={video.snippet.title}
+                        layout="fill"
+                        objectFit="cover"
+                        className="rounded-xl"
+                        priority={false}
+                      />
+                    </div>
+                    <p className="font-medium mt-2">{video.snippet.title}</p>
+                    <p className="p-2 bg-[#171f38] w-fit text-xs rounded-md mt-2">
                       {new Date(video.snippet.publishTime).toDateString()}
                     </p>
                   </div>
                 ))}
             </Slider>
           </Col>
-          <Col lg="3" md="6">
+
+          {/* YouTube Stats */}
+          <Col lg="3" md="6" sm="12" className="space-y-4">
             <ServicesItem
-              title={`${(
-                Number(youtubeStats?.statistics?.subscriberCount) / 1000
-              ).toPrecision(3)}K Subscribers`}
+              title={formatSubscribers(youtubeStats?.statistics?.subscriberCount)}
               icon="ri-user-add-line"
             />
             <ServicesItem
-              title={`${youtubeStats?.statistics?.videoCount} Videos Uploaded`}
+              title={`${youtubeStats?.statistics?.videoCount || 0} Videos Uploaded`}
               icon="ri-film-line"
             />
           </Col>
 
-          <Col lg="6" md="6" className={`${classes.service__title}`}>
-            <SectionSubtitle subtitle="Youtube" />
-            <h3 className="mb-0 mt-4">Popular</h3>
-            <h3 className="mb-2">Uploads from My Youtube Channel</h3>
+          {/* Text Section */}
+          <Col lg="5" md="6" sm="12" className={`${classes.service__title} space-y-3`}>
+            <SectionSubtitle subtitle="YouTube" />
+            <h3 className="mt-4">Popular Uploads from My YouTube Channel</h3>
             <p>
               I would really appreciate it if you could check it out and maybe
               even hit the subscribe button if you enjoy the content.
             </p>
-            <p className="mb-3">Thanks in advance!</p>
+            <p>Thanks in advance!</p>
             <a
               href="https://www.youtube.com/@piyushgargdev?sub_confirmation=1"
               target="_blank"
