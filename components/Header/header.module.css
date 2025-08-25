@@ -8,7 +8,8 @@
 .nav__wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .logo h1 {
@@ -23,6 +24,7 @@
 .nav__menu {
   display: flex;
   align-items: center;
+  justify-content: center;
   column-gap: 2.8rem;
   background-color: #0e1630;
 }
