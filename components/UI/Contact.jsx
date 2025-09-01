@@ -1,187 +1,152 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "reactstrap";
 import Link from "next/link";
 import SectionSubtitle from "./SectionSubtitle";
 import classes from "../../styles/contact.module.css";
-import Form from "./Form";
 import axios from "axios";
-import { useState } from "react";
+import {
+  RiYoutubeFill, RiGithubFill, RiLinkedinFill,
+  RiMailLine, RiMapPinLine, RiSendPlaneFill,
+  RiCustomerService2Fill
+} from "react-icons/ri";
+import { motion } from "framer-motion";
 import NewTwitterLogo from "./NewTwitterlogo";
-import { RiYoutubeFill, RiGithubFill, RiTwitterFill, RiLinkedinFill } from "react-icons/ri";
+
+// Animation Presets
+const fadeIn = {
+  hidden: { y: 20, opacity: 0 },
+  visible: { y: 0, opacity: 1, transition: { type: "spring", stiffness: 120 } },
+};
+const buttonAnim = {
+  initial: { scale: 1 },
+  hover: { scale: 1.05, transition: { duration: 0.2 } },
+  tap: { scale: 0.95 },
+};
+
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    const data = {
-      name: event.target.name.value,
-      email: event.target.email.value,
-      message: event.target.message.value,
-    };
-    console.log(data);
+  const [loading, setLoading] = useState(false);
+
+  // Handle form submission
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
     try {
-      const response = await axios.post("/api/contact", data);
-      if (response.status === 200) {
-        setSubmitted(true);
-        console.log("Form submitted");
-      } else {
-        console.log("Failed");
-      }
-    } catch (error) {
-      console.log(error);
+      const { name, email, message } = e.target;
+      await axios.post("/api/contact", {
+        name: name.value,
+        email: email.value,
+        message: message.value,
+      });
+      setSubmitted(true);
+    } catch (err) {
+      console.error("Contact form error:", err);
+    } finally {
+      setLoading(false);
     }
   };
 
+  // Social Links
+  const socials = [
+    { href: "https://youtube.com/@piyushgargdev", icon: <RiYoutubeFill size={16} />, color: "hover:text-[#FF0000]" },
+    { href: "https://github.com/piyushgarg-dev", icon: <RiGithubFill size={16} />, color: "hover:text-white" },
+    { href: "https://twitter.com/piyushgarg_dev", icon: <NewTwitterLogo size={16} />, color: "hover:text-[#1DA1F2]" },
+    { href: "https://www.linkedin.com/in/piyushgarg195/", icon: <RiLinkedinFill size={16} />, color: "hover:text-[#0A66C2]" },
+  ];
+
   return (
-    <section id="contact" className={`${classes.contact}`}>
+    <section id="contact" className={`${classes.contact} py-12`}>
       <Container>
-        <Row className="flex justify-between flex-col md:flex-row ">
-          <Col lg="4" md="6">
+        <Row className="flex flex-col md:flex-row justify-between items-center">
 
-            <h3 className="mt-4 mb-4 text-2xl">Connect with me</h3>
+          {/* --- Contact Info --- */}
+          <Col lg="5" md="6" className="mb-6 md:mb-0">
+            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }}>
+              <h3 className="flex items-center text-2xl font-bold text-white mb-4">
+                <RiCustomerService2Fill className="mr-2 text-[#01d293]" /> Connect with me
+              </h3>
 
-            <ul className={`${classes.contact__info__list}`}>
-              <li className={`${classes.info__item}`}>
-                <span>
-                  <i className="ri-map-pin-line"></i>
-                </span>
-                <p>Planet Earth 🌍</p>
-              </li>
-              <li className={`${classes.info__item}`}>
-                <span>
-                  <a href="mailto:piyushgarg.dev@gmail.com">
-                    <i className="ri-mail-line"></i>
-                  </a>
-                </span>
-                <p>
-                  <a className="hover:text-[#01d293]" href="mailto:piyushgarg.dev@gmail.com">
+              <ul className="space-y-3 mb-5">
+                <motion.li variants={fadeIn} className="flex items-center p-3 rounded-lg bg-[#1e293b]/50 backdrop-blur-sm border-l-4 border-[#01d293]">
+                  <RiMapPinLine className="mr-3 text-[#01d293]" size={18} />
+                  <p className="text-gray-300 text-sm">Planet Earth 🌍</p>
+                </motion.li>
+                <motion.li variants={fadeIn} className="flex items-center p-3 rounded-lg bg-[#1e293b]/50 backdrop-blur-sm border-l-4 border-[#01d293]">
+                  <a href="mailto:piyushgarg.dev@gmail.com" className="flex items-center text-gray-300 hover:text-[#01d293] text-sm">
+                    <RiMailLine className="mr-3 text-[#01d293]" size={18} />
                     piyushgarg.dev@gmail.com
                   </a>
-                </p>
-              </li>
-            </ul>
+                </motion.li>
+              </ul>
 
-            <div className={`${classes.social__links}`}>
-              <Link
-                className="hover:text-[#01d293] duration-300"
-                aria-label="Youtube Channel"
-                href="https://youtube.com/@piyushgargdev"
-                target="_blank"
-              >
-                <RiYoutubeFill />
-              </Link>
-              <Link
-                className="hover:text-[#01d293] duration-300"
-                aria-label="Github Profile"
-                href="https://github.com/piyushgarg-dev"
-                target="_blank"
-              >
-                <RiGithubFill />
-              </Link>
-              <Link
-                className="hover:text-[#01d293] duration-300"
-                aria-label="Twitter Account"
-                href="https://twitter.com/piyushgarg_dev"
-                target="_blank"
-              >
-             
-                <NewTwitterLogo />
-              </Link>
-              <Link
-                className="hover:text-[#01d293] duration-300"
-                aria-label="LinedIn Account"
-                href="https://www.linkedin.com/in/piyushgarg195/"
-                target="_blank"
-              >
-                <RiLinkedinFill />
-              </Link>
-            </div>
-          </Col>
-          <Col lg="5" md="6">
-            {submitted ? (
-              <div className="flex justify-center items-center text-xl font-bold h-[30vh]">
-                <p>Message Sent!</p>
+              <p className="text-gray-400 text-sm mb-2">Follow me on:</p>
+              <div className="flex space-x-3">
+                {socials.map(({ href, icon, color }, i) => (
+                  <motion.div key={i} whileHover={{ y: -3 }} whileTap={{ scale: 0.95 }}>
+                    <Link
+                      href={href}
+                      target="_blank"
+                      className={`flex items-center justify-center w-9 h-9 rounded-full bg-[#1e293b]/50 backdrop-blur-sm text-gray-400 transition-colors ${color}`}
+                    >
+                      {icon}
+                    </Link>
+                  </motion.div>
+                ))}
               </div>
-            ) : (
-              <>
-                <div className="mt-4 mb-4 text-2xl"><SectionSubtitle subtitle="Contact me" /></div>
+            </motion.div>
+          </Col>
 
-                <form className="flex flex-col space-y-4" onSubmit={handleSubmit}>
-                  <input
-                    className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
-                    type="text"
-                    name="name"
-                    placeholder="Your Full Name"
-                    required
-                    autoComplete="off"
-                  />
-                  <input
-                    className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
-                    type="email"
-                    name="email"
-                    placeholder="Your Email"
-                    required
-                    autoComplete="off"
-                  />
-                  <textarea
-                    className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
-                    name="message"
-                    placeholder="Your Message"
-                    required
-                    rows="4"
-                    autoComplete="off"
-                  ></textarea>
-                  <button
-                    type="submit"
-                    className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
-                  >
-                    Send Message
-                  </button>
-                </form>
-              </>
+          {/* --- Contact Form / Success --- */}
+          <Col lg="6" md="6">
+            {submitted ? (
+              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
+                className="flex flex-col items-center text-center p-6 rounded-xl bg-gradient-to-br from-[#171f38] to-[#1e293b] border border-[#2d3748] shadow-lg">
+                <motion.div animate={{ scale: [1, 1.2, 1], rotate: [0, 10, -10, 0] }} transition={{ duration: 0.5 }}
+                  className="mb-3 text-4xl text-[#01d293]">✓</motion.div>
+                <h3 className="text-xl font-bold text-white">Message Sent!</h3>
+                <p className="mt-2 text-gray-400 text-sm">I'll get back to you soon.</p>
+                <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}
+                  onClick={() => setSubmitted(false)}
+                  className="px-5 py-2 mt-4 text-sm text-white rounded-lg bg-[#01d293] hover:bg-[#02b580]">
+                  Send Another Message
+                </motion.button>
+              </motion.div>
+            ) : (
+              <motion.form onSubmit={handleSubmit}
+                initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }}
+                className="p-5 space-y-4 rounded-xl bg-gradient-to-br from-[#171f38] to-[#1e293b] border border-[#2d3748] shadow-lg">
+                <SectionSubtitle subtitle="Get in touch" />
+                <p className="text-gray-400 text-sm">Have a project in mind? Let's make it happen.</p>
+
+                {["name", "email", "message"].map((field, i) =>
+                  field === "message" ? (
+                    <motion.textarea key={i} name={field} rows="3" required
+                      placeholder="Your Message"
+                      className="w-full px-4 py-2.5 text-sm text-white rounded-lg bg-[#171f38] border border-transparent focus:bg-[#1a223c] focus:border-[#01d293] focus:ring-2 focus:ring-[#01d293]/30"
+                    />
+                  ) : (
+                    <motion.input key={i} type={field === "email" ? "email" : "text"} name={field} required
+                      placeholder={`Your ${field === "name" ? "Full Name" : "Email"}`}
+                      className="w-full px-4 py-2.5 text-sm text-white rounded-lg bg-[#171f38] border border-transparent focus:bg-[#1a223c] focus:border-[#01d293] focus:ring-2 focus:ring-[#01d293]/30"
+                    />
+                  )
+                )}
+
+                <motion.button type="submit" disabled={loading}
+                  variants={buttonAnim} initial="initial" whileHover="hover" whileTap="tap"
+                  className="flex items-center justify-center w-full px-5 py-2.5 text-sm text-white rounded-lg bg-gradient-to-r from-[#01d293] to-[#02b580] hover:from-[#02b580] hover:to-[#01d293] disabled:opacity-70">
+                  {loading ? (
+                    <motion.div animate={{ rotate: 360 }} transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
+                      className="w-4 h-4 mr-2 border-2 border-white border-t-transparent rounded-full" />
+                  ) : <RiSendPlaneFill className="mr-2" size={14} />}
+                  {loading ? "Sending..." : "Send Message"}
+                </motion.button>
+              </motion.form>
             )}
           </Col>
         </Row>
       </Container>
-      {/* <Container className=" w-80">
-        {submitted ? (
-          <div className="flex justify-center items-center text-xl font-bold h-[30vh]">
-            <p>Message Sent!</p>
-          </div>
-        ) : (
-          <form className="flex flex-col space-y-4" onSubmit={handleSubmit}>
-            <input
-              className="border border-gray-300 bg-transparent px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:rgba(77, 181, 255, 0.4) text-white"
-              type="text"
-              name="name"
-              placeholder="Your Full Name"
-              required
-              autoComplete="off"
-            />
-            <input
-              className="border border-gray-300 bg-transparent px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:[rgba(77, 181, 255, 0.4)] text-white"
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              required
-              autoComplete="off"
-            />
-            <textarea
-              className="border border-gray-300 bg-transparent px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:rgba(77, 181, 255, 0.4) text-white"
-              name="message"
-              placeholder="Your Message"
-              required
-              rows="4"
-              autoComplete="off"
-            ></textarea>
-            <button
-              type="submit"
-              className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
-            >
-              Send Message
-            </button>
-          </form>
-        )}
-      </Container> */}
     </section>
   );
 };
