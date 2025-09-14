@@ -61,7 +61,8 @@ const Terminal = () => {
   }, [data?.user?.email, data?.user?.name, isLoggedIn]);
 
   return (
-    <TerminalContextProvider>
+    <div className="cursor-text">
+      <TerminalContextProvider>
       <ReactTerminal
         prompt={
           data && data.user ? `$ ${data.user.name} >> ` : "$ piyushgarg-dev >> "
@@ -109,6 +110,7 @@ const Terminal = () => {
         }}
       />
     </TerminalContextProvider>
+    </div>
   );
 };
 
