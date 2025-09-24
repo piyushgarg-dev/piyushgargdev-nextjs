@@ -32,13 +32,20 @@
   margin-top: 30px;
   align-items: center;
   column-gap: 1rem;
-  color: #808dad !important;
-  font-size: 1.3rem !important;
-  margin-left: 4px !important;
+  font-size: 1.3rem;
+  margin-left: 4px;
 }
 
-.social__links :hover {
-  color: var(--site-theme-color);
+.social__links a {
+  color: #808dad;               
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;       
+}
+
+.social__links a:hover {
+  color: var(--site-theme-color); 
+  transform: translateY(-4px) scale(1.1); 
+  cursor: pointer;                
 }
 
 @media only screen and (max-width: 768px) {
