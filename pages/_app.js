@@ -3,6 +3,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SessionProvider } from "next-auth/react";
 
 import Layout from "../components/Layout/Layout";
+import ScrollToTop from "../components/ScrollToTop"; // <-- Import here
 
 import "../styles/external.css";
 import "../styles/globals.css";
@@ -33,8 +34,9 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
             </Script>
           </>
         )}
-        <Component {...pageProps} />;
+        <Component {...pageProps} />
         <Analytics />
+        <ScrollToTop /> {/* <-- Add the scroll-to-top button here */}
       </Layout>
     </SessionProvider>
   );
