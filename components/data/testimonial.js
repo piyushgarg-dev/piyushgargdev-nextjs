@@ -31,7 +31,7 @@ const feedbacks = [
     userImage:
       "https://wsrv.nl/?url=https%3A%2F%2Flh3.googleusercontent.com%2Fa-%2FAOh14Gg5XTRRMQMiRxqlIgum7MkmYl0PenYAbNMRDvo4XA&w=96&q=70&output=webp",
     content:
-      "IT IS THE best courses which gives you proper learning regarding react js",
+      "It is the best courses which gives you proper learning regarding react js",
     studentProfileLink: "",
     courseId: "02",
   },
@@ -48,7 +48,7 @@ const feedbacks = [
     name: "Sohit Mandeliya",
     userImage:
       "https://wsrv.nl/?url=https%3A%2F%2Flh3.googleusercontent.com%2Fa%2FALm5wu1j0kmSeJCbDNI2Gwjsg6FlKFMgmSUzMdDIEqZz2A&w=80&fit=cover&h=80&q=70&output=webp",
-    content: "good sessions and coding practise",
+    content: "Good sessions and coding practise",
     studentProfileLink: "",
     courseId: "01",
   },
@@ -56,7 +56,7 @@ const feedbacks = [
     name: "Gowtham Eganathan",
     userImage:
       "https://wsrv.nl/?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F51506726%3Fv%3D4&w=80&fit=cover&h=80&q=70&output=webp",
-    content: "excellent beginner friendly course",
+    content: "Excellent beginner friendly course",
     studentProfileLink: "",
     courseId: "01",
   },
@@ -65,7 +65,7 @@ const feedbacks = [
     userImage:
       "https://wsrv.nl/?url=https%3A%2F%2Flh3.googleusercontent.com%2Fa-%2FAOh14Gi3OfMCQoQ1g7t1OmU1_bl0X2CXiXnAR6tO4xsM66I&w=80&fit=cover&h=80&q=70&output=webp",
     content:
-      "all the basics covered to startwith can say a beginner to pro course🔥",
+      "All the basics covered to startwith can say a beginner to pro course🔥",
     studentProfileLink: "",
     courseId: "01",
   },
@@ -98,7 +98,7 @@ const feedbacks = [
     name: "Dnyanesh Teli",
     userImage:
       "https://wsrv.nl/?url=https%3A%2F%2Flh3.googleusercontent.com%2Fa%2FALm5wu2MM0UqqzuRWSIHudFn-t6sCL9Kr3KRHAN62Kr3ww&w=96&q=70&output=webp",
-    content: "helpful for java beginner",
+    content: "Helpful for java beginner",
     studentProfileLink: "",
     courseId: "01",
   },
@@ -115,7 +115,7 @@ const feedbacks = [
     userImage:
       "https://wsrv.nl/?url=https%3A%2F%2Fs3.amazonaws.com%2Fuser-assets.codedamn.com%2F636bd8726d5fca0008043bae%2F2022-11-12%2Fe5342f077b704a6beb4a9242c8d368aad74ddcf9&w=80&q=70&output=webp",
 
-    content: "the examples explained here are really nice! understood well!",
+    content: "The examples explained here are really nice! understood well!",
     studentProfileLink: "",
     courseId: "01",
   },
@@ -124,7 +124,7 @@ const feedbacks = [
     userImage:
       "https://wsrv.nl/?url=https%3A%2F%2Fs3.amazonaws.com%2Fuser-assets.codedamn.com%2F620d7588246dd0000964cef8%2F2022-10-21%2Fd605514f22da24e22ab8cb39059afa7ae196c3af&w=96&q=70&output=webp",
 
-    content: "course content is really good and easily understandable.",
+    content: "Course content is really good and easily understandable.",
     studentProfileLink: "",
     courseId: "04",
   },
