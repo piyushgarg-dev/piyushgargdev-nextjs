@@ -4,8 +4,10 @@
   padding-top: 20px;
   border-radius: 10px;
   margin-bottom: 8px;
-  min-height: 100%;
+  min-height: 420px;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .portfolio__item div {
@@ -26,10 +28,32 @@
 .portfolio__img {
   background: transparent;
   text-align: center;
+  position: relative;
+  height: 240px;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
-.portfolio__img img {
+.portfolio__img :global(img) {
   border-radius: 10px;
+}
+
+.portfolio__subtitle {
+  margin-top: 8px;
+  color: #cbd5e1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.portfolio__meta {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 12px;
 }
 
 .portfolio__keyword {
