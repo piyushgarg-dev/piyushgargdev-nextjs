@@ -15,8 +15,13 @@ const Footer = () => {
           <Col lg="12">
             <div className={`${classes.footer__copyright}`}>
               <p>
-                &copy; Copyright {year} - Developed by Piyush Garg. All right
-                reserved.
+                &copy; Copyright {year} - Developed by{" "}
+                <a href="/#">
+                  <span className="cursor-pointer hover:text-blue-700">
+                    Piyush Garg
+                  </span>
+                </a>
+                . All right reserved.
               </p>
             </div>
           </Col>
