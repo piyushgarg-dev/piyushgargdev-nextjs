@@ -46,3 +46,17 @@
     margin-bottom: 30px;
   }
 }
+
+.social__links a {
+  color: #808dad;
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social__links a:hover {
+  color: var(--site-theme-color);
+  transform: scale(1.2);
+}
