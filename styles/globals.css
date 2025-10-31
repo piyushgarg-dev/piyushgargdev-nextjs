@@ -5,6 +5,26 @@
 :root {
   --site-theme-color: #01d293;
 }
+html, body {
+  height: 100%;
+  overflow: hidden; /* locomotive handles scroll */
+}
+
+[data-scroll-container] {
+  will-change: transform;
+}
+
+.is-reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.is-reveal[data-scroll-visible] {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
 
 html,
 body {
