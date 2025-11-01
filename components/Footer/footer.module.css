@@ -31,6 +31,85 @@
   text-align: center;
 }
 
+/* Social icons in footer */
+.footer__social_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 0 2rem 0;
+}
+
+.footer__social {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.social__links {
+  /* kept for compatibility with other styles */
+  display: flex;
+  gap: 0.75rem;
+}
+
+.social__item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  color: #9aa4bf;
+  text-decoration: none;
+  position: relative;
+  transition: transform 160ms ease, color 160ms ease;
+}
+
+.social__item:hover {
+  transform: scale(1.06);
+  color: var(--site-theme-color);
+}
+
+.social__item:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.12);
+}
+
+.icon_outline,
+.icon_fill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  line-height: 1;
+  transition: opacity 160ms ease, transform 160ms ease, filter 160ms ease;
+}
+
+/* outlined visible by default, filled hidden */
+.icon_outline {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.icon_fill {
+  position: absolute;
+  opacity: 0;
+  transform: scale(0.92);
+}
+
+/* On hover: swap icons, add subtle glow */
+.social__item:hover .icon_outline {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.social__item:hover .icon_fill {
+  opacity: 1;
+  transform: scale(1);
+  filter: drop-shadow(0 6px 12px rgba(2, 210, 153, 0.08));
+}
+
 @media only screen and (max-width: 768px) {
   .footer__top {
     display: none;
