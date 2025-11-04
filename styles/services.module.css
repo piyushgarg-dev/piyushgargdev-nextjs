@@ -14,3 +14,21 @@
     font-size: 1.3rem;
   }
 }
+
+/* Subscribe button styling */
+.subscribeBtn {
+  font-family: "Poppins", "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  padding: 0.65rem 1.4rem;
+  border-radius: 8px;
+  letter-spacing: 0.2px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.12);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.subscribeBtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.16);
+}
