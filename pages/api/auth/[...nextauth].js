@@ -18,6 +18,10 @@ export const authOptions = {
       clientSecret: process.env.DISCORD_CLIENT_SECRET,
     }),
   ],
+  // Use a custom sign-in page so we can add provider icons and custom styles
+  pages: {
+    signIn: "/auth/signin",
+  },
 };
 
 export default NextAuth(authOptions);
