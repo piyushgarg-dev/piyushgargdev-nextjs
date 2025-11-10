@@ -15,6 +15,7 @@ const Contact = () => {
     const data = {
       name: event.target.name.value,
       email: event.target.email.value,
+      phone: event.target.phone.value,    
       message: event.target.message.value,
     };
     console.log(data);
@@ -119,6 +120,14 @@ const Contact = () => {
                     type="email"
                     name="email"
                     placeholder="Your Email"
+                    required
+                    autoComplete="off"
+                  />
+                  <input
+                    className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
+                    type="text"
+                    name="phone"
+                    placeholder="Your Phone Number"
                     required
                     autoComplete="off"
                   />
