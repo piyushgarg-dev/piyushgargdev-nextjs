@@ -5,7 +5,7 @@ import Image from "next/image";
 import SectionSubtitle from "./SectionSubtitle";
 import classes from "../../styles/services.module.css";
 import ServicesItem from "./ServicesItem";
-
+import { CiYoutube } from "react-icons/ci";
 const Services = ({ youtubeStats, youtubeVideos }) => {
   const settings = {
     dots: false,
@@ -89,7 +89,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
               target="_blank"
               rel="noreferrer"
             >
-              <Button color="danger">Subscribe</Button>
+              <Button color="danger" className="flex justify-center items-center gap-2">Subscribe <CiYoutube  size={23}/></Button>
             </a>
           </Col>
         </Row>
