@@ -99,4 +99,4 @@ const gears = [
   },
 ];
 
-export default gears;
+export default gears   ;
