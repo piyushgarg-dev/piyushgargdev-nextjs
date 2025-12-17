@@ -10,7 +10,7 @@ import {
   RiCloseLine,
   RiYoutubeFill,
   RiGithubFill,
-  RiTwitterFill,
+  
   RiLinkedinFill,
 } from "react-icons/ri";
 
@@ -209,7 +209,7 @@ const Header = () => {
               </div>
             </div>
           </div>
-
+          
           <span
             onClick={() => setCrossMenu(!crossMenu)}
             className={`${classes.mobile__menu}`}
