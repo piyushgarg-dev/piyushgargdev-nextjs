@@ -31,22 +31,21 @@ const PortfolioItem = (props) => {
 
           <div className='bg-transparent'>
             <div className={`${classes.portfolio__img}`}>
-              <Image alt={title} src={img} width={380} height={1} style={{maxHeight: "380px", overflow:"auto"}}/>
+              <Image alt={title} src={img} width={380} height={1} style={{ maxHeight: "380px", overflow: "auto" }} />
 
             </div>
 
             <h3 style={{ background: "transparent" }}>{title}</h3>
             <p style={{ background: "transparent", }}>{subtitle}</p>
-            
+
             <div className=" w-[100%] mt-5 lg:mt-0"> </div>
             <div
               style={{
-                position: "absolute",
                 background: "transparent",
-                bottom: "20px",
                 display: "flex",
                 flexDirection: "row",
                 flexWrap: "wrap",
+                marginTop: "10px",
               }}>
 
               {keyword.map((item, index) => (
