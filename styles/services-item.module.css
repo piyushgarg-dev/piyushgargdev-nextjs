@@ -12,7 +12,13 @@
   background: var(--site-theme-color);
   cursor: pointer;
 
-  transform: translateY(-20px);
+  /* Keep hover effect contained within the card */
+  position: relative;
+  overflow: hidden;
+
+  /* Smooth hover animation */
+  will-change: transform;
+  transition: transform 150ms ease, box-shadow 150ms ease, background 150ms ease;
 }
 
 .service__item:hover i {
@@ -55,5 +61,11 @@
   }
   .service__item h5 {
     font-size: 0.9rem;
+  }
+
+  /* Keep hover subtle on smaller screens */
+  .service__item:hover {
+    transform: scale(1.01);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
 }
