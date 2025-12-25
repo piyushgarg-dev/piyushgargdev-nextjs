@@ -94,6 +94,14 @@ const Contact = () => {
               >
                 <RiLinkedinFill />
               </Link>
+              <Link
+                className="hover:text-[#01d293] duration-300"
+                aria-label="Instagram Account"
+                href="https://www.instagram.com/piyushgarg_dev"
+                target="_blank"
+              >
+                <RInstagramFill />
+              </Link>
             </div>
           </Col>
           <Col lg="5" md="6">
