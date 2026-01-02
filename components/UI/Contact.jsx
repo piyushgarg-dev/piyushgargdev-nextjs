@@ -61,39 +61,50 @@ const Contact = () => {
             </ul>
 
             <div className={`${classes.social__links}`}>
-              <Link
-                className="hover:text-[#01d293] duration-300"
-                aria-label="Youtube Channel"
-                href="https://youtube.com/@piyushgargdev"
-                target="_blank"
-              >
-                <RiYoutubeFill />
-              </Link>
-              <Link
-                className="hover:text-[#01d293] duration-300"
-                aria-label="Github Profile"
-                href="https://github.com/piyushgarg-dev"
-                target="_blank"
-              >
-                <RiGithubFill />
-              </Link>
-              <Link
-                className="hover:text-[#01d293] duration-300"
-                aria-label="Twitter Account"
-                href="https://twitter.com/piyushgarg_dev"
-                target="_blank"
-              >
-             
-                <NewTwitterLogo />
-              </Link>
-              <Link
-                className="hover:text-[#01d293] duration-300"
-                aria-label="LinedIn Account"
-                href="https://www.linkedin.com/in/piyushgarg195/"
-                target="_blank"
-              >
-                <RiLinkedinFill />
-              </Link>
+             <Link
+                    aria-label="Youtube Channel"
+                    href="https://youtube.com/@piyushgargdev"
+                    target="_blank"
+                    title="Youtube Channel"
+                    id="youtube-channel"
+                    className={`cursor-pointer  text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    rel="noreferrer"
+                  >
+                    <RiYoutubeFill />
+                  </Link>
+
+                  <Link
+                    href="https://github.com/piyushgarg-dev/"
+                    target="_blank"
+                    title="Github Account"
+                    id="github-account"
+                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    rel="noreferrer"
+                  >
+                    <RiGithubFill />
+                  </Link>
+
+                  <Link
+                    href="https://twitter.com/piyushgarg_dev"
+                    target="_blank"
+                    title="Twitter Account"
+                    id="twitter-account"
+                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    rel="noreferrer"
+                  >
+                    <NewTwitterLogo/>
+                  </Link>
+
+                  <Link
+                    href="https://www.linkedin.com/in/piyushgarg195/"
+                    target="_blank"
+                    title="LinkedIn Account"
+                    id="linkedin-account"
+                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    rel="noreferrer"
+                  >
+                    <RiLinkedinFill />
+                  </Link>
             </div>
           </Col>
           <Col lg="5" md="6">
