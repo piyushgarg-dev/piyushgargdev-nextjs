@@ -27,25 +27,28 @@ const Hero = () => {
               </p>
             </div>
             <div className="mt-5 flex place-content-center md:block">
-              <div className="relative inline-flex group">
-                <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r animate-pulse hover:animate-none from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+              <div className="relative inline-block">
                 <Link
-                  target="_blank"
-                  href="https://discord.gg/kRSRxBQ6xf"
-                  className="relative text-sm sm:text-md md:text-lg text-center items-center justify-center px-8 py-4  font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
-                  role="button"
-                >
-                  <span
-                    style={{
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      gap: "10px",
-                    }}
-                    className="block"
+                    target="_blank"
+                    href="https://discord.gg/kRSRxBQ6xf"
+                    className="
+                      inline-flex items-center justify-center
+                      px-8 py-4
+                      text-sm sm:text-md md:text-lg font-semibold
+                      text-white
+                      bg-[#0b1220]
+                      rounded-xl
+                      border-2 border-[#008852]
+                      box-border
+                      transition-transform duration-300 ease-out
+                      hover:scale-[1.04]
+                      hover:border-emerald-400
+                      focus:outline-none
+                    "
                   >
-                    Join Discord Server <BsDiscord />
-                  </span>
+                    <span className="flex items-center gap-2">
+                      Join Discord Server <BsDiscord className="text-lg" />
+                    </span>
                 </Link>
               </div>
             </div>
