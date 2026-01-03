@@ -23,8 +23,8 @@ const Courses = ({ courses = [] }) => {
               key={item.id}
               lg="4"
               md="4"
-              sm="6"
-              className="hover:scale-105 hover:ease-out duration-300 shadow-md"
+  className="shadow-md transform-gpu transition-all duration-300 ease-out hover:scale-105"
+
             >
               <PortfolioItem item={item} />
             </Col>
