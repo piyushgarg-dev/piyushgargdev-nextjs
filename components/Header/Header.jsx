@@ -97,10 +97,12 @@ const Header = () => {
           </div>
 
           {/* ========= nav menu =========== */}
+          <div style={{ flex: 1 }} />
           <div
             className={`${classes.navigation}`}
             ref={menuRef}
             onClick={toggleMenu}
+            style={{ justifyContent: 'flex-end' }}
           >
             <div className={`${classes.nav__menu}`}>
               {crossMenu && (

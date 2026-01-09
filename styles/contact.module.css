@@ -9,7 +9,7 @@
 }
 
 .info__item {
-  display: flex;
+  display: flex;  
   align-items: center;
   margin-bottom: 15px;
   column-gap: 1rem;

@@ -8,9 +8,19 @@
 .nav__wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  position: relative;
 }
 
+.logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  z-index: 2;
+}
 .logo h1 {
   font-size: 2rem;
   margin-bottom: 0;
