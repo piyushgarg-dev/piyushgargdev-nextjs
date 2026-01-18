@@ -29,14 +29,34 @@ const PortfolioItem = (props) => {
             </div>
           )}
 
-          <div className='bg-transparent'>
+          <div className='bg-transparent flex flex-col h-full'>
             <div className={`${classes.portfolio__img}`}>
-              <Image alt={title} src={img} width={380} height={1} style={{maxHeight: "380px", overflow:"auto"}}/>
+              <Image alt={title} src={img} width={380} height={1} style={{maxHeight: "380px", objectFit: 'cover'}}/>
 
             </div>
+            
+            <div style={{ background: "transparent", marginBottom: "4rem" }}>
+              <h3
+                style={{
+                  background: "transparent",
+                  lineHeight: "1.4",
+                  marginBottom: "0.5rem",
+                }}
+              >
+                {title}
+              </h3>
 
-            <h3 style={{ background: "transparent" }}>{title}</h3>
-            <p style={{ background: "transparent", }}>{subtitle}</p>
+              <p
+                style={{
+                  background: "transparent",
+                  lineHeight: "1.6",
+                  margin: 0,
+                  wordBreak: "break-word",
+                }}
+              >
+                {subtitle}
+              </p>
+            </div>
             
             <div className=" w-[100%] mt-5 lg:mt-0"> </div>
             <div
