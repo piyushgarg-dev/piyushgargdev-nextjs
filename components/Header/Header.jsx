@@ -85,7 +85,8 @@ const Header = () => {
 
   return (
     <header className={`${classes.header}`} ref={headerRef}>
-      <Container>
+      <Container className="max-w-7xl mx-auto px-4">
+
         <div className={`${classes.nav__wrapper}`}>
           {/* ======== navigation logo ======== */}
           <div style={{ cursor: "pointer" }} className={`${classes.logo}`}>
