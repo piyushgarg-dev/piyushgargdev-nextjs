@@ -1,13 +1,18 @@
 .hero {
-  padding-top: 60px !important;
+  padding-top: 40px !important;
 }
+
+.heroTop {
+  margin-bottom: 1.5rem;
+}
+
 .hero__content h5 {
   color: #808dad;
   font-weight: 400;
 }
 
 .hero__content {
-  padding-top: 50px;
+  padding-top: 10px;
 }
 
 .hero__img {
@@ -48,6 +53,342 @@
 
 .hero__skills span {
   background: transparent;
+}
+
+/* Boxes Container - Side by Side Layout */
+.boxesContainer {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Navigation Box */
+.navigationBox {
+  background: rgba(30, 41, 59, 0.8);
+  border: 1px solid rgba(75, 85, 99, 0.4);
+  border-radius: 12px;
+  padding: 1rem;
+  backdrop-filter: blur(10px);
+  flex: 1;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Social Links Box */
+.socialBox {
+  background: rgba(30, 41, 59, 0.8);
+  border: 1px solid rgba(75, 85, 99, 0.4);
+  border-radius: 12px;
+  padding: 1rem;
+  backdrop-filter: blur(10px);
+  flex: 1;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.boxHeader {
+  margin-bottom: 0.8rem;
+}
+
+/* Interactive Frame - Combined Navigation & Social */
+.interactiveFrame {
+  background: rgba(30, 41, 59, 0.8);
+  border: 1px solid rgba(75, 85, 99, 0.4);
+  border-radius: 16px;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+  margin-bottom: 2rem;
+  max-width: 300px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.frameHeader {
+  margin-bottom: 1rem;
+}
+
+.frameDivider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.3), transparent);
+  margin: 1.5rem 0;
+}
+
+.profileSection {
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: center !important;
+  padding-top: 10px;
+}
+
+/* Navigation Section */
+.navigationSection {
+  margin-bottom: 2rem;
+}
+
+.sectionTitle {
+  color: #5390d9;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.navigationGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.6rem;
+}
+
+.navCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem;
+  background: rgba(55, 65, 81, 0.8);
+  border: 1px solid rgba(75, 85, 99, 0.3);
+  border-radius: 10px;
+  color: #e5e7eb;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  aspect-ratio: 1;
+  backdrop-filter: blur(10px);
+}
+
+.navCard:hover {
+  background: rgba(75, 85, 99, 0.8);
+  border-color: rgba(99, 102, 241, 0.5);
+  transform: translateY(-2px);
+  color: #fff;
+  text-decoration: none;
+}
+
+.navCard.active {
+  background: rgba(234, 88, 12, 0.8);
+  border-color: rgba(249, 115, 22, 0.5);
+}
+
+.navIcon {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.navLabel {
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Social Links Section */
+.socialSection {
+  margin-bottom: 2rem;
+}
+
+.socialGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.6rem;
+}
+
+.socialCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem;
+  background: rgba(55, 65, 81, 0.8);
+  border: 1px solid rgba(75, 85, 99, 0.3);
+  border-radius: 10px;
+  color: #e5e7eb;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  aspect-ratio: 1;
+  backdrop-filter: blur(10px);
+}
+
+.socialCard:hover {
+  background: rgba(75, 85, 99, 0.8);
+  border-color: rgba(99, 102, 241, 0.5);
+  transform: translateY(-2px);
+  color: #fff;
+  text-decoration: none;
+}
+
+.socialIcon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.socialLabel {
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Profile Frame */
+.profileFrame {
+  position: relative;
+  display: inline-block;
+}
+
+.profileImageWrapper {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  background: linear-gradient(145deg, #1e293b, #0f172a);
+  padding: 8px;
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.profileImageWrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(145deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1));
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.profileImage {
+  border-radius: 12px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+}
+
+/* Mobile Styles */
+.navigationSectionMobile {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.sectionTitleMobile {
+  color: #5390d9;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.navigationGridMobile {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.navCardMobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem;
+  background: rgba(55, 65, 81, 0.8);
+  border: 1px solid rgba(75, 85, 99, 0.3);
+  border-radius: 10px;
+  color: #e5e7eb;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  aspect-ratio: 1;
+  backdrop-filter: blur(10px);
+}
+
+.navCardMobile:hover {
+  background: rgba(75, 85, 99, 0.8);
+  border-color: rgba(99, 102, 241, 0.5);
+  transform: translateY(-2px);
+  color: #fff;
+  text-decoration: none;
+}
+
+.navCardMobile.activeMobile {
+  background: rgba(234, 88, 12, 0.8);
+  border-color: rgba(249, 115, 22, 0.5);
+}
+
+.navIconMobile {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.navLabelMobile {
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.socialSectionMobile {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.socialGridMobile {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.socialCardMobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem;
+  background: rgba(55, 65, 81, 0.8);
+  border: 1px solid rgba(75, 85, 99, 0.3);
+  border-radius: 10px;
+  color: #e5e7eb;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  aspect-ratio: 1;
+  backdrop-filter: blur(10px);
+}
+
+.socialCardMobile:hover {
+  background: rgba(75, 85, 99, 0.8);
+  border-color: rgba(99, 102, 241, 0.5);
+  transform: translateY(-2px);
+  color: #fff;
+  text-decoration: none;
+}
+
+.socialIconMobile {
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.socialLabelMobile {
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.profileFrameMobile {
+  position: relative;
+  display: inline-block;
+  max-width: 300px;
+}
+
+.profileFrameMobile .profileImageWrapper {
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(239, 68, 68, 0.2));
+  padding: 3px;
+}
+
+.profileFrameMobile .profileImage {
+  border-radius: 17px;
 }
 
 .hero__experience {
@@ -125,6 +466,35 @@
   .hero__experience span i {
     font-size: 0.8rem;
   }
+
+  /* Adjust navigation and social cards for tablet */
+  .navigationGrid {
+    max-width: 240px;
+    gap: 0.6rem;
+  }
+
+  .socialGrid {
+    max-width: 240px;
+    gap: 0.6rem;
+  }
+
+  .navCard,
+  .socialCard {
+    padding: 0.8rem;
+  }
+
+  .navIcon {
+    font-size: 1.1rem;
+  }
+
+  .socialIcon {
+    font-size: 1.3rem;
+  }
+
+  .navLabel,
+  .socialLabel {
+    font-size: 0.75rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -141,6 +511,18 @@
   .hero__experience {
     right: 20%;
   }
+
+  /* Hide desktop navigation and social sections on mobile */
+  .navigationSection,
+  .socialSection {
+    display: none;
+  }
+
+  /* Ensure mobile versions are visible */
+  .navigationSectionMobile,
+  .socialSectionMobile {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -153,5 +535,43 @@
 
   .hero__img {
     justify-content: center;
+  }
+
+  /* Adjust mobile cards for smaller screens */
+  .navigationGridMobile {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 200px;
+    gap: 0.4rem;
+  }
+
+  .socialGridMobile {
+    max-width: 180px;
+    gap: 0.4rem;
+  }
+
+  .navCardMobile,
+  .socialCardMobile {
+    padding: 0.6rem;
+  }
+
+  .navIconMobile {
+    font-size: 1rem;
+  }
+
+  .socialIconMobile {
+    font-size: 1.1rem;
+  }
+
+  .navLabelMobile,
+  .socialLabelMobile {
+    font-size: 0.65rem;
+  }
+
+  .sectionTitleMobile {
+    font-size: 0.8rem;
+  }
+
+  .profileFrameMobile {
+    max-width: 250px;
   }
 }

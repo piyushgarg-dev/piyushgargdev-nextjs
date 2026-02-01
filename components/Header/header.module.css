@@ -27,6 +27,53 @@
   background-color: #0e1630;
 }
 
+/* Small Professional Login Button */
+.loginButton {
+  background: rgba(15, 23, 42, 0.8) !important;
+  border: 1px solid rgba(71, 85, 105, 0.5) !important;
+  border-radius: 4px !important;
+  padding: 0.25rem 0.5rem !important;
+  transition: all 0.2s ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.25rem !important;
+  min-width: auto !important;
+  height: 28px !important;
+  text-align: center !important;
+}
+
+.loginButton:hover {
+  background: rgba(30, 41, 59, 0.9) !important;
+  border-color: rgba(99, 102, 241, 0.7) !important;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.2) !important;
+}
+
+.loginText {
+  color: #cbd5e1 !important;
+  font-weight: 500 !important;
+  font-size: 0.75rem !important;
+  white-space: nowrap !important;
+  line-height: 1 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.loginButton:hover .loginText {
+  color: #f1f5f9 !important;
+}
+
+.loginIcon {
+  font-size: 0.8rem !important;
+  transition: none !important;
+  line-height: 1 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 .nav__menu a,
 .nav__menu > * {
   font-weight: 500;
@@ -127,7 +174,23 @@
   .mobile__menuDiv {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 7px;
+  }
+
+  /* Login Button Mobile Alignment */
+  .mobile__menuDiv.loginButton {
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  .mobile__menuDiv.loginButton .mobile__menu {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 }
 
