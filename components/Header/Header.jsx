@@ -22,28 +22,7 @@ import {
 } from "react-icons/ai";
 
 
-const NAV__LINK = [
-  {
-    path: "/",
-    display: "Home",
-    openInNewPage:false,
-  },
-  {
-    path: "/#courses",
-    display: "Courses",
-    openInNewPage:false,
-  },
-  {
-    path: "/gears",
-    display: "My Gears",
-    openInNewPage:false,
-  },
-  {
-    path: "https://blog.piyushgarg.dev",
-    display: "Blogs",
-    openInNewPage:true,
-  },
-];
+const NAV__LINK = [];
 
 const icons = [
   <AiFillHome key="home" />,
@@ -143,14 +122,14 @@ const Header = () => {
               ) : (
                 <div
                   onClick={signIn}
-                  className={`${classes.mobile__menuDiv} cursor-pointer`}
+                  className={`${classes.mobile__menuDiv} ${classes.loginButton} cursor-pointer`}
                 >
                   <Link href={"#"}>
-                    <p className={`${classes.mobile__menu}`}>{icons[4]}</p>
+                    <p className={`${classes.mobile__menu} ${classes.loginIcon}`}>{icons[4]}</p>
                   </Link>
 
                   <Link href={"#"}>
-                    <span className=" text-[#808dad] hover:text-green-400">
+                    <span className={`${classes.loginText} text-[#808dad] hover:text-green-400`}>
                       Login
                     </span>
                   </Link>
