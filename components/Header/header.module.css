@@ -1,7 +1,7 @@
 .header {
   width: 100%;
-  height: 94px;
-  line-height: 80px;
+  height: 70px;
+  padding-top: 15px;
   background-color: #0e1630;
 }
 
@@ -25,6 +25,7 @@
   align-items: center;
   column-gap: 2.8rem;
   background-color: #0e1630;
+
 }
 
 .nav__menu a,
@@ -64,7 +65,7 @@
   left: 0;
   width: 100%;
   height: 80px;
-  line-height: 80px;
+  padding-top: 15px;
   box-shadow: 5px 5px 15px -5px var(--site-theme-color) 44;
   z-index: 9999;
 }
@@ -78,6 +79,7 @@
 
 .mobile__menu {
   display: none;
+  height: 20px;
 }
 
 .color_FF0000 {

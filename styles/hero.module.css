@@ -19,7 +19,7 @@
 }
 
 .hero__img img {
-  border-radius: 50px 5px 5px 5px;
+  border-radius: 50%;
   display: inline;
 }
 

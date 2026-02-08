@@ -111,7 +111,7 @@ const Header = () => {
               {NAV__LINK.map((item, index) => (
                 <div
                   key={index}
-                  className={`${classes.mobile__menuDiv} cursor-pointer`}
+                  className={`${classes.mobile__menuDiv} px-3 py-1 border-2 border-green-300 rounded-full  hover:border-green-700 cursor-pointer `}
                 >
                   <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}`}>
                     <p className={`${classes.mobile__menu}`}>{icons[index]}</p>
@@ -143,7 +143,7 @@ const Header = () => {
               ) : (
                 <div
                   onClick={signIn}
-                  className={`${classes.mobile__menuDiv} cursor-pointer`}
+                  className={`${classes.mobile__menuDiv} px-3 py-1 border-2 border-green-300 rounded-full  hover:border-green-700 cursor-pointer`}
                 >
                   <Link href={"#"}>
                     <p className={`${classes.mobile__menu}`}>{icons[4]}</p>

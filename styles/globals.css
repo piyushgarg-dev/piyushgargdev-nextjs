@@ -4,7 +4,9 @@
 
 :root {
   --site-theme-color: #01d293;
+  
 }
+:root { --border-angle: 0deg; }
 
 html,
 body {
@@ -15,6 +17,38 @@ body {
   background: #0e1630;
   background-color: #0e1630 !important;
 }
+
+
+
+@property --border-angle {
+  inherits: false;
+  initial-value: 0deg;
+  syntax: "<angle>";
+}
+
+@keyframes borderRotate {
+  to {
+    --border-angle: 360deg;
+  }
+}
+
+.animate-border {
+  animation: borderRotate 2s linear infinite;
+}
+
+.border-animate-bg {
+  border: 3px solid transparent; 
+  border-radius: 100%;
+  background: 
+    linear-gradient(#0e1630, #0e1630) padding-box, 
+    conic-gradient(from var(--border-angle),
+      rgba(71,85,105,0.48) 80%,
+      #4ade80 86%,   
+      #22c55e 90%,  
+      #4ade80 94%,  
+      rgba(71,85,105,0.48)) border-box;
+}
+
 
 .border-cool {
   border: "1px solid";
