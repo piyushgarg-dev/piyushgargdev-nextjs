@@ -41,6 +41,7 @@ const Hero = () => {
                       justifyContent: "center",
                       alignItems: "center",
                       gap: "10px",
+                      
                     }}
                     className="block"
                   >
@@ -52,13 +53,22 @@ const Hero = () => {
           </Col>
           <Col lg="6" md="6">
             <div className={`${classes.hero__img} text-end`}>
-              <Image alt="Piyush Garg" src={heroImg} width="450" height="450" />
-            </div>
+            <div className={classes.imageWrapper}>
+            <div className={classes.imageGlow}></div>
+            <Image
+              alt="Piyush Garg"
+              src={heroImg}
+              width={450}
+              height={450}
+              className={classes.profileImage}
+            />
+          </div>
+          </div>
           </Col>
         </Row>
       </Container>
 
-      {/* mobile / small screen view */}
+    
 
       <Container id="hero-section" className="md:hidden">
         <Row>

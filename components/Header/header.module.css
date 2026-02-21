@@ -33,6 +33,22 @@
   font-size: 1rem;
   text-decoration: none;
   transition: 0.3s;
+  position: relative;
+}
+
+.nav__menu a::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #4ade80;
+  transition: width 0.3s ease;
+}
+
+.nav__menu a:hover::after {
+  width: 100%;
 }
 
 .nav__right p {
@@ -84,7 +100,6 @@
   color: #ff0000 !important;
 }
 
-/* ========== make it responsive ========= */
 
 @media only screen and (max-width: 992px) {
   .navigation {
