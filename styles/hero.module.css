@@ -155,3 +155,39 @@
     justify-content: center;
   }
 }
+.imageWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.imageWrapper {
+  position: relative;
+  display: inline-block;
+  border-radius: 200px 5px 5px 5px;
+}
+
+.imageGlow {
+  position: absolute;
+  inset: -2px;
+  border-radius: 230px 230px 230px 230px; 
+  background: linear-gradient(90deg, #44bcff, #ff44ec, #ff675e, #44bcff);
+  background-size: 300% 300%;
+  filter: blur(8px);
+  opacity: 0.8;
+  transition: opacity 0.6s ease, inset 0.6s ease, filter 0.6s ease;
+  z-index: 1;
+  animation: glowPulse 4s ease-in-out infinite;
+}
+
+.imageWrapper:hover .imageGlow {
+  opacity: 1;
+  inset: -4px;
+  filter: blur(10px);
+}
+
+.profileImage {
+  border-radius: 150px 5px 5px 5px;
+  position: relative;
+  z-index: 2;
+  display: block;
+}
