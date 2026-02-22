@@ -12,6 +12,7 @@ import {
   RiGithubFill,
   RiTwitterFill,
   RiLinkedinFill,
+  RiInstagramFill,
 } from "react-icons/ri";
 
 import {
@@ -170,7 +171,7 @@ const Header = () => {
                     className={`cursor-pointer  text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
-                    <RiYoutubeFill />
+                    <RiYoutubeFill size={22}/>
                   </Link>
 
                   <Link
@@ -181,7 +182,7 @@ const Header = () => {
                     className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
-                    <RiGithubFill />
+                    <RiGithubFill size={22} />
                   </Link>
 
                   <Link
@@ -203,7 +204,18 @@ const Header = () => {
                     className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
-                    <RiLinkedinFill />
+                    <RiLinkedinFill size={22} />
+                  </Link>
+
+                  <Link
+                    href="https://instagram.com/piyushgarg_dev"
+                    target="_blank"
+                     title="Instagram Account"
+                     id="instagram-account"
+                      className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                      rel="noreferrer"
+                  >
+                     <RiInstagramFill size={22} />
                   </Link>
                 </div>
               </div>
