@@ -4,6 +4,19 @@
 
 :root {
   --site-theme-color: #01d293;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f3f4f6;
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --border-color: #e5e7eb;
+}
+
+.dark {
+  --bg-primary: #0e1630;
+  --bg-secondary: #171f38;
+  --text-primary: #ffffff;
+  --text-secondary: #808dad;
+  --border-color: #171f38;
 }
 
 html,
@@ -12,8 +25,9 @@ body {
   margin: 0;
   font-family: "Quicksand", sans-serif !important;
   scroll-behavior: smooth;
-  background: #0e1630;
-  background-color: #0e1630 !important;
+  background: var(--bg-primary);
+  background-color: var(--bg-primary) !important;
+  color: var(--text-primary);
 }
 
 .border-cool {
@@ -32,7 +46,7 @@ a {
 }
 
 p {
-  color: #808dad;
+  color: var(--text-secondary);
   line-height: 30px;
 }
 h1,
@@ -41,7 +55,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #fff;
+  color: var(--text-primary);
 }
 
 h2 {
@@ -55,11 +69,11 @@ section {
 footer {
   padding-bottom: 10px;
   padding-top: 20px;
-  border-top: 1px solid #171f38;
+  border-top: 1px solid var(--border-color);
 }
 
 .primary__btn {
-  background: #171f38 !important;
+  background: var(--bg-secondary) !important;
   padding: 7px 25px !important;
   border: 1px solid var(--site-theme-color);
   border-radius: 5px;
