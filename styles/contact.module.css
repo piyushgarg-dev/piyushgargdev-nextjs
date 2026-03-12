@@ -24,7 +24,7 @@
   font-size: 1.2rem;
   padding: 5px;
   border-radius: 5px;
-  background: var(--site-theme-color) 38;
+  background: var(--bg-secondary);
 }
 
 .social__links {
@@ -32,7 +32,7 @@
   margin-top: 30px;
   align-items: center;
   column-gap: 1rem;
-  color: #808dad !important;
+  color: var(--text-secondary) !important;
   font-size: 1.3rem !important;
   margin-left: 4px !important;
 }

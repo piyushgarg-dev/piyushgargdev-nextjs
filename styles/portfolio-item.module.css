@@ -1,5 +1,5 @@
 .portfolio__item {
-  background: #171f38;
+  background: var(--bg-secondary);
   padding: 10px 15px 10px 15px;
   padding-top: 20px;
   border-radius: 10px;
@@ -34,17 +34,18 @@
 
 .portfolio__keyword {
   padding: 5px 10px;
-  color: #fff;
-  background: #808dad68;
+  color: var(--text-primary);
+  background: var(--bg-secondary);
   font-size: 0.7rem;
   margin-right: 10px;
   border-radius: 5px;
   margin-bottom: 5px;
+  border: 1px solid var(--border-color);
 }
 
 .portfolio__keyword:hover {
-  background-color: white;
-  color: #000;
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
 }
 
 .portfolio__live {

@@ -2,7 +2,7 @@
   width: 100%;
   height: 94px;
   line-height: 80px;
-  background-color: #0e1630;
+  background-color: var(--bg-primary);
 }
 
 .nav__wrapper {
@@ -24,7 +24,7 @@
   display: flex;
   align-items: center;
   column-gap: 2.8rem;
-  background-color: #0e1630;
+  background-color: var(--bg-primary);
 }
 
 .nav__menu a,
@@ -40,7 +40,7 @@
   position: relative;
 }
 .nav__right i {
-  color: #808dad;
+  color: var(--text-secondary);
 }
 
 .nav__right p::before {
@@ -50,8 +50,8 @@
   left: -20px;
   width: 1px;
   height: 14px;
-  background: #808dad;
-  color: #808dad;
+  background: var(--text-secondary);
+  color: var(--text-secondary);
 }
 
 .nav__right p :hover {
@@ -71,7 +71,7 @@
 
 .mobile__menu i {
   font-size: 1.3rem;
-  color: #fff;
+  color: var(--text-primary);
 
   cursor: pointer;
 }
@@ -93,7 +93,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: #171f3897;
+    background: var(--bg-secondary);
     z-index: 99999;
     display: none;
   }
