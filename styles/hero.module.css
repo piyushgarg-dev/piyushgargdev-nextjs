@@ -155,3 +155,20 @@
     justify-content: center;
   }
 }
+
+.softwareEngineer {
+  display: inline;
+  color: var(--site-theme-color);
+  font-weight: 600;
+  animation: typingReveal 2s steps(17, end) forwards;
+  clip-path: inset(0 100% 0 0);
+}
+
+@keyframes typingReveal {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
