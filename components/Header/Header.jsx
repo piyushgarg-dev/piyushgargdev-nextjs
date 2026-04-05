@@ -1,8 +1,9 @@
-import React, { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import { BiLogInCircle } from "react-icons/bi";
 import { FaWhmcs } from "react-icons/fa";
 import { Container } from "reactstrap";
 import { useSession, signOut, signIn } from "next-auth/react";
+import { useRouter } from "next/router";
 import classes from "./header.module.css";
 import Link from "next/link";
 import NewTwitterLogo from "../UI/NewTwitterlogo";
@@ -10,14 +11,12 @@ import {
   RiCloseLine,
   RiYoutubeFill,
   RiGithubFill,
-  RiTwitterFill,
   RiLinkedinFill,
 } from "react-icons/ri";
 
 import {
   AiFillHome,
   AiFillShopping,
-  AiFillExclamationCircle,
   AiFillEdit,
 } from "react-icons/ai";
 
@@ -56,9 +55,8 @@ const icons = [
 const Header = () => {
   const [crossMenu, setCrossMenu] = useState(false);
   const headerRef = useRef(null);
-
   const menuRef = useRef(null);
-
+  const router = useRouter();
   const { data } = useSession();
 
   const headerFunc = () => {
@@ -81,6 +79,15 @@ const Header = () => {
   const toggleMenu = () => {
     setCrossMenu(false);
     menuRef.current.classList.toggle(`${classes.menu__active}`);
+  };
+
+  const isNavLinkActive = (path) => {
+
+    if (path.includes("#")) {
+      return router.asPath === path;
+    }
+
+    return router.pathname === path && !router.asPath.includes("#");
   };
 
   return (
@@ -118,7 +125,7 @@ const Header = () => {
                   </Link>
 
                   <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}`}>
-                    <span className=" text-[#808dad] hover:text-green-400">
+                    <span className={`${isNavLinkActive(item.path) ? 'text-green-400' : 'text-[#808dad]'} hover:text-green-400`}>
                       {item.display}
                     </span>
                   </Link>
