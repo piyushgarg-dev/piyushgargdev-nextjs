@@ -12,6 +12,8 @@ import {
   RiGithubFill,
   RiTwitterFill,
   RiLinkedinFill,
+  RiMoonClearLine,
+  RiSunLine,
 } from "react-icons/ri";
 
 import {
@@ -55,6 +57,7 @@ const icons = [
 
 const Header = () => {
   const [crossMenu, setCrossMenu] = useState(false);
+  const [theme, setTheme] = useState("dark");
   const headerRef = useRef(null);
 
   const menuRef = useRef(null);
@@ -77,6 +80,22 @@ const Header = () => {
 
     return () => window.removeEventListener("scroll", headerFunc);
   }, []);
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme");
+    const initialTheme = savedTheme === "light" ? "light" : "dark";
+
+    setTheme(initialTheme);
+    document.documentElement.setAttribute("data-theme", initialTheme);
+  }, []);
+
+  const toggleTheme = () => {
+    const nextTheme = theme === "dark" ? "light" : "dark";
+
+    setTheme(nextTheme);
+    localStorage.setItem("theme", nextTheme);
+    document.documentElement.setAttribute("data-theme", nextTheme);
+  };
 
   const toggleMenu = () => {
     setCrossMenu(false);
@@ -118,7 +137,7 @@ const Header = () => {
                   </Link>
 
                   <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}`}>
-                    <span className=" text-[#808dad] hover:text-green-400">
+                    <span className={classes.nav__linkText}>
                       {item.display}
                     </span>
                   </Link>
@@ -135,7 +154,7 @@ const Header = () => {
                   </Link>
 
                   <Link href={"/#"}>
-                    <span className=" text-[#808dad] hover:text-green-400">
+                    <span className={classes.nav__linkText}>
                       Sign Out
                     </span>
                   </Link>
@@ -150,7 +169,7 @@ const Header = () => {
                   </Link>
 
                   <Link href={"#"}>
-                    <span className=" text-[#808dad] hover:text-green-400">
+                    <span className={classes.nav__linkText}>
                       Login
                     </span>
                   </Link>
@@ -167,7 +186,7 @@ const Header = () => {
                     target="_blank"
                     title="Youtube Channel"
                     id="youtube-channel"
-                    className={`cursor-pointer  text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    className={`${classes.social__icon} cursor-pointer transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
                     <RiYoutubeFill />
@@ -178,7 +197,7 @@ const Header = () => {
                     target="_blank"
                     title="Github Account"
                     id="github-account"
-                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    className={`${classes.social__icon} cursor-pointer transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
                     <RiGithubFill />
@@ -189,7 +208,7 @@ const Header = () => {
                     target="_blank"
                     title="Twitter Account"
                     id="twitter-account"
-                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    className={`${classes.social__icon} cursor-pointer transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
                     <NewTwitterLogo/>
@@ -200,11 +219,21 @@ const Header = () => {
                     target="_blank"
                     title="LinkedIn Account"
                     id="linkedin-account"
-                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    className={`${classes.social__icon} cursor-pointer transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
                     <RiLinkedinFill />
                   </Link>
+
+                  <button
+                    type="button"
+                    onClick={toggleTheme}
+                    className={classes.theme__toggle}
+                    aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+                    title={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+                  >
+                    {theme === "dark" ? <RiSunLine /> : <RiMoonClearLine />}
+                  </button>
                 </div>
               </div>
             </div>
