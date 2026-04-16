@@ -23,16 +23,17 @@
 .footer__creator h6 {
   text-align: right;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.852);
+  
 }
 
 .footer__copyright p {
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
   .footer__top {
     display: none;
+    color:#ffffff;
   }
 }
