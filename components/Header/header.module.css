@@ -137,3 +137,37 @@
     line-height: 60px;
   }
 }
+
+.social__icons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-left: 16px;
+  border-left: 2px solid #64748b;
+}
+
+.social__icons a {
+  color: white;
+  font-size: 1.4rem;
+  transition: all 0.3s ease;
+}
+
+.social__icons a:hover {
+  transform: scale(1.35);
+}
+
+/* Individual Colors */
+.youtube:hover {
+  color: #ff0000;
+}
+
+.github:hover {
+  color: #f5f5f5;
+}
+
+.twitter:hover {
+  color: #000000;
+}
+.linkedin:hover {
+  color: #0a66c2;
+}
