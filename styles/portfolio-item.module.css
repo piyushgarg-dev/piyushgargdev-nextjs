@@ -6,6 +6,7 @@
   margin-bottom: 8px;
   min-height: 100%;
   position: relative;
+  transition: all 0.3s ease;
 }
 
 .portfolio__item div {
@@ -54,6 +55,9 @@
 }
 
 .portfolio__item:hover {
+  transform: translateY(-10px);
+   transform: scale(1.05);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
   cursor: pointer;
 }
 

@@ -10,16 +10,21 @@ export default function Gears() {
       <Head>
         <title>Piyush Garg - Gears</title>
       </Head>
+
       <Container className="mt-5">
         <SectionSubtitle subtitle="Gears" />
-        <Row>
+
+        {/* Added margin top here */}
+        <Row className="mt-4">
           {gears.map((item) => (
             <Col
-              style={{ margin: "10px 0px" }}
               key={item.id}
               lg="4"
               md="4"
               sm="6"
+
+              /* Added padding between cards */
+              style={{ padding: "15px" }}
             >
               <PortfolioItem item={item} />
             </Col>
