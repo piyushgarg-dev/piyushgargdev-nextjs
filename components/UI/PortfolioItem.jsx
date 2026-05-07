@@ -40,13 +40,13 @@ const PortfolioItem = (props) => {
             
             <div className=" w-[100%] mt-5 lg:mt-0"> </div>
             <div
-              style={{
-                position: "absolute",
-                background: "transparent",
-                bottom: "20px",
-                display: "flex",
-                flexDirection: "row",
-                flexWrap: "wrap",
+                  style={{
+                  background: "transparent",
+                  display: "flex",
+                  flexDirection: "row",
+                  flexWrap: "wrap",
+                  gap: "8px",
+                  marginTop: "12px",
               }}>
 
               {keyword.map((item, index) => (
