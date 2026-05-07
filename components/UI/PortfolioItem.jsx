@@ -1,9 +1,7 @@
-
 import React from 'react';
 import classes from '../../styles/portfolio-item.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
-
 
 const PortfolioItem = (props) => {
   const {
@@ -14,13 +12,18 @@ const PortfolioItem = (props) => {
     subtitle,
     ribbonText = null,
   } = props.item;
+
   return (
-    <div className={`${classes.portfolio__item}`}>
+    <div className={classes.portfolio__item}>
       <a
         target='_blank'
-        style={{ textDecoration: 'none' }}
         href={liveUrl}
         rel='noreferrer'
+        style={{
+          textDecoration: 'none',
+          display: 'block',
+          height: '100%',
+        }}
       >
         <>
           {ribbonText && (
@@ -30,25 +33,37 @@ const PortfolioItem = (props) => {
           )}
 
           <div className='bg-transparent'>
-            <div className={`${classes.portfolio__img}`}>
-              <Image alt={title} src={img} width={380} height={1} style={{maxHeight: "380px", overflow:"auto"}}/>
-
+            <div className={classes.portfolio__img}>
+              <Image
+                alt={title}
+                src={img}
+                width={380}
+                height={1}
+                style={{
+                  maxHeight: '380px',
+                  overflow: 'auto',
+                }}
+              />
             </div>
 
-            <h3 style={{ background: "transparent" }}>{title}</h3>
-            <p style={{ background: "transparent", }}>{subtitle}</p>
-            
-            <div className=" w-[100%] mt-5 lg:mt-0"> </div>
+            <h3 style={{ background: 'transparent' }}>{title}</h3>
+
+            <p style={{ background: 'transparent' }}>
+              {subtitle}
+            </p>
+
+            <div className="w-[100%] mt-5 lg:mt-0"></div>
+
             <div
               style={{
-                position: "absolute",
-                background: "transparent",
-                bottom: "20px",
-                display: "flex",
-                flexDirection: "row",
-                flexWrap: "wrap",
-              }}>
-
+                position: 'absolute',
+                background: 'transparent',
+                bottom: '20px',
+                display: 'flex',
+                flexDirection: 'row',
+                flexWrap: 'wrap',
+              }}
+            >
               {keyword.map((item, index) => (
                 <span
                   className={`${classes.portfolio__keyword} my-1`}
