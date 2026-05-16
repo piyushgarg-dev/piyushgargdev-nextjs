@@ -47,6 +47,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
                       width={0}
                       sizes="100vw"
                       style={{
+                        display: "inline-block",
                         borderRadius: "20px",
                         marginBottom: "10px",
                         width: "100%",
