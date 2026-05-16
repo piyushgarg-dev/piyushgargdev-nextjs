@@ -45,7 +45,7 @@
 }
 
 .nav__right p::before {
-  content: "";
+  content: "left";
   position: absolute;
   top: 25%;
   left: -20px;
