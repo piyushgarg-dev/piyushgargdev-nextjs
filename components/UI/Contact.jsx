@@ -10,6 +10,7 @@ import NewTwitterLogo from "./NewTwitterlogo";
 import { RiYoutubeFill, RiGithubFill, RiTwitterFill, RiLinkedinFill } from "react-icons/ri";
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
+  const [message, setMessage] = useState("");
   const handleSubmit = async (event) => {
     event.preventDefault();
     const data = {
@@ -112,6 +113,7 @@ const Contact = () => {
                     name="name"
                     placeholder="Your Full Name"
                     required
+                    maxLength={20}
                     autoComplete="off"
                   />
                   <input
@@ -128,8 +130,14 @@ const Contact = () => {
                     placeholder="Your Message"
                     required
                     rows="4"
+                    maxLength={250}
                     autoComplete="off"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                   ></textarea>
+                  <p className="text-gray-400 text-white">
+                    {message.length}/250 characters</p>
+
                   <button
                     type="submit"
                     className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
@@ -168,9 +176,10 @@ const Contact = () => {
             <textarea
               className="border border-gray-300 bg-transparent px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:rgba(77, 181, 255, 0.4) text-white"
               name="message"
-              placeholder="Your Message"
+              placeholder="your  Message"
               required
               rows="4"
+              maxLength={10}
               autoComplete="off"
             ></textarea>
             <button
