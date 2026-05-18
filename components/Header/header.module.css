@@ -2,7 +2,7 @@
   width: 100%;
   height: 94px;
   line-height: 80px;
-  background-color: #0e1630;
+  background-color: var(--theme-bg);
 }
 
 .nav__wrapper {
@@ -14,6 +14,7 @@
 .logo h1 {
   font-size: 2rem;
   margin-bottom: 0;
+  color: var(--theme-text);
 }
 
 .logo h1 span {
@@ -24,7 +25,7 @@
   display: flex;
   align-items: center;
   column-gap: 2.8rem;
-  background-color: #0e1630;
+  background-color: var(--theme-bg);
 }
 
 .nav__menu a,
@@ -40,7 +41,7 @@
   position: relative;
 }
 .nav__right i {
-  color: #808dad;
+  color: var(--theme-muted);
 }
 
 .nav__right p::before {
@@ -50,8 +51,8 @@
   left: -20px;
   width: 1px;
   height: 14px;
-  background: #808dad;
-  color: #808dad;
+  background: var(--theme-border);
+  color: var(--theme-border);
 }
 
 .nav__right p :hover {
@@ -65,19 +66,71 @@
   width: 100%;
   height: 80px;
   line-height: 80px;
-  box-shadow: 5px 5px 15px -5px var(--site-theme-color) 44;
+  background-color: var(--theme-bg);
+  box-shadow: 0 12px 30px -18px var(--theme-shadow);
   z-index: 9999;
 }
 
 .mobile__menu i {
   font-size: 1.3rem;
-  color: #fff;
+  color: var(--theme-text);
 
   cursor: pointer;
 }
 
 .mobile__menu {
   display: none;
+}
+
+.nav__label {
+  color: var(--theme-muted);
+  transition: color 0.3s ease;
+}
+
+.nav__label:hover {
+  color: var(--site-theme-color);
+}
+
+.mobile__menuDiv:hover .nav__label {
+  color: var(--site-theme-color);
+}
+
+.social__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--theme-border);
+}
+
+.social__link {
+  color: var(--theme-text);
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.social__link:hover {
+  color: var(--site-theme-color);
+  transform: scale(1.15);
+}
+
+.close__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  width: 3rem;
+  height: 3rem;
+  color: var(--theme-text);
+  font-size: 1.875rem;
+  font-weight: 800;
+  border: 1px solid var(--theme-border);
+  border-radius: 999px;
+  background: var(--theme-surface);
 }
 
 .color_FF0000 {
@@ -93,7 +146,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: #171f3897;
+    background: var(--theme-overlay);
     z-index: 99999;
     display: none;
   }

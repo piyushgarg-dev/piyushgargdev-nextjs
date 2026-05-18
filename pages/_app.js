@@ -7,9 +7,32 @@ import Layout from "../components/Layout/Layout";
 import "../styles/external.css";
 import "../styles/globals.css";
 
+const themeInitializerScript = `
+  (function () {
+    try {
+      var storageKey = "piyushgarg-theme";
+      var savedTheme = window.localStorage.getItem(storageKey);
+      var theme = savedTheme;
+
+      if (theme !== "dark" && theme !== "light") {
+        theme = window.matchMedia("(prefers-color-scheme: light)").matches
+          ? "light"
+          : "dark";
+      }
+
+      document.documentElement.setAttribute("data-theme", theme);
+    } catch (error) {
+      document.documentElement.setAttribute("data-theme", "dark");
+    }
+  })();
+`;
+
 function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   return (
     <SessionProvider session={session}>
+      <Script id="theme-initializer" strategy="beforeInteractive">
+        {themeInitializerScript}
+      </Script>
       <Layout>
         {process.env.NODE_ENV === "production" && (
           <>
