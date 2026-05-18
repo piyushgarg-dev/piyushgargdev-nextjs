@@ -8,6 +8,7 @@ import Contact from "../components/UI/Contact";
 import Blog from "../components/UI/Blog";
 import Terminal from "../components/UI/Terminal";
 import Testimonial from "../components/UI/Testimonial";
+import ThemeToggle from "../components/UI/ThemeToggle";
 
 import {
   getYoutubeChannelDataDefaultResponse,
@@ -66,6 +67,7 @@ export default function Home({
           content="https://www.piyushgarg.dev/images/seo.png"
         />
       </Head>
+      <ThemeToggle />
       <Hero />
       <Services youtubeVideos={youtubeVideos} youtubeStats={youtubeStats} />
       <Courses courses={courses} />
@@ -74,7 +76,7 @@ export default function Home({
         <SectionSubtitle subtitle="Terminal" />
         <div
           id="terminal-1"
-          style={{ border: "1px solid white", height: "400px" }}
+          style={{ border: "1px solid var(--theme-border)", height: "400px" }}
         >
           <Terminal />
         </div>

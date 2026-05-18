@@ -104,7 +104,7 @@ const Header = () => {
           >
             <div className={`${classes.nav__menu}`}>
               {crossMenu && (
-                <div className="border text-white text-3xl absolute top-10 right-10 font-extrabold">
+                <div className={classes.close__menu}>
                   <RiCloseLine />
                 </div>
               )}
@@ -118,7 +118,7 @@ const Header = () => {
                   </Link>
 
                   <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}`}>
-                    <span className=" text-[#808dad] hover:text-green-400">
+                    <span className={classes.nav__label}>
                       {item.display}
                     </span>
                   </Link>
@@ -135,7 +135,7 @@ const Header = () => {
                   </Link>
 
                   <Link href={"/#"}>
-                    <span className=" text-[#808dad] hover:text-green-400">
+                    <span className={classes.nav__label}>
                       Sign Out
                     </span>
                   </Link>
@@ -150,7 +150,7 @@ const Header = () => {
                   </Link>
 
                   <Link href={"#"}>
-                    <span className=" text-[#808dad] hover:text-green-400">
+                    <span className={classes.nav__label}>
                       Login
                     </span>
                   </Link>
@@ -158,16 +158,14 @@ const Header = () => {
               )}
 
               <div className={`${classes.nav__right}`}>
-                <div
-                  className={`flex flex-row items-center gap-3 border-l-2 pl-4 border-l-slate-500 `}
-                >
+                <div className={classes.social__list}>
                   <Link
                     aria-label="Youtube Channel"
                     href="https://youtube.com/@piyushgargdev"
                     target="_blank"
                     title="Youtube Channel"
                     id="youtube-channel"
-                    className={`cursor-pointer  text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    className={classes.social__link}
                     rel="noreferrer"
                   >
                     <RiYoutubeFill />
@@ -178,7 +176,7 @@ const Header = () => {
                     target="_blank"
                     title="Github Account"
                     id="github-account"
-                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    className={classes.social__link}
                     rel="noreferrer"
                   >
                     <RiGithubFill />
@@ -189,7 +187,7 @@ const Header = () => {
                     target="_blank"
                     title="Twitter Account"
                     id="twitter-account"
-                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    className={classes.social__link}
                     rel="noreferrer"
                   >
                     <NewTwitterLogo/>
@@ -200,7 +198,7 @@ const Header = () => {
                     target="_blank"
                     title="LinkedIn Account"
                     id="linkedin-account"
-                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    className={classes.social__link}
                     rel="noreferrer"
                   >
                     <RiLinkedinFill />

@@ -2,7 +2,7 @@
   padding-top: 60px !important;
 }
 .hero__content h5 {
-  color: #808dad;
+  color: var(--theme-muted);
   font-weight: 400;
 }
 
@@ -32,13 +32,13 @@
   left: 22%;
   transform: translateY(-50%);
   border-radius: 5px;
-  background: #808dad26;
+  background: var(--theme-card-accent);
   z-index: 10;
 }
 
 .hero__skills h6 {
   background: transparent;
-  color: #fff;
+  color: var(--theme-text);
 }
 
 .hero__skills span i {
@@ -57,7 +57,7 @@
   right: -5%;
   padding: 10px 20px;
   border-radius: 5px;
-  background: #808dad26;
+  background: var(--theme-card-accent);
   z-index: 10;
 }
 
@@ -76,7 +76,7 @@
 .hero__experience span i {
   padding: 5px;
   color: var(--site-theme-color);
-  background: #808dad70;
+  background: var(--theme-card-accent);
   border-radius: 5px;
 }
 
