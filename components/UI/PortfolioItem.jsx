@@ -36,19 +36,8 @@ const PortfolioItem = (props) => {
             </div>
 
             <h3 style={{ background: "transparent" }}>{title}</h3>
-            <p style={{ background: "transparent", }}>{subtitle}</p>
-            
-            <div className=" w-[100%] mt-5 lg:mt-0"> </div>
-            <div
-              style={{
-                position: "absolute",
-                background: "transparent",
-                bottom: "20px",
-                display: "flex",
-                flexDirection: "row",
-                flexWrap: "wrap",
-              }}>
-
+            <p style={{ background: "transparent" }}>{subtitle}</p>
+            <div className={classes.portfolio__tags}>
               {keyword.map((item, index) => (
                 <span
                   className={`${classes.portfolio__keyword} my-1`}

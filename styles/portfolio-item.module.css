@@ -1,3 +1,11 @@
+.portfolio__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+  margin-top: 16px;
+  position: static;
+  background: transparent;
+}
 .portfolio__item {
   background: #171f38;
   padding: 10px 15px 10px 15px;
