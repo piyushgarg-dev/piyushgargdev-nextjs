@@ -26,7 +26,7 @@ const Hero = () => {
                 knowledge and experience with others.
               </p>
             </div>
-            <div className="mt-5 flex place-content-center md:block">
+            <div className="mt-5 flex justify-start md:block">
               <div className="relative inline-flex group">
                 <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r animate-pulse hover:animate-none from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
                 <Link
@@ -51,7 +51,7 @@ const Hero = () => {
             </div>
           </Col>
           <Col lg="6" md="6">
-            <div className={`${classes.hero__img} text-end`}>
+          <div className={`${classes.hero__img} text-left md:text-right`}>yarn
               <Image alt="Piyush Garg" src={heroImg} width="450" height="450" />
             </div>
           </Col>
