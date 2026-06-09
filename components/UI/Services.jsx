@@ -23,11 +23,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
       <Container>
         <Row>
           <Col lg="3" md="12" sm="12">
-            <Slider
-              {...settings}
-              // style={{ cursor: "pointer", marginBottom: "10px" }}
-              className=" cursor-pointer mb-10 md:mb:0"
-            >
+            <Slider {...settings} style={{ cursor: "pointer" }}>
               {youtubeVideos
                 ?.filter((video) => video.id.videoId)
                 ?.map((video) => (
@@ -83,7 +79,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
               I would really appreciate it if you could check it out and maybe
               even hit the subscribe button if you enjoy the content.
             </p>
-            <p className="mb-3">Thanks in advance!</p>
+            <p className="mb-4">Thanks in advance!</p>
             <a
               href="https://www.youtube.com/@piyushgargdev?sub_confirmation=1"
               target="_blank"
