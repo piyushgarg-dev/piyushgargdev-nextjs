@@ -43,6 +43,19 @@
   color: #808dad;
 }
 
+.homeBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+  font-weight: 600;
+  transition: color .2s, transform .12s;
+}
+.homeBtn:hover {
+  color: var(--site-theme-color);
+  transform: translateY(-2px);
+}
+
 .nav__right p::before {
   content: "";
   position: absolute;

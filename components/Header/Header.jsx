@@ -158,6 +158,19 @@ const Header = () => {
               )}
 
               <div className={`${classes.nav__right}`}>
+                {/* Home button placed on the top-right beside other gadgets */}
+                <div className={`flex items-center mr-4`}> 
+                  <Link
+                    aria-label="Home"
+                    href="/"
+                    title="Home"
+                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] ${classes.homeBtn}`}
+                  >
+                    <AiFillHome />
+                    <span className="ml-2 hidden md:inline">Home</span>
+                  </Link>
+                </div>
+
                 <div
                   className={`flex flex-row items-center gap-3 border-l-2 pl-4 border-l-slate-500 `}
                 >
