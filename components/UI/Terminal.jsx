@@ -1,9 +1,16 @@
 import React from "react";
 import { ReactTerminal, TerminalContextProvider } from "react-terminal";
 import { signIn, signOut, useSession } from "next-auth/react";
+import { useTheme } from "next-themes";
 
 const Terminal = () => {
   const { data } = useSession();
+  const { theme } = useTheme();
+  const [mounted, setMounted] = React.useState(false);
+
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const isLoggedIn = React.useMemo(() => Boolean(data && data.user), [data]);
 
@@ -84,8 +91,14 @@ const Terminal = () => {
             themeColor: "#38CC77",
             themePromptColor: "#fff",
           },
+          lightDefault: {
+            themeBGColor: "",
+            themeToolbarColor: "",
+            themeColor: "#38CC77",
+            themePromptColor: "#1a202c",
+          },
         }}
-        theme="darkDefault"
+        theme={mounted && theme === "light" ? "lightDefault" : "darkDefault"}
         commands={{
           ...Object.keys(terminalCommands).reduce(
             (b, key) => ({ ...b, [key]: terminalCommands[key].action }),

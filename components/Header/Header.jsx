@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
-import { BiLogInCircle } from "react-icons/bi";
+import { BiLogInCircle, BiSun, BiMoon } from "react-icons/bi";
+import { useTheme } from "next-themes";
 import { FaWhmcs } from "react-icons/fa";
 import { Container } from "reactstrap";
 import { useSession, signOut, signIn } from "next-auth/react";
@@ -60,6 +61,8 @@ const Header = () => {
   const menuRef = useRef(null);
 
   const { data } = useSession();
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
 
   const headerFunc = () => {
     if (
@@ -73,6 +76,7 @@ const Header = () => {
   };
 
   useEffect(() => {
+    setMounted(true);
     window.addEventListener("scroll", headerFunc);
 
     return () => window.removeEventListener("scroll", headerFunc);
@@ -104,7 +108,7 @@ const Header = () => {
           >
             <div className={`${classes.nav__menu}`}>
               {crossMenu && (
-                <div className="border text-white text-3xl absolute top-10 right-10 font-extrabold">
+                <div className="border text-text-color text-3xl absolute top-10 right-10 font-extrabold">
                   <RiCloseLine />
                 </div>
               )}
@@ -167,7 +171,7 @@ const Header = () => {
                     target="_blank"
                     title="Youtube Channel"
                     id="youtube-channel"
-                    className={`cursor-pointer  text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    className={`cursor-pointer text-[color:var(--text-color)] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
                     <RiYoutubeFill />
@@ -178,7 +182,7 @@ const Header = () => {
                     target="_blank"
                     title="Github Account"
                     id="github-account"
-                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    className={`cursor-pointer text-[color:var(--text-color)] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
                     <RiGithubFill />
@@ -189,7 +193,7 @@ const Header = () => {
                     target="_blank"
                     title="Twitter Account"
                     id="twitter-account"
-                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    className={`cursor-pointer text-[color:var(--text-color)] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
                     <NewTwitterLogo/>
@@ -200,11 +204,21 @@ const Header = () => {
                     target="_blank"
                     title="LinkedIn Account"
                     id="linkedin-account"
-                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    className={`cursor-pointer text-[color:var(--text-color)] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
                     <RiLinkedinFill />
                   </Link>
+                  {mounted && (
+                    <button
+                      aria-label="Toggle Dark Mode"
+                      type="button"
+                      className="cursor-pointer text-[color:var(--text-color)] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150 ml-2 border-none bg-transparent"
+                      onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+                    >
+                      {theme === 'dark' ? <BiSun /> : <BiMoon />}
+                    </button>
+                  )}
                 </div>
               </div>
             </div>
