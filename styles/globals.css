@@ -4,6 +4,22 @@
 
 :root {
   --site-theme-color: #01d293;
+  --bg-color: #ffffff;
+  --text-color: #1a202c;
+  --text-muted: #4a5568;
+  --border-color: #e2e8f0;
+  --btn-bg: #f7fafc;
+  --card-bg: #f7fafc;
+}
+
+.dark {
+  --site-theme-color: #01d293;
+  --bg-color: #0e1630;
+  --text-color: #ffffff;
+  --text-muted: #808dad;
+  --border-color: #171f38;
+  --btn-bg: #171f38;
+  --card-bg: #171f38;
 }
 
 html,
@@ -12,8 +28,10 @@ body {
   margin: 0;
   font-family: "Quicksand", sans-serif !important;
   scroll-behavior: smooth;
-  background: #0e1630;
-  background-color: #0e1630 !important;
+  background: var(--bg-color);
+  background-color: var(--bg-color) !important;
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .border-cool {
@@ -32,7 +50,7 @@ a {
 }
 
 p {
-  color: #808dad;
+  color: var(--text-muted);
   line-height: 30px;
 }
 h1,
@@ -41,7 +59,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #fff;
+  color: var(--text-color);
 }
 
 h2 {
@@ -55,11 +73,11 @@ section {
 footer {
   padding-bottom: 10px;
   padding-top: 20px;
-  border-top: 1px solid #171f38;
+  border-top: 1px solid var(--border-color);
 }
 
 .primary__btn {
-  background: #171f38 !important;
+  background: var(--btn-bg) !important;
   padding: 7px 25px !important;
   border: 1px solid var(--site-theme-color);
   border-radius: 5px;

@@ -74,7 +74,8 @@ export default function Home({
         <SectionSubtitle subtitle="Terminal" />
         <div
           id="terminal-1"
-          style={{ border: "1px solid white", height: "400px" }}
+          className="border border-gray-300 dark:border-white"
+          style={{ height: "400px" }}
         >
           <Terminal />
         </div>
