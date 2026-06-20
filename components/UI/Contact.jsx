@@ -10,6 +10,9 @@ import NewTwitterLogo from "./NewTwitterlogo";
 import { RiYoutubeFill, RiGithubFill, RiTwitterFill, RiLinkedinFill } from "react-icons/ri";
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
+  const [messageText, setMessageText] = useState("");
+  const MAX_CHARS = 1000;
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     const data = {
@@ -83,7 +86,7 @@ const Contact = () => {
                 href="https://twitter.com/piyushgarg_dev"
                 target="_blank"
               >
-             
+
                 <NewTwitterLogo />
               </Link>
               <Link
@@ -122,14 +125,22 @@ const Contact = () => {
                     required
                     autoComplete="off"
                   />
-                  <textarea
-                    className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
-                    name="message"
-                    placeholder="Your Message"
-                    required
-                    rows="4"
-                    autoComplete="off"
-                  ></textarea>
+                  <div className="w-full">
+                    <textarea
+                      className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
+                      name="message"
+                      placeholder="Your Message"
+                      required
+                      rows="4"
+                      autoComplete="off"
+                      maxLength={MAX_CHARS}
+                      value={messageText}
+                      onChange={(e) => setMessageText(e.target.value)}
+                    ></textarea>
+                    <div className={`text-sm text-right mt-1 transition-colors ${messageText.length >= 900 ? 'text-red-500' : 'text-gray-400'}`}>
+                      {messageText.length} / {MAX_CHARS}
+                    </div>
+                  </div>
                   <button
                     type="submit"
                     className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
