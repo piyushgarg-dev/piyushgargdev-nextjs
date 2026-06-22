@@ -1,20 +1,21 @@
-import { Fragment } from "react";
 import axios from "axios";
 import Head from "next/head";
+import { Fragment } from "react";
+import Contact from "../components/UI/Contact";
+import Courses from "../components/UI/Courses";
 import Hero from "../components/UI/Hero";
 import Services from "../components/UI/Services";
-import Courses from "../components/UI/Courses";
-import Contact from "../components/UI/Contact";
-import Blog from "../components/UI/Blog";
 import Terminal from "../components/UI/Terminal";
 import Testimonial from "../components/UI/Testimonial";
 
+
+
+import courses from "../components/data/courses";
+import feedbacks from "../components/data/testimonial";
 import {
   getYoutubeChannelDataDefaultResponse,
   getYoutubeVideosDefaultResponse,
 } from "../components/data/youtubeDefault";
-import feedbacks from "../components/data/testimonial";
-import courses from "../components/data/courses";
 
 import { Container } from "reactstrap";
 import SectionSubtitle from "../components/UI/SectionSubtitle";
@@ -23,6 +24,7 @@ export default function Home({
   youtubeStats,
   youtubeVideos,
   blogData,
+  theme,
   feedbacks = [],
   courses = [],
 }) {
@@ -74,9 +76,12 @@ export default function Home({
         <SectionSubtitle subtitle="Terminal" />
         <div
           id="terminal-1"
-          style={{ border: "1px solid white", height: "400px" }}
+          style={{
+            border: theme === "dark" ? "1px solid white" : "1px solid #111827",
+            height: "400px",
+          }}
         >
-          <Terminal />
+          <Terminal theme={theme} />
         </div>
       </Container>
       <Contact />

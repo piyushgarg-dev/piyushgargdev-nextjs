@@ -1,24 +1,22 @@
-import React, { useRef, useEffect, useState } from "react";
+import { signIn, signOut, useSession } from "next-auth/react";
+import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
 import { BiLogInCircle } from "react-icons/bi";
 import { FaWhmcs } from "react-icons/fa";
-import { Container } from "reactstrap";
-import { useSession, signOut, signIn } from "next-auth/react";
-import classes from "./header.module.css";
-import Link from "next/link";
-import NewTwitterLogo from "../UI/NewTwitterlogo";
 import {
   RiCloseLine,
-  RiYoutubeFill,
   RiGithubFill,
-  RiTwitterFill,
   RiLinkedinFill,
+  RiYoutubeFill
 } from "react-icons/ri";
+import { Container } from "reactstrap";
+import NewTwitterLogo from "../UI/NewTwitterlogo";
+import classes from "./header.module.css";
 
 import {
-  AiFillHome,
-  AiFillShopping,
-  AiFillExclamationCircle,
   AiFillEdit,
+  AiFillHome,
+  AiFillShopping
 } from "react-icons/ai";
 
 
@@ -53,7 +51,7 @@ const icons = [
   <BiLogInCircle key="login" />,
 ];
 
-const Header = () => {
+const Header = ({ theme, setTheme }) => {
   const [crossMenu, setCrossMenu] = useState(false);
   const headerRef = useRef(null);
 
@@ -94,15 +92,31 @@ const Header = () => {
                 <span>P</span>iyush <span>G</span>arg
               </h1>
             </Link>
+
           </div>
 
           {/* ========= nav menu =========== */}
-          <div
-            className={`${classes.navigation}`}
+
+
+
+          <div  className={`${classes.navigation}`}
             ref={menuRef}
             onClick={toggleMenu}
           >
+
+
+
             <div className={`${classes.nav__menu}`}>
+                          <button
+    type="button"
+    className={classes.themeToggle}
+    onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+    aria-label="Toggle theme"
+  >
+    <span className={classes.toggleCircle}>
+      {theme === "dark" ? "🌙" : "☀️"}
+    </span>
+  </button>
               {crossMenu && (
                 <div className="border text-white text-3xl absolute top-10 right-10 font-extrabold">
                   <RiCloseLine />
@@ -154,6 +168,7 @@ const Header = () => {
                       Login
                     </span>
                   </Link>
+
                 </div>
               )}
 
@@ -210,6 +225,8 @@ const Header = () => {
             </div>
           </div>
 
+
+
           <span
             onClick={() => setCrossMenu(!crossMenu)}
             className={`${classes.mobile__menu}`}
@@ -217,7 +234,10 @@ const Header = () => {
             <i className="ri-menu-line" onClick={toggleMenu}></i>
           </span>
         </div>
+
       </Container>
+
+
     </header>
   );
 };

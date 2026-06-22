@@ -1,11 +1,12 @@
-import React, { Fragment } from "react";
-import Header from "../Header/Header";
+import { Fragment } from "react";
 import Footer from "../Footer/Footer";
+import Header from "../Header/Header";
 
 const Layout = (props) => {
   return (
     <Fragment>
-      <Header />
+      <Header theme={props.theme} setTheme={props.setTheme} />
+
       <div>{props.children}</div>
       <Footer />
     </Fragment>

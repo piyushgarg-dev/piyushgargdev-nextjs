@@ -6,6 +6,30 @@
   --site-theme-color: #01d293;
 }
 
+.dark-theme {
+  background: #0f172a;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+.light-theme {
+  background: #ffffff;
+  color: #14203a;
+  min-height: 100vh;
+}
+
+.light-theme h2,
+.light-theme h3,
+.light-theme h4,
+.light-theme h5,
+.light-theme h6 {
+  color: #058d97;
+}
+
+.dark-theme a {
+  color: #ffffff;
+}
+
 html,
 body {
   padding: 0;
@@ -164,7 +188,9 @@ footer {
   background-color: #3498db;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   color: #fff;
-  font: 700 18px/1 "Lato", sans-serif;
+  font:
+    700 18px/1 "Lato",
+    sans-serif;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
   text-align: center;
