@@ -1,24 +1,22 @@
-import React, { useRef, useEffect, useState } from "react";
+import { signIn, signOut, useSession } from "next-auth/react";
+import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
 import { BiLogInCircle } from "react-icons/bi";
 import { FaWhmcs } from "react-icons/fa";
-import { Container } from "reactstrap";
-import { useSession, signOut, signIn } from "next-auth/react";
-import classes from "./header.module.css";
-import Link from "next/link";
-import NewTwitterLogo from "../UI/NewTwitterlogo";
 import {
   RiCloseLine,
-  RiYoutubeFill,
   RiGithubFill,
-  RiTwitterFill,
   RiLinkedinFill,
+  RiYoutubeFill
 } from "react-icons/ri";
+import { Container } from "reactstrap";
+import NewTwitterLogo from "../UI/NewTwitterlogo";
+import classes from "./header.module.css";
 
 import {
-  AiFillHome,
-  AiFillShopping,
-  AiFillExclamationCircle,
   AiFillEdit,
+  AiFillHome,
+  AiFillShopping
 } from "react-icons/ai";
 
 
@@ -53,7 +51,7 @@ const icons = [
   <BiLogInCircle key="login" />,
 ];
 
-const Header = () => {
+const Header = ({ theme, setTheme }) => {
   const [crossMenu, setCrossMenu] = useState(false);
   const headerRef = useRef(null);
 
@@ -154,6 +152,9 @@ const Header = () => {
                       Login
                     </span>
                   </Link>
+                        <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+        {theme === "dark" ? "Light Mode" : "Dark Mode"}
+      </button>
                 </div>
               )}
 
@@ -217,7 +218,10 @@ const Header = () => {
             <i className="ri-menu-line" onClick={toggleMenu}></i>
           </span>
         </div>
+
       </Container>
+
+
     </header>
   );
 };
