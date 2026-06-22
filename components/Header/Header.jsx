@@ -92,14 +92,28 @@ const Header = ({ theme, setTheme }) => {
                 <span>P</span>iyush <span>G</span>arg
               </h1>
             </Link>
+            <button
+                    type="button"
+                    className={classes.themeToggle}
+                    onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                    aria-label="Toggle theme"
+                  >
+                    <span className={classes.toggleCircle}>
+                      {theme === "dark" ? "🌙" : "☀️"}
+                    </span>
+            </button>
           </div>
 
           {/* ========= nav menu =========== */}
           <div
+
             className={`${classes.navigation}`}
             ref={menuRef}
             onClick={toggleMenu}
           >
+
+
+
             <div className={`${classes.nav__menu}`}>
               {crossMenu && (
                 <div className="border text-white text-3xl absolute top-10 right-10 font-extrabold">
@@ -152,9 +166,7 @@ const Header = ({ theme, setTheme }) => {
                       Login
                     </span>
                   </Link>
-                        <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
-        {theme === "dark" ? "Light Mode" : "Dark Mode"}
-      </button>
+
                 </div>
               )}
 

@@ -84,6 +84,39 @@
   color: #ff0000 !important;
 }
 
+/* ========== light/dark mode ========= */
+.themeToggle {
+  width: 54px;
+  height: 28px;
+  border: none;
+  border-radius: 999px;
+  background: #334155;
+  padding: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.toggleCircle {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  transition: transform 0.3s ease;
+}
+
+:global(.light-theme) .toggleCircle {
+  transform: translateX(26px);
+}
+
+:global(.light-theme) .themeToggle {
+  background: #f59e0b;
+}
+
 /* ========== make it responsive ========= */
 
 @media only screen and (max-width: 992px) {
