@@ -95,6 +95,7 @@
   cursor: pointer;
   display: flex;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .toggleCircle {
@@ -114,7 +115,7 @@
 }
 
 :global(.light-theme) .themeToggle {
-  background: #f59e0b;
+  background: #0bdaf5;
 }
 
 /* ========== make it responsive ========= */

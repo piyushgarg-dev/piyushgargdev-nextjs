@@ -92,22 +92,14 @@ const Header = ({ theme, setTheme }) => {
                 <span>P</span>iyush <span>G</span>arg
               </h1>
             </Link>
-            <button
-                    type="button"
-                    className={classes.themeToggle}
-                    onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-                    aria-label="Toggle theme"
-                  >
-                    <span className={classes.toggleCircle}>
-                      {theme === "dark" ? "🌙" : "☀️"}
-                    </span>
-            </button>
+
           </div>
 
           {/* ========= nav menu =========== */}
-          <div
 
-            className={`${classes.navigation}`}
+
+
+          <div  className={`${classes.navigation}`}
             ref={menuRef}
             onClick={toggleMenu}
           >
@@ -115,6 +107,16 @@ const Header = ({ theme, setTheme }) => {
 
 
             <div className={`${classes.nav__menu}`}>
+                          <button
+    type="button"
+    className={classes.themeToggle}
+    onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+    aria-label="Toggle theme"
+  >
+    <span className={classes.toggleCircle}>
+      {theme === "dark" ? "🌙" : "☀️"}
+    </span>
+  </button>
               {crossMenu && (
                 <div className="border text-white text-3xl absolute top-10 right-10 font-extrabold">
                   <RiCloseLine />
@@ -222,6 +224,8 @@ const Header = ({ theme, setTheme }) => {
               </div>
             </div>
           </div>
+
+
 
           <span
             onClick={() => setCrossMenu(!crossMenu)}

@@ -14,12 +14,16 @@
 
 .light-theme {
   background: #ffffff;
-  color: #111827;
+  color: #14203a;
   min-height: 100vh;
 }
 
-.light-theme a {
-  color: #111827;
+.light-theme h2,
+.light-theme h3,
+.light-theme h4,
+.light-theme h5,
+.light-theme h6 {
+  color: #058d97;
 }
 
 .dark-theme a {
