@@ -1,16 +1,28 @@
-.services__container {
-  display: flex;
-  align-items: center;
-  column-gap: 2rem;
-}
+ .services__container {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+  }
+  
+  .youtube__stats,
+  .youtube__content {
+    transform: translateX(16px);
+  }
+  
 
-@media only screen and (max-width: 992px) {
-  .services__container {
-    flex-direction: column;
-    align-items: unset;
+  @media only screen and (max-width: 992px) {
+    
+    .youtube__stats,
+    .youtube__content {
+    transform: translateX(0);
   }
 
-  .service__title h3 {
-    font-size: 1.3rem;
+    .services__container {
+      flex-direction: column;
+      align-items: unset;
+    }
+
+    .service__title h3 {
+      font-size: 1.3rem;
+    }
   }
-}
