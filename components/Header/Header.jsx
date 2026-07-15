@@ -62,16 +62,14 @@ const Header = () => {
   const { data } = useSession();
 
   const headerFunc = () => {
-    requestAnimationFrame(() => {
-      if (
-        document.body.scrollTop > 80 ||
-        document.documentElement.scrollTop > 80
-      ) {
-        headerRef.current.classList.add(`${classes.header__shrink}`);
-      } else {
-        headerRef.current.classList.remove(`${classes.header__shrink}`);
-      }
-    });
+    if (
+      document.body.scrollTop > 80 ||
+      document.documentElement.scrollTop > 80
+    ) {
+      headerRef.current.classList.add(`${classes.header__shrink}`);
+    } else {
+      headerRef.current.classList.remove(`${classes.header__shrink}`);
+    }
   };
 
   useEffect(() => {
