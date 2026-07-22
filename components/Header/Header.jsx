@@ -88,10 +88,10 @@ const Header = () => {
       <Container>
         <div className={`${classes.nav__wrapper}`}>
           {/* ======== navigation logo ======== */}
-          <div style={{ cursor: "pointer" }} className={`${classes.logo}`}>
+          <div className={`${classes.logo}`}>
             <Link aria-label="Home Page" href="/">
               <h1>
-                <span>P</span>iyush <span>G</span>arg
+                <span>P</span>IYUSH <span>G</span>ARG
               </h1>
             </Link>
           </div>
