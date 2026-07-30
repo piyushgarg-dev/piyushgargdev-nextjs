@@ -30,7 +30,7 @@ export default function Home({
     <Fragment>
       <Head>
         {/* <!-- Primary Meta Tags --> */}
-        <title>Piyush Garg - Dev and Instructor</title>
+        <title>Piyush Garg - Dev and Inr</title>
         <meta name="title" content="Piyush Garg - Dev and Instructor" />
         <meta
           name="description"
