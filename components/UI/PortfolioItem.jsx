@@ -1,9 +1,6 @@
-
-import React from 'react';
-import classes from '../../styles/portfolio-item.module.css';
-import Image from 'next/image';
-import Link from 'next/link';
-
+import React from "react";
+import classes from "../../styles/portfolio-item.module.css";
+import Image from "next/image";
 
 const PortfolioItem = (props) => {
   const {
@@ -14,52 +11,72 @@ const PortfolioItem = (props) => {
     subtitle,
     ribbonText = null,
   } = props.item;
+
   return (
-    <div className={`${classes.portfolio__item}`}>
+    <div className={classes.portfolio__item}>
       <a
-        target='_blank'
-        style={{ textDecoration: 'none' }}
+        target="_blank"
+        style={{ textDecoration: "none" }}
         href={liveUrl}
-        rel='noreferrer'
+        rel="noreferrer"
+        className="flex h-full flex-col"
       >
-        <>
-          {ribbonText && (
-            <div style={{ zIndex: 99 }} className='ribbon ribbon-top-left'>
-              <span>{ribbonText}</span>
-            </div>
-          )}
-
-          <div className='bg-transparent'>
-            <div className={`${classes.portfolio__img}`}>
-              <Image alt={title} src={img} width={380} height={1} style={{maxHeight: "380px", overflow:"auto"}}/>
-
-            </div>
-
-            <h3 style={{ background: "transparent" }}>{title}</h3>
-            <p style={{ background: "transparent", }}>{subtitle}</p>
-            
-            <div className=" w-[100%] mt-5 lg:mt-0"> </div>
-            <div
-              style={{
-                position: "absolute",
-                background: "transparent",
-                bottom: "20px",
-                display: "flex",
-                flexDirection: "row",
-                flexWrap: "wrap",
-              }}>
-
-              {keyword.map((item, index) => (
-                <span
-                  className={`${classes.portfolio__keyword} my-1`}
-                  key={index}
-                >
-                  {item}
-                </span>
-              ))}
-            </div>
+        {ribbonText && (
+          <div
+            style={{ zIndex: 99 }}
+            className="ribbon ribbon-top-left"
+          >
+            <span>{ribbonText}</span>
           </div>
-        </>
+        )}
+
+        <div className="bg-transparent flex flex-col h-full">
+          <div className={classes.portfolio__img}>
+            <Image
+              alt={title}
+              src={img}
+              width={380}
+              height={220}
+              sizes="(max-width: 576px) 100vw, (max-width: 940px) 50vw, 33vw"
+              style={{
+                width: "100%",
+                height: "auto",
+                maxHeight: "380px",
+                objectFit: "cover",
+              }}
+            />
+          </div>
+
+          <h3 style={{ background: "transparent" }}>
+            {title}
+          </h3>
+
+          <p style={{ background: "transparent" }}>
+            {subtitle}
+          </p>
+
+          <div className="w-full mt-5 lg:mt-0"></div>
+
+          <div
+            className="lg:mt-auto lg:pt-5"
+            style={{
+              background: "transparent",
+              display: "flex",
+              flexDirection: "row",
+              flexWrap: "wrap",
+              gap: "6px",
+            }}
+          >
+            {keyword.map((item, index) => (
+              <span
+                className={classes.portfolio__keyword}
+                key={index}
+              >
+                {item}
+              </span>
+            ))}
+          </div>
+        </div>
       </a>
     </div>
   );

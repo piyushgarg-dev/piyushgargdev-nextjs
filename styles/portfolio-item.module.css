@@ -4,7 +4,7 @@
   padding-top: 20px;
   border-radius: 10px;
   margin-bottom: 8px;
-  min-height: 100%;
+  height: 100%;
   position: relative;
 }
 
@@ -36,15 +36,15 @@
   padding: 5px 10px;
   color: #fff;
   background: #808dad68;
-  font-size: 0.7rem;
+  font-size: 1rem;
   margin-right: 10px;
   border-radius: 5px;
   margin-bottom: 5px;
 }
 
 .portfolio__keyword:hover {
-  background-color: white;
-  color: #000;
+  background-color: red;
+  color: #fff;
 }
 
 .portfolio__live {
