@@ -11,8 +11,6 @@
 .service__item:hover {
   background: var(--site-theme-color);
   cursor: pointer;
-
-  transform: translateY(-20px);
 }
 
 .service__item:hover i {
@@ -32,10 +30,12 @@
 .service__item span i {
   font-size: 3rem;
   color: var(--site-theme-color);
+  transition: 0.3s;
 }
 
 .service__item h5 {
   font-size: 1rem;
+  transition: 0.3s;
 }
 
 .service__item:first-child {
