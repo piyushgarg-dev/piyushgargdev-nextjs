@@ -42,9 +42,9 @@ const Contact = () => {
             <ul className={`${classes.contact__info__list}`}>
               <li className={`${classes.info__item}`}>
                 <span>
-                  <i className="ri-map-pin-line"></i>
+                  <i className="ri-map-pin-line cursor-pointer"></i>
                 </span>
-                <p>Planet Earth 🌍</p>
+                <p className="hover:text-[#01d293] cursor-pointer">Planet Earth 🌍</p>
               </li>
               <li className={`${classes.info__item}`}>
                 <span>
