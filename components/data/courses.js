@@ -9,6 +9,15 @@ const portfolio = [
     liveUrl: "https://learn.piyushgarg.dev/learn/twitter-clone",
   },
   {
+    id: "08",
+    title: "Master Next.js 14",
+    subtitle: "Learn Next.js with App router, Server Components and much more.",
+    img: "/images/next-14.webp",
+    category: "Full Stack",
+    keyword: ["NextJS", "Server-Components", "Server-Actions"],
+    liveUrl: "https://learn.piyushgarg.dev/learn/nextjs-14",
+  },
+  {
     id: "01",
     title: "Complete Java Master Course",
     subtitle: "Go from Zero to Hero in Java",

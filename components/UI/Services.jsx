@@ -41,7 +41,7 @@ const Services = ({ youtubeStats, youtubeVideos }) => {
                     style={{ padding: "10px" }}
                     key={video.id.videoId}
                   >
-                    <Image
+                    <img
                       src={video.snippet.thumbnails.medium.url}
                       height={0}
                       width={0}

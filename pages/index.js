@@ -79,12 +79,6 @@ export default function Home({
           <Terminal />
         </div>
       </Container>
-
-      <Blog
-        blogDomain={blogData?.user?.publicationDomain}
-        blogs={blogData?.user?.publication?.posts}
-      />
-
       <Contact />
     </Fragment>
   );
@@ -134,7 +128,7 @@ async function getYoutubeVideos() {
 
 export async function getRecentBlogs() {
   const response = await axios.post(
-    "https://api.hashnode.com",
+    "https://gql.hashnode.com",
     {
       query:
         '{\n  user(username: "piyushgarg") {\npublicationDomain \n    publication {\n     posts(page: 1) {\n  _id\n totalReactions\n  brief\n    title\n        slug\n        coverImage\n      }\n    }\n  }\n}',
@@ -151,14 +145,14 @@ export async function getStaticProps(context) {
     const [youtubeStats, youtubeVideos, blogResponse] = await Promise.all([
       getYoutubeStatsForChannelId("UCf9T51_FmMlfhiGpoes0yFA"),
       getYoutubeVideos(),
-      getRecentBlogs(),
+      
     ]);
 
     return {
       props: {
         youtubeStats,
         youtubeVideos,
-        blogData: blogResponse,
+        blogData: [],
         feedbacks: feedbacks.map((feedBack) => ({
           ...feedBack,
           course: courses.find((e) => e.id === feedBack.courseId),
