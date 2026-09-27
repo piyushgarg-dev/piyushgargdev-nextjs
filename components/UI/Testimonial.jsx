@@ -40,7 +40,17 @@ const Testimonial = ({ feedbacks = [] }) => {
     <section>
       <Container>
         <SectionSubtitle subtitle="Testimonials" />
-        <h4 className="mt-4 mb-5 text-2xl">Feedback from students</h4>
+        <div className="flex items-center gap-3 mt-4 mb-5">
+  <img 
+    src="https://cdn-icons-png.flaticon.com/128/11778/11778933.png" 
+    loading="lazy"  
+    alt="Customers review" 
+    data-id="4739579" 
+    data-src="?term=feedback&page=1&position=7&origin=tag"
+    className="w-8 h-8 object-contain"
+  />
+  <h4 className="text-2xl m-0">Feedbacks from Students</h4>
+</div>
         <Row className="sm:p-2 p-10">
           <Slider {...settings}>
             {feedbacks.map((feedBack) => (
