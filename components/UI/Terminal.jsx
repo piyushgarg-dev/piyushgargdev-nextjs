@@ -64,7 +64,7 @@ const Terminal = () => {
     <TerminalContextProvider>
       <ReactTerminal
         prompt={
-          data && data.user ? `$ ${data.user.name} >> ` : "$ piyushgarg-dev >> "
+          data && data.user ? `$ ${data.user.name} >>` : "$ piyushgarg-dev >>"
         }
         welcomeMessage={
           <div>
