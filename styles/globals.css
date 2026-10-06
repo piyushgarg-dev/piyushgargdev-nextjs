@@ -2,8 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+:root,
+[data-theme="dark"] {
   --site-theme-color: #01d293;
+
+  /* theme tokens — dark is the default */
+  --bg: #0e1630;
+  --card-bg: #171f38;
+  --text-muted: #808dad;
+  --text-primary: #ffffff;
+}
+
+[data-theme="light"] {
+  --site-theme-color: #007f58; /* darker accent so it stays readable on light backgrounds */
+  --bg: #f7f9fc;
+  --card-bg: #e9edf5;
+  --text-muted: #4a5573;
+  --text-primary: #0e1630;
 }
 
 html,
@@ -12,8 +27,8 @@ body {
   margin: 0;
   font-family: "Quicksand", sans-serif !important;
   scroll-behavior: smooth;
-  background: #0e1630;
-  background-color: #0e1630 !important;
+  background: var(--bg);
+  background-color: var(--bg) !important;
 }
 
 .border-cool {
@@ -32,7 +47,7 @@ a {
 }
 
 p {
-  color: #808dad;
+  color: var(--text-muted);
   line-height: 30px;
 }
 h1,
@@ -41,7 +56,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #fff;
+  color: var(--text-primary);
 }
 
 h2 {
@@ -55,11 +70,11 @@ section {
 footer {
   padding-bottom: 10px;
   padding-top: 20px;
-  border-top: 1px solid #171f38;
+  border-top: 1px solid var(--card-bg);
 }
 
 .primary__btn {
-  background: #171f38 !important;
+  background: var(--card-bg) !important;
   padding: 7px 25px !important;
   border: 1px solid var(--site-theme-color);
   border-radius: 5px;
@@ -100,8 +115,13 @@ footer {
   cursor: pointer;
 }
 
+.slick-prev:before,
+.slick-next:before {
+  color: var(--text-primary);
+}
+
 .slick-dots li button:before {
-  color: white !important;
+  color: var(--text-primary) !important;
 }
 
 .slick-next {

@@ -74,7 +74,12 @@ export default function Home({
         <SectionSubtitle subtitle="Terminal" />
         <div
           id="terminal-1"
-          style={{ border: "1px solid white", height: "400px" }}
+          data-theme="dark"
+          style={{
+            border: "1px solid var(--text-primary)",
+            background: "var(--bg)",
+            height: "400px",
+          }}
         >
           <Terminal />
         </div>

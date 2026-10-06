@@ -2,7 +2,7 @@
   padding-top: 60px !important;
 }
 .hero__content h5 {
-  color: #808dad;
+  color: var(--text-muted);
   font-weight: 400;
 }
 
@@ -38,7 +38,7 @@
 
 .hero__skills h6 {
   background: transparent;
-  color: #fff;
+  color: var(--text-primary);
 }
 
 .hero__skills span i {

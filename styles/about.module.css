@@ -4,7 +4,7 @@
 
 .about__img {
   padding: 10px;
-  background: #171f38;
+  background: var(--card-bg);
   margin-bottom: 20px;
   border-radius: 5px;
 }

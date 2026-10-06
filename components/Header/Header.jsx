@@ -6,6 +6,7 @@ import { useSession, signOut, signIn } from "next-auth/react";
 import classes from "./header.module.css";
 import Link from "next/link";
 import NewTwitterLogo from "../UI/NewTwitterlogo";
+import ThemeToggle from "../UI/ThemeToggle";
 import {
   RiCloseLine,
   RiYoutubeFill,
@@ -104,7 +105,7 @@ const Header = () => {
           >
             <div className={`${classes.nav__menu}`}>
               {crossMenu && (
-                <div className="border text-white text-3xl absolute top-10 right-10 font-extrabold">
+                <div className="border text-theme-primary text-3xl absolute top-10 right-10 font-extrabold">
                   <RiCloseLine />
                 </div>
               )}
@@ -118,7 +119,7 @@ const Header = () => {
                   </Link>
 
                   <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}`}>
-                    <span className=" text-[#808dad] hover:text-green-400">
+                    <span className=" text-theme-muted hover:text-green-400">
                       {item.display}
                     </span>
                   </Link>
@@ -135,7 +136,7 @@ const Header = () => {
                   </Link>
 
                   <Link href={"/#"}>
-                    <span className=" text-[#808dad] hover:text-green-400">
+                    <span className=" text-theme-muted hover:text-green-400">
                       Sign Out
                     </span>
                   </Link>
@@ -150,7 +151,7 @@ const Header = () => {
                   </Link>
 
                   <Link href={"#"}>
-                    <span className=" text-[#808dad] hover:text-green-400">
+                    <span className=" text-theme-muted hover:text-green-400">
                       Login
                     </span>
                   </Link>
@@ -167,7 +168,7 @@ const Header = () => {
                     target="_blank"
                     title="Youtube Channel"
                     id="youtube-channel"
-                    className={`cursor-pointer  text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    className={`cursor-pointer  text-theme-primary hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
                     <RiYoutubeFill />
@@ -178,7 +179,7 @@ const Header = () => {
                     target="_blank"
                     title="Github Account"
                     id="github-account"
-                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    className={`cursor-pointer text-theme-primary hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
                     <RiGithubFill />
@@ -189,7 +190,7 @@ const Header = () => {
                     target="_blank"
                     title="Twitter Account"
                     id="twitter-account"
-                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    className={`cursor-pointer text-theme-primary hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
                     <NewTwitterLogo/>
@@ -200,11 +201,13 @@ const Header = () => {
                     target="_blank"
                     title="LinkedIn Account"
                     id="linkedin-account"
-                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    className={`cursor-pointer text-theme-primary hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
                     rel="noreferrer"
                   >
                     <RiLinkedinFill />
                   </Link>
+
+                  <ThemeToggle className="ml-2" />
                 </div>
               </div>
             </div>
@@ -214,6 +217,7 @@ const Header = () => {
             onClick={() => setCrossMenu(!crossMenu)}
             className={`${classes.mobile__menu}`}
           >
+            <ThemeToggle className="mr-4 align-middle" />
             <i className="ri-menu-line" onClick={toggleMenu}></i>
           </span>
         </div>

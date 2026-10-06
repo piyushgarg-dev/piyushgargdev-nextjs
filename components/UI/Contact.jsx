@@ -107,7 +107,7 @@ const Contact = () => {
 
                 <form className="flex flex-col space-y-4" onSubmit={handleSubmit}>
                   <input
-                    className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
+                    className="text-md border-transparent rounded-lg block w-full p-2.5 bg-theme-card placeholder-gray-400 text-theme-primary"
                     type="text"
                     name="name"
                     placeholder="Your Full Name"
@@ -115,7 +115,7 @@ const Contact = () => {
                     autoComplete="off"
                   />
                   <input
-                    className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
+                    className="text-md border-transparent rounded-lg block w-full p-2.5 bg-theme-card placeholder-gray-400 text-theme-primary"
                     type="email"
                     name="email"
                     placeholder="Your Email"
@@ -123,7 +123,7 @@ const Contact = () => {
                     autoComplete="off"
                   />
                   <textarea
-                    className="text-md border-transparent rounded-lg block w-full p-2.5 bg-[#171f38] placeholder-gray-400 text-white"
+                    className="text-md border-transparent rounded-lg block w-full p-2.5 bg-theme-card placeholder-gray-400 text-theme-primary"
                     name="message"
                     placeholder="Your Message"
                     required
@@ -150,7 +150,7 @@ const Contact = () => {
         ) : (
           <form className="flex flex-col space-y-4" onSubmit={handleSubmit}>
             <input
-              className="border border-gray-300 bg-transparent px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:rgba(77, 181, 255, 0.4) text-white"
+              className="border border-gray-300 bg-transparent px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:rgba(77, 181, 255, 0.4) text-theme-primary"
               type="text"
               name="name"
               placeholder="Your Full Name"
@@ -158,7 +158,7 @@ const Contact = () => {
               autoComplete="off"
             />
             <input
-              className="border border-gray-300 bg-transparent px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:[rgba(77, 181, 255, 0.4)] text-white"
+              className="border border-gray-300 bg-transparent px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:[rgba(77, 181, 255, 0.4)] text-theme-primary"
               type="email"
               name="email"
               placeholder="Your Email"
@@ -166,7 +166,7 @@ const Contact = () => {
               autoComplete="off"
             />
             <textarea
-              className="border border-gray-300 bg-transparent px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:rgba(77, 181, 255, 0.4) text-white"
+              className="border border-gray-300 bg-transparent px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:rgba(77, 181, 255, 0.4) text-theme-primary"
               name="message"
               placeholder="Your Message"
               required
