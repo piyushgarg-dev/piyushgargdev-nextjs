@@ -2,7 +2,7 @@
   width: 100%;
   height: 94px;
   line-height: 80px;
-  background-color: #0e1630;
+  background-color: var(--page-background);
 }
 
 .nav__wrapper {
@@ -24,7 +24,7 @@
   display: flex;
   align-items: center;
   column-gap: 2.8rem;
-  background-color: #0e1630;
+  background-color: var(--page-background);
 }
 
 .nav__menu a,
@@ -40,7 +40,7 @@
   position: relative;
 }
 .nav__right i {
-  color: #808dad;
+  color: var(--secondary-text);
 }
 
 .nav__right p::before {
@@ -50,12 +50,12 @@
   left: -20px;
   width: 1px;
   height: 14px;
-  background: #808dad;
-  color: #808dad;
+  background: var(--secondary-text);
+  color: var(--secondary-text);
 }
 
 .nav__right p :hover {
-  color: var(--site-theme-color);
+  color: var(--hover-color);
 }
 
 .header__shrink {
@@ -65,19 +65,46 @@
   width: 100%;
   height: 80px;
   line-height: 80px;
-  box-shadow: 5px 5px 15px -5px var(--site-theme-color) 44;
+  border-bottom: 1px solid var(--border-color);
   z-index: 9999;
 }
 
 .mobile__menu i {
   font-size: 1.3rem;
-  color: #fff;
+  color: var(--primary-text);
 
   cursor: pointer;
 }
 
 .mobile__menu {
   display: none;
+}
+
+.themeToggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-left: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  color: var(--primary-text);
+  background: var(--surface-background);
+  cursor: pointer;
+  transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.themeToggle:hover {
+  color: var(--hover-color);
+  border-color: var(--hover-color);
+  transform: translateY(-1px);
+}
+
+.themeToggle:focus-visible {
+  outline: 2px solid var(--site-theme-color);
+  outline-offset: 3px;
 }
 
 .color_FF0000 {
@@ -93,7 +120,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: #171f3897;
+    background: color-mix(in srgb, var(--page-background) 70%, transparent);
     z-index: 99999;
     display: none;
   }
@@ -128,6 +155,11 @@
     display: flex;
     align-items: center;
     gap: 7px;
+  }
+
+  .themeToggle {
+    margin-left: auto;
+    margin-right: 0.75rem;
   }
 }
 

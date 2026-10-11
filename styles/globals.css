@@ -3,7 +3,37 @@
 @tailwind utilities;
 
 :root {
-  --site-theme-color: #01d293;
+  --site-theme-color: #ffffff;
+  --hover-color: #d4d4d4;
+  --terminal-accent: #ffffff;
+  --terminal-background: #111111;
+  --page-background: #050505;
+  --surface-background: #111111;
+  --elevated-surface: #1a1a1a;
+  --primary-text: #f5f5f5;
+  --secondary-text: #a1a1aa;
+  --muted-text: #71717a;
+  --border-color: #262626;
+  --muted-surface: rgba(113, 113, 122, 0.15);
+  --button-background: #111111;
+  --button-text: #f5f5f5;
+}
+
+[data-theme="light"] {
+  --page-background: #f6f8fb;
+  --surface-background: #ffffff;
+  --elevated-surface: #ffffff;
+  --primary-text: #111111;
+  --secondary-text: #3f3f46;
+  --muted-text: #71717a;
+  --border-color: #dbe3ee;
+  --muted-surface: rgba(82, 98, 122, 0.12);
+  --button-background: #ffffff;
+  --button-text: #111111;
+  --site-theme-color: #111111;
+  --hover-color: #52525b;
+  --terminal-accent: #111111;
+  --terminal-background: #ffffff;
 }
 
 html,
@@ -12,8 +42,10 @@ body {
   margin: 0;
   font-family: "Quicksand", sans-serif !important;
   scroll-behavior: smooth;
-  background: #0e1630;
-  background-color: #0e1630 !important;
+  background: var(--page-background);
+  background-color: var(--page-background) !important;
+  color: var(--primary-text);
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 .border-cool {
@@ -32,7 +64,7 @@ a {
 }
 
 p {
-  color: #808dad;
+  color: var(--secondary-text);
   line-height: 30px;
 }
 h1,
@@ -41,7 +73,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #fff;
+  color: var(--primary-text);
 }
 
 h2 {
@@ -55,11 +87,11 @@ section {
 footer {
   padding-bottom: 10px;
   padding-top: 20px;
-  border-top: 1px solid #171f38;
+  border-top: 1px solid var(--border-color);
 }
 
 .primary__btn {
-  background: #171f38 !important;
+  background: var(--surface-background) !important;
   padding: 7px 25px !important;
   border: 1px solid var(--site-theme-color);
   border-radius: 5px;
@@ -83,7 +115,7 @@ footer {
 }
 .primary__btn a:hover,
 .secondary__btn a:hover {
-  color: var(--site-theme-color);
+  color: var(--hover-color);
 }
 
 ::-webkit-scrollbar {
@@ -101,7 +133,7 @@ footer {
 }
 
 .slick-dots li button:before {
-  color: white !important;
+  color: var(--primary-text) !important;
 }
 
 .slick-next {
@@ -115,7 +147,89 @@ footer {
 }
 
 .text-white {
-  color: "#fff";
+  color: var(--primary-text) !important;
+}
+
+input,
+textarea,
+button,
+select {
+  font: inherit;
+}
+
+[data-theme="light"] .text-\[\#808dad\] {
+  color: var(--secondary-text) !important;
+}
+
+[data-theme="light"] .text-\[\#ffffff\] {
+  color: var(--primary-text) !important;
+}
+
+[data-theme="light"] .bg-\[\#171f38\] {
+  background-color: var(--surface-background) !important;
+}
+
+[data-theme="dark"] .bg-\[\#171f38\] {
+  background-color: var(--surface-background) !important;
+}
+
+[data-theme="dark"] .text-\[\#808dad\] {
+  color: var(--secondary-text) !important;
+}
+
+[data-theme="dark"] .text-\[\#ffffff\] {
+  color: var(--primary-text) !important;
+}
+
+[data-theme="light"] .bg-gray-900 {
+  background-color: var(--button-background) !important;
+}
+
+[data-theme="dark"] .bg-gray-900 {
+  background-color: var(--button-background) !important;
+}
+
+.theme-hover-text:hover {
+  color: var(--hover-color) !important;
+}
+
+[data-theme="light"] .theme-hover-text:hover,
+[data-theme="light"] .nav__menu a:hover {
+  color: #000000 !important;
+}
+
+[data-theme="light"] ::-webkit-scrollbar-thumb {
+  background: #d4d4d4;
+}
+
+[data-theme="light"] .contactSubmit {
+  color: #000000;
+  background: #ffffff;
+  border: 1px solid #000000;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+[data-theme="light"] .contactSubmit:hover,
+[data-theme="light"] .contactSubmit:focus-visible {
+  color: #111111;
+  background: #f5f5f5;
+  border-color: #000000;
+}
+
+.terminalWrapper {
+  border: 0;
+  border-radius: 0.5rem;
+  transition: outline-color 0.2s ease;
+}
+
+[data-theme="light"] .terminalWrapper:hover,
+[data-theme="light"] .terminalWrapper:focus-within {
+  outline: 1px solid #000000;
+  outline-offset: 0;
+}
+
+[data-theme="light"] .border-gray-300 {
+  border-color: var(--border-color) !important;
 }
 
 .pushable {
@@ -154,16 +268,15 @@ footer {
   z-index: -1;
   content: "";
   display: block;
-  border: 5px solid #2980b9;
+  border: 5px solid var(--border-color);
 }
 .ribbon span {
   position: absolute;
   display: block;
   width: 225px;
   padding: 15px 0;
-  background-color: #3498db;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  color: #fff;
+  background-color: var(--elevated-surface);
+  color: var(--primary-text);
   font: 700 18px/1 "Lato", sans-serif;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   text-transform: uppercase;

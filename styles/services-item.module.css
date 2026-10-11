@@ -1,5 +1,5 @@
 .service__item {
-  background: #171f38;
+  background: var(--surface-background);
   padding: 30px;
   margin-bottom: 30px;
   display: flex;
@@ -9,18 +9,18 @@
 }
 
 .service__item:hover {
-  background: var(--site-theme-color);
+  background: var(--hover-color);
   cursor: pointer;
 
   transform: translateY(-20px);
 }
 
 .service__item:hover i {
-  color: #171f38;
+  color: var(--surface-background);
 }
 
 .service__item:hover h5 {
-  color: #171f38;
+  color: var(--surface-background);
 }
 
 .service__item span,
@@ -44,6 +44,16 @@
 
 .service__item:last-child {
   border-radius: 10px 10px 0px 10px;
+}
+
+[data-theme="light"] .service__item:hover {
+  background: var(--surface-background);
+  border: 1px solid #000000;
+}
+
+[data-theme="light"] .service__item:hover i,
+[data-theme="light"] .service__item:hover h5 {
+  color: #000000;
 }
 
 @media only screen and (max-width: 992px) {

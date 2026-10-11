@@ -20,6 +20,8 @@ import {
   AiFillExclamationCircle,
   AiFillEdit,
 } from "react-icons/ai";
+import { MdDarkMode, MdLightMode } from "react-icons/md";
+import { useTheme } from "../../context/ThemeContext";
 
 
 const NAV__LINK = [
@@ -60,6 +62,7 @@ const Header = () => {
   const menuRef = useRef(null);
 
   const { data } = useSession();
+  const { theme, toggleTheme } = useTheme();
 
   const headerFunc = () => {
     if (
@@ -118,7 +121,7 @@ const Header = () => {
                   </Link>
 
                   <Link aria-label={item.display} href={item.path} target={`${item.openInNewPage?'_blank':'_self'}`}>
-                    <span className=" text-[#808dad] hover:text-green-400">
+                    <span className="text-[#808dad] theme-hover-text">
                       {item.display}
                     </span>
                   </Link>
@@ -135,7 +138,7 @@ const Header = () => {
                   </Link>
 
                   <Link href={"/#"}>
-                    <span className=" text-[#808dad] hover:text-green-400">
+                    <span className="text-[#808dad] theme-hover-text">
                       Sign Out
                     </span>
                   </Link>
@@ -150,7 +153,7 @@ const Header = () => {
                   </Link>
 
                   <Link href={"#"}>
-                    <span className=" text-[#808dad] hover:text-green-400">
+                    <span className="text-[#808dad] theme-hover-text">
                       Login
                     </span>
                   </Link>
@@ -167,7 +170,7 @@ const Header = () => {
                     target="_blank"
                     title="Youtube Channel"
                     id="youtube-channel"
-                    className={`cursor-pointer  text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    className="cursor-pointer text-[#ffffff] theme-hover-text transform ease-in-out hover:-translate-y+1 hover:scale-150"
                     rel="noreferrer"
                   >
                     <RiYoutubeFill />
@@ -178,7 +181,7 @@ const Header = () => {
                     target="_blank"
                     title="Github Account"
                     id="github-account"
-                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    className="cursor-pointer text-[#ffffff] theme-hover-text transform ease-in-out hover:-translate-y+1 hover:scale-150"
                     rel="noreferrer"
                   >
                     <RiGithubFill />
@@ -189,7 +192,7 @@ const Header = () => {
                     target="_blank"
                     title="Twitter Account"
                     id="twitter-account"
-                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    className="cursor-pointer text-[#ffffff] theme-hover-text transform ease-in-out hover:-translate-y+1 hover:scale-150"
                     rel="noreferrer"
                   >
                     <NewTwitterLogo/>
@@ -200,7 +203,7 @@ const Header = () => {
                     target="_blank"
                     title="LinkedIn Account"
                     id="linkedin-account"
-                    className={`cursor-pointer text-[#ffffff] hover:text-[--site-theme-color] transform ease-in-out hover:-translate-y+1 hover:scale-150`}
+                    className="cursor-pointer text-[#ffffff] theme-hover-text transform ease-in-out hover:-translate-y+1 hover:scale-150"
                     rel="noreferrer"
                   >
                     <RiLinkedinFill />
@@ -209,6 +212,16 @@ const Header = () => {
               </div>
             </div>
           </div>
+
+          <button
+            type="button"
+            className={classes.themeToggle}
+            onClick={toggleTheme}
+            aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+            title={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+          >
+            {theme === "dark" ? <MdLightMode /> : <MdDarkMode />}
+          </button>
 
           <span
             onClick={() => setCrossMenu(!crossMenu)}
