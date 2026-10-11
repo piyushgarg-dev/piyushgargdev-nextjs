@@ -3,6 +3,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SessionProvider } from "next-auth/react";
 
 import Layout from "../components/Layout/Layout";
+import { ThemeProvider } from "../context/ThemeContext";
 
 import "../styles/external.css";
 import "../styles/globals.css";
@@ -10,7 +11,8 @@ import "../styles/globals.css";
 function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   return (
     <SessionProvider session={session}>
-      <Layout>
+      <ThemeProvider>
+        <Layout>
         {process.env.NODE_ENV === "production" && (
           <>
             <Script
@@ -33,9 +35,10 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
             </Script>
           </>
         )}
-        <Component {...pageProps} />;
-        <Analytics />
-      </Layout>
+          <Component {...pageProps} />
+          <Analytics />
+        </Layout>
+      </ThemeProvider>
     </SessionProvider>
   );
 }

@@ -2,12 +2,45 @@
   padding-top: 60px !important;
 }
 .hero__content h5 {
-  color: #808dad;
+  color: var(--secondary-text);
   font-weight: 400;
 }
 
 .hero__content {
   padding-top: 50px;
+}
+
+.hero__discord {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  color: var(--button-text);
+  background: var(--button-background);
+  font-weight: 700;
+  text-align: center;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.hero__discord:hover {
+  color: var(--button-text);
+  background: var(--elevated-surface);
+  border-color: var(--hover-color);
+  transform: translateY(-1px);
+}
+
+.hero__discord:focus-visible {
+  outline: 2px solid var(--hover-color);
+  outline-offset: 3px;
+}
+
+.hero__discord span {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .hero__img {
@@ -32,13 +65,13 @@
   left: 22%;
   transform: translateY(-50%);
   border-radius: 5px;
-  background: #808dad26;
+  background: var(--muted-surface);
   z-index: 10;
 }
 
 .hero__skills h6 {
   background: transparent;
-  color: #fff;
+  color: var(--primary-text);
 }
 
 .hero__skills span i {
@@ -57,7 +90,7 @@
   right: -5%;
   padding: 10px 20px;
   border-radius: 5px;
-  background: #808dad26;
+  background: var(--muted-surface);
   z-index: 10;
 }
 
@@ -76,7 +109,7 @@
 .hero__experience span i {
   padding: 5px;
   color: var(--site-theme-color);
-  background: #808dad70;
+  background: var(--muted-surface);
   border-radius: 5px;
 }
 

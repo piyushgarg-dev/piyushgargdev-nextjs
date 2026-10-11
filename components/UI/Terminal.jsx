@@ -16,7 +16,7 @@ const Terminal = () => {
         ) : (
           <div>
             <p>You need to be signed in to use this command!</p>
-            <span style={{ color: "#38CC77" }}>Just type `sign-in`</span>
+            <span style={{ color: "var(--terminal-accent)" }}>Just type `sign-in`</span>
           </div>
         ),
       },
@@ -37,7 +37,7 @@ const Terminal = () => {
         action: !isLoggedIn ? (
           <div>
             <p>You need to be signed in to use this command!</p>
-            <span style={{ color: "#38CC77" }}>Just type `sign-in`</span>
+            <span style={{ color: "var(--terminal-accent)" }}>Just type `sign-in`</span>
           </div>
         ) : (
           signOut
@@ -61,28 +61,29 @@ const Terminal = () => {
   }, [data?.user?.email, data?.user?.name, isLoggedIn]);
 
   return (
-    <TerminalContextProvider>
-      <ReactTerminal
-        prompt={
-          data && data.user ? `$ ${data.user.name} >> ` : "$ piyushgarg-dev >> "
-        }
+    <div className="terminalWrapper">
+      <TerminalContextProvider>
+        <ReactTerminal
+          prompt={
+            data && data.user ? `$ ${data.user.name} >> ` : "$ piyushgarg-dev >> "
+          }
         welcomeMessage={
           <div>
             <p>
               Welcome to my website! Get started by typing `help` command below
             </p>
             {/* <p>
-              <span style={{ color: "#38CC77" }}>Pro Tip:</span> Hack this
+              <span style={{ color: "var(--terminal-accent)" }}>Pro Tip:</span> Hack this
               terminal and you{"'"}ll get FREE access to my courses :)
             </p> */}
           </div>
         }
         themes={{
           darkDefault: {
-            themeBGColor: "",
-            themeToolbarColor: "",
-            themeColor: "#38CC77",
-            themePromptColor: "#fff",
+            themeBGColor: "var(--terminal-background)",
+            themeToolbarColor: "var(--terminal-background)",
+            themeColor: "var(--terminal-accent)",
+            themePromptColor: "var(--primary-text)",
           },
         }}
         theme="darkDefault"
@@ -96,19 +97,20 @@ const Terminal = () => {
               <p>Available Commands:</p>
               {Object.keys(terminalCommands).map((key) => (
                 <p key={key}>
-                  <span style={{ color: "#38CC77" }}>{key}:</span>{" "}
+                  <span style={{ color: "var(--terminal-accent)" }}>{key}:</span>{" "}
                   {terminalCommands[key].help}
                 </p>
               ))}
               <p>
-                <span style={{ color: "#38CC77" }}>clear:</span> clears out
+                <span style={{ color: "var(--terminal-accent)" }}>clear:</span> clears out
                 everything on screen!
               </p>
             </div>
           ),
         }}
-      />
-    </TerminalContextProvider>
+        />
+      </TerminalContextProvider>
+    </div>
   );
 };
 
