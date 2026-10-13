@@ -64,9 +64,9 @@ const Hero = () => {
         <Row>
           <Col lg="6" md="6">
             <div className={`${classes.hero__content}`}>
-              <div className="flex flex-col items-center justify-center">
+              <div className="flex flex-col items-start justify-start">
                 <Col lg="6" md="6">
-                  <div className={`${classes.hero__img} text-end`}>
+                  <div className={`${classes.hero__img} text-left`}>
                     <Image
                       alt="Piyush Garg"
                       src={heroImg}
@@ -82,7 +82,7 @@ const Hero = () => {
                   I&apos;m Piyush Garg
                 </h2>
                 <h5 className="mb-4">Fullstack Developer & Instructor</h5>
-                <p id="about-me" className="text-center">
+                <p id="about-me" className="text-left">
                   Hi there! My name is Piyush Garg and I&rsquo;m a software
                   engineer with over 5 years of experience in the industry. I
                   love all things tech and coding, and on my channel, I share my
@@ -90,7 +90,7 @@ const Hero = () => {
                 </p>
               </div>
             </div>
-            <div className="mt-5 flex flex-col items-center justify-center">
+            <div className="mt-5 flex flex-col items-start justify-start">
               <div className="relative inline-flex group">
                 <div className="absolute w-full transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r animate-pulse hover:animate-none from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
                 <Link
