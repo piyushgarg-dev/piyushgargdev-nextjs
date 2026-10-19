@@ -43,11 +43,14 @@ const PortfolioItem = (props) => {
               style={{
                 position: "absolute",
                 background: "transparent",
-                bottom: "20px",
+                bottom: "15px",
+                left: "15px",
+                right: "15px",
                 display: "flex",
                 flexDirection: "row",
                 flexWrap: "wrap",
-              }}>
+              }}
+            >
 
               {keyword.map((item, index) => (
                 <span
