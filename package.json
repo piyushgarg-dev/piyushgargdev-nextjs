@@ -22,7 +22,10 @@
     "next": "^13.1.1",
     "next-auth": "^4.18.10",
     "react": "18.2.0",
+<<<<<<< HEAD
+=======
     "react-browser-ui": "^1.3.5",
+>>>>>>> 9880dc123f4d7d8bc058e19afa7059e1ffcc0317
     "react-device-detect": "^2.2.2",
     "react-dom": "18.2.0",
     "react-icons": "^4.9.0",
