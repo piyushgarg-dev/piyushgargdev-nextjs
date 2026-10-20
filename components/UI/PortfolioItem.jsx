@@ -69,7 +69,7 @@ const PortfolioItem = (props) => {
           style={{
             display: 'flex',
             flexWrap: 'wrap',
-            gap: '8px',
+            gap: '85px',
             marginTop: 'auto',
             paddingTop: '8px',
           }}
