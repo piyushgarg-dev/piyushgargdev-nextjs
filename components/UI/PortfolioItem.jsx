@@ -3,7 +3,7 @@ import React from 'react';
 import classes from '../../styles/portfolio-item.module.css';
 import Image from 'next/image';
 
-const PortfolioItem = (props) => {
+const PortfolioItem = ({ item }) => {
   const {
     title,
     img,
@@ -11,54 +11,82 @@ const PortfolioItem = (props) => {
     keyword = [],
     subtitle,
     ribbonText = null,
-  } = props.item;
+  } = item;
 
   return (
-    <div className={classes.portfolio__item}>
+    <div
+      className={classes.portfolio__item}
+      style={{
+        height: '100%',
+        borderRadius: '14px',
+        overflow: 'hidden',
+        transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+      }}
+    >
       <a
-        target="_blank"
-        rel="noreferrer"
         href={liveUrl}
+        target="_blank"
+        rel="noopener noreferrer"
         style={{
-          textDecoration: 'none',
           display: 'flex',
           flexDirection: 'column',
           height: '100%',
+          textDecoration: 'none',
+          padding: '14px',
         }}
       >
         {ribbonText && (
           <div
-            style={{ zIndex: 99 }}
             className="ribbon ribbon-top-left"
+            style={{ zIndex: 2 }}
           >
             <span>{ribbonText}</span>
           </div>
         )}
 
-        <div className={classes.portfolio__img}>
+        <div
+          className={classes.portfolio__img}
+          style={{
+            width: '100%',
+            overflow: 'hidden',
+            borderRadius: '10px',
+          }}
+        >
           <Image
-            alt={title}
+            alt={title || 'Course thumbnail'}
             src={img}
             width={380}
-            height={200}
+            height={220}
+            sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
             style={{
-              width: '120%',
-              height: 'auto',
+              display: 'block',
+              width: '100%',
+              height: '220px',
               objectFit: 'cover',
+              transition: 'transform 0.3s ease',
             }}
           />
         </div>
 
-        <h3 style={{ background: 'transparent', marginTop: '12px' }}>
+        <h3
+          style={{
+            background: 'transparent',
+            marginTop: '16px',
+            marginBottom: '8px',
+            fontSize: '1.2rem',
+            fontWeight: 600,
+            lineHeight: 1.4,
+          }}
+        >
           {title}
         </h3>
 
         <p
           style={{
             background: 'transparent',
-            marginTop: '6px',
-            marginBottom: '12px',
-            lineHeight: '1.5',
+            margin: 0,
+            marginBottom: '16px',
+            lineHeight: 1.6,
             overflowWrap: 'anywhere',
           }}
         >
@@ -69,17 +97,26 @@ const PortfolioItem = (props) => {
           style={{
             display: 'flex',
             flexWrap: 'wrap',
-            gap: '85px',
+            alignItems: 'center',
+            gap: '8px',
             marginTop: 'auto',
-            paddingTop: '8px',
+            paddingTop: '12px',
           }}
         >
-          {keyword.map((item, index) => (
+          {keyword.map((tag, index) => (
             <span
               className={classes.portfolio__keyword}
-              key={index}
+              key={`${tag}-${index}`}
+              style={{
+                display: 'inline-block',
+                padding: '5px 10px',
+                borderRadius: '6px',
+                fontSize: '0.8rem',
+                maxWidth: '100%',
+                overflowWrap: 'anywhere',
+              }}
             >
-              {item}
+              {tag}
             </span>
           ))}
         </div>
