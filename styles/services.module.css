@@ -1,0 +1,16 @@
+.services__container {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .services__container {
+    flex-direction: column;
+    align-items: unset;
+  }
+
+  .service__title h3 {
+    font-size: 1.3rem;
+  }
+}

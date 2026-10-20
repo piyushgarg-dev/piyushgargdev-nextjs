@@ -1,0 +1,157 @@
+.hero {
+  padding-top: 60px !important;
+}
+.hero__content h5 {
+  color: #808dad;
+  font-weight: 400;
+}
+
+.hero__content {
+  padding-top: 50px;
+}
+
+.hero__img {
+  position: relative;
+  z-index: 9;
+  display: flex;
+  /* border: 2px solid red; */
+  justify-content: flex-end;
+}
+
+.hero__img img {
+  border-radius: 50px 5px 5px 5px;
+  display: inline;
+}
+
+.hero__skills {
+  text-align: left;
+  width: 130px;
+  padding: 10px 20px;
+  position: absolute;
+  top: 50%;
+  left: 22%;
+  transform: translateY(-50%);
+  border-radius: 5px;
+  background: #808dad26;
+  z-index: 10;
+}
+
+.hero__skills h6 {
+  background: transparent;
+  color: #fff;
+}
+
+.hero__skills span i {
+  color: var(--site-theme-color);
+  background: transparent;
+}
+
+.hero__skills span {
+  background: transparent;
+}
+
+.hero__experience {
+  width: 150px;
+  position: absolute;
+  bottom: -10%;
+  right: -5%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: #808dad26;
+  z-index: 10;
+}
+
+.hero__experience span,
+.hero__experience h5,
+.hero__experience h6 {
+  background: transparent !important;
+}
+
+.hero__experience h6 {
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.hero__experience span i {
+  padding: 5px;
+  color: var(--site-theme-color);
+  background: #808dad70;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 992px) {
+  .hero__content h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .hero__content h5 {
+    font-size: 1.1rem !important;
+  }
+
+  .hero__img img {
+    width: 250px !important;
+    height: 250px !important;
+  }
+
+  .hero__content {
+    padding-top: 0;
+  }
+
+  .hero__skills {
+    padding: 10px;
+    width: 90px;
+    left: 5%;
+  }
+
+  .hero__skills h6,
+  .hero__skills span i {
+    font-size: 0.7rem;
+    margin-bottom: 0;
+  }
+
+  .hero__experience {
+    padding: 10px;
+    width: 115px;
+  }
+
+  .hero__experience h6 {
+    font-size: 0.7rem;
+  }
+
+  .hero__experience h5 {
+    font-size: 0.9rem;
+  }
+  .hero__experience span i {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero__img {
+    text-align: center !important;
+    margin-top: 50px;
+    justify-content: center;
+  }
+
+  .hero__skills {
+    left: 15%;
+  }
+
+  .hero__experience {
+    right: 20%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .hero__skills {
+    display: none;
+  }
+  .hero__experience {
+    display: none !important;
+  }
+
+  .hero__img {
+    justify-content: center;
+  }
+}

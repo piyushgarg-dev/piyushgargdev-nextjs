@@ -1,0 +1,38 @@
+.nav__menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav__menu a {
+  color: #808dad;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.nav__menu a:hover {
+  color: var(--site-theme-color);
+}
+
+.nav__menu a:first-child {
+  color: var(--site-theme-color);
+}
+
+.footer__creator h6 {
+  text-align: right;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.852);
+}
+
+.footer__copyright p {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer__top {
+    display: none;
+  }
+}

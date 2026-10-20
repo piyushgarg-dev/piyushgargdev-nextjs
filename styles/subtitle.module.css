@@ -1,0 +1,19 @@
+.section__subtitle {
+  color: var(--site-theme-color) !important;
+  font-weight: 400;
+  
+  margin-left: 40px;
+  font-size: 1.5rem !important;
+  position: relative;
+}
+
+.section__subtitle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  width: 30px;
+  height: 1px;
+  background: var(--site-theme-color);
+  color: var(--site-theme-color);
+}
