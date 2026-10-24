@@ -185,7 +185,7 @@ const Header = () => {
                   </Link>
 
                   <Link
-                    href="https://twitter.com/piyushgarg_dev"
+                    href="https://x.com/piyushgarg_dev"
                     target="_blank"
                     title="Twitter Account"
                     id="twitter-account"
