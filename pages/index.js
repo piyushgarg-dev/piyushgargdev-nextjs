@@ -72,10 +72,7 @@ export default function Home({
       <Testimonial feedbacks={feedbacks} />
       <Container className="mt-5">
         <SectionSubtitle subtitle="Terminal" />
-        <div
-          id="terminal-1"
-          style={{ border: "1px solid white", height: "400px" }}
-        >
+        <div className="mt-4 h-[400px] overflow-hidden rounded-xl border border-white">
           <Terminal />
         </div>
       </Container>
