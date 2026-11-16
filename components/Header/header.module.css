@@ -58,17 +58,29 @@
   color: var(--site-theme-color);
 }
 
-.header__shrink {
-  position: sticky;
+.header {
+  position: sticky;      /* sticky in BOTH states */
   top: 0;
-  left: 0;
   width: 100%;
-  height: 80px;
+  height: 94px;
   line-height: 80px;
-  box-shadow: 5px 5px 15px -5px var(--site-theme-color) 44;
-  z-index: 9999;
+  background-color: #0e1630;
+  z-index: 1000;
+  transition: box-shadow 0.3s ease;
 }
 
+/* only visual changes here, never position or height */
+.header__shrink {
+  box-shadow: 5px 5px 15px -5px
+    color-mix(in srgb, var(--site-theme-color) 27%, transparent);
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    height: 60px;
+    line-height: 60px;
+  }
+}
 .mobile__menu i {
   font-size: 1.3rem;
   color: #fff;
