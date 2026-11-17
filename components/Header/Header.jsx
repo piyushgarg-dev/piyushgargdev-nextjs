@@ -62,14 +62,14 @@ const Header = () => {
   const { data } = useSession();
 
   const headerFunc = () => {
-    if (
-      document.body.scrollTop > 80 ||
-      document.documentElement.scrollTop > 80
-    ) {
-      headerRef.current.classList.add(`${classes.header__shrink}`);
-    } else {
-      headerRef.current.classList.remove(`${classes.header__shrink}`);
-    }
+  if (!headerRef.current) return;
+  const y = window.scrollY;
+  const el = headerRef.current;
+  const shrunk = el.classList.contains(classes.header__shrink);
+
+  if (!shrunk && y > 100) el.classList.add(classes.header__shrink);
+  else if (shrunk && y < 20) el.classList.remove(classes.header__shrink);
+
   };
 
   useEffect(() => {
